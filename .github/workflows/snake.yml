@@ -1,6 +1,11 @@
 name: Snake
 on:
+  pull_request:
+    branches: master
+    paths:
+      - projects/snake
   push:
+    branches: master
     paths:
       - projects/snake
 jobs:
