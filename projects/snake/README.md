@@ -1,16 +1,16 @@
 # Snake
 
-`# TODO: fix badges`
+`# TODO: latest release and build status`
 
 [![Latest Release](https://img.shields.io/github/release/vanillaSlice/Snake.svg)](https://github.com/vanillaSlice/Snake/releases/latest)
 [![Build Status](https://img.shields.io/travis/com/vanillaSlice/Snake/master.svg)](https://travis-ci.com/vanillaSlice/Snake)
-[![License](https://img.shields.io/github/license/vanillaSlice/Snake.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 A Snake clone built using [libGDX](https://libgdx.badlogicgames.com/).
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-1.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 
@@ -62,4 +62,4 @@ Resources useful for the completion of this project:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
