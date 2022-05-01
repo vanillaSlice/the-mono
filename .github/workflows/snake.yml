@@ -9,7 +9,7 @@ on:
     paths:
       - projects/snake/**
 jobs:
-  build:
+  Build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -18,5 +18,8 @@ jobs:
           java-version: 8
           distribution: temurin
       - uses: gradle/gradle-build-action@v2
-      - run: ./gradlew desktop:assemble
-      - run: ./gradlew desktop:check
+        with:
+          arguments: desktop:assemble
+      - uses: gradle/gradle-build-action@v2
+        with:
+          arguments: desktop:check
