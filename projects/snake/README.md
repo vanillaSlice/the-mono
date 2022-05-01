@@ -1,11 +1,5 @@
 # Snake
 
-`# TODO: latest release and build status`
-
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/Snake.svg)](https://github.com/vanillaSlice/Snake/releases/latest)
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Snake/master)](https://github.com/vanillaSlice/the-mono/actions?query=workflow:Snake+branch:master)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-
 A Snake clone built using [libGDX](https://libgdx.badlogicgames.com/).
 
 ## Screenshot
