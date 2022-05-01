@@ -1,5 +1,7 @@
 # Snake
 
+`# TODO: fix badges`
+
 [![Latest Release](https://img.shields.io/github/release/vanillaSlice/Snake.svg)](https://github.com/vanillaSlice/Snake/releases/latest)
 [![Build Status](https://img.shields.io/travis/com/vanillaSlice/Snake/master.svg)](https://travis-ci.com/vanillaSlice/Snake)
 [![License](https://img.shields.io/github/license/vanillaSlice/Snake.svg)](LICENSE)
