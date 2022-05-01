@@ -1,0 +1,124 @@
+textures.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+background
+  rotate: false
+  xy: 1, 237
+  size: 360, 640
+  orig: 360, 640
+  offset: 0, 0
+  index: -1
+block
+  rotate: false
+  xy: 133, 181
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+game-frame
+  rotate: false
+  xy: 363, 237
+  size: 360, 640
+  orig: 360, 640
+  offset: 0, 0
+  index: -1
+large-down-arrow
+  rotate: false
+  xy: 1, 171
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+large-down-arrow-pressed
+  rotate: false
+  xy: 725, 813
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+large-left-arrow
+  rotate: false
+  xy: 1, 105
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+large-left-arrow-pressed
+  rotate: false
+  xy: 67, 171
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+large-right-arrow
+  rotate: false
+  xy: 725, 747
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+large-right-arrow-pressed
+  rotate: false
+  xy: 791, 813
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+large-up-arrow
+  rotate: false
+  xy: 1, 39
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+large-up-arrow-pressed
+  rotate: false
+  xy: 67, 105
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+pause
+  rotate: false
+  xy: 133, 199
+  size: 36, 36
+  orig: 36, 36
+  offset: 0, 0
+  index: -1
+pause-pressed
+  rotate: false
+  xy: 725, 709
+  size: 36, 36
+  orig: 36, 36
+  offset: 0, 0
+  index: -1
+small-left-arrow
+  rotate: false
+  xy: 791, 775
+  size: 36, 36
+  orig: 36, 36
+  offset: 0, 0
+  index: -1
+small-left-arrow-pressed
+  rotate: false
+  xy: 857, 841
+  size: 36, 36
+  orig: 36, 36
+  offset: 0, 0
+  index: -1
+small-right-arrow
+  rotate: false
+  xy: 1, 1
+  size: 36, 36
+  orig: 36, 36
+  offset: 0, 0
+  index: -1
+small-right-arrow-pressed
+  rotate: false
+  xy: 67, 67
+  size: 36, 36
+  orig: 36, 36
+  offset: 0, 0
+  index: -1
