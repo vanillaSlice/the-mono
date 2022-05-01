@@ -3,11 +3,11 @@ on:
   pull_request:
     branches: main
     paths:
-      - projects/snake
+      - 'projects/snake/**'
   push:
     branches: main
     paths:
-      - projects/snake
+      - 'projects/snake/**'
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
