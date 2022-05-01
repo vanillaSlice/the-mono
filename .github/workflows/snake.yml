@@ -2,8 +2,8 @@ name: Snake
 on:
   pull_request:
     branches: master
-    paths:
-      - projects/snake/**
+    # paths:
+      # - projects/snake/**
   push:
     branches: master
     paths:
