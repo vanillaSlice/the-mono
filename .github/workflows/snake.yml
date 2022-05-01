@@ -1,13 +1,13 @@
 name: Snake
 on:
   pull_request:
-    branches: master
+    branches: main
     paths:
-      - projects/snake/**
+      - projects/snake
   push:
-    branches: master
+    branches: main
     paths:
-      - projects/snake/**
+      - projects/snake
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
