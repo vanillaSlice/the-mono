@@ -12,7 +12,7 @@ import lowe.mike.snake.util.State;
  *
  * @author Mike Lowe
  */
-public inal class SnakeGame extends Game {
+public final class SnakeGame extends Game {
 
   public static final String TITLE = "Snake";
   public static final int WIDTH = 360;
