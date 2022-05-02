@@ -2,10 +2,8 @@ name: Empty
 on:
   pull_request:
     branches: main
-  push:
-    branches: main
 jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-        - run: exit 0
+      - run: exit 0
