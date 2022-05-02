@@ -14,3 +14,21 @@
 * Leave the campground cleaner than you found it.
 
 ## Chapter Two: Meaningful Names
+
+* Use intention-revealing names.
+* Avoid disinformation.
+* Make meaningful distinctions.
+* Use pronounceable names.
+* Use searchable names.
+* The length of a name should correspond to the size of its scope.
+* Avoid encodings.
+* Avoid mental mapping.
+* Classes and objects should have noun or noun phrase names like `Customer`, `WikiPage`, `Account`, or `AddressParser`.
+* Method should have verb or verb phrase names like `postPayment`, `deletePage`, or `save`.
+* Don't be cute. Say what you mean. Mean what you say.
+* Pick one word per concept.
+* Don't pun.
+* Use solution domain names.
+* Use problem domain names.
+* Add meaningful context.
+* Don't add gratuitous context.
