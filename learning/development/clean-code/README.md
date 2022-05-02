@@ -12,3 +12,5 @@
 * Clean code always looks like it was written by someone who cares.
 * Clean code contains no duplication, is expressive, and has tiny abstractions.
 * Leave the campground cleaner than you found it.
+
+## Chapter Two: Meaningful Names
