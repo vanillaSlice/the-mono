@@ -1,5 +1,8 @@
 # Snake
 
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Snake/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ASnake+branch%3Amain)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 A Snake clone built using [libGDX](https://libgdx.badlogicgames.com/).
 
 ## Screenshot
