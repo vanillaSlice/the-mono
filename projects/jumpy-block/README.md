@@ -1,6 +1,6 @@
 # Jumpy Block
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Jumpy%20Block/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AJumpy%20Block+branch%3Amain)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Jumpy%20Block/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AJumpy%-Block+branch%3Amain)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 

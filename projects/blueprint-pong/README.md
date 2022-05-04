@@ -1,6 +1,6 @@
 # Blueprint Pong
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Blueprint%20Pong/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ABlueprint%20Pong+branch%3Amain)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Blueprint%20Pong/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ABlueprint-Pong+branch%3Amain)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 A Pong clone built using [libGDX](https://libgdx.badlogicgames.com/).
