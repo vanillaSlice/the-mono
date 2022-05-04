@@ -24,7 +24,7 @@
 * Avoid encodings.
 * Avoid mental mapping.
 * Classes and objects should have noun or noun phrase names like `Customer`, `WikiPage`, `Account`, or `AddressParser`.
-* Method should have verb or verb phrase names like `postPayment`, `deletePage`, or `save`.
+* Methods should have verb or verb phrase names like `postPayment`, `deletePage`, or `save`.
 * Don't be cute. Say what you mean. Mean what you say.
 * Pick one word per concept.
 * Don't pun.
@@ -32,3 +32,5 @@
 * Use problem domain names.
 * Add meaningful context.
 * Don't add gratuitous context.
+
+## Chapter Three: Functions
