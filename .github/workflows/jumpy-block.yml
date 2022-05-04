@@ -1,0 +1,26 @@
+name: Jumpy Block
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/jumpy-block.yml
+      - projects/jumpy-block/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/jumpy-block.yml
+      - projects/jumpy-block/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
+        with:
+          java-version: 8
+          distribution: temurin
+      - uses: gradle/gradle-build-action@v2
+      - working-directory: projects/jumpy-block
+        run: |
+          ./gradlew desktop:assemble
+          ./gradlew desktop:check
