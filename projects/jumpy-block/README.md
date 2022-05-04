@@ -1,15 +1,14 @@
 # Jumpy Block
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/JumpyBlock.svg)](https://github.com/vanillaSlice/JumpyBlock/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/JumpyBlock/master.svg)](https://travis-ci.com/vanillaSlice/JumpyBlock)
-[![License](https://img.shields.io/github/license/vanillaSlice/JumpyBlock.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Jumpy%20Block/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AJumpy%20Block+branch%3Amain)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 
 A Flappy Bird clone built using [libGDX](https://libgdx.badlogicgames.com/).
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-1.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 
