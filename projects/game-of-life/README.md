@@ -1,7 +1,7 @@
 # Game of Life
 
 [![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Game%20of%20Life/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AGame-of-Life+branch%3Amain)
-[![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/GameOfLife/master.svg)](https://coveralls.io/github/vanillaSlice/GameOfLife?branch=master)
+[![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=GameOfLife)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/game-of-life)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 *The Game of Life* is a cellular automaton devised by mathematician John Conway.
