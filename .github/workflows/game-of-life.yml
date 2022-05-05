@@ -1,0 +1,35 @@
+name: Game of Life
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/game-of-life.yml
+      - projects/game-of-life/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/game-of-life.yml
+      - projects/game-of-life/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
+        with:
+          java-version: 8
+          distribution: temurin
+      - uses: gradle/gradle-build-action@v2
+      - working-directory: projects/game-of-life
+        run: |
+          ./gradlew check
+
+  # - export DISPLAY=:99.0
+  # - sh -e /etc/init.d/xvfb start
+  # - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  # - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+  # - rm -f  $HOME/.gradle/caches/*/fileHashes/fileHashes.bin
+  # - rm -f  $HOME/.gradle/caches/*/fileHashes/fileHashes.lock
+
+# after_success:
+  # - ./gradlew jacocoTestReport
