@@ -1,0 +1,10 @@
+comment: false
+coverage:
+  status:
+    patch: off
+    project: off
+flags:
+  GameOfLife:
+    paths:
+      - projects/game-of-life
+    carryforward: true

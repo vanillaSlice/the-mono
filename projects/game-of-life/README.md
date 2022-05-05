@@ -34,11 +34,6 @@ See [Wikipedia](https://en.wikipedia.org/wiki/Conway's_Game_of_Life) for more in
 
 ### Building
 
-*If you don't want to build the project yourself, head to
-[releases](https://github.com/vanillaSlice/GameOfLife/releases) and download one of the jar files from there.*
-
-To build the project yourself:
-
 1. Clone the project.
 2. Navigate to the project directory in your terminal/command prompt.
 3. If you have Gradle installed locally, run the Gradle Daemon:
