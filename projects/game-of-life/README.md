@@ -1,9 +1,8 @@
 # Game of Life
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/GameOfLife.svg)](https://github.com/vanillaSlice/GameOfLife/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/GameOfLife/master.svg)](https://travis-ci.com/vanillaSlice/GameOfLife)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Game%20of%20Life/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AGame-of-Life+branch%3Amain)
 [![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/GameOfLife/master.svg)](https://coveralls.io/github/vanillaSlice/GameOfLife?branch=master)
-[![License](https://img.shields.io/github/license/vanillaSlice/GameOfLife.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 *The Game of Life* is a cellular automaton devised by mathematician John Conway.
 
@@ -18,13 +17,13 @@ rules apply:
 
 An example of cell interaction:
 
-![Cell Interaction](/images/pattern-1.gif)
+![Cell Interaction](./images/pattern-1.gif)
 
 See [Wikipedia](https://en.wikipedia.org/wiki/Conway's_Game_of_Life) for more information on *The Game of Life*.
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-1.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 
@@ -60,14 +59,14 @@ To build the project yourself:
     gradlew clean buildFatJar
     ```
 
-    This will create a jar file called `GameOfLife-all-1.1.0.jar` in `build/libs`.
+    This will create a jar file called `GameOfLife.jar` in `build/libs`.
 
 ### Running
 
-To run the application double-click `GameOfLife-all-1.1.0.jar` or from your terminal/command prompt run:
+To run the application double-click `GameOfLife.jar` or from your terminal/command prompt run:
 
 ```
-java -jar GameOfLife-all-1.1.0.jar
+java -jar GameOfLife.jar
 ```
 
 ## Technology Used
