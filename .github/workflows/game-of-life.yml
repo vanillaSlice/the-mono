@@ -22,4 +22,8 @@ jobs:
       - uses: gradle/gradle-build-action@v2
       - working-directory: projects/game-of-life
         run: |
-          ./gradlew check
+          ./gradlew check jacocoTestReport
+      - uses: codecov/codecov-action@v2
+        with:
+          flags: GameOfLife
+          fail_ci_if_error: true
