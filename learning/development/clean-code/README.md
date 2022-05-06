@@ -34,3 +34,8 @@
 * Don't add gratuitous context.
 
 ## Chapter Three: Functions
+
+* Functions should be small.
+* Indent level of a function should not be greater than one or two.
+* Functions should do one thing. They should do it well. They should do it only.
+* Functions that do one thing cannot be reasonably divided up into sections.
