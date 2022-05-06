@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id 'idea'
-    id 'org.unbroken-dome.test-sets' version '1.5.1'
+    id 'org.unbroken-dome.test-sets' version '2.0.3'
     id 'checkstyle'
     id 'jacoco'
 }
@@ -14,10 +14,11 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.3.1'
-    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.1'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.3.2'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.2'
     testCompile group: 'org.testfx', name: 'testfx-core', version: '4.0.15-alpha'
     testCompile group: 'org.testfx', name: 'testfx-junit5', version: '4.0.15-alpha'
+    testCompile group: 'org.testfx', name: 'openjfx-monocle', version: '8u76-b04'
     compile group: 'com.google.guava', name: 'guava', version: '27.0-jre'
 }
 
@@ -25,20 +26,16 @@ testSets {
     e2eTest
 }
 
-test {
+tasks.withType(Test) {
     useJUnitPlatform()
-    dependsOn e2eTest
 }
 
-e2eTest {
-    useJUnitPlatform()
-}
+check.dependsOn e2eTest
+e2eTest.mustRunAfter test
 
 checkstyle {
-    toolVersion = '8.14'
-    ignoreFailures = false
+    toolVersion = '8.16'
     maxWarnings = 0
-    maxErrors = 0
 }
 
 jacoco {
@@ -49,7 +46,6 @@ jacocoTestReport {
     executionData fileTree(project.rootDir.absolutePath).include('**/build/jacoco/*.exec')
     reports {
         xml.enabled = true
-        html.enabled = true
     }
 }
 
@@ -72,7 +68,11 @@ task buildFatJar(type: Jar) {
                 'Main-Class': 'lowe.mike.strimko.StrimkoApplication'
     }
     baseName = 'Strimko'
-    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+	from {
+        configurations.compile.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
     with jar
 }
 
