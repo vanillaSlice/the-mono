@@ -1,0 +1,7 @@
+Strimko/Easy/Test-Strimko-1.txt
+Strimko/Easy/Test-Strimko-2.txt
+Strimko/Medium/Test-Invalid-Strimko-1.txt
+Strimko/Hard/Test-Strimko-1.txt
+Sudoku/Easy/Test-Sudoku-1.txt
+Sudoku/Medium/Test-Sudoku-1.txt
+Sudoku/Hard/Test-Sudoku-1.txt

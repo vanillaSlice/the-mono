@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+         stylesheets="@style.css" tabClosingPolicy="UNAVAILABLE"
+         xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="lowe.mike.strimko.controller.MainViewController">
+  <tabs>
+    <Tab style="-fx-font-size: 12;" text="Play">
+      <fx:include fx:id="playModeView" source="play-mode-view.fxml"/>
+    </Tab>
+    <Tab style="-fx-font-size: 12;" text="Solve">
+      <fx:include fx:id="solveModeView" source="solve-mode-view.fxml"/>
+    </Tab>
+  </tabs>
+</TabPane>
