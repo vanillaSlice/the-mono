@@ -1,0 +1,79 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'org.unbroken-dome.test-sets' version '2.0.3'
+    id 'checkstyle'
+    id 'jacoco'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.3.2'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.2'
+    testCompile group: 'org.testfx', name: 'testfx-core', version: '4.0.15-alpha'
+    testCompile group: 'org.testfx', name: 'testfx-junit5', version: '4.0.15-alpha'
+    testCompile group: 'org.testfx', name: 'openjfx-monocle', version: '8u76-b04'
+    compile group: 'com.google.guava', name: 'guava', version: '27.0-jre'
+}
+
+testSets {
+    e2eTest
+}
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+}
+
+check.dependsOn e2eTest
+e2eTest.mustRunAfter test
+
+checkstyle {
+    toolVersion = '8.16'
+    maxWarnings = 0
+}
+
+jacoco {
+    toolVersion = '0.8.2'
+}
+
+jacocoTestReport {
+    executionData fileTree(project.rootDir.absolutePath).include('**/build/jacoco/*.exec')
+    reports {
+        xml.enabled = true
+    }
+}
+
+jacocoTestCoverageVerification {
+    executionData fileTree(project.rootDir.absolutePath).include('**/build/jacoco/*.exec')
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.5
+            }
+        }
+    }
+}
+
+check.dependsOn jacocoTestCoverageVerification
+
+task buildFatJar(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'Strimko',
+                'Main-Class': 'lowe.mike.strimko.StrimkoApplication'
+    }
+    baseName = 'Strimko'
+	from {
+        configurations.compile.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+    with jar
+}
+
+build.finalizedBy buildFatJar

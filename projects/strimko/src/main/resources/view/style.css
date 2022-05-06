@@ -1,0 +1,75 @@
+.root {
+  -fx-font-size: 12.0px;
+}
+
+.refresh-button {
+  -fx-background-image: url('refresh.png');
+  -fx-background-position: center;
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 23.0px 23.0px;
+}
+
+.number-label,
+.solution-label {
+  -fx-alignment: center;
+  -fx-font-size: 32.0px;
+}
+
+.pencil-mark-label {
+  -fx-alignment: center;
+  -fx-font-size: 12.0px;
+}
+
+.pencil-marks-pane {
+  -fx-alignment: top-left;
+}
+			
+.stream-1 {
+  -fx-background-color: #b8e1ff;
+}
+
+.stream-2 {
+  -fx-background-color: #ffc09f;
+}
+
+.stream-3 {
+  -fx-background-color: #ffee93;
+}
+
+.stream-4 {
+  -fx-background-color: #94fbab;
+}
+
+.stream-5 {
+  -fx-background-color: #a799b7;
+}
+
+.stream-6 {
+  -fx-background-color: #e85d75;
+}
+
+.stream-7 {
+  -fx-background-color: #f5b0cb;
+}
+
+.stream-8 {
+  -fx-background-color: #79addc;
+}
+
+.stream-9 {
+  -fx-background-color: #aaaaaa;
+}
+
+.cell-pane {
+  -fx-alignment: center;
+  -fx-border-color: #000000;
+}
+
+.stream-button {
+  -fx-border-color: transparent;
+  -fx-border-radius: 3.0px, 3.0px, 2.0px, 1.0px;
+}
+
+.stream-button:selected {
+  -fx-border-color: #000000;
+}

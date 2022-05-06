@@ -8,3 +8,7 @@ flags:
     paths:
       - projects/game-of-life
     carryforward: true
+  Strimko:
+    paths:
+      - projects/strimko
+    carryforward: true
