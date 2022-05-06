@@ -1,0 +1,18 @@
+{
+  "grammarly.overrides": [
+    {
+      "files": [
+        "**/learning/development/clean-code/README.md"
+      ],
+      "config": {
+        "audience": "general",
+        "dialect": "british",
+        "domain": "technical",
+        "emotions": [
+          "neutral"
+        ],
+        "goals": []
+      }
+    }
+  ]
+}

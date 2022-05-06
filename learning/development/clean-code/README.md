@@ -39,3 +39,11 @@
 * Indent level of a function should not be greater than one or two.
 * Functions should do one thing. They should do it well. They should do it only.
 * Functions that do one thing cannot be reasonably divided up into sections.
+* One level of abstraction per function.
+* Code should read top-down like a narrative.
+* Bury switch statements away, for example, in abstract factories.
+* Use descriptive names.
+* Zero is the ideal number of arguments. Followed by one and two. Avoid three or more.
+* Avoid adding output information to arguments.
+* Avoid flag arguments.
+* Create argument objects.
