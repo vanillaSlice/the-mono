@@ -24,3 +24,10 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
+      - uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: build
+          production-branch: main
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: 8f9edb0a-439c-4953-b079-c3df81002cbe
