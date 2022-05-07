@@ -1,8 +1,8 @@
 # Hazelcast Leader Election
 
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/hazelcast-leader-election/master.svg)](https://travis-ci.com/vanillaSlice/hazelcast-leader-election)
-[![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/hazelcast-leader-election/master.svg)](https://coveralls.io/github/vanillaSlice/hazelcast-leader-election?branch=master)
-[![License](https://img.shields.io/github/license/vanillaSlice/hazelcast-leader-election.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/HazelcastLeaderElection/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AHazelcast-Leader-Election+branch%3Amain)
+[![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=HazelcastLeaderElection)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/hazelcast-leader-election)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 Playing around with leadership election with [Hazelcast](https://hazelcast.com/) and
 [Kubernetes](https://kubernetes.io/).
@@ -32,7 +32,7 @@ This should respond with something like:
 ```
 
 If you continually hit this endpoint, the response should stay the same. This is because all
-requests are getting routed to the same pod (the leader). 
+requests are getting routed to the same pod (the leader).
 
 You can find the leader pod by going to
 `http://127.0.0.1:8001/api/v1/namespaces/default/endpoints/leader-election/`.
@@ -40,7 +40,7 @@ You can test a leader change by deleting the leader pod with something like:
 
 ```
 kubectl delete pod leader-election-768c69b4f7-r56s4
-```  
+```
 
 Then hit `http://127.0.0.1:8001/api/v1/namespaces/default/services/leader-election:7080/proxy/leader` again.
 This should respond with something different like:
