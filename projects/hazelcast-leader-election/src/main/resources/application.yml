@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: leader-election
+
+server:
+  port: 7080
+
+management:
+  server:
+    port: 7081
+
+leader-election:
+  kubernetes:
+    enabled: true
+    endpoints-refresh: 15s
+    node-name: ${NODE_NAME:minikube}
+    pod-ip: ${POD_IP:}
+    pod-name: ${POD_NAME:}
+    pod-namespace: ${POD_NAMESPACE:default}
+    service-name: leader-election
+    service-port: 7080
+  hazelcast:
+    kubernetes:
+      enabled: ${leader-election.kubernetes.enabled}
+      namespace: ${leader-election.kubernetes.pod-namespace}
+      service-name: leader-election-hazelcast-discovery
+    min-quorum-size: 2
+    quorum-enabled: true
+    system-properties:
+      # These are Hazelcast system properties described here:
+      # https://docs.hazelcast.org/docs/3.11.2/manual/html-single/index.html#system-properties
+      # Note that all values must be strings!
+      hazelcast.discovery.enabled: 'true'
+      hazelcast.initial.min.cluster.size: '3'
+      hazelcast.phone.home.enabled: 'false'
+      hazelcast.shutdownhook.policy: 'GRACEFUL'
