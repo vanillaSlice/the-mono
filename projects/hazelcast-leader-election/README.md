@@ -1,6 +1,6 @@
 # Hazelcast Leader Election
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/HazelcastLeaderElection/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AHazelcast-Leader-Election+branch%3Amain)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Hazelcast%20Leader%20Election/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AHazelcast-Leader-Election+branch%3Amain)
 [![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=HazelcastLeaderElection)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/hazelcast-leader-election)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
