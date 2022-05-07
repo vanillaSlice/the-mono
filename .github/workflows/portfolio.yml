@@ -1,0 +1,41 @@
+name: Portfolio
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/portfolio.yml
+      - projects/portfolio/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/portfolio.yml
+      - projects/portfolio/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+      - run: npm ci
+      - run: npm test
+
+# language: node_js
+# branches:
+#   only:
+#     - master
+# node_js:
+#   - stable
+# cache: npm
+# script:
+#   - npm run test
+#   - if [[ $TRAVIS_BRANCH = 'master' && $TRAVIS_PULL_REQUEST = 'false' ]]; then npm run build; fi
+# deploy:
+#   provider: pages
+#   skip_cleanup: true
+#   github_token: $GITHUB_TOKEN
+#   local_dir: build
+#   on:
+#     branch: master
+#   fqdn: portfolio.mikelowe.xyz
