@@ -28,7 +28,6 @@ jobs:
         with:
           publish-dir: projects/portfolio/build
           production-branch: main
-          enable-pull-request-comment: true
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: 8f9edb0a-439c-4953-b079-c3df81002cbe
