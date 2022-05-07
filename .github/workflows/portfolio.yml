@@ -26,7 +26,7 @@ jobs:
       - run: npm run build
       - uses: nwtgck/actions-netlify@v1.2
         with:
-          publish-dir: ./build
+          publish-dir: projects/portfolio/build
           production-branch: main
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
