@@ -47,3 +47,10 @@
 * Avoid adding output information to arguments.
 * Avoid flag arguments.
 * Create argument objects.
+* Have no side effects.
+* Prefer exceptions to returning error codes.
+* Extract try/catch blocks.
+* Don't repeat yourself.
+* Functions don't come out this way at the start. We massage them after a rough draft.
+
+## Chapter Four: Comments
