@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mike Lowe - Software Developer</title>
+  <meta name="description" content="Basic Front End Development Project for FreeCodeCamp">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="manifest" href="./site.webmanifest">
+  <meta name="msapplication-config" content="./browserconfig.xml">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.0/css/bootstrap.min.css"
+    integrity="sha256-H0KfTigpUV+0/5tn2HXC0CPwhhDhWgSawJdnFd0CGCo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" integrity="sha256-HtCCUh9Hkh//8U1OwcbD8epVEUdBvuI8wj1KtqMhNkI="
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower%7CRaleway">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="container-fluid" data-spy="scroll" data-target=".navbar" data-offset="55">
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top animated bounceInDown">
+      <div class="container">
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed js-navbar-toggle" data-toggle="collapse" data-target="#portfolio-navbar"
+              aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./">Mike Lowe</a>
+          </div>
+          <div class="collapse navbar-collapse" id="portfolio-navbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#about" class="js-scrollable">About</a></li>
+              <li><a href="#work" class="js-scrollable">Work</a></li>
+              <li><a href="#education" class="js-scrollable">Education</a></li>
+              <li><a href="#skills" class="js-scrollable">Skills</a></li>
+              <li><a href="#projects" class="js-scrollable">Projects</a></li>
+              <li><a href="#contact" class="js-scrollable">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="animated bounceInUp">
+    <section class="row about-section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9">
+            <h2>About</h2>
+            <p>
+              Hello! My name is Mike and I am a software developer currently working in Manchester, England. My main
+              area of focus is in back end development, specialising in Java, but I have skills and experience in front
+              end development also. I am devoted to learning new technologies and producing clean code.
+            </p>
+            <p>
+              Perpetual refactor-er(?). Slightly obsessed with
+              <a href="http://johncooperclarke.com/">John Cooper Clarke</a>. Probably a hipster.
+            </p>
+          </div>
+          <div class="col-sm-3 text-center">
+            <img src="./images/logo.png" alt="Logo" class="img-responsive img-circle center-block logo js-logo">
+            <q class="quote js-quote"></q>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row work-section" id="work">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Work</h2>
+            <h3>Developer</h3>
+            <h4>Jisc Historical Texts and Journal Archives</h4>
+            <p class="date">June 2016 - Present</p>
+            <p>
+              I am currently a developer at <a href="https://www.jisc.ac.uk/">Jisc</a> working on the
+              <a href="https://historicaltexts.jisc.ac.uk">Historical Texts</a> and
+              <a href="https://journalarchives.jisc.ac.uk">Journal Archives</a> services.
+              <a href="https://historicaltexts.jisc.ac.uk">Historical Texts</a> is a full text digital archive
+              enabling users to cross-search, view and download over 350,000 texts published between the 15<sup>th</sup>
+              and 19 <sup>th</sup> century. <a href="https://journalarchives.jisc.ac.uk">Journal Archives</a> is
+              a platform enabling users to cross-search, view and download over 3.75 million articles from various
+              major publishers.
+            </p>
+            <p>My role includes:</p>
+            <ul>
+              <li>
+                Developing a framework/writing tools to process and index vast amounts of data into the Elasticsearch
+                search engine that backs both services.
+              </li>
+              <li>
+                Developing media processing tools to process media that is served up to users on the front end (e.g.
+                thumbnails, zoomable images, EPUBs, plain text files).
+              </li>
+              <li>General service maintenance.</li>
+            </ul>
+            <p>Skills I have developed:</p>
+            <ul>
+              <li>Working in an Agile environment</li>
+              <li>Pair programming</li>
+              <li>
+                Using a wide range of Java technologies including JUnit, Mockito, Gradle, Maven, Guava, Apache
+                Commons Libraries and Tomcat.
+              </li>
+            </ul>
+            <p>
+              My proudest achievement to date is the contribution I made towards launching the
+              <a href="https://ukmhl.historicaltexts.jisc.ac.uk">UK Medical Heritage Library</a> collection
+              in Historical Texts. Check out the wall of images!
+            </p>
+            <hr>
+            <h3>Graduate Developer</h3>
+            <h4>Jisc Historical Texts and Journal Archives</h4>
+            <p class="date">November 2014 - June 2016</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row education-section" id="education">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Education</h2>
+            <h3>University of Liverpool</h3>
+            <h4>BSc (Hons). Computer Science 1<sup>st</sup> Class</h4>
+            <p class="date">2011-2014</p>
+            <p>
+              Exposure to programming languages such as Java, C, PHP, JavaScript, Perl, Prolog, etc. fuelled my desire
+              to pursue a career in software development.
+            </p>
+            <hr>
+            <h3>Carmel College, St Helens</h3>
+            <h4>A levels in Computing [A], Maths [B] and Psychology [C]</h4>
+            <p class="date">2009-2011</p>
+            <p>
+              Computing classes in college sparked my interest in programming (Visual Basic anyone?) and computers.
+              This pushed me towards studying Computer Science at university.
+            </p>
+            <hr>
+            <h3>St Cuthbert's High School, St Helens</h3>
+            <h4>GCSEs in 10 subjects, grades A-B, including English, Maths and IT</h4>
+            <p class="date">2004-2009</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row skills-section" id="skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Skills</h2>
+            <p class="skills-text">These are the technologies that I feel most confident in:</p>
+            <div class="row">
+              <div class="col-sm-3 skills-col">
+                <img src="images/java-logo.png" alt="Java Logo" title="Java" class="col-sm-6 center-block img-responsive skill-img">
+                <img src="images/html5-logo.png" alt="HTML5 Logo" title="HTML5" class="col-sm-6 center-block img-responsive skill-img">
+              </div>
+              <div class="col-sm-3 skills-col">
+                <img src="images/css3-logo.png" alt="CSS3 Logo" title="CSS3" class="col-sm-6 center-block img-responsive skill-img">
+                <img src="images/javascript-logo.png" alt="JavaScript Logo" title="JavaScript" class="col-sm-6 center-block img-responsive skill-img">
+              </div>
+              <div class="col-sm-3 skills-col">
+                <img src="images/mysql-logo.png" alt="MySQL Logo" title="MySQL" class="col-sm-6 center-block img-responsive skill-img">
+                <img src="images/git-logo.png" alt="Git Logo" title="Git" class="col-sm-6 center-block img-responsive skill-img">
+              </div>
+              <div class="col-sm-3 skills-col">
+                <img src="images/linux-logo.png" alt="Linux Logo" title="Linux" class="col-sm-6 center-block img-responsive skill-img">
+              </div>
+            </div>
+            <p>I also have experience in Elasticsearch, MongoDB, Bootstrap, jQuery and AngularJS.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row projects-section" id="projects">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Projects</h2>
+            <p>Here are some projects that I've worked on in my spare time (mainly games):</p>
+            <div class="row text-center">
+              <div class="col-sm-4">
+                <div class="thumbnail">
+                  <a href="https://github.com/vanillaSlice/JumpyBlock"><img src="images/jumpy-block.png" alt="Jumpy Block"></a>
+                  <div class="caption">
+                    <h3>Jumpy Block</h3>
+                    <p>libGDX Flappy Bird clone.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="thumbnail">
+                  <a href="https://github.com/vanillaSlice/BlueprintPong"><img src="images/blueprint-pong.png" alt="Blueprint Pong"></a>
+                  <div class="caption">
+                    <h3>Blueprint Pong</h3>
+                    <p>libGDX Pong clone.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="thumbnail">
+                  <a href="https://github.com/vanillaSlice/Snake"><img src="images/snake.png" alt="Snake"></a>
+                  <div class="caption">
+                    <h3>Snake</h3>
+                    <p>libGDX Snake clone.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="thumbnail">
+                  <a href="https://github.com/vanillaSlice/Strimko"><img src="images/strimko.png" alt="Strimko"></a>
+                  <div class="caption">
+                    <h3>Strimko</h3>
+                    <p>JavaFX puzzle.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="thumbnail">
+                  <a href="https://github.com/vanillaSlice/GameOfLife"><img src="images/game-of-life.png" alt="Game of Life"></a>
+                  <div class="caption">
+                    <h3>Game of Life</h3>
+                    <p>JavaFX Game of Life.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="thumbnail">
+                  <a href="https://github.com/vanillaSlice/TributePage"><img src="images/tribute-page.png" alt="Tribute Page"></a>
+                  <div class="caption">
+                    <h3>Tribute Page</h3>
+                    <p>FreeCodeCamp project.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>Check out my <a href="https://github.com/vanillaSlice">GitHub</a> for more.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row contact-section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Contact</h2>
+            <p>Email me at <a href="mailto:mike_lowe_08@hotmail.co.uk">mike_lowe_08@hotmail.co.uk</a> (send memes).</p>
+            <p><a href="./files/cv.pdf">Read my CV here.</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer animated bounceInUp">
+    <div class="container text-center">
+      <a href="https://github.com/vanillaSlice" class="link social" aria-label="GitHub"><i class="fab fa-github fa-fw"></i></a>
+      <a href="https://codepen.io/vanillaSlice" class="link social" aria-label="CodePen"><i class="fab fa-codepen fa-fw"></i></a>
+      <a href="https://www.freecodecamp.com/vanillaslice" class="link social" aria-label="FreeCodeCamp"><i class="fab fa-free-code-camp fa-fw"></i></a>
+      <p>Skills section icons by <a href="https://icons8.com/" class="link">icons8</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha256-kJrlY+s09+QoWjpkOrXXwhxeaoDz9FW5SaxF8I0DibQ="
+    crossorigin="anonymous"></script>
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>

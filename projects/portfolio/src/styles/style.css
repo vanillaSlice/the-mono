@@ -1,0 +1,174 @@
+body {
+  color: #292b2c;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Indie Flower', cursive;
+}
+
+a,
+a:focus,
+a:hover,
+a:visited {
+  color: #e7e7e7;
+}
+
+section {
+  padding: 20px 0;
+}
+
+hr {
+  border-color: #292b2c;
+}
+
+.date {
+  font-family: 'Indie Flower', cursive;
+  font-size: 16px;
+}
+
+.navbar {
+  font-family: 'Indie Flower', cursive;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border-style: none;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: #e7e7e7;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #292b2c;
+}
+
+.navbar-default .navbar-brand {
+  font-size: 28px;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+  color: #292b2c;
+}
+
+.navbar-default .navbar-collapse {
+  background-color: #fff;
+  border-style: none;
+}
+
+.navbar-nav {
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 20px;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > .active > a {
+  color: #292b2c;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: #e7e7e7;
+  color: #292b2c;
+}
+
+.about-section {
+  background-color: #25ced1;
+}
+
+.about-section .logo {
+  padding: 20px 0;
+}
+
+.about-section .quote {
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+}
+
+.work-section {
+  background-color: #fc6471;
+}
+
+.education-section {
+  background-color: #f7b267;
+}
+
+.skills-section {
+  background-color: #292b2c;
+  color: #fff;
+}
+
+.skills-section .skills-text {
+  margin: 0;
+}
+
+.skills-section .skills-col {
+  padding: 0;
+}
+
+.skills-section .skill-img {
+  padding: 30px 0;
+}
+
+.projects-section {
+  background-color: #56e39f;
+}
+
+.projects-section .thumbnail {
+  border-style: none;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.projects-section .thumbnail:last-child {
+  margin-bottom: 30px;
+}
+
+.contact-section {
+  background-color: #6699cc;
+}
+
+.footer .link,
+.footer .link:focus,
+.footer .link:hover,
+.footer .link:visited {
+  color: #292b2c;
+}
+
+.footer .social,
+.footer .social:focus,
+.footer .social:hover,
+.footer .social:visited {
+  font-size: 32px;
+}
+
+@media (min-width: 768px) {
+  section .container {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 920px;
+  }
+}
