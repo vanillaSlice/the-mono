@@ -13,12 +13,14 @@ on:
 jobs:
   Build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/portfolio
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 14
-      - run: cd projects/portfolio
       - run: npm ci
       - run: npm test
 
