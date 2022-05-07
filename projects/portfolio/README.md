@@ -1,8 +1,7 @@
 # Portfolio
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/Portfolio.svg)](https://github.com/vanillaSlice/Portfolio/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/Portfolio/master.svg)](https://travis-ci.com/vanillaSlice/Portfolio)
-[![License](https://img.shields.io/github/license/vanillaSlice/Portfolio.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Portfolio/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3APortfolio+branch%3Amain)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 *Basic Front End Development Project for FreeCodeCamp.*
 
@@ -10,7 +9,7 @@ A deployed version can be viewed [here](https://portfolio.mikelowe.xyz/).
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-1.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 
