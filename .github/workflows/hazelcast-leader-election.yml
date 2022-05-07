@@ -1,0 +1,29 @@
+name: Hazelcast Leader Election
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/hazelcast-leader-election.yml
+      - projects/hazelcast-leader-election/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/hazelcast-leader-election.yml
+      - projects/hazelcast-leader-election/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
+        with:
+          java-version: 8
+          distribution: corretto
+      - uses: gradle/gradle-build-action@v2
+      - working-directory: projects/hazelcast-leader-election
+        run: |
+          ./gradlew check jacocoTestReport
+      - uses: codecov/codecov-action@v2
+        with:
+          flags: HazelcastLeaderElection
+          fail_ci_if_error: true

@@ -1,0 +1,80 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath('org.springframework.boot:spring-boot-gradle-plugin:2.1.4.RELEASE')
+    }
+}
+
+plugins {
+    id 'java'
+    id 'idea'
+    id 'org.unbroken-dome.test-sets' version '2.1.1'
+    id 'checkstyle'
+    id 'jacoco'
+}
+
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'lowe.mike.leaderelection'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.1.4.RELEASE'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.3.2'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.2'
+    testCompile group: 'nl.jqno.equalsverifier', name: 'equalsverifier', version: '3.1.8'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.1.4.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.4.RELEASE'
+    compile group: 'org.springframework.integration', name: 'spring-integration-hazelcast', version: '1.0.0.RELEASE'
+    compile group: 'com.hazelcast', name: 'hazelcast', version: '3.11.2'
+    compile group: 'com.hazelcast', name: 'hazelcast-kubernetes', version: '1.4'
+    compile group: 'io.kubernetes', name: 'client-java', version: '4.0.0'
+}
+
+testSets {
+    integrationTest
+}
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+}
+
+check.dependsOn integrationTest
+integrationTest.mustRunAfter test
+
+checkstyle {
+    toolVersion = '8.19'
+    maxWarnings = 0
+}
+
+jacoco {
+    toolVersion = '0.8.3'
+}
+
+jacocoTestReport {
+    executionData fileTree(project.rootDir.absolutePath).include('**/build/jacoco/*.exec')
+    reports {
+        xml.enabled = true
+    }
+}
+
+jacocoTestCoverageVerification {
+    executionData fileTree(project.rootDir.absolutePath).include('**/build/jacoco/*.exec')
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.8
+            }
+        }
+    }
+}
+
+check.dependsOn jacocoTestCoverageVerification
