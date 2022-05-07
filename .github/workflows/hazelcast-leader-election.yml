@@ -25,5 +25,5 @@ jobs:
           ./gradlew check jacocoTestReport
       - uses: codecov/codecov-action@v2
         with:
-          flags: HazelcaseLeaderElection
+          flags: HazelcastLeaderElection
           fail_ci_if_error: true

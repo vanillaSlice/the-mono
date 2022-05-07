@@ -8,6 +8,10 @@ flags:
     paths:
       - projects/game-of-life
     carryforward: true
+  HazelcastLeaderElection:
+    paths:
+      - projects/hazelcast-leader-election
+    carryforward: true
   Strimko:
     paths:
       - projects/strimko
