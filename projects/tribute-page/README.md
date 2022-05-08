@@ -1,8 +1,7 @@
 # Tribute Page
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/TributePage.svg)](https://github.com/vanillaSlice/TributePage/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/TributePage/master.svg)](https://travis-ci.com/vanillaSlice/TributePage)
-[![License](https://img.shields.io/github/license/vanillaSlice/TributePage.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Tribute%20Page/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ATribute-Page+branch%3Amain)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 *Basic Front End Development Project for FreeCodeCamp.*
 
@@ -11,7 +10,7 @@ A tribute page on the writer Kurt Vonnegut. A deployed version can be viewed
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-1.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 
