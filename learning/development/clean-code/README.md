@@ -59,4 +59,5 @@
 * Explain yourself in code.
 * Good comments include: legal comments, informative comments, explanations of intent, clarifications,
 warnings of consequences, TODO comments, amplifications, and docs in public APIS.
-* Bad comments include: mumbling, redundant comments,
+* Bad comments include: mumbling, redundant comments, misleading comments, mandated comments, journal
+comments,
