@@ -54,3 +54,10 @@
 * Functions don't come out this way at the start. We massage them after a rough draft.
 
 ## Chapter Four: Comments
+
+* Comments do not make up for bad code.
+* Explain yourself in code.
+* Good comments include: legal comments, informative comments, explanations of intent, clarifications,
+warnings of consequences, TODO comments, amplifications, and docs in public APIS.
+* Bad comments include: mumbling, redundant comments, misleading comments, mandated comments, journal
+comments,
