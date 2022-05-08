@@ -1,0 +1,48 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: fade-in 1s linear;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Indie Flower', cursive;
+  hyphens: auto;
+}
+
+hr {
+  border-top-color: #777;
+}
+
+.bio {
+  background-color: #79addc;
+}
+
+.novels {
+  background-color: #ffc09f;
+}
+
+.quotes {
+  background-color: #ffee93;
+}
+
+.links {
+  background-color: #adf7b6;
+}
+
+.footer__separator::after {
+  content: '|';
+}
