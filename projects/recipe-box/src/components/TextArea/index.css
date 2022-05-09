@@ -1,0 +1,34 @@
+.textarea {
+  background-color: #def2f1;
+  border: none;
+  border-bottom: 0.0625rem solid #def2f1;
+  color: inherit;
+  display: block;
+  height: 10rem;
+  margin: 0.5rem 0;
+  outline: none;
+  padding: 0.5rem;
+  resize: none;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+/* Remove Firefox invalid red glow */
+
+.textarea:invalid {
+  box-shadow: none;
+}
+
+.textarea:-moz-submit-invalid {
+  box-shadow: none;
+}
+
+.textarea:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+.textarea:active,
+.textarea:focus {
+  border-bottom: 0.0625rem solid #3aafa9;
+  box-shadow: 0 0.0625rem 0 0 #3aafa9;
+}

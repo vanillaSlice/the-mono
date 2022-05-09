@@ -1,0 +1,29 @@
+.btn {
+  border: none;
+  border-radius: 0.25rem;
+  color: #feffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+  outline: none;
+  transition: background-color 0.1s linear;
+}
+
+.btn.btn--default {
+  background-color: #3aafa9;
+}
+
+.btn.btn--default:focus,
+.btn.btn--default:hover {
+  background-color: #219690;
+}
+
+.btn.btn--danger {
+  background-color: #d9534f;
+}
+
+.btn.btn--danger:focus,
+.btn.btn--danger:hover {
+  background-color: #c9302c;
+}

@@ -1,0 +1,26 @@
+.footer {
+  background-color: #17252a;
+  box-shadow: 0 -0.3rem 1rem #2b7a78;
+  color: #feffff;
+  width: 100%;
+}
+
+.footer .footer__content {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 2rem 1rem;
+}
+
+.footer a {
+  color: #feffff;
+  outline: none;
+  text-decoration: none;
+  transition: color 0.1s linear;
+}
+
+.footer a:focus,
+.footer a:hover {
+  color: #3aafa9;
+}

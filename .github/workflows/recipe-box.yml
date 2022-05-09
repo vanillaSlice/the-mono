@@ -1,0 +1,33 @@
+name: Recipe Box
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/recipe-box.yml
+      - projects/recipe-box/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/recipe-box.yml
+      - projects/recipe-box/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/recipe-box
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 10
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: projects/recipe-box/build
+          production-branch: main
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: 7fc955af-3c53-4c11-bec1-d0937f8e0aac

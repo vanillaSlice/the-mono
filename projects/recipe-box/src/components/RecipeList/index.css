@@ -1,0 +1,16 @@
+.recipe-list {
+  margin: 1.5rem auto;
+  max-width: 75rem;
+  width: 100%;
+}
+
+.recipe-list .recipe-list__row {
+  padding: 0 0.5rem;
+  width: 100%;
+}
+
+.recipe-list .recipe-list__row::after {
+  clear: both;
+  content: '';
+  display: table;
+}

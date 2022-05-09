@@ -1,0 +1,17 @@
+html {
+  background-color: #3aafa9;
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
