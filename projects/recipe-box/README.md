@@ -1,16 +1,15 @@
 # Recipe Box
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/RecipeBox.svg)](https://github.com/vanillaSlice/RecipeBox/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/RecipeBox/master.svg)](https://travis-ci.com/vanillaSlice/RecipeBox)
-[![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/RecipeBox/master.svg)](https://coveralls.io/github/vanillaSlice/RecipeBox?branch=master)
-[![License](https://img.shields.io/github/license/vanillaSlice/RecipeBox.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Recipe%20Box/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ARecipe-Box+branch%3Amain)
+[![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=RecipeBox)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/recipe-box)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 A recipe box app built using [React](https://reactjs.org/).
 A deployed version can be viewed [here](https://recipebox.mikelowe.xyz/).
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-1.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 

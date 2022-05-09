@@ -12,6 +12,10 @@ flags:
     paths:
       - projects/hazelcast-leader-election
     carryforward: true
+  RecipeBox:
+    paths:
+      - projects/recipe-box
+    carryforward: true
   Strimko:
     paths:
       - projects/strimko
