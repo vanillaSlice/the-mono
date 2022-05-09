@@ -1,0 +1,30 @@
+.header {
+  background-color: #17252a;
+  box-shadow: 0 0.3rem 1rem #2b7a78;
+  color: #feffff;
+  width: 100%;
+}
+
+.header .header__content {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 0 1rem;
+}
+
+.header a {
+  color: #feffff;
+  outline: none;
+  text-decoration: none;
+  transition: color 0.1s linear;
+}
+
+.header a:focus,
+.header a:hover {
+  color: #3aafa9;
+}
+
+.header .icon-btn {
+  margin-left: auto;
+}

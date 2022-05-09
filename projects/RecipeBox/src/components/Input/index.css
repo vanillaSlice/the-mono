@@ -1,0 +1,32 @@
+.input {
+  background-color: #def2f1;
+  border: none;
+  border-bottom: 0.0625rem solid #def2f1;
+  color: #17252a;
+  display: block;
+  margin: 0.5rem 0;
+  outline: none;
+  padding: 0.5rem;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+/* Remove Firefox invalid red glow */
+
+.input:invalid {
+  box-shadow: none;
+}
+
+.input:-moz-submit-invalid {
+  box-shadow: none;
+}
+
+.input:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+.input:active,
+.input:focus {
+  border-bottom: 0.0625rem solid #3aafa9;
+  box-shadow: 0 0.0625rem 0 0 #3aafa9;
+}

@@ -1,0 +1,24 @@
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  padding: 0;
+  transition: color 0.1s linear;
+}
+
+.icon-btn.icon-btn--light {
+  color: #feffff;
+}
+
+.icon-btn.icon-btn--dark {
+  color: #17252a;
+}
+
+.icon-btn.icon-btn--light:focus,
+.icon-btn.icon-btn--light:hover,
+.icon-btn.icon-btn--dark:focus,
+.icon-btn.icon-btn--dark:hover {
+  color: #3aafa9;
+}
