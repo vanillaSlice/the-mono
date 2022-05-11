@@ -1,8 +1,7 @@
 # Trainspotting 'Choose...' Quote Machine
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/TrainspottingChoose...QuoteMachine.svg)](https://github.com/vanillaSlice/TrainspottingChoose...QuoteMachine/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/TrainspottingChoose...QuoteMachine/master.svg)](https://travis-ci.com/vanillaSlice/TrainspottingChoose...QuoteMachine)
-[![License](https://img.shields.io/github/license/vanillaSlice/TrainspottingChoose...QuoteMachine.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Trainspotting%20Choose%20Quote%20Machine/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ATrainspotting-Choose-Quote-Machine+branch%3Amain)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 *Intermediate Front End Development Project for FreeCodeCamp.*
 
@@ -11,7 +10,7 @@ A deployed version can be viewed [here](https://trainspotting.mikelowe.xyz/).
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-1.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 
