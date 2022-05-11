@@ -1,0 +1,84 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  animation: fade-in 1s linear;
+  background-color: #e86b00;
+  color: #fff;
+  display: flex;
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100%;
+  word-wrap: break-word;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.quote {
+  margin: auto;
+  max-width: 33.75rem;
+  padding: 1rem;
+  text-align: right;
+  width: 100%;
+}
+
+.quote__text {
+  font-size: 3.125rem;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.quote__details {
+  margin-top: 2.5rem;
+}
+
+.quote__character {
+  font-weight: bold;
+}
+
+.quote__film {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.quote__btn {
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  border: 0.125rem solid #fff;
+  border-radius: 0.3125rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  margin-top: 2.5rem;
+  outline: none;
+  padding: 0.3125rem 0.625rem;
+  transition-duration: 0.3s;
+}
+
+.quote__btn:focus,
+.quote__btn:hover {
+  background-color: #fff;
+  color: #e86b00;
+}
+
+.quote__tweet-btn {
+  margin-left: 0.625rem;
+}
