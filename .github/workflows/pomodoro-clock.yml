@@ -1,0 +1,33 @@
+name: Pomodoro Clock
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/pomodoro-clock.yml
+      - projects/pomodoro-clock/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/pomodoro-clock.yml
+      - projects/pomodoro-clock/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/pomodoro-clock
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 10
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: projects/pomodoro-clock/build
+          production-branch: main
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: 486c55da-bdba-406e-85dc-f007f3d6625e

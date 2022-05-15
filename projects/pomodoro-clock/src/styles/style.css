@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.5rem;
+  height: 100%;
+}
+
+body {
+  background: rgb(0, 201, 255);
+  background: linear-gradient(to right, rgb(0, 201, 255), rgb(146, 254, 157));
+  color: rgb(255, 250, 255);
+  display: flex;
+  font-family: 'Holtwood One SC', serif;
+  font-size: 2rem;
+  height: 100%;
+  text-align: center;
+  text-shadow: 0.2rem 0.2rem rgb(48, 48, 54);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: rgb(179, 174, 179);
+}
+
+.container {
+  margin: auto;
+  padding: 8rem 1.5rem;
+}
+
+.heading {
+  font-size: 3.6rem;
+  margin-bottom: 3rem;
+}
+
+.break-btns,
+.session-btns {
+  display: inline-block;
+  width: 40%;
+}
+
+.btn {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  padding: 0.1rem 0.7rem;
+  text-shadow: inherit;
+}
+
+.btn:hover,
+.btn:focus {
+  color: rgb(179, 174, 179);
+}
+
+.length {
+  display: inline-block;
+  width: 30%;
+}
+
+.progress {
+  border-radius: 50%;
+  height: 30rem;
+  margin: 2rem auto;
+  overflow: hidden;
+  position: relative;
+  vertical-align: bottom;
+  width: 30rem;
+}
+
+.fill {
+  background-color: rgb(255, 250, 255);
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.center {
+  background-color: rgba(0, 150, 204, 0.7);
+  border-radius: 50%;
+  height: 26rem;
+  margin: 2rem;
+  position: absolute;
+  width: 26rem;
+}
+
+body[data-mode='Session'] .center {
+  background-color: rgba(95, 203, 106, 0.7);
+}
+
+body[data-mode='Break'] .center {
+  background-color: rgba(252, 81, 48, 0.7);
+}
+
+.mode {
+  margin-top: 10.5rem;
+}
+
+.remaining-time {
+  margin-top: 1rem;
+}
+
+.control-btns .btn {
+  width: 30%;
+}
+
+.footer {
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+.footer .separator::after {
+  content: '|';
+  margin: 0 0.3rem;
+}
+
+@media (min-width: 48em) {
+  html {
+    font-size: 62.5%;
+  }
+}
