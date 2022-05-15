@@ -10,7 +10,7 @@ A JavaScript calculator. A deployed version can be viewed [here](https://javascr
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-2.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 

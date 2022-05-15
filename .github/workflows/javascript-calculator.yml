@@ -1,0 +1,33 @@
+name: JavaScript Calculator
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/javascript-calculator.yml
+      - projects/javascript-calculator/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/javascript-calculator.yml
+      - projects/javascript-calculator/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/javascript-calculator
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 10
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: projects/javascript-calculator/build
+          production-branch: main
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: f147f1f2-f4cb-4165-a9fd-1ec098ca776c
