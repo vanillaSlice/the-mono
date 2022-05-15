@@ -1,8 +1,7 @@
 # Pomodoro Clock
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/PomodoroClock.svg)](https://github.com/vanillaSlice/PomodoroClock/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/PomodoroClock/master.svg)](https://travis-ci.com/vanillaSlice/PomodoroClock)
-[![License](https://img.shields.io/github/license/vanillaSlice/PomodoroClock.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Pomodoro%20Clock/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3APomodoro-Clock+branch%3Amain)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 *Advanced Front End Development Project for FreeCodeCamp.*
 
