@@ -1,0 +1,266 @@
+@keyframes add-border {
+  to {
+    border-bottom-color: #0da192;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-from-center {
+  to {
+    border: 0rem solid #14bdac;
+    visibility: hidden;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: #14bdac;
+  color: #f2ebd3;
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  height: 100%;
+  text-align: center;
+}
+
+a {
+  color: #f2ebd3;
+  outline: none;
+  text-decoration: underline;
+}
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  outline: none;
+  padding: 1rem 0;
+}
+
+.btn:hover {
+  background-color: #f2ebd3;
+  color: #0da192;
+}
+
+.container {
+  margin: auto;
+  padding: 5rem 2rem;
+  width: 54rem;
+}
+
+.heading {
+  font-size: 5.4rem;
+  margin-bottom: 2rem;
+}
+
+.mode-btns {
+  margin-bottom: 2rem;
+}
+
+.mode-btns .btn {
+  float: left;
+  margin-right: 4%;
+  width: 22%;
+}
+
+.mode-btns .btn:last-child {
+  margin-right: 0;
+}
+
+.mode-btns .radio:checked+.btn {
+  background-color: #f2ebd3;
+  color: #0da192;
+}
+
+.players {
+  margin-bottom: 2rem;
+}
+
+.player {
+  background-color: #f2ebd3;
+  border-bottom: solid 0.5rem #14bdac;
+  color: #0da192;
+  cursor: pointer;
+  float: left;
+  margin-right: 4%;
+  padding: 1rem;
+  text-align: left;
+  width: 48%;
+}
+
+.player:last-child {
+  margin-right: 0;
+}
+
+.player.has-turn {
+  animation: add-border 0.5s linear forwards;
+}
+
+.player .symbol,
+.player .score {
+  color: #0da192;
+  float: left;
+}
+
+.player .symbol {
+  width: 20%;
+}
+
+.player .score {
+  text-align: right;
+  width: 80%;
+}
+
+.message {
+  margin-bottom: 2rem;
+}
+
+.message .text {
+  animation: fade-in 0.5s linear;
+}
+
+.grid {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.grid .mask {
+  animation: 0.3s fade-in-from-center forwards;
+  border: 15rem solid #14bdac;
+  height: 30rem;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  right: 0;
+  width: 30rem;
+}
+
+.grid .row {
+  height: 10rem;
+  margin: 0 auto;
+  width: 30rem;
+}
+
+.grid .cell {
+  border: 0.3rem solid #0da192;
+  cursor: pointer;
+  float: left;
+  height: 10rem;
+  width: 10rem;
+}
+
+.grid .cell:nth-child(1) {
+  border-left-color: transparent;
+}
+
+.grid .cell:nth-child(3) {
+  border-right-color: transparent;
+}
+
+.grid .row:nth-child(2) .cell {
+  border-top-color: transparent;
+}
+
+.grid .row:nth-child(4) .cell {
+  border-bottom-color: transparent;
+}
+
+.grid .circle,
+.grid .cross-one,
+.grid .cross-two {
+  animation: draw 1s linear forwards;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+.grid .cross-two {
+  animation-delay: 0.2s;
+}
+
+.restart-btn {
+  background-color: #f2ebd3;
+  color: #0da192;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.footer {
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+@media (max-width: 50em) {
+  .mode-btns .btn {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+/*
+ * Taken from https://github.com/tholman/github-corners
+ */
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform:rotate(0);
+  }
+  20%,60% {
+    transform:rotate(-25deg);
+  }
+  40%,80% {
+    transform:rotate(10deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+
+  .github-corner:hover .octo-arm {
+    animation:none;
+  }
+}
