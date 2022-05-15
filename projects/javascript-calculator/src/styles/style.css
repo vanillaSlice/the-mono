@@ -1,0 +1,180 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.3rem;
+  height: 100%;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  font-family: 'Sarpanch', sans-serif;
+  height: 100%;
+  text-align: center;
+}
+
+.container {
+  margin: auto;
+  max-width: 90%;
+  padding: 3rem 0;
+}
+
+.heading {
+  color: #99ffff;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 0.5rem #66ffff, 0 0 1rem #33ffff, 0 0 1.5rem #00ffff;
+}
+
+.calculator {
+  border: 0.4rem solid #ff99ff;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem #ff66ff, 0 0 1rem #ff33ff, 0 0 1.5rem #ff00de;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 36rem;
+}
+
+.screen {
+  border: 0.4rem solid #99ffff;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem #66ffff, 0 0 1rem #33ffff;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: right;
+}
+
+.screen-text {
+  color: #ff66ff;
+  font-size: 4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 0 0.5rem #ff66ff;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.key {
+  flex: 1 1 25%;
+  padding: 1rem;
+  width: 25%;
+}
+
+.btn {
+  background: none;
+  border: 0.4rem solid #99ffff;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem #66ffff, 0 0 1rem #33ffff;
+  color: #99ffff;
+  font-family: inherit;
+  font-size: 2.4rem;
+  outline: none;
+  padding: 0.1rem 0.7rem 0.2rem;
+  text-shadow: 0 0 0.5rem #66ffff;
+  width: 100%;
+}
+
+.btn:active {
+  background-color: #99ffff;
+  color: #000;
+  text-shadow: none;
+}
+
+.alt-btn {
+  color: #ff66ff;
+  text-shadow: 0 0 0.5rem #ff66ff;
+}
+
+.keys.left {
+  width: 75%;
+}
+
+.keys.left .key {
+  flex: 1 1 33.33333%;
+  width: 33.33333%;
+}
+
+.keys.right {
+  display: flex;
+  width: 25%;
+}
+
+.keys.right .key {
+  width: 100%;
+}
+
+.keys.left .zero-key {
+  flex: 1 1 66.66666%;
+  width: 66.66666%;
+}
+
+.keys.right .equals-key {
+  display: flex;
+}
+
+.footer {
+  color: #99ffff;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  text-shadow: 0 0 0.5rem #66ffff;
+}
+
+.footer .separator::after {
+  content: '|';
+  margin: 0 0.25rem;
+}
+
+.footer .link {
+  color: #ff66ff;
+  text-decoration: none;
+  text-shadow: 0 0 0.5rem #ff66ff;
+}
+
+@media (min-width: 20.75em) {
+  html {
+    font-size: 0.5rem;
+  }
+}
+
+@media (min-width: 25em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/*
+ * Taken from https://github.com/tholman/github-corners
+ */
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform:rotate(0);
+  }
+  20%,60% {
+    transform:rotate(-25deg);
+  }
+  40%,80% {
+    transform:rotate(10deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+
+  .github-corner:hover .octo-arm {
+    animation:none;
+  }
+}
