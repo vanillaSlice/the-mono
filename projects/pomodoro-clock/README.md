@@ -9,7 +9,7 @@ A simple Pomodoro clock. A deployed version can be viewed [here](https://pomodor
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-1.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 
