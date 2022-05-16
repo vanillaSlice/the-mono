@@ -27,8 +27,7 @@ jobs:
         with:
           flags: RecipeBox
           fail_ci_if_error: true
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+          token: ${{secrets.CODECOV_TOKEN}}
       - run: npm run build
       - uses: nwtgck/actions-netlify@v1.2
         with:
