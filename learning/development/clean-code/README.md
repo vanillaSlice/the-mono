@@ -60,4 +60,14 @@
 * Good comments include: legal comments, informative comments, explanations of intent, clarifications,
 warnings of consequences, TODO comments, amplifications, and docs in public APIS.
 * Bad comments include: mumbling, redundant comments, misleading comments, mandated comments, journal
-comments,
+comments, noise comments, scary noise, position markers, closing brace comments, attributions, commented-out
+code, HTML comments, nonlocal information, too much information, inobvious connections, function headers,
+and docs in nonpublic code.
+
+## Chapter Five: Formatting
+
+* Teams should agree on a single set of formatting rules.
+* Follow the newspaper metaphor, the class name should act as the title, we should get more details as we
+read down the page.
+* Variables should be declared as close to their usage as possible.
+* Declare dependent functions close together, the callee under the caller.
