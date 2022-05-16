@@ -12,6 +12,10 @@ flags:
     paths:
       - projects/hazelcast-leader-election
     carryforward: true
+  MarkdownPreviewer:
+    paths:
+      - projects/markdown-previewer
+    carryforward: true
   RecipeBox:
     paths:
       - projects/recipe-box

@@ -1,9 +1,8 @@
 # Markdown Previewer
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/MarkdownPreviewer.svg)](https://github.com/vanillaSlice/MarkdownPreviewer/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/MarkdownPreviewer/master.svg)](https://travis-ci.com/vanillaSlice/MarkdownPreviewer)
-[![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/MarkdownPreviewer/master.svg)](https://coveralls.io/github/vanillaSlice/MarkdownPreviewer?branch=master)
-[![License](https://img.shields.io/github/license/vanillaSlice/MarkdownPreviewer.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Markdown%20Previewer/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AMarkdown-Previewer+branch%3Amain)
+[![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=MarkdownPreviewer)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/markdown-previewer)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 A [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) previewer built
 using [React](https://reactjs.org/). A deployed version can be viewed
