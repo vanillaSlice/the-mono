@@ -27,7 +27,6 @@ jobs:
         with:
           flags: MarkdownPreviewer
           fail_ci_if_error: true
-          token: ${{secrets.CODECOV_TOKEN}}
       - run: npm run build
       - uses: nwtgck/actions-netlify@v1.2
         with:
