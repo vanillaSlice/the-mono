@@ -12,7 +12,7 @@ const Footer = () => (
         <span className="footer__version">{ version }</span>
         &nbsp;|&nbsp;
         <a href="https://github.com/vanillaSlice/the-mono/tree/main/projects/recipe-box">GitHub</a>
-        &nbsp;| Made with 🎧  by&nbsp;
+        &nbsp;| Made with 🎧 by&nbsp;
         <a href="https://mikelowe.xyz">Mike</a>
       </small>
     </div>
