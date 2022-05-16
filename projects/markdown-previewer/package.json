@@ -1,0 +1,70 @@
+{
+  "name": "markdown-previewer",
+  "version": "1.1.0",
+  "description": "A Markdown previewer built using React",
+  "keywords": [
+    "markdown previewer",
+    "react"
+  ],
+  "homepage": "https://markdownpreviewer.mikelowe.xyz/",
+  "bugs": {
+    "url": "https://github.com/vanillaSlice/MarkdownPreviewer/issues",
+    "email": "mikelowedev@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Mike Lowe",
+    "email": "mikelowedev@gmail.com",
+    "url": "https://www.mikelowe.xyz/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanillaSlice/MarkdownPreviewer.git"
+  },
+  "scripts": {
+    "test": "run-s test:*",
+    "test:lint": "run-s test:lint:*",
+    "test:lint:js": "eslint --ext=js --ext=jsx src/",
+    "test:unit": "react-scripts test --env=jsdom --coverage --colors",
+    "coveralls": "cat coverage/lcov.info | coveralls",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "marked": "^0.6.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-scripts": "2.1.5",
+    "reactstrap": "^7.1.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.3",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.9.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "private": true,
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.jsx"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    }
+  }
+}
