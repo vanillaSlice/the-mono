@@ -26,7 +26,6 @@
     "test:lint": "run-s test:lint:*",
     "test:lint:js": "eslint --ext=js --ext=jsx src/",
     "test:unit": "react-scripts test --env=jsdom --coverage --colors",
-    "coveralls": "cat coverage/lcov.info | coveralls",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
@@ -41,7 +40,6 @@
     "reactstrap": "^7.1.0"
   },
   "devDependencies": {
-    "coveralls": "^3.0.3",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.9.1",
     "eslint-config-airbnb": "^17.1.0",

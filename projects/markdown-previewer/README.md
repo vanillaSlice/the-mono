@@ -11,7 +11,7 @@ using [React](https://reactjs.org/). A deployed version can be viewed
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-2.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 
