@@ -1,0 +1,13 @@
+.VideoList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@media (min-width: 62em) {
+  .VideoList {
+    margin-left: 1.5rem;
+    width: 33rem;
+  }
+}

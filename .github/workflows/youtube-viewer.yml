@@ -1,0 +1,38 @@
+name: YouTube Viewer
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/youtube-viewer.yml
+      - projects/youtube-viewer/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/youtube-viewer.yml
+      - projects/youtube-viewer/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/youtube-viewer
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 10
+      - run: npm ci
+      - run: npm test
+      - uses: codecov/codecov-action@v2
+        with:
+          flags: YouTubeViewer
+          fail_ci_if_error: true
+      - run: npm run build
+      - uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: projects/youtube-viewer/build
+          production-branch: main
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: c8c0b4ce-25a3-4107-b076-2468f01f77c4
+          REACT_APP_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
