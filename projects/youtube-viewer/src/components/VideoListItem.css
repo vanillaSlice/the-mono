@@ -1,0 +1,30 @@
+.VideoListItem {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.VideoListItem:first-child {
+  margin-top: 0;
+}
+
+.VideoListItem img {
+  align-self: flex-start;
+  margin-right: 0.5rem;
+}
+
+.VideoListItem .info {
+  align-self: flex-start;
+}
+
+.VideoListItem .title {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.VideoListItem .channel {
+  color: #707070;
+  font-size: 0.8125rem;
+  margin: 0.5rem 0;
+}

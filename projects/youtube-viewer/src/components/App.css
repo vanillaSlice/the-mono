@@ -1,0 +1,36 @@
+html {
+  background-color: #fafafa;
+  color: #111;
+  font-family: sans-serif;
+  height: 100%;
+  hyphens: auto;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  width: 100%;
+}
+
+@media (min-width: 62em) {
+  .container {
+    flex-direction: row;
+    max-width: 75rem;
+    padding: 1.5rem 5rem;
+  }
+}

@@ -1,0 +1,35 @@
+.Footer {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+}
+
+.Footer .text-right {
+  text-align: right;
+}
+
+.Footer .text-muted {
+  color: #6c757e;
+}
+
+.Footer .small {
+  font-weight: 400;
+}
+
+.Footer .link {
+  background-color: initial;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.Footer .link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+@media (min-width: 62em) {
+  .Footer {
+    max-width: 75rem;
+    padding: 1rem 5rem;
+  }
+}
