@@ -28,6 +28,8 @@ jobs:
           flags: YouTubeViewer
           fail_ci_if_error: true
       - run: npm run build
+        env:
+          REACT_APP_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
       - uses: nwtgck/actions-netlify@v1.2
         with:
           publish-dir: projects/youtube-viewer/build
@@ -35,4 +37,3 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: c8c0b4ce-25a3-4107-b076-2468f01f77c4
-          REACT_APP_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
