@@ -24,3 +24,7 @@ flags:
     paths:
       - projects/strimko
     carryforward: true
+  YouTubeViewer:
+    paths:
+      - projects/youtube-viewer
+    carryforward: true
