@@ -1,16 +1,15 @@
 # YouTube Viewer
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/YouTubeViewer.svg)](https://github.com/vanillaSlice/YouTubeViewer/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/YouTubeViewer/master.svg)](https://travis-ci.com/vanillaSlice/YouTubeViewer)
-[![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/YouTubeViewer/master.svg)](https://coveralls.io/github/vanillaSlice/YouTubeViewer?branch=master)
-[![License](https://img.shields.io/github/license/vanillaSlice/YouTubeViewer.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/YouTube%20Viewer/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AYouTube-Viewer+branch%3Amain)
+[![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=YouTubeViewer)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/youtube-viewer)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 A simple YouTube viewer built using [React](https://reactjs.org/).
 A deployed version can be viewed [here](https://youtubeviewer.mikelowe.xyz/).
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-1.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 
