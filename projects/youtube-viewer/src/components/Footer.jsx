@@ -11,7 +11,7 @@ const Footer = () => (
         v
         { version }
         &nbsp;|&nbsp;
-        <a className="link" href="https://github.com/vanillaSlice/YouTubeViewer">GitHub</a>
+        <a className="link" href="https://github.com/vanillaSlice/the-mono/tree/main/projects/youtube-viewer">GitHub</a>
         &nbsp;| Made with 🎧 by&nbsp;
         <a className="link" href="https://mikelowe.xyz">Mike</a>
       </small>
