@@ -1,0 +1,118 @@
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 58.5rem;
+  padding: 0 0.75rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.title-link {
+  background: none;
+  color: #41403e;
+  font-family: 'Patrick Hand SC', sans-serif;
+}
+
+.row {
+  max-width: 40rem;
+}
+
+.controls {
+  max-width: 25rem;
+}
+
+.towers {
+  position: relative;
+}
+
+.win-message {
+  font-size: 2.7rem;
+  position: absolute;
+  z-index: 3;
+}
+
+.tower {
+  align-items: center;
+  border-bottom: 0.1rem solid #41403e;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 16rem;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.line {
+  border-left: 0.1rem solid #41403e;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.disk {
+  height: 1.5rem;
+  position: relative;
+  transition: all 235ms ease 0s;
+  z-index: 2;
+
+  &.selected {
+    transform: scale(1.1) translateY(-0.5rem);
+  }
+}
+
+@for $i from 1 through 10 {
+  .disk-#{$i} {
+    width: $i * 10%;
+  }
+}
+
+.background-1 {
+  background-color: #deefff;
+}
+
+.background-2 {
+  background-color: #d0dbc2;
+}
+
+.background-3 {
+  background-color: #f5f0c6;
+}
+
+.background-4 {
+  background-color: #f0cbc9;
+}
+
+/*
+ * Taken from https://github.com/tholman/github-corners
+ */
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform:rotate(0);
+  }
+  20%,60% {
+    transform:rotate(-25deg);
+  }
+  40%,80% {
+    transform:rotate(10deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+
+  .github-corner:hover .octo-arm {
+    animation:none;
+  }
+}
