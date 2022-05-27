@@ -56,7 +56,6 @@ This will run the development server on [localhost:3000](http://localhost:3000).
 For those of you that are interested, the technology used in this project includes:
 
 * [React](https://reactjs.org/)
-* [Redux](https://redux.js.org/)
 
 ## Useful Links
 
