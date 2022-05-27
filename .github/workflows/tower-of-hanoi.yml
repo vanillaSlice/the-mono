@@ -1,0 +1,33 @@
+name: Tower of Hanoi
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/tower-of-hanoi.yml
+      - projects/tower-of-hanoi/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/tower-of-hanoi.yml
+      - projects/tower-of-hanoi/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/tower-of-hanoi
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 10
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: projects/tower-of-hanoi/build
+          production-branch: main
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: af8c6293-c0d4-43a7-93a3-bc87dce66abf
