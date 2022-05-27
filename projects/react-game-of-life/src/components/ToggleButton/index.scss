@@ -1,0 +1,38 @@
+.toggle-btn {
+  .toggle-btn__input {
+    display: none;
+  }
+
+  .toggle-btn__text {
+    background-color: #4c225d;
+    border-radius: 0.4rem;
+    color: #f5f5f5;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: 0.05rem;
+    margin: 0.5rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  &:active {
+    .toggle-btn__text {
+      transform: translateY(0.1rem);
+    }
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    .toggle-btn__text {
+      background-color: #f5f5f5;
+      color: #4c225d;
+    }
+  }
+
+  .toggle-btn__input:checked + .toggle-btn__text {
+    background-color: #f5f5f5;
+    color: #4c225d;
+  }
+}

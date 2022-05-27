@@ -1,0 +1,22 @@
+.app {
+  color: #f5f5f5;
+  min-width: 96rem;
+  padding: 5rem 0;
+
+  .app__heading {
+    font-size: 3.6rem;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    text-shadow: 0.5rem 0.5rem rgba(#4c225d, 0.8);
+  }
+
+  .app__generation {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+    text-shadow: 0.3rem 0.3rem rgba(#4c225d, 0.8);
+  }
+}
