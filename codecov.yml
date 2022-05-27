@@ -16,6 +16,10 @@ flags:
     paths:
       - projects/markdown-previewer
     carryforward: true
+  ReactGameOfLife:
+    paths:
+      - projects/react-game-of-life
+    carryforward: true
   RecipeBox:
     paths:
       - projects/recipe-box

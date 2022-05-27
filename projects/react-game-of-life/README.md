@@ -1,9 +1,8 @@
 # React Game of Life
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/ReactGameOfLife.svg)](https://github.com/vanillaSlice/ReactGameOfLife/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/ReactGameOfLife/master.svg)](https://travis-ci.com/vanillaSlice/ReactGameOfLife)
-[![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/ReactGameOfLife/master.svg)](https://coveralls.io/github/vanillaSlice/ReactGameOfLife?branch=master)
-[![License](https://img.shields.io/github/license/vanillaSlice/ReactGameOfLife.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/React%20Game%20of%20Life/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AReact-Game-of-Life+branch%3Amain)
+[![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=ReactGameOfLife)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/react-game-of-life)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 *The Game of Life* is a cellular automaton devised by mathematician John Conway.
 
@@ -18,7 +17,7 @@ rules apply:
 
 An example of cell interaction:
 
-![Cell Interaction](/images/pattern-1.gif)
+![Cell Interaction](./images/pattern-1.gif)
 
 See [Wikipedia](https://en.wikipedia.org/wiki/Conway's_Game_of_Life) for more information on *The Game of Life*.
 
@@ -26,7 +25,7 @@ A deployed version can be viewed [here](https://reactgameoflife.mikelowe.xyz/).
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-1.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 
