@@ -9,7 +9,7 @@ A deployed version can be viewed [here](https://towerofhanoi.mikelowe.xyz/).
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-2.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Background
 
