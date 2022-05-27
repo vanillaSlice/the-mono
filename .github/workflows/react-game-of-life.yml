@@ -1,0 +1,37 @@
+name: React Game of Life
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/react-game-of-life.yml
+      - projects/react-game-of-life/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/react-game-of-life.yml
+      - projects/react-game-of-life/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/react-game-of-life
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 10
+      - run: npm ci
+      - run: npm test
+      - uses: codecov/codecov-action@v2
+        with:
+          flags: MarkdownPreviewer
+          fail_ci_if_error: true
+      - run: npm run build
+      - uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: projects/react-game-of-life/build
+          production-branch: main
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: abd616a4-9079-4063-b583-537c957c8fe8

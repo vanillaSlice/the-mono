@@ -7,7 +7,7 @@
   ],
   "homepage": "https://reactgameoflife.mikelowe.xyz/",
   "bugs": {
-    "url": "https://github.com/vanillaSlice/ReactGameOfLife/issues",
+    "url": "https://github.com/vanillaSlice/the-mono/issues",
     "email": "mikelowedev@gmail.com"
   },
   "license": "MIT",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vanillaSlice/ReactGameOfLife.git"
+    "url": "https://github.com/vanillaSlice/the-mono.git"
   },
   "scripts": {
     "start": "run-p watch:css start:js",
@@ -32,7 +32,6 @@
     "test:lint:js": "eslint --ext=js --ext=jsx src/",
     "test:lint:scss": "stylelint src/**/*.scss",
     "test:unit": "react-scripts test --env=jsdom --coverage --colors",
-    "coveralls": "cat coverage/lcov.info | node node_modules/.bin/coveralls",
     "eject": "react-scripts eject"
   },
   "dependencies": {
@@ -46,7 +45,6 @@
     "react-scripts": "2.1.1"
   },
   "devDependencies": {
-    "coveralls": "^3.0.2",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
