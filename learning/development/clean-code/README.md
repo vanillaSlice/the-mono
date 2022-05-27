@@ -71,3 +71,17 @@ and docs in nonpublic code.
 read down the page.
 * Variables should be declared as close to their usage as possible.
 * Declare dependent functions close together, the callee under the caller.
+
+## Chapter Six: Objects and Data Structures
+
+* Objects hide their data behind abstractions and expose functions that operate on that data.
+* Data structures expose their data and have no meaningful functions.
+* The *Law of Demeter* says that a module should not know about the innards of the object it manipulates.
+* Avoid creating a hybrid of objects and data structures.
+
+## Chapter Seven: Error Handling
+
+* Use exceptions rather than return codes.
+* Use unchecked exceptions.
+* Don't return null.
+* Don't pass null.
