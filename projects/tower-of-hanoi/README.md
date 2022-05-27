@@ -1,8 +1,7 @@
 # Tower of Hanoi
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/tower-of-hanoi.svg)](https://github.com/vanillaSlice/tower-of-hanoi/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/tower-of-hanoi/master.svg)](https://travis-ci.com/vanillaSlice/tower-of-hanoi)
-[![License](https://img.shields.io/github/license/vanillaSlice/tower-of-hanoi.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Tower%20of%20Hanoi/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ATower-of-Hanoi+branch%3Amain)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 Tower of Hanoi puzzle written to practice using [Babel](http://babeljs.io/) and [Webpack](https://webpack.js.org/).
 A deployed version can be viewed [here](https://towerofhanoi.mikelowe.xyz/).
