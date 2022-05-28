@@ -85,3 +85,26 @@ read down the page.
 * Use unchecked exceptions.
 * Don't return null.
 * Don't pass null.
+
+## Chapter Eight: Boundaries
+
+* Avoid accepting or returning interfaces like `Map` in public APIs. Use specific types!
+* Write learning tests when using a third-party API.
+* Create interfaces for code that doesn't exist yet.
+
+## Chapter Nine: Unit Tests
+
+* Three laws of TDD:
+  * You may not write production code until you have written a failing unit test.
+  * You may not write more of a unit test than is sufficient to fail, and not compiling is failing.
+  * You may not write more production code than is sufficient to pass the currently failing test.
+* Test code is just as important as production code.
+* Use the *BUILD-OPERATE-CHECK* pattern when developing tests.
+* One assert per test, if possible.
+* Single concept per test.
+* Clean tests should be:
+  * Fast
+  * Independent
+  * Repeatable
+  * Self-validating
+  * Timely
