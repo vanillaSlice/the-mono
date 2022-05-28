@@ -1,8 +1,7 @@
 # Resume Template
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/resume-template.svg)](https://github.com/vanillaSlice/resume-template/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/resume-template/master.svg)](https://travis-ci.com/vanillaSlice/resume-template)
-[![License](https://img.shields.io/github/license/vanillaSlice/resume-template.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Resume%20Template/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AResume-Template+branch%3Amain)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 A clone of [this](https://creativemarket.com/ikonome/686585-Material-Resume-Blue/screenshots/#screenshot1) resume
 template built in plain old HTML and CSS.
@@ -10,7 +9,7 @@ A deployed version can be viewed [here](https://resumetemplate.mikelowe.xyz/).
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-1.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 
