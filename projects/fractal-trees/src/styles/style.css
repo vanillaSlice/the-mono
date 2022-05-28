@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  height: 100%;
+  line-height: initial;
+}
+
+.col-span-1 {
+  width: 25%;
+}
+
+.col-span-2 {
+  width: 50%;
+}
+
+.col-span-3 {
+  width: 75%;
+}
+
+.col-span-4 {
+  width: 100%;
+}
+
+.flex {
+  align-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.controls {
+  background-color: #2d2d30;
+  box-shadow: 0 0 1.5rem #000;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: transform 0.5s ease-in;
+  width: 100%;
+}
+
+.control {
+  border-bottom: solid 0.1rem #4a4a4c;
+  border-left: solid 0.3rem #007acc;
+  display: flex;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.control:last-child {
+  border: none;
+}
+
+.label {
+  margin: 0 0.5rem;
+}
+
+.input {
+  background-color: #3c3c3c;
+  border-color: #3c3c3c;
+  border-style: solid;
+  color: inherit;
+  height: 100%;
+  width: 100%;
+}
+
+.checkbox {
+  height: auto;
+  margin: 0 auto;
+  width: auto;
+}
+
+.colour {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+@media (min-width: 31.25em) {
+  .controls {
+    left: initial;
+    right: 2rem;
+    width: 30rem;
+  }
+}
