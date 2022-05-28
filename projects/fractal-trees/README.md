@@ -1,15 +1,14 @@
 # Fractal Trees
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/FractalTrees.svg)](https://github.com/vanillaSlice/FractalTrees/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/FractalTrees/master.svg)](https://travis-ci.com/vanillaSlice/FractalTrees)
-[![License](https://img.shields.io/github/license/vanillaSlice/FractalTrees.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Fractal%20Trees/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AFractal-Trees+branch%3Amain)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 Playing around with Fractal Trees in [p5.js](https://p5js.org/).
 A deployed version can be viewed [here](https://fractaltrees.mikelowe.xyz/).
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-1.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 
