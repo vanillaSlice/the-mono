@@ -1,0 +1,33 @@
+name: Wikipedia Viewer
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/wikipedia-viewer.yml
+      - projects/wikipedia-viewer/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/wikipedia-viewer.yml
+      - projects/wikipedia-viewer/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/wikipedia-viewer
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 10
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: projects/wikipedia-viewer/build
+          production-branch: main
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: 3d9b40cb-34a7-4811-9f26-11c90785e5f4

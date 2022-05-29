@@ -1,8 +1,7 @@
 # Wikipedia Viewer
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/WikipediaViewer.svg)](https://github.com/vanillaSlice/WikipediaViewer/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/WikipediaViewer/master.svg)](https://travis-ci.com/vanillaSlice/WikipediaViewer)
-[![License](https://img.shields.io/github/license/vanillaSlice/WikipediaViewer.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Wikipedia%20Viewer/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AWikipedia-Viewer+branch%3Amain)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 *Intermediate Front End Development Project for FreeCodeCamp.*
 
@@ -10,7 +9,7 @@ A simple Wikipedia Viewer. A deployed version can be viewed [here](https://wikip
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-2.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 
