@@ -15,7 +15,6 @@ const channels = [
   'noobs2ninjas',
   'OgamingSC2',
   'RobotCaleb',
-  'storbeck',
 ];
 
 /*
