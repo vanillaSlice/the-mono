@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Twitch Status Viewer</title>
+  <meta name="description" content="Intermediate Front End Development Project for FreeCodeCamp">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="manifest" href="./site.webmanifest">
+  <meta name="msapplication-config" content="./browserconfig.xml">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.0/css/bootstrap.min.css"
+    integrity="sha256-H0KfTigpUV+0/5tn2HXC0CPwhhDhWgSawJdnFd0CGCo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="container">
+  <div class="row col-md-8 col-md-offset-2">
+    <header class="text-center header">
+      <h1 class="header__heading">
+        <a class="header__heading-link" href="https://www.twitch.tv/">
+          <img class="header__logo" src="./images/twitch-logo.svg" alt="Twitch logo" title="Twitch">
+        </a> Status&nbsp;Viewer
+      </h1>
+      <div class="header__btn-group btn-group col-xs-12" data-toggle="buttons">
+        <label class="header__btn btn col-xs-4 active">
+          <input class="header__filter js-status-filter" type="radio" name="filter" value="all" checked>All
+        </label>
+        <label class="header__btn btn col-xs-4">
+          <input class="header__filter js-status-filter" type="radio" name="filter" value="online">Online
+        </label>
+        <label class="header__btn btn col-xs-4">
+          <input class="header__filter js-status-filter" type="radio" name="filter" value="offline">Offline
+        </label>
+      </div>
+      <div class="col-xs-12">
+        <div class="input-group">
+          <span class="header__search-input-addon input-group-addon">
+            <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+          </span>
+          <input type="search" class="header__search-input form-control js-search-term" placeholder="Search...">
+        </div>
+      </div>
+    </header>
+    <main class="col-xs-12 channels js-channels"></main>
+    <footer class="footer col-xs-12 text-right">
+      <small>
+        v<span class="js-version"></span>
+        <span class="footer__separator"></span>
+        <a class="footer__link" href="https://github.com/vanillaSlice/TwitchStatusViewer">GitHub</a>
+        <span class="footer__separator"></span>
+        Made with 🎧 by <a class="footer__link" href="https://mikelowe.xyz">Mike</a>
+      </small>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha256-kJrlY+s09+QoWjpkOrXXwhxeaoDz9FW5SaxF8I0DibQ="
+    crossorigin="anonymous"></script>
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>
