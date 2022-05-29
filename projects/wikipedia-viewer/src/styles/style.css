@@ -1,0 +1,172 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #3f2860;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wiki-viewer {
+  margin: auto;
+  padding: 30px 0;
+}
+
+.wiki-viewer__btn {
+  background-color: transparent;
+  border: none;
+  color: #ef6d3b;
+  cursor: pointer;
+  font-size: 64px;
+  margin: 0 20px;
+  outline: none;
+  padding: 20px;
+  transition: color 0.5s linear, transform 0.5s linear;
+}
+
+.wiki-viewer__btn:hover,
+.wiki-viewer__btn:focus {
+  color: #fa8b60;
+  transform: scale(1.14);
+}
+
+.wiki-viewer__btn:disabled,
+.wiki-viewer__btn[disabled] {
+  color: #808080;
+}
+
+.wiki-viewer__btn:disabled:hover,
+.wiki-viewer__btn:disabled:focus,
+.wiki-viewer__btn[disabled]:hover,
+.wiki-viewer__btn[disabled]:focus {
+  transform: scale(1);
+}
+
+.wiki-viewer__search-form-container {
+  margin-top: 20px;
+}
+
+.wiki-viewer__search-input {
+  background-color: transparent;
+  border: #ef6d3b solid 5px;
+  border-radius: 50px;
+  color: #ef6d3b;
+  font-size: 32px;
+  padding: 10px 20px;
+  outline: none;
+  overflow: hidden;
+  transition: color 0.5s linear, transform 0.5s linear;
+}
+
+.wiki-viewer__search-input::-webkit-input-placeholder {
+  color: #808080;
+}
+
+.wiki-viewer__search-input::-moz-placeholder {
+  color: #808080;
+  opacity: 1;
+}
+
+.wiki-viewer__search-input:focus {
+  border-color: #fa8b60;
+  color: #fa8b60;
+  transform: scale(1.05);
+}
+
+.wiki-viewer__results-container {
+  margin-top: 20px;
+}
+
+.wiki-viewer__search-results {
+  color: #ef6d3b;
+}
+
+.wiki-viewer__search-result {
+  border: #ef6d3b solid 5px;
+  border-radius: 5px;
+  color: #ef6d3b;
+  display: block;
+  margin-top: 20px;
+  padding: 0 20px;
+  text-align: left;
+  transition: color 0.5s linear, transform 0.5s linear;
+}
+
+.wiki-viewer__search-result:hover,
+.wiki-viewer__search-result:focus {
+  border-color: #fa8b60;
+  color: #fa8b60;
+  transform: scale(1.05);
+}
+
+.wiki-viewer__search-result:hover,
+.wiki-viewer__search-result:focus,
+.wiki-viewer__search-result:visited {
+  outline: none;
+  text-decoration: none;
+}
+
+.wiki-viewer__search-result-extract {
+  margin-bottom: 20px;
+}
+
+.footer {
+  color: #ef6d3b;
+  margin: 15px auto;
+  padding: 15px 0;
+}
+
+.footer__text {
+  margin-bottom: 0;
+}
+
+.footer__link {
+  color: #ef6d3b;
+}
+
+.footer__link:focus,
+.footer__link:hover {
+  color: #fa8b60;
+  outline: none;
+  text-decoration: none;
+  transition: color 0.5s linear;
+}
+
+@media(max-width: 768px) {
+  .wiki-viewer,
+  .footer {
+    width: 100%;
+  }
+}
+
+/*
+ * Taken from https://github.com/tholman/github-corners
+ */
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform:rotate(0);
+  }
+  20%,60% {
+    transform:rotate(-25deg);
+  }
+  40%,80% {
+    transform:rotate(10deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+
+  .github-corner:hover .octo-arm {
+    animation:none;
+  }
+}
