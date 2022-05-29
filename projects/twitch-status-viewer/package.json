@@ -1,0 +1,45 @@
+{
+  "name": "twitch-status-viewer",
+  "version": "1.1.0",
+  "description": "Intermediate Front End Development Project for FreeCodeCamp",
+  "keywords": [
+    "twitch status viewer",
+    "freecodecamp"
+  ],
+  "homepage": "https://twitch.mikelowe.xyz/",
+  "bugs": {
+    "url": "https://github.com/vanillaSlice/the-mono/issues",
+    "email": "mikelowedev@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Mike Lowe",
+    "email": "mikelowedev@gmail.com",
+    "url": "https://www.mikelowe.xyz/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanillaSlice/the-mono.git"
+  },
+  "scripts": {
+    "test": "run-s test:*",
+    "test:lint": "run-s test:lint:*",
+    "test:lint:css": "stylelint src/**/*.css",
+    "test:lint:js": "eslint src/**/*.js",
+    "start": "parcel src/index.html -d build",
+    "build": "parcel build src/index.html -d build --public-url ./"
+  },
+  "devDependencies": {
+    "acorn": "^6.0.6",
+    "autoprefixer": "^9.4.7",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-browserconfig": "^1.0.0",
+    "stylelint": "^9.10.1",
+    "stylelint-config-recommended": "^2.1.0"
+  },
+  "private": true
+}
