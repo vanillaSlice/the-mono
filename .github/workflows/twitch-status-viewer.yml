@@ -1,0 +1,33 @@
+name: Twitch Status Viewer
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/twitch-status-viewer.yml
+      - projects/twitch-status-viewer/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/twitch-status-viewer.yml
+      - projects/twitch-status-viewer/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/twitch-status-viewer
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 10
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: projects/twitch-status-viewer/build
+          production-branch: main
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: 8e5bee3b-f1dd-4d01-8dba-ac674e666787

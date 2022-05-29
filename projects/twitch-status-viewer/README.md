@@ -1,8 +1,7 @@
 # Twitch Status Viewer
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/TwitchStatusViewer.svg)](https://github.com/vanillaSlice/TwitchStatusViewer/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/TwitchStatusViewer/master.svg)](https://travis-ci.com/vanillaSlice/TwitchStatusViewer)
-[![License](https://img.shields.io/github/license/vanillaSlice/TwitchStatusViewer.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Twitch%20Status%20Viewer/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ATwitch-Status-Viewer+branch%3Amain)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 *Intermediate Front End Development Project for FreeCodeCamp.*
 
@@ -11,7 +10,7 @@ A deployed version can be viewed [here](https://twitch.mikelowe.xyz/).
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-1.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 
