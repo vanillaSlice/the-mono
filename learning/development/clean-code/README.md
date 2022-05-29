@@ -108,3 +108,12 @@ read down the page.
   * Repeatable
   * Self-validating
   * Timely
+
+## Chapter Ten: Classes
+
+* Classes should be small!
+* The Single Responsibility Principle states that a class or modules should have one, and only one, reason to change.
+* Open-Closed Principle states that classes should be open for extension but closed for modification.
+* The Dependency Inversion Principle states that classes should depend on abstractions, not concrete details.
+
+## Chapter Eleven: Systems
