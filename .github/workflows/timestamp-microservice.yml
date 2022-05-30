@@ -34,8 +34,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: akhileshns/heroku-deploy@v3.12.12
-        working-directory: projects/timestamp-microservice
         with:
+          appdir: projects/timestamp-microservice
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: slicetimestamp
           heroku_email: ${{ secrets.HEROKU_EMAIL }}
