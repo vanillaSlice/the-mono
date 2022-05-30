@@ -117,3 +117,9 @@ read down the page.
 * The Dependency Inversion Principle states that classes should depend on abstractions, not concrete details.
 
 ## Chapter Eleven: Systems
+
+* Separate construction of objects from use.
+* *Dependency Injection* is a mechanism for doing this. It involves passing dependencies to classes.
+* Scale-up by separating concerns. Separate cross-cutting concerns.
+* Use standards wisely, when they add demonstrable value.
+* Use the simplest thing that can possibly work.
