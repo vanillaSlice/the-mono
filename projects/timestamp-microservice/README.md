@@ -1,9 +1,8 @@
 # Timestamp Microservice
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/TimestampMicroservice.svg)](https://github.com/vanillaSlice/TimestampMicroservice/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/TimestampMicroservice/master.svg)](https://travis-ci.com/vanillaSlice/TimestampMicroservice)
-[![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/TimestampMicroservice/master.svg)](https://coveralls.io/github/vanillaSlice/TimestampMicroservice?branch=master)
-[![License](https://img.shields.io/github/license/vanillaSlice/TimestampMicroservice.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Timestamp%20Microservice/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ATimestamp-Microservice+branch%3Amain)
+[![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=TimestampMicroservice)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/timestamp-microservice)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 A simple timestamp microservice built with [Spring Boot](http://spring.io/projects/spring-boot). A deployed version can
 be viewed [here](https://timestamp.mikelowe.xyz/).
@@ -16,10 +15,6 @@ be viewed [here](https://timestamp.mikelowe.xyz/).
 * [Gradle](https://gradle.org) (optional)
 
 ### Building
-
-*If you don't want to build the project yourself, head to
-[releases](https://github.com/vanillaSlice/TimestampMicroservice/releases) and download one of the jar files from
-there.*
 
 To build the project yourself:
 
