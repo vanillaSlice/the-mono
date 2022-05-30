@@ -34,7 +34,6 @@ public class DefaultTimestampService implements TimestampService {
     if (s == null) {
       return TimestampResponse.EMPTY;
     }
-
     return isLong(s) ? parseUnix(s) : parseNatural(s);
   }
 
