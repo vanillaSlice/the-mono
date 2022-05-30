@@ -39,3 +39,5 @@ jobs:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: slicetimestamp
           heroku_email: ${{ secrets.HEROKU_EMAIL }}
+        env:
+          GRADLE_TASK: assemble
