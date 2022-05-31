@@ -1,0 +1,25 @@
+name: Bitconnect Carlos Ipsum
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/bitconnect-carlos-ipsum.yml
+      - projects/bitconnect-carlos-ipsum/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/bitconnect-carlos-ipsum.yml
+      - projects/bitconnect-carlos-ipsum/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/bitconnect-carlos-ipsum
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 11
+      - run: npm ci
+      - run: npm test
