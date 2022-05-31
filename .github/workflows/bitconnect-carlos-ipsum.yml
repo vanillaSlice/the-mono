@@ -1,0 +1,37 @@
+name: Bitconnect Carlos Ipsum
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/bitconnect-carlos-ipsum.yml
+      - projects/bitconnect-carlos-ipsum/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/bitconnect-carlos-ipsum.yml
+      - projects/bitconnect-carlos-ipsum/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/bitconnect-carlos-ipsum
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 11
+      - run: npm ci
+      - run: npm test
+  Deploy:
+    if: ${{ github.event_name == 'push' }}
+    needs: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          appdir: projects/bitconnect-carlos-ipsum
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_app_name: bitconnectcarlosipsum
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}

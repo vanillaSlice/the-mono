@@ -1,0 +1,66 @@
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+h1 a {
+  background: none;
+  color: #41403e;
+  font-family: 'Patrick Hand SC', sans-serif;
+}
+
+header img {
+  height: 4rem;
+  width: 4rem;
+}
+
+header img.right {
+  margin: 1rem 0 2.68rem;
+  transform: scaleX(-1);
+}
+
+header img.left {
+  margin: 2.68rem 0 1rem;
+}
+
+@media (min-width: 62em) {
+  h1 {
+    font-size: 4rem;
+    margin: 2.68rem 0 1rem;
+  }
+
+  header img.left,
+  header img.right {
+    margin: 0;
+  }
+}
+
+/*
+ * Taken from https://github.com/tholman/github-corners
+ */
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform:rotate(0);
+  }
+  20%,60% {
+    transform:rotate(-25deg);
+  }
+  40%,80% {
+    transform:rotate(10deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+
+  .github-corner:hover .octo-arm {
+    animation:none;
+  }
+}
