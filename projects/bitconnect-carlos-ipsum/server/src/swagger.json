@@ -1,0 +1,418 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This page lists all the REST APIs for Bitconnect Carlos Ipsum.",
+    "version": "1.3.0",
+    "title": "Bitconnect Carlos Ipsum",
+    "contact": {
+      "name": "Mike Lowe",
+      "url": "https://www.mikelowe.xyz",
+      "email": "mikelowedev@gmail.com"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://github.com/vanillaSlice/BitconnectCarlosIpsum/blob/master/LICENSE"
+    }
+  },
+  "basePath": "/api",
+  "tags": [{
+      "name": "headings",
+      "description": "heading endpoints"
+    },
+    {
+      "name": "quotes",
+      "description": "quote endpoints"
+    },
+    {
+      "name": "text",
+      "description": "text endpoints"
+    }
+  ],
+  "paths": {
+    "/headings": {
+      "get": {
+        "tags": [
+          "headings"
+        ],
+        "summary": "Get all headings",
+        "description": "Returns all available headings.",
+        "operationId": "api.headings.get",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "name": "hTagLevel",
+          "in": "query",
+          "description": "The H tag level",
+          "required": false,
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 6
+        }],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "headings": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/heading"
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Invalid hTagLevel",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "errors": {
+                  "type": "object",
+                  "properties": {
+                    "hTagLevel": {
+                      "$ref": "#/definitions/hTagLevelError"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/headings/random": {
+      "get": {
+        "tags": [
+          "headings"
+        ],
+        "summary": "Get random heading",
+        "description": "Returns a random heading.",
+        "operationId": "api.headings.random.get",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "name": "hTagLevel",
+          "in": "query",
+          "description": "The H tag level",
+          "required": false,
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 6
+        }],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "heading": {
+                  "$ref": "#/definitions/heading"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Invalid hTagLevel",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "errors": {
+                  "type": "object",
+                  "properties": {
+                    "hTagLevel": {
+                      "$ref": "#/definitions/hTagLevelError"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/quotes": {
+      "get": {
+        "tags": [
+          "quotes"
+        ],
+        "summary": "Get all quotes",
+        "description": "Returns all available quotes.",
+        "operationId": "api.quotes.get",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "name": "includePTags",
+          "in": "query",
+          "description": "If P tags should be included",
+          "required": false,
+          "type": "boolean"
+        }],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "quotes": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/quote"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/quotes/random": {
+      "get": {
+        "tags": [
+          "quotes"
+        ],
+        "summary": "Get random quote",
+        "description": "Returns a random quote.",
+        "operationId": "api.quotes.random.get",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "name": "includePTags",
+          "in": "query",
+          "description": "If P tags should be included",
+          "required": false,
+          "type": "boolean"
+        }],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "quote": {
+                  "$ref": "#/definitions/quote"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/text": {
+      "get": {
+        "tags": [
+          "text"
+        ],
+        "summary": "Get text entries",
+        "description": "Returns a number of text entries.",
+        "operationId": "api.text.get",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+            "name": "paragraphs",
+            "in": "query",
+            "description": "Number of paragraphs",
+            "required": true,
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100
+          },
+          {
+            "name": "minQuotes",
+            "in": "query",
+            "description": "Minimum number of quotes to generate",
+            "required": true,
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 20
+          },
+          {
+            "name": "maxQuotes",
+            "in": "query",
+            "description": "Maximum number of quotes to generate",
+            "required": true,
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 20
+          },
+          {
+            "name": "includePTags",
+            "in": "query",
+            "description": "If P tags should be included",
+            "required": false,
+            "type": "boolean"
+          },
+          {
+            "name": "includeHeadings",
+            "in": "query",
+            "description": "If headings should be included",
+            "required": false,
+            "type": "boolean"
+          },
+          {
+            "name": "hTagLevel",
+            "in": "query",
+            "description": "The H tag level",
+            "required": false,
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "heading": {
+                        "$ref": "#/definitions/heading"
+                      },
+                      "paragraph": {
+                        "$ref": "#/definitions/paragraph"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Invalid query parameter",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "errors": {
+                  "type": "object",
+                  "properties": {
+                    "paragraphs": {
+                      "$ref": "#/definitions/paragraphsError"
+                    },
+                    "minQuotes": {
+                      "$ref": "#/definitions/minQuotesError"
+                    },
+                    "maxQuotes": {
+                      "$ref": "#/definitions/maxQuotesError"
+                    },
+                    "hTagLevel": {
+                      "$ref": "#/definitions/hTagLevelError"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "heading": {
+      "type": "string",
+      "example": "I LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOVE BITCONEEEEEEECT!"
+    },
+    "quote": {
+      "type": "string",
+      "example": "Hey hey heeeeeeeeeey... Hey hey heeeeeeeeeey... Hey hey heeeeeeeeeey."
+    },
+    "paragraph": {
+      "type": "string",
+      "example": "Hey hey hey everybody, My name is Carlos Matos and I am coming from New York City, New York. Let me tell you guys that I started 137 days ago, with only 25 thousand six hundred and ten dollars -and right now I am reaching one hundred and forty THOUSAND dollars."
+    },
+    "hTagLevelError": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string",
+          "example": "12"
+        },
+        "msg": {
+          "type": "string",
+          "example": "must be between 1 and 6"
+        },
+        "param": {
+          "type": "string",
+          "example": "hTagLevel"
+        },
+        "location": {
+          "type": "string",
+          "example": "query"
+        }
+      }
+    },
+    "paragraphsError": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string",
+          "example": "101"
+        },
+        "msg": {
+          "type": "string",
+          "example": "must be between 1 and 100"
+        },
+        "param": {
+          "type": "string",
+          "example": "paragraphs"
+        },
+        "location": {
+          "type": "string",
+          "example": "query"
+        }
+      }
+    },
+    "minQuotesError": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string",
+          "example": "0"
+        },
+        "msg": {
+          "type": "string",
+          "example": "must be between 1 and 20"
+        },
+        "param": {
+          "type": "string",
+          "example": "minQuotes"
+        },
+        "location": {
+          "type": "string",
+          "example": "query"
+        }
+      }
+    },
+    "maxQuotesError": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string",
+          "example": "21"
+        },
+        "msg": {
+          "type": "string",
+          "example": "must be between 1 and 20"
+        },
+        "param": {
+          "type": "string",
+          "example": "maxQuotes"
+        },
+        "location": {
+          "type": "string",
+          "example": "query"
+        }
+      }
+    }
+  }
+}
