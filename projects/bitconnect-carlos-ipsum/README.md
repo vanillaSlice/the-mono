@@ -3,7 +3,7 @@
 [![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Bitconnect%20Carlos%20Ipsum/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ABitconnect-Carlos-Ipsum+branch%3Amain)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-A [Bitconnect Carlos](https://www.youtube.com/watch?v=vabXXkZjKiw&t=35s&ab_channel=chronosceptor) Lorem Ipsum generator. A deployed
+A [Bitconnect Carlos](https://www.youtube.com/watch?v=vabXXkZjKiw&ab_channel=chronosceptor) Lorem Ipsum generator. A deployed
 version can be viewed [here](https://bitconnectcarlosipsum.mikelowe.xyz/)
 (Swagger docs can be viewed [here](https://bitconnectcarlosipsum.mikelowe.xyz/api-docs)).
 
