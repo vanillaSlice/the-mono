@@ -13,7 +13,7 @@ and the client is built with [React](https://reactjs.org/).
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-2.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 
