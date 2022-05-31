@@ -9,7 +9,7 @@
   ],
   "homepage": "https://bitconnectcarlosipsum.mikelowe.xyz/",
   "bugs": {
-    "url": "https://github.com/vanillaSlice/BitconnectCarlosIpsum/issues",
+    "url": "https://github.com/vanillaSlice/the-mono/issues",
     "email": "mikelowedev@gmail.com"
   },
   "license": "MIT",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vanillaSlice/BitconnectCarlosIpsum.git"
+    "url": "https://github.com/vanillaSlice/the-mono.git"
   },
   "scripts": {
     "test": "run-s test:*",
