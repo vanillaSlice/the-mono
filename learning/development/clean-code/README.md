@@ -123,3 +123,11 @@ read down the page.
 * Scale-up by separating concerns. Separate cross-cutting concerns.
 * Use standards wisely, when they add demonstrable value.
 * Use the simplest thing that can possibly work.
+
+## Chapter Twelve: Emergence
+
+* Kent Beck's four rules of *Simple Design*:
+  * Runs all the tests.
+  * Contains no duplication.
+  * Expresses the intent of the programmer.
+  * Minimises the number of classes and methods.
