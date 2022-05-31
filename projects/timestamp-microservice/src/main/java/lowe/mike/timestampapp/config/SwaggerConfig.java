@@ -47,7 +47,7 @@ public class SwaggerConfig {
         .contact(new Contact("Mike Lowe", "https://www.mikelowe.xyz", "mikelowedev@gmail.com"))
         .description("This page lists all the REST APIs for the Timestamp App.")
         .license("MIT")
-        .licenseUrl("https://github.com/vanillaSlice/TimestampMicroservice/blob/master/LICENSE")
+        .licenseUrl("https://github.com/vanillaSlice/the-mono/blob/main/projects/timestamp-microservice/LICENSE")
         .title("Timestamp App")
         .version(version)
         .build();
