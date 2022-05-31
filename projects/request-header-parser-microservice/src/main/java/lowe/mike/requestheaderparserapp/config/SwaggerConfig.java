@@ -48,7 +48,7 @@ public class SwaggerConfig {
         .description("This page lists all the REST APIs for the Request Header Parser App.")
         .license("MIT")
         .licenseUrl(
-            "https://github.com/vanillaSlice/RequestHeaderParserMicroservice/blob/master/LICENSE")
+            "https://github.com/vanillaSlice/the-mono/blob/main/projects/request-header-parser-microservice/LICENSE")
         .title("Request Header Parser App")
         .version(version)
         .build();
