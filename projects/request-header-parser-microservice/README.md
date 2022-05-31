@@ -1,9 +1,8 @@
 # Request Header Parser Microservice
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/RequestHeaderParserMicroservice.svg)](https://github.com/vanillaSlice/RequestHeaderParserMicroservice/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/RequestHeaderParserMicroservice/master.svg)](https://travis-ci.com/vanillaSlice/RequestHeaderParserMicroservice)
-[![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/RequestHeaderParserMicroservice/master.svg)](https://coveralls.io/github/vanillaSlice/RequestHeaderParserMicroservice?branch=master)
-[![License](https://img.shields.io/github/license/vanillaSlice/RequestHeaderParserMicroservice.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Request%20Header%20Parser%20Microservice/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ARequest-Header-Parser-Microservice+branch%3Amain)
+[![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=RequestHeaderParserMicroservice)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/request-header-parser-microservice)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 A simple request header parser microservice built with [Spring Boot](http://spring.io/projects/spring-boot). A deployed
 version can be viewed [here](https://headerparser.mikelowe.xyz/).
@@ -16,10 +15,6 @@ version can be viewed [here](https://headerparser.mikelowe.xyz/).
 * [Gradle](https://gradle.org) (optional)
 
 ### Building
-
-*If you don't want to build the project yourself, head to
-[releases](https://github.com/vanillaSlice/RequestHeaderParserMicroservice/releases) and download one of the jar files
-from there.*
 
 To build the project yourself:
 
