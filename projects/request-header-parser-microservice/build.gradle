@@ -1,0 +1,85 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath('org.springframework.boot:spring-boot-gradle-plugin:2.1.2.RELEASE')
+    }
+}
+
+plugins {
+    id 'java'
+    id 'idea'
+    id 'org.unbroken-dome.test-sets' version '2.0.3'
+    id 'checkstyle'
+    id 'jacoco'
+}
+
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'lowe.mike.requestheaderparserapp'
+version = '1.0.0'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.1.2.RELEASE'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.3.2'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.2'
+    testCompile group: 'nl.jqno.equalsverifier', name: 'equalsverifier', version: '3.1.4'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.2.RELEASE'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.6'
+    compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+}
+
+processResources {
+    filesMatching('application.yml') {
+        expand(project.properties)
+    }
+}
+
+testSets {
+    integrationTest
+}
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+}
+
+check.dependsOn integrationTest
+integrationTest.mustRunAfter test
+
+checkstyle {
+    toolVersion = '8.16'
+    maxWarnings = 0
+}
+
+jacoco {
+    toolVersion = '0.8.2'
+}
+
+jacocoTestReport {
+    executionData fileTree(project.rootDir.absolutePath).include('**/build/jacoco/*.exec')
+    reports {
+        xml.enabled = true
+    }
+}
+
+jacocoTestCoverageVerification {
+    executionData fileTree(project.rootDir.absolutePath).include('**/build/jacoco/*.exec')
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.9
+            }
+        }
+    }
+}
+
+check.dependsOn jacocoTestCoverageVerification

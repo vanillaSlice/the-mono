@@ -1,0 +1,41 @@
+name: Request Header Parser Microservice
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/request-header-parser-microservice.yml
+      - projects/request-header-parser-microservice/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/request-header-parser-microservice.yml
+      - projects/request-header-parser-microservice/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
+        with:
+          java-version: 8
+          distribution: corretto
+      - uses: gradle/gradle-build-action@v2
+      - working-directory: projects/request-header-parser-microservice
+        run: |
+          ./gradlew check jacocoTestReport
+      - uses: codecov/codecov-action@v2
+        with:
+          flags: RequestHeaderParserMicroservice
+          fail_ci_if_error: true
+  Deploy:
+    if: ${{ github.event_name == 'push' }}
+    needs: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          appdir: projects/request-header-parser-microservice
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_app_name: sliceheaderparser
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}

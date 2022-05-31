@@ -24,6 +24,10 @@ flags:
     paths:
       - projects/recipe-box
     carryforward: true
+  RequestHeaderParserMicroservice:
+    paths:
+      - projects/request-header-parser-microservice
+    carryforward: true
   Strimko:
     paths:
       - projects/strimko
