@@ -1,8 +1,7 @@
 # Bitconnect Carlos Ipsum
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/BitconnectCarlosIpsum.svg)](https://github.com/vanillaSlice/BitconnectCarlosIpsum/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/BitconnectCarlosIpsum/master.svg)](https://travis-ci.com/vanillaSlice/BitconnectCarlosIpsum)
-[![License](https://img.shields.io/github/license/vanillaSlice/BitconnectCarlosIpsum.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Bitconnect%20Carlos%20Ipsum/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ABitconnect-Carlos-Ipsum+branch%3Amain)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 A [Bitconnect Carlos](https://www.youtube.com/watch?v=QKO6IChjojI) Lorem Ipsum generator. A deployed
 version can be viewed [here](https://bitconnectcarlosipsum.mikelowe.xyz/)
