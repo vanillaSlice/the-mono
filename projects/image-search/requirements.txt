@@ -4,3 +4,4 @@ flask-mongoengine==0.9.5
 gunicorn==19.10.0
 requests==2.27.1
 swagger-ui-bundle==0.0.9
+wheel==0.37.1
