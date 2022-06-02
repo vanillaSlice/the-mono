@@ -12,6 +12,10 @@ flags:
     paths:
       - projects/hazelcast-leader-election
     carryforward: true
+  ImageSearch:
+    paths:
+      - projects/image-search
+    carryforward: true
   MarkdownPreviewer:
     paths:
       - projects/markdown-previewer
