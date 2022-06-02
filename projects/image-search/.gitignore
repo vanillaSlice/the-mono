@@ -1,0 +1,7 @@
+.coverage
+.DS_Store
+.vscode
+__pycache__
+instance/*
+!instance/config-example.py
+mongodb/data

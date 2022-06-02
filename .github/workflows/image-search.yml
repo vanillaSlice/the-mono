@@ -1,0 +1,40 @@
+name: Image Search
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/image-search.yml
+      - projects/image-search/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/image-search.yml
+      - projects/image-search/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/image-search
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: 3.7
+      - run: |
+          pip install -r requirements.txt
+          pip install -r requirements-test.txt
+          ./scripts/lint.sh
+          ./scripts/test.sh
+  Deploy:
+    if: ${{ github.event_name == 'push' }}
+    needs: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          appdir: projects/image-search
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_app_name: sliceimagesearch
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}
