@@ -5,7 +5,6 @@ Exports a function to create an instance of the Image Search app.
 import os
 
 from connexion import FlaskApp
-from flask import Flask, render_template
 from flask_mongoengine import MongoEngine
 from swagger_ui_bundle import swagger_ui_3_path
 
