@@ -1,0 +1,24 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo:4.0.8-xenial
+    volumes:
+      - ./mongodb/docker-entrypoint-initdb.d/local-user.js:/docker-entrypoint-initdb.d/local-user.js
+      - ./mongodb/data/db:/data/db
+  imagesearch:
+    build:
+      context: .
+      dockerfile: ./docker/local.Dockerfile
+    ports:
+      - 5000:8000
+    environment:
+      - DEBUG=True
+      - ENV=local
+      - MONGODB_HOST=mongodb
+      - MONGODB_PASSWORD=local-user-password
+      - MONGODB_USERNAME=local-user
+    volumes:
+      - ./imagesearch:/opt/app/imagesearch
+      - ./config.py:/opt/app/config.py
+      - ./run.py:/opt/app/run.py
+      - ./instance:/opt/app/instance

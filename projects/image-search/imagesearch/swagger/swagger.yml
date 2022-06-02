@@ -1,0 +1,119 @@
+swagger: '2.0'
+info:
+  description: 'This page lists all the REST APIs for the Image Search App.'
+  version: '1.2.0'
+  title: 'Image Search App'
+  contact:
+    name: 'Mike Lowe'
+    url: 'https://www.mikelowe.xyz'
+    email: 'mikelowedev@gmail.com'
+  license:
+    name: 'MIT'
+    url: 'https://github.com/vanillaSlice/ImageSearch/blob/master/LICENSE'
+
+basePath: '/'
+
+tags:
+  - name: 'Image Search'
+    description: 'Image Search Endpoints'
+
+paths:
+  /search/{terms}:
+    get:
+      tags:
+        - 'Image Search'
+      summary: 'Performs search'
+      description: 'Returns image search results.'
+      operationId: 'imagesearch.blueprints.search'
+      produces:
+        - 'application/json'
+      parameters:
+        - name: 'terms'
+          in: 'path'
+          description: 'Search terms'
+          required: true
+          type: 'string'
+        - name: 'offset'
+          in: 'query'
+          description: 'The search offset'
+          required: false
+          type: 'integer'
+      responses:
+        200:
+          description: 'Returns image search results'
+          schema:
+            type: 'array'
+            items:
+              '$ref': '#/definitions/Search Response'
+        400:
+          description: 'Invalid search offset'
+          schema:
+            '$ref': '#/definitions/Search Error'
+  /latest:
+    get:
+      tags:
+        - 'Image Search'
+      summary: 'Latest searches'
+      description: 'Returns the latest searches.'
+      operationId: 'imagesearch.blueprints.latest'
+      produces:
+        - 'application/json'
+      responses:
+        200:
+          description: 'Returns the latest searches'
+          schema:
+            type: 'array'
+            items:
+              '$ref': '#/definitions/Latest Response'
+
+definitions:
+  'Search Response':
+    type: 'object'
+    properties:
+      context:
+        type: 'string'
+        description: 'Image context'
+        example: 'https://en.wikipedia.org/wiki/Nicolas_Cage'
+      snippet:
+        type: 'string'
+        description: 'Image snippet'
+        example: 'Nicolas Cage - Wikipedia'
+      thumbnail:
+        type: 'string'
+        description: 'Image thumbnail'
+        example: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQseCOiqCouEhvftBpHc5V0AnKCxYaIcICU6wPWMoWWVOXB6GTPiklxZg'
+      url:
+        type: 'string'
+        description: 'Image URL'
+        example: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Nicolas_Cage_Deauville_2013.jpg/220px-Nicolas_Cage_Deauville_2013.jpg'
+  'Latest Response':
+    type: 'object'
+    properties:
+      terms:
+        type: 'string'
+        description: 'Search terms'
+        example: 'Nicolas Cage'
+      when:
+        type: 'string'
+        format: 'date-time'
+        description: 'When search was performed'
+        example: '2018-11-19T14:32:55.592000'
+  'Search Error':
+    type: 'object'
+    properties:
+      detail:
+        type: 'string'
+        description: 'Error detail'
+        example: 'Wrong type, expected ''integer'' for query parameter ''offset'''
+      status:
+        type: 'integer'
+        description: 'Error status code'
+        example: 400
+      title:
+        type: 'string'
+        description: 'Error title'
+        example: 'Bad Request'
+      type:
+        type: 'string'
+        description: 'Error type'
+        example: 'about:blank'
