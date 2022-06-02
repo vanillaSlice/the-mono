@@ -1,6 +1,6 @@
-connexion==2.13.1
+connexion==2.9.0
 Flask==1.1.4
 flask-mongoengine==1.0.0
-gunicorn==19.9.0
-requests==2.21.0
-swagger-ui-bundle==0.0.3
+gunicorn==20.1.0
+requests==2.27.1
+swagger-ui-bundle==0.0.9
