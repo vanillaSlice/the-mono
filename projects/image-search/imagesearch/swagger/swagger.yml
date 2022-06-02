@@ -9,7 +9,7 @@ info:
     email: 'mikelowedev@gmail.com'
   license:
     name: 'MIT'
-    url: 'https://github.com/vanillaSlice/ImageSearch/blob/master/LICENSE'
+    url: 'https://github.com/vanillaSlice/the-mono/tree/main/projects/image-search/LICENSE'
 
 basePath: '/'
 
