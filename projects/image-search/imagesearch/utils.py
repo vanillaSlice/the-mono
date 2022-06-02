@@ -39,7 +39,7 @@ def save_search_to_database(terms):
     Saves search to database.
     """
 
-    SearchEntry(terms).save()
+    SearchEntry(terms=terms).save()
 
 def get_latest_searches():
     """
