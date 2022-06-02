@@ -26,6 +26,10 @@ jobs:
           pip install -r requirements-test.txt
           ./scripts/lint.sh
           ./scripts/test.sh
+      - uses: codecov/codecov-action@v2
+        with:
+          flags: ImageSearch
+          fail_ci_if_error: true
   Deploy:
     if: ${{ github.event_name == 'push' }}
     needs: Build
