@@ -22,6 +22,7 @@ jobs:
         with:
           python-version: 3.7
       - run: |
+          pip install –upgrade setuptools
           pip install -r requirements.txt
           pip install -r requirements-test.txt
           ./scripts/lint.sh
