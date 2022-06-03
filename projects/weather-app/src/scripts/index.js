@@ -7,7 +7,7 @@ import { version } from '../../package.json';
 const visualCrossingOptions = {
   baseUrl: 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline',
   unitGroup: 'metric',
-  include: 'days, current',
+  include: 'days,current',
   key: 'MUSW8DDR9UZL2ZPYRN5VF4YHH',
   contentType: 'json',
 };
