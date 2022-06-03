@@ -4,9 +4,13 @@ import { version } from '../../package.json';
  * Constants
  */
 
-const darkSkyUrl = 'https://api.darksky.net/forecast/63b249ea29dd4b09ae0118ebe17b4499';
-const darkSkyExclusions = 'minutely,hourly,alerts,flags';
-const darkSkyUnits = 'si';
+const visualCrossingOptions = {
+  baseUrl: 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline',
+  unitGroup: 'metric',
+  include: 'days, current',
+  key: 'MUSW8DDR9UZL2ZPYRN5VF4YHH',
+  contentType: 'json',
+};
 const googleMapsUrls = 'https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDWfRSVrdwP_pLYXBVDHvh3pSRYUQGFx5Y';
 const { geolocation } = navigator;
 const defaultUnit = 'c';
@@ -98,7 +102,7 @@ function celsiusToFahrenheit(temp) {
 }
 
 function updateCurrentTemperature() {
-  const tempInCelsius = currentWeather.currently.temperature;
+  const tempInCelsius = currentWeather.days[0].temp;
   const temp = (currentUnit === 'c') ? tempInCelsius : celsiusToFahrenheit(tempInCelsius);
   const tempRounded = Math.round(temp);
   temperatureElement.html(`${tempRounded}&deg;`);
@@ -106,12 +110,12 @@ function updateCurrentTemperature() {
 
 function updateForecast(updateIcons) {
   for (let i = 0; i < daysToForecast; i += 1) {
-    const forecast = currentWeather.daily.data[i];
-    const day = (i === 0) ? 'Today' : getDayName(forecast.time);
-    const highInCelsius = forecast.temperatureHigh;
+    const forecast = currentWeather.days[i];
+    const day = (i === 0) ? 'Today' : getDayName(forecast.datetimeEpoch);
+    const highInCelsius = forecast.tempmax;
     const high = (currentUnit === 'c') ? highInCelsius : celsiusToFahrenheit(highInCelsius);
     const highRounded = Math.round(high);
-    const lowInCelsius = forecast.temperatureLow;
+    const lowInCelsius = forecast.tempmin;
     const low = (currentUnit === 'c') ? lowInCelsius : celsiusToFahrenheit(lowInCelsius);
     const lowRounded = Math.round(low);
     $(`.js-day-${i} .js-day`).html(day);
@@ -126,11 +130,11 @@ function updateForecast(updateIcons) {
 function handleGetWeatherSuccess(res) {
   currentWeather = res;
 
-  skycons.add('js-skycon-current', res.currently.icon);
+  skycons.add('js-skycon-current', res.days[0].icon);
 
   updateCurrentTemperature();
 
-  currentConditionElement.html(res.currently.summary);
+  currentConditionElement.html(res.days[0].conditions);
 
   updateForecast(true);
 
@@ -144,9 +148,16 @@ function handleGetWeatherError() {
 }
 
 function getWeather(coords) {
-  const url = `${darkSkyUrl}/${coords.latitude},${coords.longitude}?exclude=${darkSkyExclusions}&units=${darkSkyUnits}`;
+  const {
+    baseUrl,
+    unitGroup,
+    include,
+    key,
+    contentType,
+  } = visualCrossingOptions;
+  const url = `${baseUrl}/${coords.latitude},${coords.longitude}?unitGroup=${unitGroup}&include=${include}&key=${key}&contentType=${contentType}`;
 
-  $.ajax({ url, dataType: 'jsonp' })
+  $.ajax({ url })
     .done(handleGetWeatherSuccess)
     .fail(handleGetWeatherError);
 }
