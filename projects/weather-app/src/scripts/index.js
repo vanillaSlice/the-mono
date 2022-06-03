@@ -102,7 +102,7 @@ function celsiusToFahrenheit(temp) {
 }
 
 function updateCurrentTemperature() {
-  const tempInCelsius = currentWeather.days[0].temp;
+  const tempInCelsius = currentWeather.currentConditions.temp;
   const temp = (currentUnit === 'c') ? tempInCelsius : celsiusToFahrenheit(tempInCelsius);
   const tempRounded = Math.round(temp);
   temperatureElement.html(`${tempRounded}&deg;`);
@@ -130,11 +130,11 @@ function updateForecast(updateIcons) {
 function handleGetWeatherSuccess(res) {
   currentWeather = res;
 
-  skycons.add('js-skycon-current', res.days[0].icon);
+  skycons.add('js-skycon-current', res.currentConditions.icon);
 
   updateCurrentTemperature();
 
-  currentConditionElement.html(res.days[0].conditions);
+  currentConditionElement.html(res.currentConditions.conditions);
 
   updateForecast(true);
 
