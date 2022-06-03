@@ -131,3 +131,16 @@ read down the page.
   * Contains no duplication.
   * Expresses the intent of the programmer.
   * Minimises the number of classes and methods.
+
+## Chapter Thirteen: Concurrency
+
+* Keep your concurrency-related code separate from other code.
+* Limit the access of any data that may be shared.
+* Use copies of data.
+* Threads should be as independent as possible.
+* Know your library.
+* Know your execution models:
+  * *Producer-Consumer*: The producer puts some work on a queue that the consumer completes.
+  * *Readers-Writers*: Writers can't write if a reader is currently reading the data.
+  * *Dining Philosophers*: Workers must acquire multiple resources before doing the work, or give up all resources.
+* Keep synchronized sections small.
