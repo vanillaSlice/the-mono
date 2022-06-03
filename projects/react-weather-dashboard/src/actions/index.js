@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const ROOT_URL = 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast';
+const ROOT_URL = 'https://api.openweathermap.org/data/2.5/forecast';
 
 export const FETCH_WEATHER = 'FETCH_WEATHER';
 
