@@ -1,0 +1,84 @@
+{
+  "name": "react-weather-dashboard",
+  "version": "1.2.0",
+  "description": "A simple weather dashboard written using React and Redux",
+  "keywords": [
+    "weather dashboard",
+    "react",
+    "redux"
+  ],
+  "homepage": "https://reactweatherdashboard.mikelowe.xyz/",
+  "bugs": {
+    "url": "https://github.com/vanillaSlice/ReactWeatherDashboard/issues",
+    "email": "mikelowedev@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Mike Lowe",
+    "email": "mikelowedev@gmail.com",
+    "url": "https://www.mikelowe.xyz/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanillaSlice/ReactWeatherDashboard.git"
+  },
+  "scripts": {
+    "test": "run-s test:*",
+    "test:lint": "run-s test:lint:*",
+    "test:lint:js": "eslint --ext=js --ext=jsx src/",
+    "test:lint:css": "stylelint src/**/*.css",
+    "test:unit": "react-scripts test --env=jsdom --coverage --colors",
+    "coveralls": "cat coverage/lcov.info | coveralls",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "google-map-react": "^1.1.2",
+    "lodash": "^4.17.11",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-fontawesome": "^1.6.1",
+    "react-redux": "^6.0.1",
+    "react-scripts": "2.1.5",
+    "react-sparklines": "^1.7.0",
+    "reactstrap": "^7.1.0",
+    "redux": "^4.0.1",
+    "redux-promise": "^0.6.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.3",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.9.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "npm-run-all": "^4.1.5",
+    "stylelint": "^9.10.1",
+    "stylelint-config-recommended": "^2.1.0"
+  },
+  "private": true,
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.jsx",
+      "src/**/*.js",
+      "!src/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 88,
+        "lines": 90,
+        "statements": 90
+      }
+    }
+  }
+}
