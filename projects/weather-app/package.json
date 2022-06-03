@@ -8,7 +8,7 @@
   ],
   "homepage": "https://weatherapp.mikelowe.xyz/",
   "bugs": {
-    "url": "https://github.com/vanillaSlice/WeatherApp/issues",
+    "url": "https://github.com/vanillaSlice/the-mono/issues",
     "email": "mikelowedev@gmail.com"
   },
   "license": "MIT",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vanillaSlice/WeatherApp.git"
+    "url": "https://github.com/vanillaSlice/the-mono.git"
   },
   "scripts": {
     "test": "run-s test:*",

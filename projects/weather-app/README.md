@@ -11,7 +11,7 @@ A simple weather app. A deployed version can be viewed
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-3.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 
