@@ -1,0 +1,33 @@
+name: Weather App
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/weather-app.yml
+      - projects/weather-app/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/weather-app.yml
+      - projects/weather-app/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/weather-app
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 10
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: projects/weather-app/build
+          production-branch: main
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: 4f4407e8-ba4c-4f25-a94c-c66a0ebc3b88
