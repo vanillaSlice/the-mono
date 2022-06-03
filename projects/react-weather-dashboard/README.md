@@ -9,7 +9,7 @@ A deployed version can be viewed [here](http://reactweatherdashboard.mikelowe.xy
 
 ## Screenshot
 
-![Screenshot](./images/screenshot-1.png)
+![Screenshot](./images/screenshot-2.png)
 
 ## Getting Started
 

@@ -31,7 +31,7 @@ export class WeatherList extends Component {
           <td>
             <Graph data={temperatures} colour="#4ec9b0" />
             <span className="average">
-              avg -
+              avg -&nbsp;
               {avgTemperature}
               &deg;F
             </span>
@@ -39,7 +39,7 @@ export class WeatherList extends Component {
           <td>
             <Graph data={pressures} colour="#ce8c55" />
             <span className="average">
-              avg -
+              avg -&nbsp;
               {avgPressure}
               mbar
             </span>
@@ -47,7 +47,7 @@ export class WeatherList extends Component {
           <td>
             <Graph data={humidities} colour="#9cdcf7" />
             <span className="average">
-              avg -
+              avg -&nbsp;
               {avgHumidity}
               %
             </span>
