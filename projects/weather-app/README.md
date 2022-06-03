@@ -1,8 +1,7 @@
 # Weather App
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/WeatherApp.svg)](https://github.com/vanillaSlice/WeatherApp/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/WeatherApp/master.svg)](https://travis-ci.com/vanillaSlice/WeatherApp)
-[![License](https://img.shields.io/github/license/vanillaSlice/WeatherApp.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Weather%20App/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AWeather-App+branch%3Amain)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 *Intermediate Front End Development Project for FreeCodeCamp.*
 
