@@ -40,7 +40,7 @@ Point your browser to [localhost:1234](http://localhost:1234).
 
 For those of you that are interested, the technology used in this project includes:
 
-* [Dark Sky](https://darksky.net/) (Weather API)
+* [Visual Crossing](https://www.visualcrossing.com/) (Weather API)
 * [Google Geolocation API](https://developers.google.com/maps/documentation/geolocation/intro)
 * [jQuery](https://jquery.com/)
 * [npm](https://www.npmjs.com/) (package management)
