@@ -1,0 +1,19 @@
+.WeatherList th,
+.WeatherList tbody > tr > td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.WeatherList tbody > tr > td {
+  position: relative;
+}
+
+.WeatherList .average {
+  bottom: 0.5rem;
+  font-weight: bold;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  right: 0;
+}

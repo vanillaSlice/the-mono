@@ -24,6 +24,10 @@ flags:
     paths:
       - projects/react-game-of-life
     carryforward: true
+  ReactWeatherDashboard:
+    paths:
+      - projects/react-weather-dashboard
+    carryforward: true
   RecipeBox:
     paths:
       - projects/recipe-box
