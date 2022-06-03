@@ -9,7 +9,7 @@
   ],
   "homepage": "https://reactweatherdashboard.mikelowe.xyz/",
   "bugs": {
-    "url": "https://github.com/vanillaSlice/ReactWeatherDashboard/issues",
+    "url": "https://github.com/vanillaSlice/the-mono/issues",
     "email": "mikelowedev@gmail.com"
   },
   "license": "MIT",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vanillaSlice/ReactWeatherDashboard.git"
+    "url": "https://github.com/vanillaSlice/the-mono.git"
   },
   "scripts": {
     "test": "run-s test:*",
@@ -28,7 +28,6 @@
     "test:lint:js": "eslint --ext=js --ext=jsx src/",
     "test:lint:css": "stylelint src/**/*.css",
     "test:unit": "react-scripts test --env=jsdom --coverage --colors",
-    "coveralls": "cat coverage/lcov.info | coveralls",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
@@ -51,7 +50,6 @@
     "redux-promise": "^0.6.0"
   },
   "devDependencies": {
-    "coveralls": "^3.0.3",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.9.1",
     "eslint-config-airbnb": "^17.1.0",

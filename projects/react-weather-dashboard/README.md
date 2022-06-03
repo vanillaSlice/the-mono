@@ -1,16 +1,15 @@
 # React Weather Dashboard
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/ReactWeatherDashboard.svg)](https://github.com/vanillaSlice/ReactWeatherDashboard/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/ReactWeatherDashboard/master.svg)](https://travis-ci.com/vanillaSlice/ReactWeatherDashboard)
-[![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/ReactWeatherDashboard/master.svg)](https://coveralls.io/github/vanillaSlice/ReactWeatherDashboard?branch=master)
-[![License](https://img.shields.io/github/license/vanillaSlice/ReactWeatherDashboard.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/React%20Weather%20Dashboard/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AReact-Weather-Dashboard+branch%3Amain)
+[![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=ReactWeatherDashboard)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/react-weather-dashboard)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 A simple weather dashboard written using [React](https://reactjs.org/) and [Redux](https://redux.js.org/).
 A deployed version can be viewed [here](http://reactweatherdashboard.mikelowe.xyz/).
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-1.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 

@@ -10,7 +10,7 @@ const AppFooter = () => (
         v
         { version }
         &nbsp;|&nbsp;
-        <a href="https://github.com/vanillaSlice/ReactWeatherDashboard">GitHub</a>
+        <a href="https://github.com/vanillaSlice/the-mono/tree/main/projects/react-weather-dashboard">GitHub</a>
         &nbsp;| Made with 🎧 by&nbsp;
         <a href="https://mikelowe.xyz">Mike</a>
       </small>
