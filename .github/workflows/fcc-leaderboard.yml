@@ -1,0 +1,37 @@
+name: FCC Leaderboard
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/fcc-leaderboard.yml
+      - projects/fcc-leaderboard/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/fcc-leaderboard.yml
+      - projects/fcc-leaderboard/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/fcc-leaderboard
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 10
+      - run: npm ci
+      - run: npm test
+      - uses: codecov/codecov-action@v2
+        with:
+          flags: FCCLeaderboard
+          fail_ci_if_error: true
+      - run: npm run build
+      - uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: projects/fcc-leaderboard/build
+          production-branch: main
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: 11366b4e-a5a0-4cae-9a1f-14aee8bbb686

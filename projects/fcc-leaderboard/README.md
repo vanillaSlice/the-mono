@@ -1,16 +1,15 @@
 # FCC Leaderboard
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/FCCLeaderboard.svg)](https://github.com/vanillaSlice/FCCLeaderboard/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/FCCLeaderboard/master.svg)](https://travis-ci.com/vanillaSlice/FCCLeaderboard)
-[![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/FCCLeaderboard/master.svg)](https://coveralls.io/github/vanillaSlice/FCCLeaderboard?branch=master)
-[![License](https://img.shields.io/github/license/vanillaSlice/FCCLeaderboard.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/FCC%20Leaderboard/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AFCC-Leaderboard+branch%3Amain)
+[![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=FCCLeaderboard)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/fcc-leaderboard)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 A [FreeCodeCamp](https://www.freecodecamp.org/) leaderboard built using [React](https://reactjs.org/).
 A deployed version can be viewed [here](https://fccleaderboard.mikelowe.xyz/).
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-1.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 

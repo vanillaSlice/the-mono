@@ -10,5 +10,5 @@ import testData from './test-data.json';
 configure({ adapter: new Adapter() });
 
 new MockAdapter(axios)
-  .onGet('https://cors-anywhere.herokuapp.com/https://www.freecodecamp.org/forum/latest.json')
+  .onGet('https://www.freecodecamp.org/forum/latest.json')
   .reply(200, testData);
