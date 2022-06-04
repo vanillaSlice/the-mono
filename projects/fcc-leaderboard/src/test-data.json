@@ -4,25 +4,25 @@
       "id": 176913,
       "username": "enjoymrban",
       "name": "",
-      "avatar_template": "/forum/user_avatar/www.freecodecamp.org/enjoymrban/{size}/105914_2.png"
+      "avatar_template": "/user_avatar/www.freecodecamp.org/enjoymrban/{size}/105914_2.png"
     },
     {
       "id": 167047,
       "username": "yoelvis",
       "name": "Yoelvis Jiménez",
-      "avatar_template": "/forum/user_avatar/www.freecodecamp.org/yoelvis/{size}/99065_2.png"
+      "avatar_template": "/user_avatar/www.freecodecamp.org/yoelvis/{size}/99065_2.png"
     },
     {
       "id": 75682,
       "username": "kevinSmith",
       "name": "Kevin Smith",
-      "avatar_template": "/forum/user_avatar/www.freecodecamp.org/kevinsmith/{size}/72934_2.png"
+      "avatar_template": "/user_avatar/www.freecodecamp.org/kevinsmith/{size}/72934_2.png"
     },
     {
       "id": 186521,
       "username": "RobbieC",
       "name": "",
-      "avatar_template": "/forum/user_avatar/www.freecodecamp.org/robbiec/{size}/111208_2.png"
+      "avatar_template": "https://avatars.discourse-cdn.com/v4/letter/p/4da419/{size}.png"
     }
   ],
   "topic_list": {

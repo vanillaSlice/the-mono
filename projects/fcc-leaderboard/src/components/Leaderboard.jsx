@@ -11,7 +11,7 @@ import moment from 'moment';
 import LeaderboardHeader from './LeaderboardHeader';
 import LeaderboardRow from './LeaderboardRow';
 
-const FCC_LATEST_URL = 'https://www.freecodecamp.org/forum/latest.json';
+const FCC_LATEST_URL = 'https://slicecorsanywhere.herokuapp.com/https://www.freecodecamp.org/forum/latest.json';
 
 class Leaderboard extends Component {
   constructor(props) {
@@ -45,8 +45,11 @@ class Leaderboard extends Component {
     const posters = topic.posters.map((poster) => {
       const { users } = this.state;
       const user = users.find(u => u.id === poster.user_id);
+      const avatar = (user.avatar_template.startsWith('/')
+        ? `https://sea1.discourse-cdn.com/freecodecamp${user.avatar_template}`
+        : user.avatar_template).replace('{size}', '128');
       return {
-        avatar: `https://www.freecodecamp.org${user.avatar_template}`.replace('{size}', '128'),
+        avatar,
         href: `https://www.freecodecamp.org/forum/u/${user.username}`,
         id: user.id,
         username: user.username,
