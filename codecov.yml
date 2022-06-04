@@ -4,6 +4,10 @@ coverage:
     patch: off
     project: off
 flags:
+  FCCLeaderboard:
+    paths:
+      - projects/fcc-leaderboard
+    carryforward: true
   GameOfLife:
     paths:
       - projects/game-of-life
