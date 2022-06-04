@@ -10,7 +10,7 @@ const AppFooter = () => (
         v
         { version }
         &nbsp;|&nbsp;
-        <a href="https://github.com/vanillaSlice/FCCLeaderboard">GitHub</a>
+        <a href="https://github.com/vanillaSlice/the-mono/tree/main/projects/fcc-leaderboard">GitHub</a>
         &nbsp;| Made with 🎧 by&nbsp;
         <a href="https://mikelowe.xyz">Mike</a>
       </small>
