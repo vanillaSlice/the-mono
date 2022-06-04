@@ -144,3 +144,8 @@ read down the page.
   * *Readers-Writers*: Writers can't write if a reader is currently reading the data.
   * *Dining Philosophers*: Workers must acquire multiple resources before doing the work, or give up all resources.
 * Keep synchronized sections small.
+
+## Chapter Fourteen: Successive Refinement
+
+* An example of refining a module.
+* It isn't enough to get code working. The next step is to make it clean!
