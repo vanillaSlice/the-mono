@@ -26,21 +26,21 @@ describe('Leaderboard', () => {
     const row1Poster1Link = row1Posters.at(0);
     const row1Poster1Img = row1Poster1Link.find('img');
     expect(row1Poster1Link.props().href).toBe('https://www.freecodecamp.org/forum/u/enjoymrban');
-    expect(row1Poster1Img.props().src).toBe('https://www.freecodecamp.org/forum/user_avatar/www.freecodecamp.org/enjoymrban/128/105914_2.png');
+    expect(row1Poster1Img.props().src).toBe('https://sea1.discourse-cdn.com/freecodecamp/user_avatar/www.freecodecamp.org/enjoymrban/128/105914_2.png');
     expect(row1Poster1Img.props().alt).toBe('enjoymrban');
     expect(row1Poster1Img.props().title).toBe('enjoymrban');
 
     const row1Poster2Link = row1Posters.at(1);
     const row1Poster2Img = row1Poster2Link.find('img');
     expect(row1Poster2Link.props().href).toBe('https://www.freecodecamp.org/forum/u/yoelvis');
-    expect(row1Poster2Img.props().src).toBe('https://www.freecodecamp.org/forum/user_avatar/www.freecodecamp.org/yoelvis/128/99065_2.png');
+    expect(row1Poster2Img.props().src).toBe('https://sea1.discourse-cdn.com/freecodecamp/user_avatar/www.freecodecamp.org/yoelvis/128/99065_2.png');
     expect(row1Poster2Img.props().alt).toBe('yoelvis');
     expect(row1Poster2Img.props().title).toBe('yoelvis');
 
     const row1Poster3Link = row1Posters.at(2);
     const row1Poster3Img = row1Poster3Link.find('img');
     expect(row1Poster3Link.props().href).toBe('https://www.freecodecamp.org/forum/u/kevinSmith');
-    expect(row1Poster3Img.props().src).toBe('https://www.freecodecamp.org/forum/user_avatar/www.freecodecamp.org/kevinsmith/128/72934_2.png');
+    expect(row1Poster3Img.props().src).toBe('https://sea1.discourse-cdn.com/freecodecamp/user_avatar/www.freecodecamp.org/kevinsmith/128/72934_2.png');
     expect(row1Poster3Img.props().alt).toBe('kevinSmith');
     expect(row1Poster3Img.props().title).toBe('kevinSmith');
 
@@ -61,7 +61,7 @@ describe('Leaderboard', () => {
     const row2Poster1Link = row2Posters.at(0);
     const row2Poster1Img = row2Poster1Link.find('img');
     expect(row2Poster1Link.props().href).toBe('https://www.freecodecamp.org/forum/u/RobbieC');
-    expect(row2Poster1Img.props().src).toBe('https://www.freecodecamp.org/forum/user_avatar/www.freecodecamp.org/robbiec/128/111208_2.png');
+    expect(row2Poster1Img.props().src).toBe('https://avatars.discourse-cdn.com/v4/letter/p/4da419/128.png');
     expect(row2Poster1Img.props().alt).toBe('RobbieC');
     expect(row2Poster1Img.props().title).toBe('RobbieC');
 
