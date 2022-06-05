@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% set body_classes='user show' %}
+
+{% block content %}
+  <div class="row user-info">
+    <div class="col-xs-7">
+      <h1 class="display-name">{{ user.display_name }}</h1>
+      {% if user.bio %}
+        <p class="bio">{{ user.bio }}</p>
+      {% endif %}
+      <p class="created">Member since {{ user.created | format_date }}</p>
+    </div>
+    <div class="col-xs-5">
+      <img class="avatar" src="{{ user.avatar_url }}">
+    </div>
+  </div>
+  <hr>
+  <div class="section-header">
+    <h2>{{ user.display_name }}&apos;s posts</h2>
+  </div>
+  <div class="posts row"></div>
+  <div class="text-center">
+    <button type="button" class="load-more hidden btn btn-primary">Load more</button>
+  </div>
+{% endblock %}

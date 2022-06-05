@@ -1,0 +1,44 @@
+name: Tiny
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/tiny.yml
+      - projects/tiny/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/tiny.yml
+      - projects/tiny/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/tiny
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: 3.7.13
+      - run: |
+          pip install -r requirements.txt
+          pip install -r requirements-test.txt
+          ./scripts/lint.sh
+          ./scripts/test.sh
+      # - uses: codecov/codecov-action@v2
+      #   with:
+      #     flags: Tiny
+      #     fail_ci_if_error: true
+  Deploy:
+    if: ${{ github.event_name == 'push' }}
+    needs: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          appdir: projects/tiny
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_app_name: slicetiny
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}
