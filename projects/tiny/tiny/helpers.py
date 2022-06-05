@@ -8,11 +8,14 @@ from bson.errors import InvalidId
 from bson.objectid import ObjectId
 from flask import flash, redirect, request, session, url_for
 from mistune import Markdown
+from mistune.inline_parser import InlineParser
+from mistune.renderers import HTMLRenderer
 from mongoengine.queryset.visitor import Q
 
 from tiny.models import Comment, Post, User
 
-markdown = Markdown(hard_wrap=True)
+renderer = HTMLRenderer()
+markdown = Markdown(renderer, inline=InlineParser(renderer, hard_wrap=True))
 
 def sign_in_required(func):
     """

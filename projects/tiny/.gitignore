@@ -1,4 +1,5 @@
 .coverage
+coverage.xml
 .DS_Store
 .pytest_cache
 .vscode
