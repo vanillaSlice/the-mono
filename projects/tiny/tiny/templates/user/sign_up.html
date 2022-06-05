@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% from '_formhelpers.html' import render_field, render_form_errors %}
+
+{% set body_classes='user sign-up' %}
+
+{% block content %}
+  <div class="form-header plain text-center">
+    <h1>Sign up</h1>
+  </div>
+  {{ render_form_errors(form) }}
+  <form data-toggle="validator" role="form" action="{{ url_for('user.sign_up') }}" method="post">
+    {{ form.csrf_token }}
+    {{ render_field(form.email, type='email', required=True, data_error='Email address is invalid') }}
+    {{ render_field(form.display_name, required=True, maxlength=50) }}
+    {{ render_field(form.password, bottom_help='Minimum of 6 characters', required=True, data_minlength='6') }}
+    {{ render_field(form.confirmation, required=True) }}
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary btn-block">Sign up</button>
+    </div>
+  </form>
+  <div class="text-center">
+    Already have an account? <a class="link" href="{{ url_for('user.sign_in') }}">Sign in</a>.
+  </div>
+{% endblock %}

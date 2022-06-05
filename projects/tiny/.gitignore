@@ -1,0 +1,10 @@
+.coverage
+.DS_Store
+.pytest_cache
+.vscode
+.webassets-cache
+__pycache__
+build
+instance/*
+!instance/config-example.py
+mongodb/data
