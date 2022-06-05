@@ -48,6 +48,10 @@ flags:
     paths:
       - projects/timestamp-microservice
     carryforward: true
+  Tiny:
+    paths:
+      - projects/tiny
+    carryforward: true
   YouTubeViewer:
     paths:
       - projects/youtube-viewer
