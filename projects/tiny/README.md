@@ -1,9 +1,8 @@
 # Tiny
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/tiny.svg)](https://github.com/vanillaSlice/tiny/releases/latest)
-[![Build Status](https://img.shields.io/travis/com/vanillaSlice/tiny/master.svg)](https://travis-ci.com/vanillaSlice/tiny)
-[![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/tiny/master.svg)](https://coveralls.io/github/vanillaSlice/tiny?branch=master)
-[![License](https://img.shields.io/github/license/vanillaSlice/tiny.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Tiny/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ATiny+branch%3Amain)
+[![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=Tiny)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/tiny)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 A small blog app built with [Flask](http://flask.pocoo.org/) and [MongoDB](https://www.mongodb.com/).
 A deployed version can be viewed [here](https://tiny.mikelowe.xyz/).
@@ -11,7 +10,7 @@ A deployed version can be viewed [here](https://tiny.mikelowe.xyz/).
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-1.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 
