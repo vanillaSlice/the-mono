@@ -82,36 +82,24 @@ function createPostCard(post, wrapperCols) {
     wrapperCols = 12;
   }
 
-  var postCard = $(
-    '<div class="post-card-wrapper col-sm-' + wrapperCols + '">' +
-      '<div class="post-card">' +
-        '<div class="col-sm-5 post-image" style="background-image:url(' + post.image_url + ')">' +
-          '<a href="/post/' + post.id  +'/show"></a>' +
-        '</div>' +
-        '<div class="col-sm-7 post-details">' +
-          '<div class="post-details-top">' +
-            '<a href="/post/' + post.id + '/show">' +
-              '<h2 class="title">' + post.title + '</h2>' +
-            '</a>' +
-            '<a href="/post/' + post.id + '/show">' +
-              '<h3 class="lead-paragraph">' + post.lead_paragraph + '</h3>' +
-            '</a>' +
-          '</div>' +
-          '<div class="post-details-bottom">' +
-            '<div class="wrapper">' +
-              '<a href="/user/' + post.author.id + '/show">' +
-                '<img src="' + post.author.avatar_url + '" class="avatar" alt="' + post.author.display_name +'\'s avatar">' +
-              '</a>' +
-            '</div>' +
-            '<div class="wrapper">' +
-              '<a class="author-name" href="/user/' + post.author.id + '/show">' + post.author.display_name + '</a>' +
-              '<span class="created">' + formatDate(post.created) + '</span>' +
-            '</div>' +
-          '</div>' +
-        '</div>' +
-      '</div>' +
-    '</div>'
-  );
+  var postCard =
+    $('<div>', { class: 'post-card-wrapper col-sm-' + wrapperCols })
+      .append($('<div>', { class: 'post-card' })
+        .append($('<div>', { class: 'col-sm-5 post-image', style: 'background-image: url(' + post.image_url + ')' })
+          .append($('<a>', { href: '/post/' + post.id  +'/show' })))
+        .append($('<div>', { class: 'col-sm-7 post-details' })
+          .append($('<div>', { class: 'post-details-top' })
+            .append($('<a>', { href: '/post/' + post.id + '/show' })
+              .append($('<h2>', { class: 'title', text: post.title })))
+            .append($('<a>', { href: '/post/' + post.id + '/show' })
+              .append($('<h3>', { class: 'lead-paragraph', text: post.lead_paragraph }))))
+          .append($('<div>', { class: 'post-details-bottom' })
+            .append($('<div>', { class: 'wrapper' })
+              .append($('<a>', { href: '/user/' + post.author.id + '/show' })
+                .append($('<img>', { src: post.author.avatar_url, class: 'avatar', alt: post.author.display_name + '\'s avatar' }))))
+            .append($('<div>', { class: 'wrapper' })
+              .append($('<a>', { class: 'author-name', href: '/user/' + post.author.id + '/show', text: post.author.display_name }))
+              .append($('<span>', { class: 'created', text: formatDate(post.created) }))))));
 
   // so long titles and paragraphs are truncated
   postCard.find('.title, .lead-paragraph').dotdotdot({ height: 'watch', watch: true });
@@ -155,28 +143,15 @@ CommentLoader.prototype.loadComments = function() {
 };
 
 function createCommentCard(comment) {
-  return (
-    '<div class="comment-card">' +
-      '<div class="author-info">' +
-        '<div class="wrapper">' +
-          '<a class="author-name" href="/user/' + comment.author.id  + '/show">' +
-            '<img class="avatar" src="' + comment.author.avatar_url +'">' +
-          '</a>' +
-        '</div>' +
-        '<div class="wrapper">' +
-          '<a class="author-name" href="/user/' + comment.author.id  + '/show">' +
-            comment.author.display_name +
-          '</a>' +
-          '<span class="date">' +
-            formatDate(comment.created) +
-          '</span>' +
-        '</div>' +
-      '</div>' +
-      '<div class="text">' +
-        comment.text +
-      '</div>' +
-    '</div>'
-  );
+  return $('<div>', { class: 'comment-card' })
+    .append($('<div>', { class: 'author-info' })
+      .append($('<div>', { class: 'wrapper' })
+        .append($('<a>', { class: 'author-name', href: '/user/' + comment.author.id  + '/show' })
+          .append($('<img>', { class: 'avatar', src: comment.author.avatar_url }))))
+      .append($('<div>', { class: 'wrapper' })
+        .append($('<a>', { class: 'author-name', href: '/user/' + comment.author.id  + '/show', text: comment.author.display_name }))
+        .append($('<span>', { class: 'date', text: formatDate(comment.created) }))))
+    .append($('<div>', { class: 'text', text: comment.text }));
 }
 
 $('form').validator().on('submit', function (e) {
@@ -285,11 +260,11 @@ if ($(document.body).hasClass('post')) {
       $.post('/post/preview', {
         'content': $('#content').val()
       }, function(e) {
-        $('#preview-tab').empty().append(
-          '<h1>' + $('#title').val() + '</h1>' +
-          '<p class="lead">' + $('#lead_paragraph').val() + '</p>' +
-          '<img class="post-img" src="' + $('#image_url').val() + '" alt="' + $('#title').val() + '">'
-        ).append(e.html);
+        $('#preview-tab').empty()
+          .append($('<h1>', { text: $('#title').val() }))
+          .append($('<p>', { class: 'lead', text: $('#lead_paragraph').val() }))
+          .append($('<img>', { class: 'post-img', src: $('#image_url').val(), alt: $('#title').val() }))
+          .append(e.html);
       });
     });
   }
