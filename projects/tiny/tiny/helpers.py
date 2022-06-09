@@ -7,15 +7,17 @@ from functools import wraps
 from bson.errors import InvalidId
 from bson.objectid import ObjectId
 from flask import flash, redirect, request, session, url_for
-from mistune import Markdown
-from mistune.inline_parser import InlineParser
-from mistune.renderers import HTMLRenderer
+from mistune import create_markdown
 from mongoengine.queryset.visitor import Q
 
 from tiny.models import Comment, Post, User
 
-renderer = HTMLRenderer()
-markdown = Markdown(renderer, inline=InlineParser(renderer, hard_wrap=True))
+markdown_to_html_renderer = create_markdown(
+    escape=False,
+    hard_wrap=True,
+    renderer='html',
+    plugins=['strikethrough', 'footnotes', 'table'],
+)
 
 def sign_in_required(func):
     """
@@ -215,4 +217,4 @@ def markdown_to_html(value):
     Converts markdown to HTML.
     """
 
-    return markdown(value)
+    return markdown_to_html_renderer(value)
