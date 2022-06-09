@@ -13,7 +13,6 @@ from mongoengine.queryset.visitor import Q
 from tiny.models import Comment, Post, User
 
 markdown_to_html_renderer = create_markdown(
-    escape=False,
     hard_wrap=True,
     renderer='html',
     plugins=['strikethrough', 'footnotes', 'table'],
