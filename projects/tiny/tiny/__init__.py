@@ -11,7 +11,7 @@ from flask_mongoengine import MongoEngine
 from tiny.assets import bundles
 from tiny.helpers import markdown_to_html
 
-version = 'v1.4.2'
+version = 'v1.4.3'
 
 assets = Environment()
 
