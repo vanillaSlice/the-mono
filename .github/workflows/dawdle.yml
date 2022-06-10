@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: 3.x
       - run: |
-          docker build --target test -t test ./docker/test.Dockerfile
+          docker build -t test -f ./docker/test.Dockerfile .
           docker run test
       # - name: Extract Coverage
       #   run: |
