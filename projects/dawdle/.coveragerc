@@ -1,8 +1,0 @@
-[run]
-source=dawdle
-parallel=True
-
-[paths]
-source=
-  dawdle/
-  /opt/app/dawdle/
