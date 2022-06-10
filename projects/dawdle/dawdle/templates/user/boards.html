@@ -1,0 +1,77 @@
+{% extends 'shared/base.html' %}
+
+{% from 'shared/utils.html' import render_form_field, render_select %}
+
+{% block title %}Boards | Dawdle{% endblock %}
+
+{% set container_classes='boards-page has-background-info has-background-pattern-info' %}
+
+{% block content %}
+  <div class="body">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-12-tablet is-10-desktop is-offset-1-desktop">
+          <h2 class="title has-text-white has-alt-text is-3">
+            <i class="fas fa-user"></i> Personal Boards
+          </h2>
+          <div id="{{ current_user.id }}-boards" class="columns is-mobile is-multiline">
+            {% for board in current_user.boards | sort(attribute='name') %}
+              <div class="column is-6-mobile is-4-tablet is-3-desktop">
+                <a href="{{ url_for('board.board_GET', board_id=board.id) }}" class="board">
+                  <div class="board-content box">
+                    <p class="has-alt-text has-text-weight-bold js-shave-lg">
+                      {{ board.name }}
+                    </p>
+                  </div>
+                </a>
+              </div>
+            {% endfor %}
+            <div class="column is-6-mobile is-4-tablet is-3-desktop">
+              <a class="board-button js-modal-trigger" data-target="#js-create-board-modal" role="button" tabindex="0">
+                <div class="board-button-content box has-background-grey-lighter">
+                  <p class="has-alt-text has-text-weight-bold">
+                    Create New Board…
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <form class="js-form js-create-board-form">
+            <div id="js-create-board-modal" class="modal js-modal">
+              <div class="modal-background js-modal-trigger"></div>
+              <div class="modal-card">
+                <header class="modal-card-head">
+                  <p class="modal-card-title has-alt-text">
+                    Create New Board
+                  </p>
+                  <button type="button" class="delete js-modal-trigger" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                  <div class="notification is-danger is-hidden js-form-errors">
+                    <button type="button" class="delete js-notification-close" aria-label="close"></button>
+                    <div class="content">
+                      <ul class="js-form-errors-list"></ul>
+                    </div>
+                  </div>
+                  {{ form.csrf_token }}
+                  {{ render_form_field(form.name,
+                                       type='text',
+                                       minlength='1',
+                                       maxlength='256',
+                                       placeholder='e.g. Death Star Plans') }}
+                  {{ render_select(form.owner) }}
+                  {{ render_select(form.visibility)}}
+                </section>
+                <footer class="modal-card-foot">
+                  <button type="submit" class="button is-fullwidth is-primary has-text-weight-bold js-submit">
+                    Create Board
+                  </button>
+                </footer>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

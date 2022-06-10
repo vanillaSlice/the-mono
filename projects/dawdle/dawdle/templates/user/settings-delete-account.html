@@ -1,0 +1,28 @@
+{% extends 'user/settings.html' %}
+
+{% from 'shared/utils.html' import render_form_errors, render_password %}
+
+{% block title %}Delete Account | Dawdle{% endblock %}
+
+{% set settings_page='delete-account' %}
+
+{% block settings_content %}
+  <h1 class="title">Delete Account</h1>
+  <div class="notification is-danger">
+    <strong>
+      Deleting your account will delete all of your content which you will not be able to retrieve in the future.
+    </strong>
+  </div>
+  {{ render_form_errors(form) }}
+  <form method="POST" class="js-form">
+    {{ form.csrf_token }}
+    {{ render_password(form.password) }}
+    <div class="field content">
+      <div class="control">
+        <button type="submit" class="button is-fullwidth is-danger has-text-weight-bold js-submit">
+          Delete Account
+        </button>
+      </div>
+    </div>
+  </form>
+{% endblock %}

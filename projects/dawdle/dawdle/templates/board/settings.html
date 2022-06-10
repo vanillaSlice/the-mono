@@ -1,0 +1,42 @@
+<div class="quickview js-quickview js-board-settings-quickview" id="board-settings">
+  <header class="quickview-header">
+    <h2 class="title">Board Settings</h2>
+    <button type="button" class="delete js-quickview-close" data-dismiss="quickview" aria-label="close"></button>
+  </header>
+  <div class="quickview-body">
+    <div class="quickview-block">
+      <h3 class="title has-alt-text is-5">Update Board</h3>
+      <form class="js-form js-update-board-form">
+        <div class="notification is-danger is-hidden js-form-errors">
+          <button type="button" class="delete js-notification-close" aria-label="close"></button>
+          <div class="content">
+            <ul class="js-form-errors-list"></ul>
+          </div>
+        </div>
+        {{ update_board_form.csrf_token }}
+        {{ update_board_form.update_board_path }}
+        {{ render_form_field(update_board_form.name,
+                             type='text',
+                             minlength='1',
+                             maxlength='256',
+                             placeholder='e.g. Death Star Plans') }}
+        {{ render_select(update_board_form.owner) }}
+        {{ render_select(update_board_form.visibility)}}
+        <div class="field content">
+          <div class="control">
+            <button type="submit" class="button is-fullwidth is-primary has-text-weight-bold js-submit">
+              Update Board
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <hr />
+    <div class="quickview-block">
+      <h3 class="title has-alt-text is-5">Danger Zone</h3>
+      <button type="button" class="button is-fullwidth is-danger has-text-weight-bold js-modal-trigger" data-target="#js-delete-board-modal">
+        Delete Board
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+{% extends 'shared/base.html' %}
+
+{% set container_classes='home-page hero is-primary is-fullheight-with-navbar' %}
+
+{% block content %}
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-multiline">
+        <div class="column is-6-tablet is-offset-3-tablet is-4-desktop is-offset-4-desktop">
+          <img src="{{ url_for('static', filename='images/home/home.svg') }}"
+            alt="Dawdle: A place to organise your projects">
+        </div>
+        <div class="column is-12 has-text-centered">
+          <h1 class="title is-1">
+            Welcome to Dawdle!
+          </h1>
+          <h2 class="subtitle is-4 has-text-white has-alt-text">
+            A place to organise your projects.
+          </h2>
+          <div class="buttons is-centered">
+            <a class="button is-info has-text-weight-bold" href="{{ url_for('auth.sign_up_GET') }}">
+              Sign Up
+            </a>
+            <a class="button is-info has-text-weight-bold is-inverted" href="{{ url_for('auth.login_GET') }}">
+              Log In
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

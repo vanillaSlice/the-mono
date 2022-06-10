@@ -1,0 +1,51 @@
+{% extends 'shared/base.html' %}
+
+{% from 'shared/utils.html' import render_form_errors, render_form_field, render_textarea %}
+
+{% block title %}Contact | Dawdle{% endblock %}
+
+{% set container_classes='contact-page hero has-background-info has-background-pattern-info is-fullheight-with-navbar' %}
+
+{% block content %}
+  <div class="hero-body">
+    <div class="container">
+      <div class="column is-10-tablet is-offset-1-tablet is-6-desktop is-offset-3-desktop is-paddingless">
+        <div class="box">
+          <h1 class="title">
+            Contact Us
+          </h1>
+          <h2 class="subtitle">
+            Got a question? Feel free to send us a message.
+          </h2>
+          {{ render_form_errors(form) }}
+          <form method="POST" class="content js-form">
+            {{ form.csrf_token }}
+            {{ render_form_field(form.email,
+                                 type='email',
+                                 placeholder='e.g. yoda@dagobah.com',
+                                 left_icon_classes='fas fa-envelope') }}
+            {{ render_form_field(form.subject,
+                                 type='text',
+                                 minlength='1',
+                                 maxlength='256',
+                                 placeholder='e.g. The Force',
+                                 left_icon_classes='fas fa-pencil-alt') }}
+            {{ render_textarea(form.message,
+                               rows='10',
+                               minlength='1',
+                               maxlength='1000',
+                               placeholder='e.g. May the Force be with you.',
+                               left_icon_classes='fas fa-pencil-alt') }}
+            <div class="field content">
+              <div class="control">
+                <button type="submit" class="button is-fullwidth is-primary has-text-weight-bold js-submit">
+                  Send
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

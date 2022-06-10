@@ -1,0 +1,54 @@
+<header class="header">
+  <nav class="navbar is-transparent js-navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="{{ url_for('home.index_GET') }}">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Dawdle: A place to organise your projects"
+          width="112" height="28">
+      </a>
+      <a role="button" class="navbar-burger js-navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu js-navbar-menu">
+      <div class="navbar-start">
+        {% if current_user.is_authenticated %}
+          <a class="navbar-item" href="{{ url_for('user.boards_GET') }}">
+            Boards
+          </a>
+        {% endif %}
+      </div>
+      <div class="navbar-end">
+        {% if current_user.is_authenticated %}
+          <div class="navbar-item has-dropdown is-hoverable">
+            <div class="navbar-link user-link">
+              <span class="user-icon has-background-primary has-text-white has-alt-text">
+                {{ current_user.initials }}
+              </span>
+            </div>
+            <div class="navbar-dropdown is-right">
+              <a class="navbar-item" href="{{ url_for('user.settings_GET') }}">
+                Settings
+              </a>
+              <a class="navbar-item" href="{{ url_for('auth.logout_GET') }}">
+                Log Out
+              </a>
+            </div>
+          </div>
+        {% else %}
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary has-text-weight-bold" href="{{ url_for('auth.sign_up_GET') }}">
+                Sign Up
+              </a>
+              <a class="button is-light has-text-weight-bold" href="{{ url_for('auth.login_GET') }}">
+                Log In
+              </a>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </nav>
+</header>

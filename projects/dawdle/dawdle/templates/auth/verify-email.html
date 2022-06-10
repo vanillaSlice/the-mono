@@ -1,0 +1,19 @@
+Hello {{ user.name }},
+<br />
+<br />
+Please <a href="{{ url_for('auth.verify_GET', token=token, next=redirect_target, _external=True) }}">click here</a> to
+verify your email address.
+<br />
+<br />
+If you did not initiate this request, you can ignore this email.
+<br />
+<br />
+Sincerely,
+<br />
+<br />
+The Dawdle Team
+<br />
+<a href="{{ url_for('home.index_GET', _external=True) }}">
+  <img src="https://drive.google.com/uc?export=view&id=1KuEzjfUDdFGo0d-FFLl1aSZZa71FoSrs"
+    alt="Dawdle: A place to organise your projects" width="112" height="32">
+</a>

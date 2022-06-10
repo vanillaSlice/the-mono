@@ -1,0 +1,38 @@
+{% extends 'shared/base.html' %}
+
+{% set container_classes='error-page hero is-danger is-fullheight-with-navbar' %}
+
+{% block content %}
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-multiline">
+        <div class="column is-6-tablet is-offset-3-tablet is-4-desktop is-offset-4-desktop">
+          <img src="{{ url_for('static', filename='images/error/{}.svg'.format(error.code)) }}"
+            alt="{{ '{}: {}'.format(error.code, error.name) }}'">
+        </div>
+        <div class="column is-12 has-text-centered">
+          <h1 class="title is-1">
+            {{ error_title }}
+          </h1>
+          <h2 class="subtitle is-4 has-text-white has-alt-text">
+            {{ error_subtitle }}
+          </h2>
+          <div class="buttons is-centered">
+            <a class="button is-link has-text-weight-bold" href="{{ url_for('contact.index_GET') }}">
+              <span class="icon is-small">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span>Contact Us</span>
+            </a>
+            <a class="button is-link has-text-weight-bold" href="{{ url_for('home.index_GET') }}">
+              <span class="icon is-small">
+                <i class="fas fa-home"></i>
+              </span>
+              <span>Take Me Home</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

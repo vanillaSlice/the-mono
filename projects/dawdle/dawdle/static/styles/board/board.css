@@ -1,0 +1,51 @@
+.board-page {
+  min-height: calc(100vh - 3.25rem);
+}
+
+.board-page .body {
+  padding: 1.5rem;
+}
+
+.board-page .board-columns {
+  height: calc(100vh - 10rem);
+  overflow-x: auto;
+}
+
+.board-page .board-column {
+  max-width: 18rem;
+  min-width: 18rem;
+  width: 18rem;
+}
+
+.board-page .board-column-outline {
+  background-color: transparent;
+  border: #fff 3px solid;
+  color: #fff;
+  overflow-x: auto;
+}
+
+.board-page .create-column-button-content {
+  background-color: transparent;
+  border: #fff 3px dashed;
+  color: #fff;
+}
+
+.board-page .create-column-button:focus .create-column-button-content,
+.board-page .create-column-button:hover .create-column-button-content {
+  background-color: #fff !important;
+  color: #3298dc !important;
+}
+
+.board-page .board-card {
+  cursor: initial;
+}
+
+@media (min-width: 1024px) {
+  .board-page .board-card {
+    cursor: pointer;
+  }
+}
+
+.board-page .card-container {
+  align-content: start;
+}

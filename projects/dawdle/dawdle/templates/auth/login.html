@@ -1,0 +1,42 @@
+{% extends 'shared/base.html' %}
+
+{% from 'shared/utils.html' import render_checkbox, render_form_errors, render_form_field, render_password %}
+
+{% block title %}Log In | Dawdle{% endblock %}
+
+{% set container_classes='auth-page hero has-background-info has-background-pattern-info is-fullheight-with-navbar' %}
+
+{% block content %}
+  <div class="hero-body">
+    <div class="container">
+      <div class="column is-10-tablet is-offset-1-tablet is-6-desktop is-offset-3-desktop is-paddingless">
+        <div class="box">
+          <h1 class="title">
+            Log In to Dawdle
+          </h1>
+          <h2 class="subtitle">
+            <a href="{{ url_for('auth.sign_up_GET') }}">or create an account</a>
+          </h2>
+          {{ render_form_errors(form) }}
+          <form method="POST" class="content js-form">
+            {{ form.csrf_token }}
+            {{ render_form_field(form.email,
+                                 type='email',
+                                 placeholder='e.g. han@thefalcon.com',
+                                 left_icon_classes='fas fa-envelope') }}
+            {{ render_password(form.password) }}
+            {{ render_checkbox(form.remember_me) }}
+            <div class="field content">
+              <div class="control">
+                <button type="submit" class="button is-fullwidth is-primary has-text-weight-bold js-submit">
+                  Log In
+                </button>
+              </div>
+            </div>
+          </form>
+          <a href="{{ url_for('auth.reset_password_request_GET') }}">Forgot your password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

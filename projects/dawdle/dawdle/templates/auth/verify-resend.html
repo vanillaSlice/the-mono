@@ -1,0 +1,40 @@
+{% extends 'shared/base.html' %}
+
+{% from 'shared/utils.html' import render_form_errors, render_form_field %}
+
+{% block title %}Resend Verification | Dawdle{% endblock %}
+
+{% set container_classes='auth-page hero has-background-info has-background-pattern-info is-fullheight-with-navbar' %}
+
+{% block content %}
+  <div class="hero-body">
+    <div class="container">
+      <div class="column is-10-tablet is-offset-1-tablet is-6-desktop is-offset-3-desktop is-paddingless">
+        <div class="box">
+          <h1 class="title">
+            Verify Your Dawdle Account
+          </h1>
+          <h2 class="subtitle">
+            If you didn't receive an email, submit your email address and we'll send you a
+            link to verify your account.
+          </h2>
+          {{ render_form_errors(form) }}
+          <form method="POST" class="js-form">
+            {{ form.csrf_token }}
+            {{ render_form_field(form.email,
+                                 type='email',
+                                 placeholder='e.g. leia@alderaan.com',
+                                 left_icon_classes='fas fa-envelope') }}
+            <div class="field">
+              <div class="control">
+                <button type="submit" class="button is-fullwidth is-primary has-text-weight-bold js-submit">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

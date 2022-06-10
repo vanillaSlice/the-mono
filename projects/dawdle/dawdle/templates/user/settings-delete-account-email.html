@@ -1,0 +1,21 @@
+Hello {{ user.name }},
+<br />
+<br />
+Your Dawdle account has been deleted.
+<br />
+<br />
+We're sorry to see you go :(
+<br />
+<br />
+You can <a href="{{ url_for('auth.sign_up_GET', _external=True) }}">sign up</a> again anytime!
+<br />
+<br />
+Sincerely,
+<br />
+<br />
+The Dawdle Team
+<br />
+<a href="{{ url_for('home.index_GET', _external=True) }}">
+  <img src="https://drive.google.com/uc?export=view&id=1KuEzjfUDdFGo0d-FFLl1aSZZa71FoSrs"
+    alt="Dawdle: A place to organise your projects" width="112" height="32">
+</a>
