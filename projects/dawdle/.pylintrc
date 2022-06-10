@@ -2,7 +2,8 @@
 max-line-length=79
 
 [MESSAGES CONTROL]
-disable=broad-except,
+disable=assigning-non-slot,
+        broad-except,
         duplicate-code,
         import-outside-toplevel,
         invalid-name,
