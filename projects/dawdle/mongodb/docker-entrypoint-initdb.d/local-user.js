@@ -1,4 +1,4 @@
-db = db.getSiblingDB('dawdle');
+db = db.getSiblingDB('admin');
 
 db.createUser({
   'user': 'local-user',
@@ -6,7 +6,7 @@ db.createUser({
   'roles': [
     {
       'role': 'readWrite',
-      'db': 'dawdle',
-    },
-  ],
+      'db': 'admin'
+    }
+  ]
 });
