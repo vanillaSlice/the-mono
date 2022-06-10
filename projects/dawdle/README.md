@@ -1,9 +1,8 @@
 # Dawdle
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/dawdle.svg)](https://github.com/vanillaSlice/dawdle/releases/latest)
-[![Release Status](https://img.shields.io/github/workflow/status/vanillaSlice/dawdle/Release/master?label=release)](https://github.com/vanillaSlice/dawdle/actions?query=workflow%3A%22Release%22+branch%3Amaster)
-[![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/dawdle/master.svg)](https://coveralls.io/github/vanillaSlice/dawdle?branch=master)
-[![License](https://img.shields.io/github/license/vanillaSlice/dawdle.svg)](../LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Dawdle/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ADawdle+branch%3Amain)
+[![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=Dawdle)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/dawdle)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 A project organisation tool built with [Flask](http://flask.pocoo.org/).
 A deployed version can be viewed [here](https://dawdle.mikelowe.xyz/) (it's running on Heroku so may take a moment to
@@ -11,7 +10,7 @@ wake up).
 
 ## Screenshot
 
-![Screenshot](images/screenshot-1.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Configuration
 

@@ -28,20 +28,20 @@ jobs:
           pip install coverage
           coverage combine
           coverage xml
-      # - uses: codecov/codecov-action@v2
-      #   with:
-      #     flags: Dawdle
-      #     fail_ci_if_error: true
-
-  # Deploy:
-  #   if: ${{ github.event_name == 'push' }}
-  #   needs: Build
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #     - uses: akhileshns/heroku-deploy@v3.12.12
-  #       with:
-  #         appdir: projects/dawdle
-  #         heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-  #         heroku_app_name: dawdle
-  #         heroku_email: ${{ secrets.HEROKU_EMAIL }}
+      - uses: codecov/codecov-action@v2
+        with:
+          flags: Dawdle
+          fail_ci_if_error: true
+  Deploy:
+    if: ${{ github.event_name == 'push' }}
+    needs: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          appdir: projects/dawdle
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_app_name: dawdle
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}
+          usedocker: true
