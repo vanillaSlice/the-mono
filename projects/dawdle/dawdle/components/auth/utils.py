@@ -35,15 +35,15 @@ def send_verification_email(user, redirect_target=None):
         )
         mail.send(msg)
         flash(
-            'A verification email has been sent to {}. Please verify your '
-            'email before logging in to Dawdle.'.format(user.email),
+            f'A verification email has been sent to {user.email}. Please '
+            'verify your email before logging in to Dawdle.',
             'info',
         )
         return True
     except Exception:
         flash(
-            'Could not send a verification email to {}. Please try again.'
-            .format(user.email),
+            f'Could not send a verification email to {user.email}. Please '
+            'try again.',
             'danger',
         )
         return False
@@ -80,15 +80,15 @@ def send_password_reset_email(user):
         )
         mail.send(msg)
         flash(
-            'A password reset email has been sent to {}. This will expire in '
-            '10 minutes.'.format(user.email),
+            f'A password reset email has been sent to {user.email}. This will '
+            'expire in 10 minutes.',
             'info',
         )
         return True
     except Exception:
         flash(
-            'Could not send a password reset email to {}. Please try again.'
-            .format(user.email),
+            f'Could not send a password reset email to {user.email}. Please '
+            'try again.',
             'danger',
         )
         return False

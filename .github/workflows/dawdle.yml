@@ -28,18 +28,10 @@ jobs:
           pip install coverage
           coverage combine
           coverage xml
-      # - name: Upload Coverage
-      #   uses: codecov/codecov-action@v2
+      # - uses: codecov/codecov-action@v2
       #   with:
       #     flags: Dawdle
       #     fail_ci_if_error: true
-
-
-      # - run: |
-      #     pip install -r requirements.txt
-      #     pip install -r requirements-test.txt
-      #     ./scripts/lint.sh
-      #     ./scripts/test.sh
 
   # Deploy:
   #   if: ${{ github.event_name == 'push' }}
@@ -49,7 +41,7 @@ jobs:
   #     - uses: actions/checkout@v3
   #     - uses: akhileshns/heroku-deploy@v3.12.12
   #       with:
-  #         appdir: projects/tiny
+  #         appdir: projects/dawdle
   #         heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-  #         heroku_app_name: slicetiny
+  #         heroku_app_name: dawdle
   #         heroku_email: ${{ secrets.HEROKU_EMAIL }}

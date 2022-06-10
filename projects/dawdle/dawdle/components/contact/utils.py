@@ -10,7 +10,7 @@ def send_contact_emails(email, subject, message):
         # send email to us
         recipients = [current_app.config['CONTACT_EMAIL']]
         msg = Message(subject, sender=get_mail_sender(), recipients=recipients)
-        msg.body = 'From: {}\n\n{}'.format(email, message)
+        msg.body = f'From: {email}\n\n{message}'
         mail.send(msg)
 
         # send email to user saying we've received their message

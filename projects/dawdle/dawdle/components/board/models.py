@@ -12,7 +12,7 @@ _board_type = namedtuple('BoardType', 'id, display_name')
 
 class BoardType:
     PERSONAL = _board_type('personal', 'Personal')
-    # TODO add TEAM type # pylint: disable=fixme
+    # TODO add TEAM type
 
 
 BOARD_TYPES = [BoardType.PERSONAL]
@@ -23,7 +23,7 @@ _board_visibility = namedtuple('BoardVisibility', 'id, display_name')
 
 class BoardVisibility:
     PRIVATE = _board_visibility('private', 'Private')
-    # TODO add PUBLIC visibility # pylint: disable=fixme
+    # TODO add PUBLIC visibility
 
 
 BOARD_VISIBILITIES = [BoardVisibility.PRIVATE]
@@ -51,7 +51,7 @@ class Board(Document):
     created = DateTimeField(required=True, default=datetime.utcnow)
     created_by = ObjectIdField(required=True)
     name = StringField(required=True, min_length=1, max_length=256)
-    # TODO add last updated field # pylint: disable=fixme
+    # TODO add last updated field
     owner_id = ObjectIdField(required=True)
     type = StringField(required=True)
     visibility = StringField(required=True)

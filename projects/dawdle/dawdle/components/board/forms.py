@@ -38,7 +38,7 @@ class CreateBoardForm(FlaskForm):
 
     def __init__(self, *args, **kwargs):
         super(CreateBoardForm, self).__init__(*args, **kwargs)
-        # TODO add teams to choices # pylint: disable=fixme
+        # TODO add teams to choices
         self.owner.choices = [(str(current_user.id), 'Me')]
 
 
@@ -81,7 +81,7 @@ class UpdateBoardForm(FlaskForm):
 
     def __init__(self, *args, **kwargs):
         super(UpdateBoardForm, self).__init__(*args, **kwargs)
-        # TODO add teams to choices # pylint: disable=fixme
+        # TODO add teams to choices
         self.owner.choices = [(str(current_user.id), 'Me')]
 
     def update_needed(self, board):

@@ -13,7 +13,7 @@ class Column(Document):
     cards = ListField(ReferenceField(Card, reverse_delete_rule=PULL))
     created = DateTimeField(required=True, default=datetime.utcnow)
     created_by = ObjectIdField(required=True)
-    # TODO add last updated field # pylint: disable=fixme
+    # TODO add last updated field
     name = StringField(required=True, min_length=1, max_length=256)
 
     def delete(self, signal_kwargs=None, **write_concern):

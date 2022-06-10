@@ -108,8 +108,8 @@ def card_move_POST(card, column, column_id, **_):
         new_column.cards.insert(0, card)
     else:
         added_card = False
-        for i in range(len(new_column.cards)):
-            if new_column.cards[i].id == prev_card_id:
+        for i, new_column_card in enumerate(new_column.cards):
+            if new_column_card.id == prev_card_id:
                 new_column.cards.insert(i + 1, card)
                 added_card = True
                 break

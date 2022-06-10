@@ -352,8 +352,8 @@ class TestCard(TestBase):
         if 'prev_card_id' in data:
             prev_card_id = to_ObjectId(data['prev_card_id'])
             found = False
-            for i in range(len(new_column.cards)):
-                if new_column.cards[i].id == prev_card_id:
+            for i, new_column_card in enumerate(new_column.cards):
+                if new_column_card.id == prev_card_id:
                     expected_index = i + 1
                     found = True
                     break

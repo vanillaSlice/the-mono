@@ -92,8 +92,8 @@ class TestBoard(TestBase):
         owner = get_owner_from_id(data['owner'])
         assert response.status_code == 201
         assert response_json['url'] == \
-            '/board/{}?message=New+board+has+been+created.' \
-            '&category=success'.format(board.id)
+            f'/board/{board.id}?message=New+board+has+been+created.' \
+            '&category=success'
         assert board.created_by == self.user.id
         assert board.name == data['name']
         assert str(board.owner_id) == data['owner']
