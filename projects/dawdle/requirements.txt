@@ -12,3 +12,4 @@ Jinja2==3.0.3
 jsmin==2.2.2
 mongoengine==0.20.0
 passlib==1.7.2
+werkzeug==2.0.3

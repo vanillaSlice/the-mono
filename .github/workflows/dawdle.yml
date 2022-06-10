@@ -24,12 +24,10 @@ jobs:
       - run: |
           docker build -t test -f ./docker/test.Dockerfile .
           docker run test
-      # - name: Extract Coverage
-      #   run: |
-      #     docker cp $(docker ps -l -q):/opt/app/.coverage .coverage.tmp
-      #     pip install coverage
-      #     coverage combine
-      #     coverage xml
+          docker cp $(docker ps -l -q):/opt/app/.coverage .coverage.tmp
+          pip install coverage
+          coverage combine
+          coverage xml
       # - name: Upload Coverage
       #   uses: codecov/codecov-action@v2
       #   with:
