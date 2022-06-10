@@ -15,7 +15,7 @@ class CreateCardForm(FlaskForm):
                 message='Card name must be between 1 and 256 characters',
             ),
         ],
-        filters=[lambda s: s.strip()],
+        filters=[lambda s: s.strip() if s else None],
     )
 
 
@@ -36,5 +36,5 @@ class UpdateCardForm(FlaskForm):
                 message='Card name must be between 1 and 256 characters',
             ),
         ],
-        filters=[lambda s: s.strip()],
+        filters=[lambda s: s.strip() if s else None],
     )

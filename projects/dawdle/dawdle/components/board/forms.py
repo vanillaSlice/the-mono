@@ -18,7 +18,7 @@ class CreateBoardForm(FlaskForm):
                 message='Board name must be between 1 and 256 characters',
             ),
         ],
-        filters=[lambda s: s.strip()],
+        filters=[lambda s: s.strip() if s else None],
     )
 
     owner = SelectField(
@@ -61,7 +61,7 @@ class UpdateBoardForm(FlaskForm):
                 message='Board name must be between 1 and 256 characters',
             ),
         ],
-        filters=[lambda s: s.strip()],
+        filters=[lambda s: s.strip() if s else None],
     )
 
     owner = SelectField(

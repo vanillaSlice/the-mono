@@ -18,7 +18,7 @@ class SignUpForm(FlaskForm):
                 message='Your name must be between 1 and 50 characters',
             ),
         ],
-        filters=[lambda s: ' '.join(s.split())],
+        filters=[lambda s: ' '.join(s.split()) if s else None],
     )
 
     email = StringField(

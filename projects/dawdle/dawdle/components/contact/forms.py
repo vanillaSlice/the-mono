@@ -23,7 +23,7 @@ class ContactForm(FlaskForm):
                 message='Subject must be between 1 and 256 characters',
             ),
         ],
-        filters=[lambda s: ' '.join(s.split())],
+        filters=[lambda s: ' '.join(s.split()) if s else None],
     )
 
     message = TextAreaField(
@@ -36,5 +36,5 @@ class ContactForm(FlaskForm):
                 message='Message must be between 1 and 1000 characters',
             ),
         ],
-        filters=[lambda s: s.strip()],
+        filters=[lambda s: s.strip() if s else None],
     )

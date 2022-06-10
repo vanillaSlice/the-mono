@@ -17,7 +17,7 @@ class CreateColumnForm(FlaskForm):
                 message='Column name must be between 1 and 256 characters',
             ),
         ],
-        filters=[lambda s: s.strip()],
+        filters=[lambda s: s.strip() if s else None],
     )
 
 
@@ -38,5 +38,5 @@ class UpdateColumnForm(FlaskForm):
                 message='Column name must be between 1 and 256 characters',
             ),
         ],
-        filters=[lambda s: s.strip()],
+        filters=[lambda s: s.strip() if s else None],
     )

@@ -19,7 +19,7 @@ class UpdateAccountDetailsForm(FlaskForm):
                 message='Your name must be between 1 and 50 characters',
             ),
         ],
-        filters=[lambda s: ' '.join(s.split())],
+        filters=[lambda s: ' '.join(s.split()) if s else None],
     )
 
     initials = StringField(
@@ -32,7 +32,7 @@ class UpdateAccountDetailsForm(FlaskForm):
                 message='Your initials must be between 1 and 4 characters',
             ),
         ],
-        filters=[lambda s: ''.join(s.split()).upper()],
+        filters=[lambda s: ''.join(s.split()).upper() if s else None],
     )
 
     def update_needed(self):
