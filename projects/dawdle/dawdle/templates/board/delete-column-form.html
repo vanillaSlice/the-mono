@@ -1,0 +1,32 @@
+<form class="js-form js-delete-column-form">
+  <div id="js-delete-column-modal" class="modal js-modal">
+    <div class="modal-background js-modal-trigger"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title has-alt-text">
+          Delete Column
+        </p>
+        <button type="button" class="delete js-modal-trigger" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="notification is-danger is-hidden js-form-errors">
+          <button type="button" class="delete js-notification-close" aria-label="close"></button>
+          <div class="content">
+            <ul class="js-form-errors-list"></ul>
+          </div>
+        </div>
+        <div class="notification is-danger is-marginless">
+          <strong>
+            Deleting this column will delete all of its content which you will not be able to retrieve in the future.
+          </strong>
+        </div>
+        {{ delete_column_form.csrf_token }}
+      </section>
+      <footer class="modal-card-foot">
+        <button type="submit" class="button is-fullwidth is-danger has-text-weight-bold js-submit">
+          Delete Column
+        </button>
+      </footer>
+    </div>
+  </div>
+</form>

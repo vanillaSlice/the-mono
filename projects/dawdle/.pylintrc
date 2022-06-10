@@ -1,0 +1,15 @@
+[MASTER]
+max-line-length=79
+
+[MESSAGES CONTROL]
+disable=assigning-non-slot,
+        broad-except,
+        duplicate-code,
+        import-outside-toplevel,
+        invalid-name,
+        fixme,
+        missing-docstring,
+        no-member,
+        super-with-arguments,
+        too-few-public-methods,
+        too-many-public-methods,

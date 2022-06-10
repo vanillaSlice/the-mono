@@ -1,0 +1,31 @@
+<div class="js-board-card board-card column is-12" data-card-id="{{ card.id }}" data-card-name="{{ card.name }}">
+  <div class="box px-4 py-4">
+    <div class="columns is-mobile">
+      <div class="column is-9">
+        <h2 class="has-alt-text has-text-weight-bold js-card-name">{{ card.name }}</h2>
+      </div>
+      <div class="column is-3">
+        <div class="dropdown is-hoverable is-right is-pulled-right">
+          <div class="dropdown-trigger">
+            <a class="has-text-info" aria-haspopup="true" aria-controls="dropdown-menu" aria-label="dropdown menu">
+              <span class="icon is-small">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item js-modal-trigger js-update-card-modal-trigger" data-target="#js-update-card-modal">
+                Update Card
+              </a>
+              <hr class="dropdown-divider">
+              <a href="#" class="dropdown-item js-modal-trigger js-delete-card-modal-trigger" data-target="#js-delete-card-modal">
+                Delete Card
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

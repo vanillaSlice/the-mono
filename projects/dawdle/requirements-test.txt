@@ -1,0 +1,6 @@
+Faker==13.12.1
+mongomock==4.0.0
+pycodestyle==2.8.0
+pylint==2.14.1
+pytest==7.1.2
+pytest-cov==3.0.0

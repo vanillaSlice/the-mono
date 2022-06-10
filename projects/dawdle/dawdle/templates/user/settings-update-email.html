@@ -1,0 +1,27 @@
+{% extends 'user/settings.html' %}
+
+{% from 'shared/utils.html' import render_form_errors, render_form_field, render_password %}
+
+{% block title %}Update Email | Dawdle{% endblock %}
+
+{% set settings_page='update-email' %}
+
+{% block settings_content %}
+  <h1 class="title">Update Email</h1>
+  {{ render_form_errors(form) }}
+  <form method="POST" class="js-form">
+    {{ form.csrf_token }}
+    {{ render_form_field(form.email,
+                         type='email',
+                         placeholder='e.g. chewie@thefalcon.com',
+                         left_icon_classes='fas fa-envelope') }}
+    {{ render_password(form.password) }}
+    <div class="field content">
+      <div class="control">
+        <button type="submit" class="button is-fullwidth is-primary has-text-weight-bold js-submit">
+          Update Email
+        </button>
+      </div>
+    </div>
+  </form>
+{% endblock %}

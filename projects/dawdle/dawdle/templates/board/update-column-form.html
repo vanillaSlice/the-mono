@@ -1,0 +1,32 @@
+<form class="js-form js-update-column-form">
+  <div id="js-update-column-modal" class="modal js-modal">
+    <div class="modal-background js-modal-trigger"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title has-alt-text">
+          Update Column
+        </p>
+        <button type="button" class="delete js-modal-trigger" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="notification is-danger is-hidden js-form-errors">
+          <button type="button" class="delete js-notification-close" aria-label="close"></button>
+          <div class="content">
+            <ul class="js-form-errors-list"></ul>
+          </div>
+        </div>
+        {{ update_column_form.csrf_token }}
+        {{ render_form_field(create_column_form.name,
+                             type='text',
+                             minlength='1',
+                             maxlength='256',
+                             placeholder='e.g. Under Construction') }}
+      </section>
+      <footer class="modal-card-foot">
+        <button type="submit" class="button is-fullwidth is-primary has-text-weight-bold js-submit">
+          Update Column
+        </button>
+      </footer>
+    </div>
+  </div>
+</form>

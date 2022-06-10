@@ -1,0 +1,50 @@
+{% extends 'shared/base.html' %}
+
+{% from 'shared/utils.html' import render_form_field, render_select %}
+
+{% block title %}{{ board.name }} | Dawdle{% endblock %}
+
+{% set container_classes='board-page has-background-info has-background-pattern-info' %}
+
+{% block content %}
+  <div class="body">
+    <div class="columns is-vcentered is-mobile">
+      <div class="column is-9">
+        <h1 class="title has-text-white has-alt-text is-3 js-shave js-board-name">
+          {{ board.name }}
+        </h1>
+      </div>
+      <div class="column is-3">
+        <button class="button is-info is-inverted is-medium is-pulled-right" data-show="quickview" data-target="board-settings" aria-label="board settings">
+          <span class="icon is-medium">
+            <i class="fas fa-cog" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="board-columns columns is-mobile pb-2 mb-0">
+      {% for column in board.columns %}
+        {% include 'board/column.html' %}
+      {% endfor %}
+      <div class="board-column column is-12 js-create-new-column-container">
+        <a class="create-column-button js-modal-trigger" data-target="#js-create-column-modal" role="button" tabindex="0">
+          <div class="create-column-button-content has-background-info box is-fullwidth">
+            <p class="has-alt-text has-text-weight-bold">
+              <i class="fas fa-plus" aria-hidden="true"></i> Create New Column
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    {% include 'board/create-column-form.html' %}
+    {% include 'board/update-column-form.html' %}
+    {% include 'board/delete-column-form.html' %}
+    {% include 'board/create-card-form.html' %}
+    {% include 'board/update-card-form.html' %}
+    {% include 'board/delete-card-form.html' %}
+    {% include 'board/settings.html' %}
+    {% include 'board/delete-board-form.html' %}
+  </div>
+{% endblock %}

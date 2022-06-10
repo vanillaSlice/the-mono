@@ -1,0 +1,43 @@
+<div class="board-column column is-fullheight is-12 js-board-column" data-column-id="{{ column.id }}" data-column-name="{{ column.name }}">
+  <div class="board-column-outline has-background-info box is-fullwidth is-fullheight px-4 py-4">
+    <div class="columns is-vcentered is-mobile">
+      <div class="column is-9">
+        <h2 class="title is-6 has-alt-text has-text-white js-shave-sm js-column-name">{{ column.name }}</h2>
+      </div>
+      <div class="column is-3">
+        <div class="dropdown is-hoverable is-right">
+          <div class="dropdown-trigger">
+            <button class="button is-info is-inverted" aria-haspopup="true" aria-controls="dropdown-menu" aria-label="dropdown menu">
+              <span class="icon is-small">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item js-modal-trigger js-create-card-modal-trigger" data-target="#js-create-card-modal">
+                Create New Card
+              </a>
+              <hr class="dropdown-divider">
+              <a href="#" class="dropdown-item js-modal-trigger js-update-column-modal-trigger" data-target="#js-update-column-modal">
+                Update Column
+              </a>
+              <a href="#" class="dropdown-item js-modal-trigger js-delete-column-modal-trigger" data-target="#js-delete-column-modal">
+                Delete Column
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-mobile is-multiline is-fullheight">
+      <div class="column is-12">
+        <div class="columns is-mobile is-fullheight is-multiline js-card-container card-container">
+          {% for card in column.cards %}
+            {% include 'board/card.html' %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

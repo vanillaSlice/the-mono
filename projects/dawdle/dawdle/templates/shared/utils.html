@@ -1,0 +1,137 @@
+{% macro render_form_errors(form) %}
+  {% if form.errors %}
+    <div class="notification is-danger js-form-errors">
+      <button type="button" class="delete js-notification-close" aria-label="close"></button>
+      <div class="content">
+        <ul class="js-form-errors-list">
+          {% for field_errors in form.errors.values() %}
+            {% for error in field_errors %}
+              <li class="has-text-weight-bold">
+                {{ error }}
+              </li>
+            {% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endif %}
+{% endmacro %}
+
+{% macro render_checkbox(field) %}
+  <div class="field">
+    <div class="control">
+      {{ field(class='is-checkradio', type='checkbox', **kwargs) | safe }}
+      <label class="checkbox" for="{{ field.id }}">
+        {{ field.label.text }}
+      </label>
+    </div>
+  </div>
+{% endmacro %}
+
+{% macro render_password(field, show_help=False) %}
+  {% set classes = 'input js-form-field js-password' %}
+  {% if field.errors %}
+    {% set classes = classes + ' is-danger' %}
+  {% endif %}
+  <div class="field js-form-field-container">
+    {{ field.label(class='label') }}
+    <div class="field has-addons">
+      <div class="control is-expanded has-icons-left">
+        {{ field(class=classes,
+                  type='password',
+                  placeholder='e.g. ••••••••••••',
+                  autocomplete='off',
+                  autocorrect='off',
+                  autocapitalize='off',
+                  spellcheck='false',
+                  **kwargs) | safe }}
+        <span class="icon is-small is-left">
+          <i class="fas fa-lock"></i>
+        </span>
+      </div>
+      <div class="control">
+        <button
+          type="button"
+          class="button is-primary {{ 'is-danger' if field.errors }} js-password-mask"
+          aria-label="mask/unmask password"
+        >
+          <span class="icon is-small">
+            <i class="fas fa-eye js-password-mask-icon"></i>
+          </span>
+        </button>
+      </div>
+    </div>
+    {% if show_help %}
+      <p class="help {{ 'is-danger' if field.errors }} js-help">
+        Minimum 8 characters
+      </p>
+    {% endif %}
+  </div>
+{% endmacro %}
+
+{% macro render_textarea(field, left_icon_classes=None, help=None) %}
+  {% set classes = 'input textarea js-form-field' %}
+  {% if field.errors %}
+    {% set classes = classes + ' is-danger' %}
+  {% endif %}
+  <div class="field js-form-field-container">
+    {{ field.label(class='label') }}
+    <div class="control {{ 'has-icons-left' if left_icon_classes }}">
+      {{ field(class=classes, **kwargs) | safe }}
+      {% if left_icon_classes %}
+        <span class="icon is-small is-left">
+          <i class="{{ left_icon_classes }}"></i>
+        </span>
+      {% endif %}
+    </div>
+    {% if help %}
+      <p class="help {{ 'is-danger' if field.errors }} js-help">
+        {{ help }}
+      </p>
+    {% endif %}
+  </div>
+{% endmacro %}
+
+{% macro render_select(field, left_icon_classes=None, help=None) %}
+  <div class="field js-form-field-container">
+    {{ field.label(class='label') }}
+    <div class="control {{ 'has-icons-left' if left_icon_classes }}">
+      <div class="select is-fullwidth {{ 'is-danger' if field.errors }} js-form-field ">
+        {{ field(**kwargs) | safe }}
+        {% if left_icon_classes %}
+          <span class="icon is-small is-left">
+            <i class="{{ left_icon_classes }}"></i>
+          </span>
+        {% endif %}
+      </div>
+    </div>
+    {% if help %}
+      <p class="help {{ 'is-danger' if field.errors }} js-help">
+        {{ help }}
+      </p>
+    {% endif %}
+  </div>
+{% endmacro %}
+
+{% macro render_form_field(field, left_icon_classes=None, help=None) %}
+  {% set classes = 'input js-form-field' %}
+  {% if field.errors %}
+    {% set classes = classes + ' is-danger' %}
+  {% endif %}
+  <div class="field js-form-field-container">
+    {{ field.label(class='label') }}
+    <div class="control {{ 'has-icons-left' if left_icon_classes }}">
+      {{ field(class=classes, **kwargs) | safe }}
+      {% if left_icon_classes %}
+        <span class="icon is-small is-left">
+          <i class="{{ left_icon_classes }}"></i>
+        </span>
+      {% endif %}
+    </div>
+    {% if help %}
+      <p class="help {{ 'is-danger' if field.errors }} js-help">
+        {{ help }}
+      </p>
+    {% endif %}
+  </div>
+{% endmacro %}
