@@ -34,7 +34,7 @@
     var columnElement = $('[data-column-id=' + card.column_id.$oid + ']');
 
     var cardElement = $(
-      '   <div class="js-board-card board-card column is-12" data-card-id="' + card._id.$oid + '">  '  +
+      '   <div class="js-board-card board-card column is-12">  '  +
       '     <div class="box px-4 py-4">  '  +
       '       <div class="columns is-mobile">  '  +
       '         <div class="column is-9">  '  +
@@ -67,6 +67,7 @@
       '   </div>  '
     );
 
+    cardElement.attr('data-card-id', card._id.$oid);
     cardElement.attr('data-card-name', card.name);
     cardElement.find('.js-card-name').text(card.name);
 

@@ -31,7 +31,7 @@
 
   function addNewColumn(column) {
     var columnElement = $(
-      '   <div class="board-column column is-fullheight is-12 js-board-column" data-column-id="' + column._id.$oid + '">  '  +
+      '   <div class="board-column column is-fullheight is-12 js-board-column">  '  +
       '     <div class="board-column-outline has-background-info box is-fullwidth is-fullheight px-4 py-4">  '  +
       '       <div class="columns is-vcentered is-mobile">  '  +
       '         <div class="column is-9">  '  +
@@ -73,6 +73,7 @@
       '  </div>  '
     );
 
+    columnElement.attr('data-column-id', column._id.$oid);
     columnElement.attr('data-column-name', column.name);
     columnElement.find('.js-column-name').text(column.name);
 
