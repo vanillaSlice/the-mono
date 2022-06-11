@@ -14,7 +14,7 @@
       })
       .fail(function(err) {
         var submitElement = formElement.find('.js-submit');
-        var errors = err.responseJSON || { error: 'Could not create board. Please try again.' }
+        var errors = err.responseJSON || { error: 'Could not create board. Please try again.' };
         dawdle.renderFormErrors(formElement, errors);
         submitElement.prop('disabled', false);
         submitElement.removeClass('is-loading');
