@@ -149,3 +149,7 @@ read down the page.
 
 * An example of refining a module.
 * It isn't enough to get code working. The next step is to make it clean!
+
+## Chapter Fifteen: JUnit Internals
+
+* An example of refactoring a JUnit class.
