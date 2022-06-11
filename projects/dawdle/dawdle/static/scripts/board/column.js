@@ -22,7 +22,7 @@
       })
       .fail(function(err) {
         var submitElement = formElement.find('.js-submit');
-        var errors = err.responseJSON || { error: 'Could not create column. Please try again.' }
+        var errors = err.responseJSON || { error: 'Could not create column. Please try again.' };
         dawdle.renderFormErrors(formElement, errors);
         submitElement.prop('disabled', false);
         submitElement.removeClass('is-loading');
@@ -30,12 +30,12 @@
   });
 
   function addNewColumn(column) {
-    $('.js-create-new-column-container').before(
-      '   <div class="board-column column is-fullheight is-12 js-board-column" data-column-id="' + column._id.$oid + '" data-column-name="' + column.name + '">  '  +
+    var columnElement = $(
+      '   <div class="board-column column is-fullheight is-12 js-board-column" data-column-id="' + column._id.$oid + '">  '  +
       '     <div class="board-column-outline has-background-info box is-fullwidth is-fullheight px-4 py-4">  '  +
       '       <div class="columns is-vcentered is-mobile">  '  +
       '         <div class="column is-9">  '  +
-      '           <h2 class="title is-6 has-alt-text has-text-white js-shave-sm js-column-name">' + column.name + '</h2>  '  +
+      '           <h2 class="title is-6 has-alt-text has-text-white js-shave-sm js-column-name"></h2>  '  +
       '         </div>  '  +
       '         <div class="column is-3">  '  +
       '           <div class="dropdown is-hoverable is-right">  '  +
@@ -72,6 +72,11 @@
       '     </div>  '  +
       '  </div>  '
     );
+
+    columnElement.attr('data-column-name', column.name);
+    columnElement.find('.js-column-name').text(column.name);
+
+    $('.js-create-new-column-container').before(columnElement);
     initSortable();
   }
 
@@ -101,11 +106,11 @@
         var columnNameElement = $(columnElement).find('.js-column-name');
         columnNameElement.text(res.column.name);
         dawdle.truncateText();
-        resetUpdateColumnForm();
+        resetUpdateColumnForm(formElement);
       })
       .fail(function(err) {
         var submitElement = formElement.find('.js-submit');
-        var errors = err.responseJSON || { error: 'Could not update column. Please try again.' }
+        var errors = err.responseJSON || { error: 'Could not update column. Please try again.' };
         dawdle.renderFormErrors(formElement, errors);
         submitElement.prop('disabled', false);
         submitElement.removeClass('is-loading');
@@ -155,7 +160,7 @@
       })
       .fail(function(err) {
         var submitElement = formElement.find('.js-submit');
-        var errors = err.responseJSON || { error: 'Could not delete column. Please try again.' }
+        var errors = err.responseJSON || { error: 'Could not delete column. Please try again.' };
         dawdle.renderFormErrors(formElement, errors);
         submitElement.prop('disabled', false);
         submitElement.removeClass('is-loading');

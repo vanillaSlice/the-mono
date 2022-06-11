@@ -24,7 +24,7 @@
       })
       .fail(function(err) {
         var submitElement = formElement.find('.js-submit');
-        var errors = err.responseJSON || { error: 'Could not update board. Please try again.' }
+        var errors = err.responseJSON || { error: 'Could not update board. Please try again.' };
         dawdle.resetNotification();
         dawdle.renderFormErrors(formElement, errors);
         submitElement.prop('disabled', false);
@@ -70,7 +70,7 @@
       })
       .fail(function(err) {
         var submitElement = formElement.find('.js-submit');
-        var errors = err.responseJSON || { error: 'Could not delete board. Please try again.' }
+        var errors = err.responseJSON || { error: 'Could not delete board. Please try again.' };
         dawdle.renderFormErrors(formElement, errors);
         submitElement.prop('disabled', false);
         submitElement.removeClass('is-loading');

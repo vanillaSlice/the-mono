@@ -2,7 +2,7 @@ import os
 
 from flask import abort, Flask, render_template
 
-version = 'v0.1.0'
+version = 'v0.1.1'
 
 
 def create_app(testing=False):

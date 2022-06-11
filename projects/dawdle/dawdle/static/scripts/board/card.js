@@ -23,7 +23,7 @@
       })
       .fail(function(err) {
         var submitElement = formElement.find('.js-submit');
-        var errors = err.responseJSON || { error: 'Could not create card. Please try again.' }
+        var errors = err.responseJSON || { error: 'Could not create card. Please try again.' };
         dawdle.renderFormErrors(formElement, errors);
         submitElement.prop('disabled', false);
         submitElement.removeClass('is-loading');
@@ -32,12 +32,13 @@
 
   function addNewCard(card) {
     var columnElement = $('[data-column-id=' + card.column_id.$oid + ']');
-    columnElement.find('.js-card-container').append(
-      '   <div class="js-board-card board-card column is-12" data-card-id="' + card._id.$oid + '" data-card-name="' + card.name + '">  '  +
+
+    var cardElement = $(
+      '   <div class="js-board-card board-card column is-12" data-card-id="' + card._id.$oid + '">  '  +
       '     <div class="box px-4 py-4">  '  +
       '       <div class="columns is-mobile">  '  +
       '         <div class="column is-9">  '  +
-      '           <h2 class="has-alt-text has-text-weight-bold js-card-name">' + card.name + '</h2>  '  +
+      '           <h2 class="has-alt-text has-text-weight-bold js-card-name"></h2>  '  +
       '         </div>  '  +
       '         <div class="column is-3">  '  +
       '           <div class="dropdown is-hoverable is-right is-pulled-right">  '  +
@@ -65,6 +66,11 @@
       '     </div>  '  +
       '   </div>  '
     );
+
+    cardElement.attr('data-card-name', card.name);
+    cardElement.find('.js-card-name').text(card.name);
+
+    columnElement.find('.js-card-container').append(cardElement);
   }
 
   $(document).on('click', '.js-create-card-form .js-modal-trigger', function() {
@@ -100,7 +106,7 @@
       })
       .fail(function(err) {
         var submitElement = formElement.find('.js-submit');
-        var errors = err.responseJSON || { error: 'Could not update card. Please try again.' }
+        var errors = err.responseJSON || { error: 'Could not update card. Please try again.' };
         dawdle.renderFormErrors(formElement, errors);
         submitElement.prop('disabled', false);
         submitElement.removeClass('is-loading');
@@ -150,7 +156,7 @@
       })
       .fail(function(err) {
         var submitElement = formElement.find('.js-submit');
-        var errors = err.responseJSON || { error: 'Could not delete card. Please try again.' }
+        var errors = err.responseJSON || { error: 'Could not delete card. Please try again.' };
         dawdle.renderFormErrors(formElement, errors);
         submitElement.prop('disabled', false);
         submitElement.removeClass('is-loading');
