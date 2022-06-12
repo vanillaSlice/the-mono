@@ -15,8 +15,8 @@ RUN pip install -r test-requirements.txt
 CMD flake8 && pytest
 
 FROM base as local
-CMD gunicorn --bind=0.0.0.0:8000 --workers=4 --reload --preload run:app
+CMD gunicorn --bind=0.0.0.0:8000 --workers=4 --reload run:app
 
 FROM base
 RUN rm ./requirements.txt
-CMD gunicorn --workers=4 --preload run:app
+CMD gunicorn --workers=4 run:app
