@@ -9,7 +9,7 @@ A deployed version can be viewed [here](https://url.mikelowe.xyz/).
 
 ## Screenshot
 
-![Screenshot](./images/screenshot-3.png)
+![Screenshot](./images/screenshot-1.png)
 
 ## Getting Started
 
@@ -84,7 +84,7 @@ Then point your browser to [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
 
 For those of you that are interested, the technology used in this project includes:
 
-* [Python 3.7](https://www.python.org/downloads/release/python-373/)
+* [Python](https://www.python.org/)
 * [Flask](http://flask.pocoo.org/) (Microframework)
 * [MongoDB](https://www.mongodb.com/) and
 [Flask-MongoEngine](http://docs.mongoengine.org/projects/flask-mongoengine/en/latest/) (Database)

@@ -32,6 +32,17 @@ jobs:
         with:
           flags: URLShortener
           fail_ci_if_error: true
+      - run: |
+          docker-compose up -d
+      - uses: cypress-io/github-action@v4
+        with:
+          project: ./integration_tests
+          record: true
+          tag: URLShortener-Integration
+          working-directory: projects/urlshortener
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   Deploy:
     if: ${{ github.event_name == 'push' }}
     needs: Build
