@@ -1,16 +1,15 @@
 # URL Shortener
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/URLShortener.svg)](https://github.com/vanillaSlice/URLShortener/releases/latest)
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/URLShortener/CI/master)](https://github.com/vanillaSlice/URLShortener/actions?query=workflow%3ACI+branch%3Amaster)
-[![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/URLShortener/master)](https://codecov.io/gh/vanillaSlice/URLShortener/branch/master)
-[![License](https://img.shields.io/github/license/vanillaSlice/URLShortener.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/URL%20Shortener/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AURL-Shortener+branch%3Amain)
+[![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=URLShortener)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/URL%20Shortener)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 A simple URL shortener built with [Flask](http://flask.pocoo.org/) and [MongoDB](https://www.mongodb.com/).
 A deployed version can be viewed [here](https://url.mikelowe.xyz/).
 
 ## Screenshot
 
-![Screenshot](/images/screenshot-3.png)
+![Screenshot](./images/screenshot-3.png)
 
 ## Getting Started
 
