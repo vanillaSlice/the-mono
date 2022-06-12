@@ -1,12 +1,12 @@
-db = db.getSiblingDB('urlshortener');
+db = db.getSiblingDB('admin');
 
 db.createUser({
-  'user': 'urlshortener',
-  'pwd': 'urlshortener',
+  'user': 'local-user',
+  'pwd': 'local-user-password',
   'roles': [
     {
       'role': 'readWrite',
-      'db': 'urlshortener',
-    },
-  ],
+      'db': 'admin'
+    }
+  ]
 });

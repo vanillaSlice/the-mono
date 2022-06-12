@@ -12,7 +12,9 @@ services:
     ports:
       - 5000:8000
     environment:
-      - MONGODB_HOST=mongodb://urlshortener:urlshortener@mongodb:27017/urlshortener
+      - MONGODB_HOST=mongodb
+      - MONGODB_PASSWORD=local-user-password
+      - MONGODB_USERNAME=local-user
       - SERVER_NAME=127.0.0.1:5000
       - SESSION_COOKIE_DOMAIN=127.0.0.1:5000
       - SSL=False
