@@ -12,7 +12,7 @@
   "author": "Michael Lowe",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vanillaSlice/URLShortener.git"
+    "url": "https://github.com/vanillaSlice/the-mono.git"
   },
   "license": "MIT",
   "devDependencies": {

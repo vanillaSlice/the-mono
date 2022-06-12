@@ -3,7 +3,7 @@ WORKDIR /opt/app
 COPY ./config.py ./config.py
 COPY ./requirements.txt ./requirements.txt
 COPY ./run.py ./run.py
-COPY ./url-shortener ./url-shortener
+COPY ./urlshortener ./urlshortener
 RUN pip install -r requirements.txt
 
 FROM base as test
