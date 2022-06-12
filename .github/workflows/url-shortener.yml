@@ -56,3 +56,28 @@ jobs:
           heroku_app_name: sliceurl
           heroku_email: ${{ secrets.HEROKU_EMAIL }}
           usedocker: true
+      - uses: juliangruber/sleep-action@v1
+        with:
+          time: 60s
+      - uses: cypress-io/github-action@v2
+        with:
+          project: ./e2e_tests
+          record: true
+          tag: URLShortener-E2E
+          working-directory: projects/urlshortener
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Rollback
+      #   if: failure()
+      #   run: |
+      #     RELEASES=$(curl -n -s https://api.heroku.com/apps/${{ secrets.HEROKU_APP_NAME }}/releases \
+      #       -H "Accept: application/vnd.heroku+json; version=3" \
+      #       -H "Authorization: Bearer ${{ secrets.HEROKU_API_KEY }}")
+      #     LAST_VERSION=$(echo "${RELEASES}" | jq -r .[-2].id)
+      #     PAYLOAD='{"release": "'"${LAST_VERSION}"'"}'
+      #     curl -n -X POST https://api.heroku.com/apps/${{ secrets.HEROKU_APP_NAME }}/releases \
+      #       -H "Accept: application/vnd.heroku+json; version=3" \
+      #       -H "Authorization: Bearer ${{ secrets.HEROKU_API_KEY }}" \
+      #       -H "Content-Type: application/json" \
+      #       -d "${PAYLOAD}"
