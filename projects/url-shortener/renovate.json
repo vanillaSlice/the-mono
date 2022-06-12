@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "config:base",
+    "docker:enableMajor",
+    ":prHourlyLimitNone",
+    ":rebaseStalePrs",
+    "group:all"
+  ],
+  "automerge": true
+}

@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo:4.1.9-xenial
+    volumes:
+      - ./mongodb/setup.js:/docker-entrypoint-initdb.d/setup.js
+      - ./mongodb/data/db:/data/db
+  urlshortener:
+    build:
+      context: .
+      target: local
+    ports:
+      - 5000:8000
+    environment:
+      - MONGODB_HOST=mongodb://urlshortener:urlshortener@mongodb:27017/urlshortener
+      - SERVER_NAME=127.0.0.1:5000
+      - SESSION_COOKIE_DOMAIN=127.0.0.1:5000
+      - SSL=False
+    volumes:
+      - ./urlshortener:/opt/app/urlshortener
+      - ./config.py:/opt/app/config.py
+      - ./run.py:/opt/app/run.py
+      - ./instance:/opt/app/instance
