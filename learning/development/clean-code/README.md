@@ -153,3 +153,7 @@ read down the page.
 ## Chapter Fifteen: JUnit Internals
 
 * An example of refactoring a JUnit class.
+
+## Chapter Sixteen: Refactoring `SerialDate`
+
+* An example of refactoring the `SerialDate` class.
