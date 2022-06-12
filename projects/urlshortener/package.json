@@ -1,0 +1,22 @@
+{
+  "name": "ui-tests",
+  "version": "1.0.0",
+  "description": "UI Tests",
+  "scripts": {
+    "open:integration": "cypress open -P integration_tests",
+    "test:integration": "cypress run -P integration_tests",
+    "test:integration:snapshots": "npm run test:integration -- -e type=base",
+    "open:e2e": "cypress open -P e2e_tests",
+    "test:e2e": "cypress run -P e2e_tests"
+  },
+  "author": "Michael Lowe",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanillaSlice/the-mono.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "6.1.0",
+    "cypress-visual-regression": "1.5.6"
+  }
+}

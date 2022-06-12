@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <h1>
+    <a class="title-link" href="{{ url_for('home.index') }}">URL Shortener</a>
+  </h1>
+  <div class="row flex-center text-left">
+    <div class="col sm-8 padding-none js-alerts"></div>
+  </div>
+  <form class="row flex-center js-link-form">
+    <div class="form-group col sm-8 padding-none">
+      <input class="input-block js-link-input" type="url" placeholder="Enter a link to shorten it" required>
+      <button id="shorten-btn" class="btn-block btn-secondary margin-top-small js-shorten-btn">
+        Shorten
+      </button>
+    </div>
+  </form>
+  <h2 class="margin-top-none margin-bottom-small hidden js-links-heading">Your Links</h2>
+  <div class="row flex-center text-left">
+    <div class="col sm-8 padding-none js-links"></div>
+  </div>
+{% endblock %}

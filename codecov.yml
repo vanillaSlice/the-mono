@@ -52,6 +52,10 @@ flags:
     paths:
       - projects/tiny
     carryforward: true
+  URLShortener:
+    paths:
+      - projects/urlshortener
+    carryforward: true
   YouTubeViewer:
     paths:
       - projects/youtube-viewer
