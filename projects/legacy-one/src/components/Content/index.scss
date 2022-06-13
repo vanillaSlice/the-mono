@@ -1,0 +1,67 @@
+@import '../../themes/theme.scss';
+@import '../../styles/media_query_mixins.scss';
+
+.Content {
+  background-color: $content-background-colour;
+  color: $content-colour;
+  font-size: 1.125rem; // 18px
+  height: 100%;
+  padding: 3.75rem 1rem; // 60px 16px
+  width: 100%;
+
+  @include desktop {
+    padding: 3.75rem; // 60px
+  }
+
+  .container {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 50rem; // 800px
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  strong {
+    color: $content-secondary-colour;
+  }
+
+  h1 {
+    font-size: 2.8125rem; // 45px
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 1.125rem; // 18px;
+    margin: 0;
+  }
+
+  a {
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    margin: 0 0 1.5rem; // 24px
+    width: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    list-style: inside;
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,10 @@
+@import '../../styles/animations.scss';
+
+.Contact {
+  animation: fade-in 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}

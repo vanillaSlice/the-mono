@@ -1,0 +1,39 @@
+//
+// Colours
+//
+
+// standard colours
+$background-colour: #04b9b7;
+
+// navbar specific colours
+$navbar-colour: #fff;
+$navbar-secondary-colour: #04b9b7;
+$navbar-background-colour: #2c2d31;
+$navbar-highlight-colour: #008684;
+$navbar-shadow-colour: #000;
+
+// content specific colours
+$content-colour: #fff;
+$content-secondary-colour: #005351;
+$content-background-colour: #04b9b7;
+$content-shadow-colour: #000;
+
+// terminal specific colours
+$terminal-colour: #bcbcbc;
+$terminal-background-colour: #292a2b;
+$terminal-close-button-colour: #ff5d5b;
+$terminal-minimise-button-colour: #ffbb4f;
+$terminal-maximise-button-colour: #00c857;
+$terminal-tag-colour: #ff296c;
+$terminal-attribute-colour: #f3ae73;
+$terminal-value-colour: #05e2c7;
+$terminal-shadow-colour: #000;
+
+//
+// Fonts
+//
+
+$heading-font-family: 'Raleway', sans-serif;
+$font-family: 'Raleway', sans-serif;
+$terminal-font-family: 'Source Code Pro', monospace;
+$font-size: 1rem; // 16px
