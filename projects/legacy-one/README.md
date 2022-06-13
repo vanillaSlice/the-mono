@@ -7,6 +7,10 @@ Source code for my legacy website which can be viewed [here](https://legacy-one.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+## Screenshot
+
+![Screenshot](./images/screenshot-1.png)
+
 ## Installing dependencies
 ```
 npm install
