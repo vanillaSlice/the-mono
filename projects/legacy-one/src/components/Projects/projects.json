@@ -21,7 +21,7 @@
     "recipe-box": {
       "displayName": "Recipe Box",
       "url": "https://recipebox.mikelowe.xyz/",
-      "repo": "https://github.com/vanillaSlice/the-mono/tree/main/recipe-box",
+      "repo": "https://github.com/vanillaSlice/the-mono/tree/main/projects/recipe-box",
       "icon": "book",
       "description": "A React app where the user can create, view, update and delete recipes using the browser's localStorage. I aimed to create a clean, attractive and responsive interface. This could be improved by storing recipes in a database on a server and developing an API to return the data.",
       "tech": "HTML5, CSS3, JavaScript, localStorage, React and Jest (for testing).",
