@@ -82,7 +82,7 @@ class ProjectDetails extends Component {
 }
 
 ProjectDetails.propTypes = {
-  match: PropTypes.objectOf(PropTypes.any).isRequired,
+  match: PropTypes.objectOf(PropTypes.shape).isRequired,
 };
 
 export default ProjectDetails;

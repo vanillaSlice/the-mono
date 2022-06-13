@@ -16,67 +16,67 @@ export default () => (
       </span>
       <span className="line">
         <span className="tag">&nbsp;&nbsp;&lt;li&gt;</span>
-          Java
+        Java
         <span className="tag">&lt;/li&gt;</span>
       </span>
       <span className="line">
         <span className="tag">&nbsp;&nbsp;&lt;li&gt;</span>
-          Python
+        Python
         <span className="tag">&lt;/li&gt;</span>
       </span>
       <span className="line">
         <span className="tag">&nbsp;&nbsp;&lt;li&gt;</span>
-          HTML5
+        HTML5
         <span className="tag">&lt;/li&gt;</span>
       </span>
       <span className="line">
         <span className="tag">&nbsp;&nbsp;&lt;li&gt;</span>
-          CSS3/SCSS
+        CSS3/SCSS
         <span className="tag">&lt;/li&gt;</span>
       </span>
       <span className="line">
         <span className="tag">&nbsp;&nbsp;&lt;li&gt;</span>
-          JavaScript/ES6
+        JavaScript/ES6
         <span className="tag">&lt;/li&gt;</span>
       </span>
       <span className="line">
         <span className="tag">&nbsp;&nbsp;&lt;li&gt;</span>
-          jQuery
+        jQuery
         <span className="tag">&lt;/li&gt;</span>
       </span>
       <span className="line">
         <span className="tag">&nbsp;&nbsp;&lt;li&gt;</span>
-          React
+        React
         <span className="tag">&lt;/li&gt;</span>
       </span>
       <span className="line">
         <span className="tag">&nbsp;&nbsp;&lt;li&gt;</span>
-          Redux
+        Redux
         <span className="tag">&lt;/li&gt;</span>
       </span>
       <span className="line">
         <span className="tag">&nbsp;&nbsp;&lt;li&gt;</span>
-          Elasticsearch
+        Elasticsearch
         <span className="tag">&lt;/li&gt;</span>
       </span>
       <span className="line">
         <span className="tag">&nbsp;&nbsp;&lt;li&gt;</span>
-          MongoDB
+        MongoDB
         <span className="tag">&lt;/li&gt;</span>
       </span>
       <span className="line">
         <span className="tag">&nbsp;&nbsp;&lt;li&gt;</span>
-          MySQL
+        MySQL
         <span className="tag">&lt;/li&gt;</span>
       </span>
       <span className="line">
         <span className="tag">&nbsp;&nbsp;&lt;li&gt;</span>
-          Git
+        Git
         <span className="tag">&lt;/li&gt;</span>
       </span>
       <span className="line">
         <span className="tag">&nbsp;&nbsp;&lt;li&gt;</span>
-          Linux
+        Linux
         <span className="tag">&lt;/li&gt;</span>
       </span>
       <span className="line tag">&lt;/ul&gt;</span>

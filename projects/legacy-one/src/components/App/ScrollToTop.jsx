@@ -16,8 +16,8 @@ class ScrollToTop extends Component {
 }
 
 ScrollToTop.propTypes = {
-  location: PropTypes.objectOf(PropTypes.any).isRequired,
-  children: PropTypes.objectOf(PropTypes.any).isRequired,
+  location: PropTypes.objectOf(PropTypes.shape).isRequired,
+  children: PropTypes.objectOf(PropTypes.shape).isRequired,
   onUpdate: PropTypes.func.isRequired,
 };
 
