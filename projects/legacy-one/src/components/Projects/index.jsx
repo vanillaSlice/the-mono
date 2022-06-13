@@ -31,7 +31,7 @@ const Projects = () => (
       {renderProjects()}
     </div>
     <p>
-      I built this site using React, the source code can be found <a href="https://github.com/vanillaSlice/mikelowe.xyz">here</a>.
+      I built this site using React, the source code can be found <a href="https://github.com/vanillaSlice/the-mono/tree/main/projects/legacy-one">here</a>.
     </p>
   </div>
 );
