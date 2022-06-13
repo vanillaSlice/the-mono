@@ -1,0 +1,81 @@
+@import '../../themes/theme.scss';
+@import '../../styles/animations.scss';
+@import '../../styles/media_query_mixins.scss';
+
+.Projects {
+  animation: fade-in 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+
+
+  .grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem; // 24px
+    width: 100%;
+  }
+
+  .project {
+    height: 10rem; // 160px
+    padding: 0.5rem 0; // 8px
+    width: 100%;
+
+    @include tablet {
+      width: 33.3333%;
+
+      &:nth-child(3n+1) {
+        padding-right: 0.5rem; // 8px
+      }
+  
+      &:nth-child(3n+2) {
+        padding: 0.5rem; // 8px
+      }
+  
+      &:nth-child(3n+3) {
+        padding-left: 0.5rem; // 8px
+      }
+    }
+  }
+
+  .content {
+    align-items: center;
+    background-color: $content-secondary-colour;
+    box-shadow: 0 0 0.125rem $content-shadow-colour; // 2px
+    color: $content-colour;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 1rem; // 16px
+    text-align: center;
+    transition: all 0.1s linear;
+    width: 100%;
+
+    &:hover,
+    &:focus {
+      background-color: $content-colour;
+      box-shadow: 0 0 0.125rem $content-colour; // 2px
+      color: $content-secondary-colour;
+      text-decoration: none;
+      transform: scale(1.05);
+
+      h2 {
+        color: $content-secondary-colour;
+      }
+    }
+
+    h2 {
+      color: $content-colour;
+      margin-top: 1rem; // 16px
+      width: 100%;
+    }
+  }
+
+  .fa {
+    font-size: 2rem; // 32px
+  }
+}

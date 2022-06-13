@@ -1,0 +1,12 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "react/no-unused-state": false,
+    "jsx-a11y/anchor-is-valid": false,
+    "react/no-danger": false
+  }
+}

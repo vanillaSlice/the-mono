@@ -1,0 +1,24 @@
+@import '../../styles/animations.scss';
+@import '../../styles/media_query_mixins.scss';
+
+.App {
+  animation: fade-in 0.8s ease-in-out;
+  display: grid;
+  // navbar on top, content underneath
+  grid-template: 'navbar' auto 'content' 1fr / auto;
+  height: 100%;
+  min-height: 100vh;
+
+  @include desktop {
+    // navbar left, content right
+    grid-template: 'navbar content' auto / auto 1fr;
+  }
+
+  .Navbar {
+    grid-area: navbar;
+  }
+
+  .Content {
+    grid-area: content;
+  }
+}

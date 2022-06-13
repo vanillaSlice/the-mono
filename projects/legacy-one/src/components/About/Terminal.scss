@@ -1,0 +1,58 @@
+@import '../../themes/theme.scss';
+
+.Terminal {
+  background-color: $terminal-background-colour;
+  border-radius: 0.3125rem; // 5px
+  box-shadow: 0 0 1.5rem $terminal-shadow-colour; // 24px
+  color: $terminal-colour;
+  font-family: $terminal-font-family;
+  padding: 1rem 1.125rem; // 16px 20px
+  width: 100%;
+
+  .top-bar {
+    width: 100%;
+  }
+
+  .button {
+    border-radius: 50%;
+    display: inline-block;
+    height: 0.875rem; // 14px
+    margin-left: 0.5rem; // 8px
+    width: 0.875rem; // 14px
+
+    &.close {
+      background-color: $terminal-close-button-colour;
+      margin-left: 0;
+    }
+
+    &.minimise {
+      background-color: $terminal-minimise-button-colour;
+    }
+
+    &.maximise {
+      background-color: $terminal-maximise-button-colour;
+    }
+  }
+
+  .content {
+    padding: 1rem 0 0.5rem; // 16px 8px
+    width: 100%;
+  }
+
+  .line {
+    display: block;
+    padding: 0.125rem; // 2px
+  }
+
+  .tag {
+    color: $terminal-tag-colour;
+  }
+
+  .attribute {
+    color: $terminal-attribute-colour;
+  }
+
+  .value {
+    color: $terminal-value-colour;
+  }
+}

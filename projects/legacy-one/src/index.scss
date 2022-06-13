@@ -1,0 +1,40 @@
+@import './themes/theme.scss';
+
+html {
+  background-color: $background-colour;
+  font-size: $font-size;
+  height: 100%;
+}
+
+body {
+  font-family: $font-family;
+  height: 100%;
+  // disable tap highlight on mobile
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  // disable outline highlights on buttons, links, etc.
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#root {
+  height: 100%;
+}

@@ -1,0 +1,82 @@
+{
+  "projects": {
+    "tiny": {
+      "displayName": "Tiny",
+      "url": "https://tiny.mikelowe.xyz/",
+      "repo": "https://github.com/vanillaSlice/tiny",
+      "icon": "book",
+      "description": "A blog app built using Python, Flask and MongoDB. The user can read, write and comment on blog posts. Basic search functionality is also included. In the future I would like to add the ability to like and favourite posts, like and dislike comments, and add tags to posts.",
+      "tech": "Python, Flask, MongoDB, Jinja2, HTML5, CSS3 and Bootstrap.",
+      "learned": "<ul><li>How to build a Flask app.</li><li>How to handle user authentication and sessions.</li><li>How to deploy an app to Heroku.</li></ul>"
+    },
+    "youtube-viewer": {
+      "displayName": "YouTube Viewer",
+      "url": "https://youtubeviewer.mikelowe.xyz/",
+      "repo": "https://github.com/vanillaSlice/YouTubeViewer",
+      "icon": "youtube-play",
+      "description": "A simple YouTube viewer built using React. The user can enter a search term and get a handful of matching video results. I tried to replicate the general style of YouTube and make it responsive. I'm thinking about creating a more fully-featured clone of YouTube in the future!",
+      "tech": "HTML5, CSS3, JavaScript, React, the YouTube API and Jest (for testing).",
+      "learned": "<ul><li>How to interact with the YouTube API.</li><li>How to handle API responses appropriately within the context of React apps.</li><li>How to properly test React components in isolation using Jest.</li></ul>"
+    },
+    "recipe-box": {
+      "displayName": "Recipe Box",
+      "url": "https://recipebox.mikelowe.xyz/",
+      "repo": "https://github.com/vanillaSlice/RecipeBox",
+      "icon": "book",
+      "description": "A React app where the user can create, view, update and delete recipes using the browser's localStorage. I aimed to create a clean, attractive and responsive interface. This could be improved by storing recipes in a database on a server and developing an API to return the data.",
+      "tech": "HTML5, CSS3, JavaScript, localStorage, React and Jest (for testing).",
+      "learned": "<ul><li>How to create reusable React components.</li><li>How to interact with localStorage in a React app.</li><li>How to properly test React components in isolation using Jest.</li><li>How to test forms in React.</li><li>How to mock localStorage when testing.</li></ul>"
+    },
+    "matrix-digital-rain": {
+      "displayName": "Matrix Digital Rain",
+      "url": "https://matrixdigitalrain.mikelowe.xyz/",
+      "repo": "https://github.com/vanillaSlice/MatrixDigitalRain",
+      "icon": "film",
+      "description": "An experiment with p5.js to recreate The Matrix digital rain effect. The inspiration for this project came from a YouTube video by <a href='https://www.youtube.com/user/shiffman'>The Coding Train</a> (go and subscribe to his channel right now!). I plan on playing around with p5.js more in the future - I just need some ideas.",
+      "tech": "JavaScript and p5.js.",
+      "learned": "<ul><li>How to create a p5.js 'sketch'.</li><li>Those funky symbols are called half-width kana characters.</li><li>A lot about randomising speeds and characters!</li></ul>"
+    },
+    "simon-game": {
+      "displayName": "Simon Game",
+      "url": "https://simon.mikelowe.xyz/",
+      "repo": "https://github.com/vanillaSlice/SimonGame",
+      "icon": "gamepad",
+      "description": "A recreation of the retro Simon game written in JavaScript. The aim of this project was to create a game that was aesthetically and behaviourally very close to the original. The design is also responsive so works pretty well on small devices!",
+      "tech": "HTML5, CSS3 and JavaScript.",
+      "learned": "<ul><li>How to use the JavaScript Web Audio API.</li><li>How to manage many intervals and timeouts in JavaScript.</li><li>How to cope without jQuery (look Mum, no hands!).</li></ul>"
+    },
+    "jumpy-block": {
+      "displayName": "Jumpy Block",
+      "repo": "https://github.com/vanillaSlice/JumpyBlock",
+      "icon": "gamepad",
+      "description": "A Flappy Bird clone written using libGDX with an even simpler design. Desktop and Android versions are available. A cool feature of this clone is that it can also be played in portrait and landscape modes, I don't <em>think</em> this was possible in the original game.",
+      "tech": "Java, libGDX and Gradle.",
+      "learned": "<ul><li>How to develop a libGDX game for both desktop and Android.</li><li>A tonne about physics, game loops and sprites.</li><li>How to use Android Studio.</li></ul>"
+    },
+    "strimko": {
+      "displayName": "Strimko",
+      "repo": "https://github.com/vanillaSlice/Strimko",
+      "icon": "puzzle-piece",
+      "description": "A JavaFX implementation of <a href='http://www.strimko.com'>Strimko</a>, a logic puzzle like Sudoku. The user can play and create puzzles of varying size and degrees of difficulty. Features include: hint highlighting, 'smart' solving to determine the solution to a puzzle (including its difficulty) and the pencil marks solving aid.",
+      "tech": "Java, JavaFX, Guava, jUnit (for testing) and Gradle.",
+      "learned": "<ul><li>How to build a JavaFX application (it's a lot nicer than Swing).</li><li>About Google's Guava libraries, these take the hassle away from carrying out a lot of common tasks in Java.</li><li>To embrace the lambda expression in Java 8.</li></ul>"
+    },
+    "twitch-status-viewer": {
+      "displayName": "Twitch Status Viewer",
+      "url": "https://twitch.mikelowe.xyz/",
+      "repo": "https://github.com/vanillaSlice/TwitchStatusViewer",
+      "icon": "twitch",
+      "description": "A viewer written in JavaScript to display the status of <a href='https://go.twitch.tv/'>Twitch</a> channels. Channel data is pulled in using the Twitch API. The user can filter channels that are online or offline, and search channels by name.",
+      "tech": "HTML5, CSS3, Bootstrap, JavaScript, jQuery and the Twitch API.",
+      "learned": "<ul><li>How to use the Twitch API to retrieve channel data.</li></ul>"
+    },
+    "blueprint-pong": {
+      "displayName": "Blueprint Pong",
+      "repo": "https://github.com/vanillaSlice/the-mono/tree/main/projects/blueprint-pong",
+      "icon": "gamepad",
+      "description": "A Pong clone written using libGDX with a blueprint design. The player can play against the computer at three difficulties: <strong>easy</strong>, <strong>medium</strong> and <strong>hard</strong>. Desktop and Android versions are available.",
+      "tech": "Java, libGDX and Gradle.",
+      "learned": "<ul><li>How to develop a libGDX game for both desktop and Android.</li><li>About the physics/geometry of Pong.</li><li>How to create a challenging AI.</li></ul>"
+    }
+  }
+}
