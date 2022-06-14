@@ -13,6 +13,6 @@ theme = "journal"
   tagline = "Memoirs of a bug-maker."
 
 [params.work]
-  company = "Upside Energy"
-  companyUrl = "https://upsideenergy.co.uk/"
-  jobTitle = "Developer"
+  company = "KrakenFlex"
+  companyUrl = "https://www.krakenflex.com/"
+  jobTitle = "Senior Software Engineer"
