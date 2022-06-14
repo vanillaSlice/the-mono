@@ -157,3 +157,26 @@ read down the page.
 ## Chapter Sixteen: Refactoring `SerialDate`
 
 * An example of refactoring the `SerialDate` class.
+
+## Chapter Seventeen: Smells and Heuristics
+
+* Comments:
+  * Inappropriate Information
+  * Obsolete Comment
+  * Redundant Comment
+  * Poorly Written Comment
+  * Commented-Out Code
+* Environment:
+  * Build Requires More Than One Step
+  * Tests Require More Than One Step
+* Functions:
+  * Too Many Arguments
+  * Output Arguments
+  * Flag Arguments
+  * Dead Function
+* General:
+  * Multiple Languages in One Source File
+  * Obvious Behaviour Is Unimplemented
+  * Incorrect Behaviour at the Boundaries
+  * Overridden Safeties
+  *
