@@ -18,6 +18,8 @@ jobs:
         working-directory: blog
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: true
       - uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 0.72.0
