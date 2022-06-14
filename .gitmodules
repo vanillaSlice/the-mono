@@ -1,3 +1,0 @@
-[submodule "blog/themes/hugo-journal"]
-	path = blog/themes/hugo-journal
-	url = git@github.com:dashdashzako/hugo-journal.git
