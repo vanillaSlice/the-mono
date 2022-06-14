@@ -1,0 +1,33 @@
+name: Blog
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/blog.yml
+      - blog/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/blog.yml
+      - blog/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: blog
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+      - uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 0.72.0
+      - run: hugo --minify
+      - uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: blog/public
+          production-branch: main
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: 61375a44-256e-43da-81e7-88a77f7d2e72
