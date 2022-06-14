@@ -1,0 +1,18 @@
+baseURL = "https://blog.mikelowe.xyz/"
+disqusShortname = "blog-mikelowe-xyz"
+languageCode = "en-gb"
+title = "Muh blog."
+theme = "journal"
+
+[author]
+  name = "Mike Lowe"
+
+[params]
+  description = "Memoirs of a bug-maker."
+  githubUsername = "vanillaSlice"
+  tagline = "Memoirs of a bug-maker."
+
+[params.work]
+  company = "Upside Energy"
+  companyUrl = "https://upsideenergy.co.uk/"
+  jobTitle = "Developer"
