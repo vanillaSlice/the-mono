@@ -179,4 +179,10 @@ read down the page.
   * Obvious Behaviour Is Unimplemented
   * Incorrect Behaviour at the Boundaries
   * Overridden Safeties
-  *
+  * Duplication
+  * Code at Wrong Level of Abstraction
+  * Base Classes Depending on Their Derivatives
+  * Too Much Information
+  * Dead Code
+  * Vertical Separation
+  * Inconsistency
