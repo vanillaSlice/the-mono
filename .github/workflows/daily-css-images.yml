@@ -1,0 +1,32 @@
+name: Daily CSS Images
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/daily-css-images.yml
+      - challenges/daily-css-images/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/daily-css-images.yml
+      - challenges/daily-css-images/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: challenges/daily-css-images
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 10
+      - run: npm ci
+      - run: npm run build
+      - uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: challenges/daily-css-images/dist
+          production-branch: main
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: 16fd5c7b-f808-4445-a6e1-a3979bc70f32
