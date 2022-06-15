@@ -1,0 +1,20 @@
+sudo: required
+services:
+  - docker
+before_install:
+  - docker build -t vanillaslice/docker-react -f Dockerfile.dev .
+script:
+  - docker run vanillaslice/docker-react npm test -- --coverage
+deploy:
+  provider: elasticbeanstalk
+  region: eu-west-1
+  app: docker-react
+  env: DockerReact-env
+  bucket_name: elasticbeanstalk-eu-west-1-500085192249
+  bucket_path: docker-react
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: 
+    secure:
+      $AWS_SECRET_ACCESS_KEY
