@@ -1,0 +1,45 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:11.2-alpine
+  redis:
+    image: redis:5.0.3-alpine
+  api:
+    build:
+      context: ./server
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./server/index.js:/app/index.js
+      - ./server/keys.js:/app/keys.js
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - PGUSER=postgres
+      - PGHOST=postgres
+      - PGDATABASE=postgres
+      - PGPASSWORD=postgres_password
+      - PGPORT=5432
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./client/public:/app/public
+      - ./client/src:/app/src
+  worker:
+    build:
+      context: ./worker
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./worker/index.js:/app/index.js
+      - ./worker/keys.js:/app/keys.js
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+  nginx:
+    restart: always
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile.dev
+    ports:
+      - 3050:80
