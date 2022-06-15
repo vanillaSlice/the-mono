@@ -186,3 +186,22 @@ read down the page.
   * Dead Code
   * Vertical Separation
   * Inconsistency
+  * Clutter
+  * Artificial Coupling
+  * Feature Envy
+  * Selector Arguments
+  * Obscured Intent
+  * Misplaced Responsibility
+  * Inappropriate Static
+  * Use Explanatory Variables
+  * Function Names Should Say What They Do
+  * Understand the Algorithm
+  * Make Logical Dependencies Physical
+  * Prefer Polymorphism to If/Else or Switch/Case
+  * Follow Standard Conventions
+  * Replace Magic Numbers with Named Constants
+  * Be Precise
+  * Structure Over Convention
+  * Encapsulate Conditionals
+  * Avoid Negative Conditionals
+  * Functions Should Do One Thing
