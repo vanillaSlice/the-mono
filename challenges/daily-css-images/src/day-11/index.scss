@@ -1,0 +1,182 @@
+$background: #faf6c6;
+$base: #ffce9c;
+$cheese: #ffe788;
+$eye: #5f4741;
+$mouth: #5f4741;
+$pepper: #60cd7c;
+$pepperoni: #ff7d74;
+$pupil: #f3f8fd;
+
+html,
+body {
+  background-color: $background;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.box {
+  background: none;
+  height: 70vw;
+  margin: auto;
+  max-height: 420px;
+  max-width: 600px;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+}
+
+.pizza {
+  background-color: $base;
+  border-radius: 50%;
+  height: auto;
+  left: 20%;
+  padding-bottom: 60%;
+  position: absolute;
+  top: 20%;
+  width: 60%;
+}
+
+.cheese {
+  background-color: $cheese;
+  border-radius: 50%;
+  height: 85%;
+  left: 7.5%;
+  position: absolute;
+  top: 7.5%;
+  width: 85%;
+}
+
+.pepperoni {
+  background-color: $pepperoni;
+  border-radius: 50%;
+  height: 15%;
+  position: absolute;
+  width: 15%;
+  
+  &:nth-child(2) {
+    left: 33%;
+    top: 55%;
+  }
+  
+  &:nth-child(3) {
+    left: 20%;
+    top: 20%;
+  }
+  
+  &:nth-child(4) {
+    right: 14%;
+    top: 25%;
+  }
+  
+  &:nth-child(5) {
+    right: 35%;
+    top: 39%;
+  }
+}
+
+.pepper {
+  border: 5px solid $pepper;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  height: 5%;
+  position: absolute;
+  width: 5%;
+  
+  &:nth-child(6) {
+    left: 36%;
+    top: 35%;
+    transform: rotate(100deg);
+  }
+  
+  &:nth-child(7) {
+    right: 27%;
+    top: 17%;
+    transform: rotate(20deg);
+  }
+  
+  &:nth-child(8) {
+    right: 33%;
+    top: 33%;
+    transform: rotate(10deg);
+  }
+  
+  &:nth-child(9) {
+    right: 45%;
+    top: 60%;
+    transform: rotate(120deg);
+  }
+}
+
+.eye {
+  background-color: $eye;
+  border-radius: 50%;
+  height: 5%;
+  position: absolute;
+  top: 20%;
+  width: 5%;
+  
+  &.left {
+    left: 40%;
+  }
+  
+  &.right {
+    right: 40%; 
+  }
+  
+  .pupil {
+    background-color: $pupil;
+    border-radius: 50%;
+    height: 35%;
+    position: absolute;
+    right: 25%;
+    top: 15%;
+    width: 35%;
+  }
+}
+
+.mouth {
+  border: 5px solid $mouth;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  height: 10%;
+  left: 45%;
+  position: absolute;
+  top: 25%;
+  transform: rotate(45deg);
+  width: 10%;
+}
+
+.mask {
+  background-color: $background;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  width: 120%;
+
+  &.left {
+    left: 0;
+    transform: rotate(55deg);
+    transform-origin: left top;
+  }
+
+  &.right {
+    right: 0;
+    transform: rotate(305deg);
+    transform-origin: right top;
+  }
+}

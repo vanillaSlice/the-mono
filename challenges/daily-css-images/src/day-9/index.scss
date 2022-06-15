@@ -1,0 +1,89 @@
+$background-color: #d0cdd0;
+$background-img: 'https://images.unsplash.com/photo-1495374316456-4d7e380881a7?auto=format&fit=crop&w=1334&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D';
+$calendar-background: #707e82;
+$day-color: #595959;
+$month-background: #ed5553;
+$month-color: #f9f9f9;
+$paper: #f9f9f9;
+
+html,
+body {
+  background: $background-color url($background-img) no-repeat center center fixed;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+.month,
+.day {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.box {
+  background: none;
+  height: 70vw;
+  margin: auto;
+  max-height: 420px;
+  max-width: 600px;
+  position: relative;
+  width: 100vw;
+}
+
+.calendar {
+  background-color: $calendar-background;
+  height: auto;
+  left: 25%;
+  padding-bottom: 50%;
+  position: absolute;
+  top: 12.5%;
+  transform: rotate(-5deg);
+  width: 50%;
+}
+
+.paper {
+  background-color: $paper;
+  height: 97.5%;
+  left: 2.5%;
+  position: absolute;
+  text-align: center;
+  top: -2.5%;
+  width: 95%;
+  
+  .month {
+    background-color: $month-background;
+    color: $month-color;
+    font-size: 10vw;
+    height: 30%;
+    position: absolute;
+    text-transform: uppercase;
+    width: 100%;
+    
+    @media (min-width: 400px) {
+      font-size: 50px;
+    }
+  }
+  
+  .day {
+    color: $day-color;
+    font-size: 30vw;
+    height: 70%;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+
+    @media (min-width: 400px) {
+      font-size: 120px;
+    }
+  }
+}
