@@ -1,0 +1,29 @@
+sudo: required
+services:
+  - docker
+before_install:
+  - docker build -t vanillaslice/react-test -f ./client/Dockerfile.dev ./client
+script:
+  - docker run vanillaslice/react-test npm test -- --coverage
+after_success:
+  - docker build -t vanillaslice/multi-client ./client
+  - docker build -t vanillaslice/multi-nginx ./nginx
+  - docker build -t vanillaslice/multi-server ./server
+  - docker build -t vanillaslice/multi-worker ./worker
+  - docker login -u "$DOCKER_ID" -p "$DOCKER_PASSWORD"
+  - docker push vanillaslice/multi-client
+  - docker push vanillaslice/multi-nginx
+  - docker push vanillaslice/multi-server
+  - docker push vanillaslice/multi-worker
+deploy:
+  provider: elasticbeanstalk
+  region: eu-west-1
+  app: multi-docker
+  env: MultiDocker-env
+  bucket_name: elasticbeanstalk-eu-west-1-500085192249
+  bucket_path: multi-docker
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: 
+    secure: $AWS_SECRET_ACCESS_KEY
