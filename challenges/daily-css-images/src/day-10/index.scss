@@ -1,0 +1,134 @@
+$background: #ffd4be;
+$eraser: #ed6b86;
+$lead: #5d675b;
+$metal: #857e7b;
+$pencil: #f9dc5c;
+$pencil-jar: #af9fa5;
+$tip: #f1bb87;
+
+html,
+body {
+  background-color: $background;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.box {
+  height: 64vw;
+  margin: auto;
+  max-height: 368px;
+  max-width: 460px;
+  position: relative;
+  width: 80vw;
+}
+
+.pencil-jar {
+  background-color: $pencil-jar;
+  border-left: 5px solid darken($pencil-jar, 10%);
+  border-bottom: 5px solid darken($pencil-jar, 10%);
+  border-radius: 0 0 15px 15px;
+  border-right: 5px solid darken($pencil-jar, 10%);
+  bottom: 10%;
+  height: 60%;
+  left: 25%;
+  opacity: 0.7;
+  position: absolute;
+  width: 50%;
+  z-index: 1;
+}
+
+.pencil {
+  height: 90%;
+  position: absolute;
+  transform-origin: 50% 100%;
+  width: 5%;
+  
+  .eraser {
+    background-color: $eraser;
+    border-radius: 5px 5px 0 0;
+    height: 6%;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .metal {
+    background-color: $metal;
+    height: 2%;
+    position: absolute;
+    top: 6%;
+    width: 100%;
+  }
+  
+  .middle {
+    background-color: $pencil;
+    height: 80%;
+    position: absolute;
+    top: 8%;
+    width: 100%;
+  }
+  
+  .tip {
+    border-left: 2vw solid transparent;
+    border-right: 2vw solid transparent;
+    border-top: 4vw solid $tip;
+    height: 0;
+    position: absolute;
+    top: 88%;
+    width: 0;
+    
+    @media (min-width: 576px) {
+      border-left: 11.5px solid transparent;
+      border-right: 11.5px solid transparent;
+      border-top: 26px solid $tip;
+    }
+  }
+  
+  .lead {
+    border-left: 1vw solid transparent;
+    border-right: 1vw solid transparent;
+    border-top: 2vw solid $lead;
+    height: 0;
+    left: 1vw;
+    position: absolute;
+    top: 92%;
+    width: 0;
+    
+    @media (min-width: 576px) {
+      border-left: 5.75px solid transparent;
+      border-right: 5.75px solid transparent;
+      border-top: 13px solid $lead;
+      left: 5.75px;
+    }
+  } 
+  
+  &:nth-child(2) {
+    bottom: 9%;
+    left: 27%;
+    transform: rotate(10deg);
+  }
+  
+  &:nth-child(3) {
+    bottom: 9%;
+    left: 30%;
+    transform: rotate(25deg);
+  }
+  
+  &:nth-child(4) {
+    bottom: 9%;
+    left: 33%;
+    transform: rotate(35deg);
+  }
+}

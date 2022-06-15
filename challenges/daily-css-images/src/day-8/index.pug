@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title="Day 8 - Notepad"
+    meta(name="description" content="Daily CSS Images Challenge")
+    link(rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png")
+    link(rel="manifest" href="../site.webmanifest")
+    link(rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5")
+    meta(name="theme-color" content="#ffffff")
+    link(href="https://fonts.googleapis.com/css?family=Reenie+Beanie", rel="stylesheet")
+    link(href="./index.css", rel="stylesheet")
+  body
+    .box
+      .notepad
+        .left.page
+        - for (var i = 0; i < 12; i++)
+          .loop
+        .right.page
+          p='There is an idea of a Patrick Bateman; some kind of abstraction. But there is no real me: only an entity, something illusory. And though I can hide my cold gaze, and you can shake my hand and feel flesh gripping yours and maybe you can even sense our lifestyles are probably comparable... I simply am not there.'
+      .pencil
+        .eraser
+        .metal
+        .middle
+        .tip
+        .lead

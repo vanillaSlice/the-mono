@@ -1,0 +1,275 @@
+$background: #269ed2;
+$black: #231f20;
+$brown: #917159;
+$orange: #ffb761;
+$pink: #fcac9d;
+$white: #fff;
+
+html {
+  background-color: $background;
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  background-color: $background;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.box {
+  background: none;
+  height: 70vw;
+  margin: auto;
+  max-height: 420px;
+  max-width: 600px;
+  position: relative;
+  width: 100vw;
+}
+
+.arthur {
+  height: auto;
+  left: 32.5%;
+  padding-bottom: 35%;
+  position: absolute;
+  top: 25%;
+  width: 35%;
+}
+
+.head {
+  background-color: $orange;
+  border: 2px solid $black;
+  border-radius: 50%;
+  height: 100%;
+  left: 5%;
+  position: absolute;
+  top: 5%;
+  width: 90%;
+}
+
+.ear {
+  background-color: $orange;
+  border: 2px solid $black;
+  height: 36%;
+  position: absolute;
+  top: -25%;
+  width: 36%;
+  
+  &.left {
+    border-radius: 50% 50% 0 50%;
+    left: 0;
+    transform: rotate(10deg);
+    
+    .inner {
+      border-radius: 50% 50% 0 50%;
+    }
+    
+    .mask {
+      right: -30%;
+    }
+  }
+  
+  &.right {
+    border-radius: 50% 50% 50% 0;
+    right: 0;
+    transform: rotate(-10deg);
+    
+    .inner {
+      border-radius: 50% 50% 50% 0;
+    }
+    
+    .mask {
+      left: -30%;
+    }
+  }
+  
+  .inner {
+    background-color: $pink;
+    border: 2px solid $black;
+    height: 70%;
+    left: 15%;
+    position: absolute;
+    top: 15%;
+    width: 70%;
+  }
+  
+  .mask {
+    background-color: $orange;
+    border-radius: 50%;
+    bottom: -30%;
+    height: 50%;
+    position: absolute;
+    width: 50%;
+  }
+}
+
+.glasses {
+  height: 40%;
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  
+  .frame {
+    background-color: $brown;
+    border: 2px solid $black;
+    border-radius: 50%;
+    height: 100%;
+    position: absolute;
+    width: 45%;
+    
+    &.left {
+      left: -1%;
+      
+      .pupil {
+        left: 45%;
+      }
+    }
+    
+    &.right {
+      right: -1%;
+      
+      .pupil {
+        right: 45%;
+      }
+    }
+  }
+  
+  .eye {
+    background-color: $white;
+    border: 2px solid $black;
+    border-radius: 50%;
+    height: 80%;
+    left: 10%;
+    position: absolute;
+    top: 10%;
+    width: 80%;
+    
+    .pupil {
+      background-color: $black;
+      border-radius: 50%;
+      height: 30%;
+      position: absolute;
+      top: 35%;
+      width: 30%;
+    }
+  }
+  
+  .middle {
+    background-color: $brown;
+    border-bottom: 2px solid $black;
+    border-top: 2px solid $black;
+    height: 20%;
+    left: 41%;
+    position: absolute;
+    top: 35%;
+    width: 18%;
+    z-index: 1;
+  }
+}
+
+.nostril {
+  background-color: $black;
+  height: 2px;
+  position: absolute;
+  top: 75%;
+  width: 5%;
+  z-index: 2;
+  
+  &.left {
+    left: 40%;
+    transform: rotate(30deg);
+  }
+  
+  &.right {
+    right: 40%;
+    transform: rotate(-30deg);
+  }
+}
+
+.mouth {
+  background-color: $black;
+  border-bottom: 2px solid $black;
+  border-radius: 50%;
+  bottom: 5%;
+  height: 40%;
+  left: 27.5%;
+  position: absolute;
+  width: 45%;
+  
+  .mask {
+    background-color: $orange;
+    border-radius: 50%;
+    height: 87%;
+    left: -10%;
+    position: absolute;
+    top: -5%;
+    width: 120%;
+  }
+  
+  .left {
+    background-color: $black;
+    border-radius: 50%;
+    bottom: 20%;
+    height: 35%;
+    left: -20%;
+    position: absolute;
+    width: 30%;
+
+    .inner {
+      background-color: $orange;
+      border-radius: 50%;
+      bottom: -5%;
+      height: 200%;
+      position: absolute;
+      right: -5%;
+      width: 150%;
+    }
+  }
+  
+  .right {
+    background-color: $black;
+    border-radius: 50%;
+    bottom: 20%;
+    height: 35%;
+    position: absolute;
+    right: -20%;
+    width: 30%;
+
+    .inner {
+      background-color: $orange;
+      border-radius: 50%;
+      bottom: -5%;
+      height: 200%;
+      left: -5%;
+      position: absolute;
+      width: 150%;
+    }
+  }
+}
+
+.tongue {
+  border-radius: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+
+  .inner {
+    background-color: $pink;
+    border-radius: 50%;
+    bottom: -30%;
+    height: 40%;
+    left: 30%;
+    position: absolute;
+    width: 40%;
+  }
+}

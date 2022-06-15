@@ -1,0 +1,267 @@
+$background: #f7e86f;
+$bun: #e4a577;
+$cheese: #f3cb72;
+$eye: #f9f9e7;
+$lettuce: #29b159;
+$mouth: #7a553a;
+$patty: #7a553a;
+$pupil: #310200;
+$seed: #f9f9e7;
+$tomato: #ef3d3a;
+
+html,
+body {
+  background: darken($background, 20%) radial-gradient(circle at center, $background, darken($background, 20%));
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.box {
+  background: none;
+  height: 70vw;
+  margin: auto;
+  max-height: 420px;
+  max-width: 600px;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+}
+
+.hamburger {
+  height: auto;
+  left: 30%;
+  padding-bottom: 40%;
+  position: absolute;
+  top: 25%;
+  width: 40%;
+}
+
+.bun {
+  background-color: $bun;
+  position: absolute;
+  
+  &.top {
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    height: 35%;
+    width: 100%;
+  }
+  
+  &.bottom {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    bottom: 14%;
+    height: 22%;
+    width: 100%;
+  }
+}
+
+.seed {
+  background-color: $seed;
+  border-radius: 50%;
+  height: 12%;
+  position: absolute;
+  width: 1.2%;
+  
+  &:nth-child(1) {
+    left: 12%;
+    top: 35%;
+    transform: rotate(45deg);
+  }
+  
+  &:nth-child(2) {
+    left: 12%;
+    bottom: 25%;
+    transform: rotate(30deg);
+  }
+  
+  &:nth-child(3) {
+    left: 24%;
+    top: 20%;
+    transform: rotate(20deg);
+  }
+  
+  &:nth-child(4) {
+    left: 24%;
+    bottom: 30%;
+    transform: rotate(18deg);
+  }
+  
+  &:nth-child(5) {
+    left: 29%;
+    top: 37%;
+    transform: rotate(20deg);
+  }
+  
+  &:nth-child(6) {
+    left: 36%;
+    top: 15%;
+    transform: rotate(35deg);
+  }
+  
+  &:nth-child(7) {
+    left: 40%;
+    top: 30%;
+    transform: rotate(10deg);
+  }
+  
+  &:nth-child(8) {
+    left: 35%;
+    bottom: 20%;
+    transform: rotate(10deg);
+  }
+  
+  &:nth-child(9) {
+    left: 48%;
+    top: 12%;
+    transform: rotate(5deg);
+  }
+  
+  &:nth-child(10) {
+    left: 48%;
+    bottom: 20%;
+    transform: rotate(-5deg);
+  }
+  
+  &:nth-child(11) {
+    right: 12%;
+    top: 35%;
+    transform: rotate(-45deg);
+  }
+  
+  &:nth-child(12) {
+    right: 12%;
+    bottom: 25%;
+    transform: rotate(-30deg);
+  }
+  
+  &:nth-child(13) {
+    right: 24%;
+    top: 20%;
+    transform: rotate(-20deg);
+  }
+  
+  &:nth-child(14) {
+    right: 24%;
+    bottom: 30%;
+    transform: rotate(-18deg);
+  }
+  
+  &:nth-child(15) {
+    right: 29%;
+    top: 37%;
+    transform: rotate(-20deg);
+  }
+  
+  &:nth-child(16) {
+    right: 36%;
+    top: 15%;
+    transform: rotate(-35deg);
+  }
+  
+  &:nth-child(17) {
+    right: 40%;
+    top: 30%;
+    transform: rotate(-10deg);
+  }
+  
+  &:nth-child(18) {
+    right: 35%;
+    bottom: 20%;
+    transform: rotate(-10deg);
+  }
+}
+
+.tomato {
+  background-color: $tomato;
+  border-radius: 50px;
+  height: 4%;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  z-index: 2;
+}
+
+.lettuce {
+  background-color: $lettuce;
+  border-radius: 50px;
+  height: 4%;
+  position: absolute;
+  top: 39%;
+  width: 100%;
+  z-index: 2;
+}
+
+.cheese {
+  background-color: $cheese;
+  border-radius: 50px;
+  height: 4%;
+  position: absolute;
+  top: 43%;
+  width: 100%;
+  z-index: 2;
+}
+
+.patty {
+  background-color: $patty;
+  border-radius: 40px;
+  height: 20%;
+  position: absolute;
+  bottom: 35%;
+  width: 100%;
+  z-index: 1;
+}
+
+.eye {
+  background-color: $eye;
+  border-radius: 50%;
+  height: 50%;
+  position: absolute;
+  top: 25%;
+  width: 10%;
+  
+  &.left {
+    left: 35%;
+  }
+  
+  &.right {
+    right: 35%;
+  }
+  
+  .pupil {
+    background-color: $pupil;
+    border-radius: 50%;
+    height: 15%;
+    left: 42.5%;
+    position: absolute;
+    top: 42.5%;
+    width: 15%;
+  }
+}
+
+.mouth {
+  background-color: $mouth;
+  height: 4%;
+  left: 45%;
+  position: absolute;
+  top: 35%;
+  width: 10%;
+}
