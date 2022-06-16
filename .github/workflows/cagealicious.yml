@@ -18,9 +18,26 @@ jobs:
         working-directory: projects/cagealicious
     steps:
       - uses: actions/checkout@v3
+      - run: |
+          mkdir build
+          cp -R dist build
+          cp android-chrome-192x192.png build
+          cp android-chrome-256x256.png build
+          cp apple-touch-icon.png build
+          cp browserconfig.xml build
+          cp CNAME build
+          cp favicon-16x16.png build
+          cp favicon-32x32.png build
+          cp favicon.ico build
+          cp index.css build
+          cp index.html build
+          cp index.js build
+          cp manifest.json build
+          cp mstile-150x150.png build
+          cp safari-pinned-tab.svg build
       - uses: nwtgck/actions-netlify@v1.2
         with:
-          publish-dir: projects/cagealicious
+          publish-dir: projects/cagealicious/build
           production-branch: main
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
