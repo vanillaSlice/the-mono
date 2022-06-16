@@ -205,3 +205,31 @@ read down the page.
   * Encapsulate Conditionals
   * Avoid Negative Conditionals
   * Functions Should Do One Thing
+  * Hidden Temporal Couplings
+  * Don't Be Arbitrary
+  * Encapsulate Boundary Conditions
+  * Functions Should Descend Only One Level of Abstraction
+  * Keep Configurable Data at High Levels
+  * Avoid Transitive Navigation
+* Java
+  * Avoid Long Import Lists by Using Wildcards
+  * Don't Inherit Constants
+  * Constants versus Enums
+* Names
+  * Choose Descriptive Names
+  * Choose Names at the Appropriate Level of Abstraction
+  * Use Standard Nomenclature Where Possible
+  * Unambiguous Names
+  * Use Long Names for Long Scopes
+  * Avoid Encodings
+  * Names Should Describe Side-Effects
+* Tests
+  * Insufficient Tests
+  * Use a Coverage Tool!
+  * Don't Skip Trivial Tests
+  * An Ignored Test Is a Question About an Ambiguity
+  * Test Boundary Conditions
+  * Exhaustively Test Near Bugs
+  * Patterns of Failure Are Revealing
+  * Test Coverage Patterns Can Be Revealing
+  * Tests Should Be Fast
