@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# VSCode
+.vscode
+
+# Python
+__pycache__
+
+# Coverage
+.coverage
