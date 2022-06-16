@@ -1,0 +1,39 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+.showcase {
+  margin-top: 70px;
+}
+
+.showcase .more-cage {
+  margin-right: 15px;
+}
+
+.details .col-lg-4 {
+  margin-bottom: 20px;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}

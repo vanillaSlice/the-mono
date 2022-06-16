@@ -1,0 +1,26 @@
+.cagealicious-img {
+  position: fixed;
+  transition: all 0.1s linear;
+}
+
+.cagealicious-img:nth-child(odd):hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.cagealicious-img:nth-child(even):hover {
+  transform: rotate(-10deg) scale(1.1);
+}
+
+.cagealicious-count {
+  bottom: 10px;
+  color: rgb(0, 255, 255);
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  position: fixed;
+  text-align: center;
+  text-shadow: 4px 4px 0 rgb(255, 0, 255);
+  text-transform: uppercase;
+  width: 100%;
+  z-index: 999999;
+}
