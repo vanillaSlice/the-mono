@@ -1,0 +1,27 @@
+name: Cagealicious
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/cagealicious.yml
+      - projects/cagealicious/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/cagealicious.yml
+      - projects/cagealicious/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/cagealicious
+    steps:
+      - uses: actions/checkout@v3
+      - uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: projects/cagealicious
+          production-branch: main
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: 9526bab2-6cbe-42e4-839e-3005f4bde47f
