@@ -1,0 +1,74 @@
+@import '../../styles/base.css';
+
+body {
+  align-items: center;
+  background: rgb(0, 255, 255);
+  color: rgb(34, 35, 36);
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+.todos {
+  background: white;
+  box-shadow: 0.4rem 0.4rem 0 rgba(255, 0, 255, 0.6);
+  max-width: 35rem;
+  padding: 2rem;
+}
+
+.todos__title {
+  text-align: center;
+}
+
+.todos__edit-items {
+  margin: 2rem 0;
+}
+
+.edit-items__btn {
+  border: 0.1rem solid rgb(150, 150, 150);
+  color: inherit;
+  outline: 0;
+  padding: 1rem;
+}
+
+.todos__items {
+  list-style: none;
+  text-align: left;
+}
+
+.items__item {
+  border-bottom: 0.1rem solid rgb(150, 150, 150);
+  display: flex;
+  padding: 1rem 0;
+}
+
+.item__input {
+  display: none;
+}
+
+.item__label {
+  cursor: pointer;
+  flex: 1;
+}
+
+.item__input+.item__label:before {
+  content: '⬜️';
+  margin-right: 1rem;
+}
+
+.item__input:checked+.item__label:before {
+  content: '✔️';
+}
+
+.todos__add-items {
+  margin-top: 2rem;
+}
+
+.add-items__input {
+  border: 0.1rem solid rgb(150, 150, 150);
+  color: inherit;
+  outline: 0;
+  padding: 1rem;
+}

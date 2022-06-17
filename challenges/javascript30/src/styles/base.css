@@ -1,0 +1,16 @@
+@import 'reset.css/reset.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.3;
+}

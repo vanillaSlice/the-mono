@@ -1,0 +1,54 @@
+@import '../../styles/base.css';
+
+body {
+  align-items: center;
+  background: rgb(0, 255, 255);
+  color: rgb(34, 35, 36);
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+.inbox {
+  background: white;
+  box-shadow: 1rem 1rem rgb(0, 120, 255);
+  margin: 5rem auto;
+  max-width: 40rem;
+}
+
+.inbox__item {
+  align-items: center;
+  border-bottom: 0.1rem solid #f1f1f1;
+  display: flex;
+}
+
+.inbox__item:last-child {
+  border-bottom: 0;
+}
+
+.item__checkbox {
+  margin: 2rem;
+}
+
+.item__checkbox:checked {
+  background-color: #f9f9f9;
+}
+
+.item__text {
+  border-left: 0.1rem solid #d1e2ff;
+  flex: 1;
+  margin: 0;
+  padding: 2rem;
+}
+
+.item__checkbox:checked+.item__text {
+  text-decoration: line-through;
+}
+
+@media (max-width: 31.25em) {
+  .inbox {
+    width: 90%;
+  }
+}

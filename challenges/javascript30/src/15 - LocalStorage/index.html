@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>LocalStorage</title>
+  <meta name="description" content="LocalStorage">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="msapplication-config" content="../browserconfig.xml">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:700">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <main>
+    <div class="todos">
+      <h1 class="todos__title">TODOs</h1>
+      <div class="todos__edit-items">
+        <input class="edit-items__btn js-clear-all" type="button" value="Clear All">
+        <input class="edit-items__btn js-check-all" type="button" value="Check All">
+        <input class="edit-items__btn js-uncheck-all" type="button" value="Uncheck All">
+      </div>
+      <ul class="todos__items js-items">
+        <li class="items__item">Loading TODOs...</li>
+      </ul>
+      <form class="todos__add-items js-add-items">
+        <input class="add-items__input js-item-text" type="text" placeholder="Item Name" required>
+        <input class="add-items__input" type="submit" value="+ Add Item">
+      </form>
+    </div>
+  </main>
+
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>

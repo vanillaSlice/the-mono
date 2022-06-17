@@ -1,0 +1,45 @@
+{
+  "name": "javascript-30",
+  "version": "1.0.0",
+  "description": "JavaScript 30 Challenge",
+  "keywords": [
+    "javascript 30",
+    "wes bos"
+  ],
+  "homepage": "https://javascript30.mikelowe.xyz/",
+  "bugs": {
+    "url": "https://github.com/vanillaSlice/JavaScript30/issues",
+    "email": "mikelowedev@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Mike Lowe",
+    "email": "mikelowedev@gmail.com",
+    "url": "https://www.mikelowe.xyz/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanillaSlice/JavaScript30.git"
+  },
+  "scripts": {
+    "test": "run-s test:*",
+    "test:lint": "run-s test:lint:*",
+    "test:lint:css": "stylelint src/**/*.css",
+    "test:lint:js": "eslint src/**/*.js",
+    "start": "parcel src/index.html -d build",
+    "build": "parcel build src/index.html -d build --public-url https://javascript30.mikelowe.xyz/"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.10",
+    "eslint": "^5.15.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-browserconfig": "^1.0.0",
+    "reset.css": "^2.0.2",
+    "stylelint": "^9.10.1",
+    "stylelint-config-recommended": "^2.1.0"
+  },
+  "private": true
+}

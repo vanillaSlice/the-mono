@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Array Cardio - Day 2</title>
+  <meta name="description" content="Array Cardio - Day 2">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="msapplication-config" content="../browserconfig.xml">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <p><em>Have a look at the JavaScript Console for output</em></p>
+  <p>Code:</p>
+  <pre>
+const people = [{
+  name: 'Wes',
+  year: 1988,
+},
+{
+  name: 'Kait',
+  year: 1986,
+},
+{
+  name: 'Irv',
+  year: 1970,
+},
+{
+  name: 'Lux',
+  year: 2015,
+},
+];
+
+const comments = [{
+  text: 'Love this!',
+  id: 523423,
+},
+{
+  text: 'Super good',
+  id: 823423,
+},
+{
+  text: 'You are the best',
+  id: 2039842,
+},
+{
+  text: 'Ramen is my fav food ever',
+  id: 123523,
+},
+{
+  text: 'Nice Nice Nice!',
+  id: 542328,
+},
+];
+
+// Some and Every Checks
+// Array.prototype.some() // is at least one person 19 or older?
+const isAdult = people.some((person) => {
+  const currentYear = new Date().getFullYear();
+  return (currentYear - person.year) >= 19;
+});
+console.log(isAdult);
+
+// Array.prototype.every() // is everyone 19 or older?
+const allAdults = people.every((person) => {
+  const currentYear = new Date().getFullYear();
+  return (currentYear - person.year) >= 19;
+});
+console.log(allAdults);
+
+// Array.prototype.find()
+// Find is like filter, but instead returns just the one you are looking for
+// find the comment with the ID of 823423
+const comment = comments.find(c => c.id === 823423);
+console.log(comment);
+
+// Array.prototype.findIndex()
+// Find the comment with this ID
+// delete the comment with the ID of 823423
+const index = comments.findIndex(c => c.id === 823423);
+comments.splice(index, 1);
+console.table(comments);       
+  </pre>
+
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>

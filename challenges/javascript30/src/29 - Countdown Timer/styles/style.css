@@ -1,0 +1,77 @@
+@import '../../styles/base.css';
+
+html {
+  background-color: rgb(120, 255, 255);
+}
+
+body {
+  color: white;
+  text-align: center;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+.timer__controls {
+  display: flex;
+}
+
+.timer__button {
+  background: rgba(0, 0, 0, 0.1);
+  border: 0;
+  border-bottom: 0.3rem solid rgba(0, 0, 0, 0.2);
+  border-right: 0.1rem solid rgba(0, 0, 0, 0.2);
+  color: inherit;
+  cursor: pointer;
+  flex: 1;
+  font-size: 2rem;
+  padding: 1rem;
+  text-shadow: 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+
+.timer__button:focus,
+.timer__button:hover {
+  background: rgba(0, 0, 0, 0.2);
+  outline: 0;
+}
+
+.timer__input {
+  border: 0;
+  flex: 1;
+  padding: 2rem;
+}
+
+.timer__form {
+  display: flex;  
+  flex: 1;
+}
+
+.display {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.display__time-left {
+  font-size: 20rem;
+  margin: 0;
+  text-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.display__end-time {
+  font-size: 4rem;
+  text-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 35em) {
+  .display__time-left {
+    font-size: 10rem;
+  }
+}

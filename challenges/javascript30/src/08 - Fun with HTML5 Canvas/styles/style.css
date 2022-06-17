@@ -1,0 +1,20 @@
+@import '../../styles/base.css';
+
+html {
+  background-color: rgb(34, 35, 36)
+}
+
+body {
+  align-content: center;
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.instructions {
+  font-size: 5rem;
+  pointer-events: none;
+  position: absolute;
+  text-shadow: 0.3rem 0.3rem 0 rgb(255, 102, 255);
+}

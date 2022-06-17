@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Custom Video Player</title>
+  <meta name="description" content="Custom Video Player">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="msapplication-config" content="../browserconfig.xml">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:700">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <div class="player js-player">
+    <video class="player__video js-video" src="https://player.vimeo.com/external/194837908.sd.mp4?s=c350076905b78c67f74d7ee39fdb4fef01d12420&amp;profile_id=164"></video>
+    <div class="player__controls">
+      <div class="progress js-progress">
+        <div class="progress__filled js-progress-bar"></div>
+      </div>
+      <button class="player__button js-toggle" title="Toggle Play">►</button>
+      <input type="range" name="volume" class="player__slider js-slider" min="0" max="1" step="0.05" value="1">
+      <input type="range" name="playbackRate" class="player__slider js-slider" min="0.5" max="2" step="0.1" value="1">
+      <button data-skip="-10" class="player__button js-skip">« 10s</button>
+      <button data-skip="25" class="player__button js-skip">25s »</button>
+    </div>
+  </div>
+
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>

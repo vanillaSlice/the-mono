@@ -1,0 +1,62 @@
+@import '../../styles/base.css';
+
+:root {
+  --base: #f7df1e;
+  --blur: 1rem;
+  --opacity: 1;
+}
+
+html {
+  background-color: rgb(0, 255, 255);
+}
+
+body {
+  color: white;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  width: 100rem;
+}
+
+.title {
+  font-size: 5rem;
+  letter-spacing: 0.4rem;
+  text-shadow: 0.4rem 0.4rem 0 rgba(255, 0, 255, 0.6);
+}
+
+.controls {
+  margin-top: 2rem;
+  text-shadow: 0.25rem 0.25rem 0 rgba(255, 0, 255, 0.6);
+  width: 100%;
+}
+
+.input {
+  width: 10rem;
+}
+
+.image {
+  background: var(--base);
+  filter: blur(var(--blur));
+  margin-top: 3rem;
+  opacity: var(--opacity);
+  padding: 1rem;
+  width: 100%;
+}
+
+.highlight {
+  color: var(--base);
+}
+
+@media (max-width: 62.5em) {
+  .container {
+    width: 100%;
+  }
+
+  .label+.input {
+    width: 100%;
+  }
+}

@@ -1,0 +1,101 @@
+@import '../../styles/base.css';
+
+body {
+  background-color: white;
+  color: rgb(34, 35, 36);
+  font-size: 2rem;
+}
+
+.header {
+  align-items: center;
+  background-color: rgb(255, 120, 255);
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.header__title {
+  color: white;
+  font-size: 7vw;
+  text-shadow: 0.3rem 0.4rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.nav {
+  background: rgb(34, 35, 36);
+  position: relative;
+  top: 0;
+  transition: all 0.5s;
+  width: 100%;
+  z-index: 1;
+}
+
+.fixed-nav .nav {
+  position: fixed;
+}
+
+.nav__menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav__link {
+  color: white;
+  display: inline-block;
+  padding: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.nav__logo {
+  background: white;
+  font-size: 3rem;
+  max-width: 0;
+  overflow: hidden;
+  transition: all .5s;
+}
+
+.fixed-nav .nav__logo {
+  max-width: 50rem;
+}
+
+.nav__logo .nav__link {
+  color: rgb(34, 35, 36);
+}
+
+.site-wrap {
+  background: white;
+  border: 0.3rem solid rgb(150, 150, 150);
+  box-shadow: 0.5rem 0.5rem rgb(120, 255, 255), 1rem 1rem rgb(255, 120, 255);
+  margin: 7rem auto;
+  max-width: 70rem;
+  padding: 4rem;
+  text-align: justify;
+  transform: scale(0.98);
+  transition: transform 0.5s;
+}
+
+.fixed-nav .site-wrap {
+  transform: scale(1);
+}
+
+.text {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 50em) {
+  .site-wrap {
+    width: 90%;
+  }
+}

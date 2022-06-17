@@ -1,0 +1,55 @@
+@import '../../styles/base.css';
+
+body {
+  align-items: center;
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+.items {
+  cursor: pointer;
+  font-size: 0;
+  height: 95%;
+  height: 95vh;
+  overflow-x: scroll;
+  overflow-y: hidden;  
+  padding: 10rem;
+  perspective: 50rem;
+  position: relative;
+  transform: scale(0.98);
+  transition: all 0.2s;
+  user-select: none;
+  white-space: nowrap;
+  width: 100%;
+  will-change: transform;
+}
+
+.items.active {
+  cursor: grabbing;
+  transform: scale(1);
+}
+
+.item {
+  align-items: center;
+  box-shadow: inset 0 0 0 1rem rgba(0, 0, 0, 0.15);
+  color: rgba(0, 0, 0, 0.15);
+  display: inline-flex;
+  font-size: 8rem;
+  font-weight: 100;
+  height: calc(100% - 4rem);
+  justify-content: center;
+  width: 20rem;
+}
+
+.item:nth-child(even) {
+  background: rgb(120, 255, 255);
+  transform: scaleX(1.31) rotateY(40deg);
+}
+
+.item:nth-child(odd) {
+  background: rgb(255, 120, 255);
+  transform: scaleX(1.31) rotateY(-40deg);
+}

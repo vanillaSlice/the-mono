@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Speech Synthesis</title>
+  <meta name="description" content="Speech Synthesis">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="msapplication-config" content="../browserconfig.xml">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:700">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <div class="voiceinator">
+    <h1 class="voiceinator__title">The Voiceinator 5000</h1>
+    <select class="voiceinator__select js-voices" autocomplete="off">
+      <option value="">Select A Voice</option>
+    </select>
+    <label for="rate">Rate:</label>
+    <input class="voiceinator__input js-rate" id="rate" type="range" min="0" max="3" value="1" step="0.1" autocomplete="off">
+    <label for="pitch">Pitch:</label>
+    <input class="voiceinator__input js-pitch" id="pitch" type="range" min="0" max="2" step="0.1" autocomplete="off">
+    <textarea class="voiceinator__textarea js-text" autocomplete="off">Hello! I love JavaScript 👍</textarea>
+    <button class="voiceinator__button js-stop">Stop!</button>
+    <button class="voiceinator__button js-speak">Speak</button>
+  </div>
+
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>

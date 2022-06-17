@@ -1,0 +1,66 @@
+@import '../../styles/base.css';
+
+body {
+  background-color: white;
+  color: rgb(34, 35, 36);
+  font-size: 2rem;
+  padding: 5rem 2rem;
+}
+
+.container {
+  border: 0.3rem solid rgb(150, 150, 150);
+  box-shadow: 0.5rem 0.5rem rgb(120, 255, 255), 1rem 1rem rgb(255, 120, 255);
+  margin: 0 auto;
+  max-width: 70rem;
+  padding: 3rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 4rem;
+  padding: 0;
+}
+
+.menu__link {
+  color: rgb(255, 0, 255);
+  font-size: 3rem;
+  margin: 0 2rem;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.text {
+  margin-top: 1.5rem;
+}
+
+.text__link {
+  color: rgb(255, 0, 255);
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.highlight {
+  background-color: rgb(120, 255, 255);
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s;
+  z-index: -1;
+}
+
+@media (max-width: 37.5em) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu__link  {
+    margin-left: 0;
+  }
+}

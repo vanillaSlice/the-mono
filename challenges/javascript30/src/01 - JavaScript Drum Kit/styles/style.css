@@ -1,0 +1,117 @@
+@import '../../styles/base.css';
+
+body {
+  align-items: center;
+  background-color: rgb(255, 102, 255);
+  color: white;
+  display: flex;
+  font-size: 2.4rem;
+  justify-content: center;
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 5rem 2rem;
+}
+
+.title {
+  color: rgb(102, 255, 255);
+  font-size: 5.7rem;
+  text-align: center;
+  text-shadow: 0.3rem 0.3rem 0 rgb(34, 35, 36), 0.6rem 0.6rem 0 white;
+}
+
+.modal {
+  align-content: center;
+  align-items: center;
+  background-color: rgb(255, 102, 255);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.modal__content {
+  border: 0.3rem solid rgb(102, 255, 255);
+  border-radius: 0.8rem;
+  box-shadow: 0 0 0 0.3rem rgb(255, 102, 255), 0 0 0 0.6rem white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  text-shadow: 0.2rem 0.2rem rgb(34, 35, 36);
+  width: 50rem;
+}
+
+.modal__ok {
+  background: none;
+  border: none;
+  border-radius: 0.8rem;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-shadow: 0.2rem 0.2rem rgb(34, 35, 36);
+  transition: transform 0.1s linear;
+}
+
+.modal__ok:active,
+.modal__ok:focus,
+.modal__ok:hover {
+  transform: scale(1.2);
+}
+
+.keys {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  padding-top: 1.6rem;
+  width: 70rem;
+}
+
+.key {
+  background: transparent;
+  border: 0.3rem solid rgb(102, 255, 255);
+  border-radius: 0.8rem;
+  box-shadow: 0 0 0 0.3rem rgb(255, 102, 255), 0 0 0 0.6rem white;
+  cursor: pointer;
+  flex: 1 25%;
+  font-size: 2.6rem;
+  line-height: 1;
+  margin: 1.6rem;
+  padding: 1.6rem 0.8rem;
+  text-align: center;
+  text-shadow: 0.2rem 0.2rem rgb(34, 35, 36);
+  transition: all 0.07s ease;
+}
+
+.key--playing {
+  background-color: rgb(102, 255, 255);
+  transform: scale(1.1);
+}
+
+.key__input {
+  display: block;
+  font-size: 5rem;
+}
+
+.key__sound {
+  color: inherit;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 50em) {
+  .modal__content {
+    width: 90%;
+  }
+
+  .keys {
+    width: 100%;
+  }
+}

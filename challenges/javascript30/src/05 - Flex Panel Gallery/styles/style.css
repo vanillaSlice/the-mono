@@ -1,0 +1,48 @@
+@import '../../styles/base.css';
+
+body {
+  background: rgb(47, 24, 71);
+  color: white;
+  text-align: center;
+}
+
+.panels {
+  display: flex;
+  min-height: 100vh;
+  overflow-y: hidden;
+}
+
+.panel {
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: 0.1rem;
+  justify-content: center;  
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+}
+
+.panel--open {
+  flex: 5;
+  font-size: 4rem;
+}
+
+.panel__text {
+  align-items: center;
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem;
+  text-shadow: 0.7rem 0.7rem rgb(34, 35, 36);
+  text-transform: uppercase;
+  transition: transform 0.5s;
+  width: 100%;
+  transform: translateY(100%);
+}
+
+.panel--open-active > .panel__text {
+  transform: translateY(0);
+}
