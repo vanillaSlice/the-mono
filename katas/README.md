@@ -1,3 +1,3 @@
-# Snippets
+# Kata
 
-A place to store my random snippets of code in various different languages.
+Practicing [CodeKata](http://codekata.com/kata/codekata-intro/).
