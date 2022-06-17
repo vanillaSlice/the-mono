@@ -1,0 +1,52 @@
+@import './base.css';
+
+body {
+  background-color: rgb(247, 223, 30);
+  font-size: 2rem;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  width: 50rem;
+}
+
+.title {
+  font-size: 7rem;
+  letter-spacing: 0.5rem;
+  text-shadow: 0.3rem 0.3rem 0 rgba(0, 255, 255, 0.6), 0.6rem 0.6rem 0 rgba(255, 0, 255, 0.6);
+}
+
+.title__link {
+  color: rgb(34, 35, 36);
+  text-decoration: none;
+  transition: font 0.2s linear;
+}
+
+.table-of-contents {
+  letter-spacing: 0.15rem;
+  margin-top: 2rem;
+}
+
+.table-of-contents__link {
+  color: rgb(34, 35, 36);
+  text-decoration: none;
+  transition: font 0.2s linear;
+}
+
+.table-of-contents__link:active,
+.table-of-contents__link:focus,
+.table-of-contents__link:hover {
+  font-size: 3rem;
+  text-shadow: 0.2rem 0.2rem 0 rgba(0, 255, 255, 0.6), 0.4rem 0.4rem 0 rgba(255, 0, 255, 0.6);
+}
+
+@media (max-width: 31.25em) {
+  .title {
+    font-size: 5rem;
+  }
+
+  .container {
+    width: 95%;
+  }
+}

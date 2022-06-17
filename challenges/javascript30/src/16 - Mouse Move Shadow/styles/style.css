@@ -1,0 +1,20 @@
+@import '../../styles/base.css';
+
+body {
+  background-color: rgb(34, 35, 36);
+  color: white;
+  margin: 0;
+}
+
+.hero {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.hero__title {
+  font-size: 100px;
+  text-align: center;
+  text-shadow: 10px 10px 0 rgba(255, 0, 255, 0.7);
+}

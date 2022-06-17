@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Countdown Timer</title>
+  <meta name="description" content="Countdown Timer">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="msapplication-config" content="../browserconfig.xml">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:700">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <div class="timer">
+    <div class="timer__controls">
+      <button data-time="20" class="timer__button js-timer-button">20 Secs</button>
+      <button data-time="300" class="timer__button js-timer-button">Work 5</button>
+      <button data-time="900" class="timer__button js-timer-button">Quick 15</button>
+      <button data-time="1200" class="timer__button js-timer-button">Snack 20</button>
+      <button data-time="3600" class="timer__button js-timer-button">Lunch Break</button>
+      <form class="timer__form js-timer-form">
+        <input class="timer__input" type="text" name="minutes" placeholder="Enter Minutes" autocomplete="off">
+      </form>
+    </div>
+    <div class="display">
+      <h1 class="display__time-left js-time-left"></h1>
+      <p class="display__end-time js-end-time"></p>
+    </div>
+  </div>
+
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>

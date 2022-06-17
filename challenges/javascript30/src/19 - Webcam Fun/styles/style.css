@@ -1,0 +1,76 @@
+@import '../../styles/base.css';
+
+body {
+  background-color: white;
+  color: rgb(34, 35, 36);
+  font-size: 2rem;
+  margin: 0 auto;
+  max-width: 150rem;
+  padding: 5rem;
+}
+
+.controls {
+  margin-bottom: 1rem;
+}
+
+.controls__btn {
+  cursor: pointer;
+}
+
+.photobooth:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.photobooth__photo {
+  box-shadow: 0.5rem 0.5rem rgb(120, 255, 255), 1rem 1rem rgb(255, 120, 255);
+  float: left;
+  width: 100%;
+}
+
+.photobooth__player {
+  border: 0.3rem solid rgb(150, 150, 150);
+  position: absolute;
+  right: 7rem;
+  top: 10rem;
+  width: 20rem;
+}
+
+.photobooth__strip {
+  padding: 2rem;
+}
+
+.strip__img {
+  background: white;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
+  overflow-x: scroll;
+  padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+  width: 10rem;
+}
+
+.strip__link:nth-child(5n+1) .strip__img {
+  transform: rotate(10deg);
+}
+
+.strip__link:nth-child(5n+2) .strip__img {
+  transform: rotate(-2deg);
+}
+
+.strip__link:nth-child(5n+3) .strip__img {
+  transform: rotate(8deg);
+}
+
+.strip__link:nth-child(5n+4) .strip__img {
+  transform: rotate(-11deg);
+}
+
+.strip__link:nth-child(5n+5) .strip__img {
+  transform: rotate(12deg);
+}
+
+@media (max-width: 60em) {
+  .photobooth__player {
+    display: none;
+  }
+}

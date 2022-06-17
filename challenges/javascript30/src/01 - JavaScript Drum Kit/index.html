@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>JavaScript Drum Kit</title>
+  <meta name="description" content="JavaScript Drum Kit">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="msapplication-config" content="../browserconfig.xml">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:700">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <main class="container">
+    <h1 class="title">JavaScript Drum Kit</h1>
+    <div class="modal js-modal">
+      <div class="modal__content">
+        <p>Use keyboard or click pads to play different drum sounds</p>
+        <button type="button" class="modal__ok js-modal-ok">OK</button>
+      </div>
+    </div>
+    <div class="keys">
+      <div data-key="65" class="key js-key">
+        <kbd class="key__input">A</kbd>
+        <span class="key__sound">clap</span>
+      </div>
+      <div data-key="83" class="key js-key">
+        <kbd class="key__input">S</kbd>
+        <span class="key__sound">hihat</span>
+      </div>
+      <div data-key="68" class="key js-key">
+        <kbd class="key__input">D</kbd>
+        <span class="key__sound">kick</span>
+      </div>
+      <div data-key="70" class="key js-key">
+        <kbd class="key__input">F</kbd>
+        <span class="key__sound">openhat</span>
+      </div>
+      <div data-key="71" class="key js-key">
+        <kbd class="key__input">G</kbd>
+        <span class="key__sound">boom</span>
+      </div>
+      <div data-key="72" class="key js-key">
+        <kbd class="key__input">H</kbd>
+        <span class="key__sound">ride</span>
+      </div>
+      <div data-key="74" class="key js-key">
+        <kbd class="key__input">J</kbd>
+        <span class="key__sound">snare</span>
+      </div>
+      <div data-key="75" class="key js-key">
+        <kbd class="key__input">K</kbd>
+        <span class="key__sound">tom</span>
+      </div>
+      <div data-key="76" class="key js-key">
+        <kbd class="key__input">L</kbd>
+        <span class="key__sound">tink</span>
+      </div>
+    </div>
+    <audio class="js-audio" data-key="65" src="./sounds/clap.wav"></audio>
+    <audio class="js-audio" data-key="83" src="./sounds/hihat.wav"></audio>
+    <audio class="js-audio" data-key="68" src="./sounds/kick.wav"></audio>
+    <audio class="js-audio" data-key="70" src="./sounds/openhat.wav"></audio>
+    <audio class="js-audio" data-key="71" src="./sounds/boom.wav"></audio>
+    <audio class="js-audio" data-key="72" src="./sounds/ride.wav"></audio>
+    <audio class="js-audio" data-key="74" src="./sounds/snare.wav"></audio>
+    <audio class="js-audio" data-key="75" src="./sounds/tom.wav"></audio>
+    <audio class="js-audio" data-key="76" src="./sounds/tink.wav"></audio>
+  </main>
+
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>

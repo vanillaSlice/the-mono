@@ -1,0 +1,65 @@
+@import '../../styles/base.css';
+
+body {
+  background-color: white;
+  color: rgb(34, 35, 36);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container {
+  border: 0.3rem solid rgb(150, 150, 150);
+  box-shadow: 0.5rem 0.5rem rgb(120, 255, 255), 1rem 1rem rgb(255, 120, 255);
+  margin: 5rem auto;
+  max-width: 70rem;
+  padding: 4rem;
+  text-align: justify;
+}
+
+.title {
+  font-size: 7.2rem;
+  margin-top: 0;
+}
+
+.text {
+  margin: 1.5rem 0;
+}
+
+.align-left {
+  float: left;
+  margin-right: 2rem;
+}
+
+.align-right {
+  float: right;
+  margin-left: 2rem;
+}
+
+.img {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.align-left.img {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.img {
+  transform: translateX(30%) scale(0.95);
+}
+
+.img.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+
+@media(max-width: 43.75em) {
+  .container {
+    width: 90%;
+  }
+
+  .img {
+    margin: 0 0 1.5rem 0;
+    max-width: 100%;
+  }
+}

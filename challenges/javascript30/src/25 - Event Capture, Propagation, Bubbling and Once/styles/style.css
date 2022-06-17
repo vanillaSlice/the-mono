@@ -1,0 +1,33 @@
+@import '../../styles/base.css';
+
+body {
+  font-size: 2.6rem;
+  height: 100%;
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+  width: 100vw;
+}
+
+div {
+  height: 100%;
+  width: 100%;
+}
+
+.one {
+  background: rgb(102, 255, 255);
+  padding: 10%;
+}
+
+.two {
+  background: rgb(255, 102, 255);
+  padding: 10%;
+}
+
+.three {
+  align-content: center;
+  align-items: center;
+  background: white;
+  display: flex;
+  justify-content: center;
+}
