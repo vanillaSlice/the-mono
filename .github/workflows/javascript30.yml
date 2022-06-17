@@ -4,18 +4,18 @@ on:
     branches: main
     paths:
       - .github/workflows/javascript30.yml
-      - projects/javascript30/**
+      - challenges/javascript30/**
   push:
     branches: main
     paths:
       - .github/workflows/javascript30.yml
-      - projects/javascript30/**
+      - challenges/javascript30/**
 jobs:
   Build:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: projects/javascript30
+        working-directory: challenges/javascript30
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -26,7 +26,7 @@ jobs:
       - run: npm run build
       - uses: nwtgck/actions-netlify@v1.2
         with:
-          publish-dir: projects/javascript30/build
+          publish-dir: challenges/javascript30/build
           production-branch: main
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
