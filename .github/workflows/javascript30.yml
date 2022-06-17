@@ -1,0 +1,33 @@
+name: JavaScript30
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/javascript30.yml
+      - projects/javascript30/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/javascript30.yml
+      - projects/javascript30/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/javascript30
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 10
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: projects/javascript30/build
+          production-branch: main
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: f08aac73-d4aa-49ff-a366-0e8c7ce430e7
