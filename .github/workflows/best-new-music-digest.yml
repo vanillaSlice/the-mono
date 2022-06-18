@@ -28,5 +28,5 @@ jobs:
           pytest tests/ --cov=best_new_music_digest --cov-report=xml --cov-fail-under=95
       - uses: codecov/codecov-action@v2
         with:
-          flags: BestNewMusic
+          flags: BestNewMusicDigest
           fail_ci_if_error: true

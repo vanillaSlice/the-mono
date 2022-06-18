@@ -4,9 +4,9 @@ coverage:
     patch: off
     project: off
 flags:
-  BestNewMusic:
+  BestNewMusicDigest:
     paths:
-      - projects/best-new-music
+      - projects/best-new-music-digest
     carryforward: true
   Dawdle:
     paths:
