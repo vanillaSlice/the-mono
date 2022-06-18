@@ -4,6 +4,14 @@ coverage:
     patch: off
     project: off
 flags:
+  BestNewMusic:
+    paths:
+      - projects/best-new-music
+    carryforward: true
+  Dawdle:
+    paths:
+      - projects/dawdle
+    carryforward: true
   FCCLeaderboard:
     paths:
       - projects/fcc-leaderboard
