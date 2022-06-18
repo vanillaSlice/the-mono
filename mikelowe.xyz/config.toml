@@ -20,6 +20,14 @@ enabled = "true"
 title = "Mike Lowe"
 subtitle = "Senior Software Engineer at KrakenFlex"
 
+[[params.profileMode.buttons]]
+name = "Projects"
+url = "/projects"
+
+[[params.profileMode.buttons]]
+name = "Writing"
+url = "/writing"
+
 [[params.socialIcons]]
 name = "github"
 url = "https://github.com/vanillaSlice"
