@@ -1,9 +1,8 @@
 # Best New Music Digest
 
-[![Latest Release](https://img.shields.io/github/release/vanillaSlice/best-new-music-digest.svg)](https://github.com/vanillaSlice/best-new-music-digest/releases/latest)
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/best-new-music-digest/Continuous%20Integration/master)](https://github.com/vanillaSlice/best-new-music-digest/actions?query=workflow%3A%22Continuous+Integration%22+branch%3Amaster)
-[![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/best-new-music-digest/master.svg)](https://coveralls.io/github/vanillaSlice/best-new-music-digest?branch=master)
-[![License](https://img.shields.io/github/license/vanillaSlice/best-new-music-digest.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Best%20New%20Music%20Digest/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ABest-New-Music-Digest+branch%3Amain)
+[![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=BestNewMusicDigest)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/best-new-music-digest)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 Scrapes new music info, emails out a digest, and creates playlists.
 
