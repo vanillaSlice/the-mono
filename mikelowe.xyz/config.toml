@@ -9,8 +9,13 @@ env = "production"
 title = "Mike Lowe"
 description = "Senior Software Engineer at KrakenFlex"
 author = "Mike Lowe"
-keywords = ["software", "developer", "engineer", "krakenflex"]
-defaultTheme = "auto"
+keywords = ["mike lowe", "software", "developer", "engineer", "krakenflex", "manchester", "england", "uk"]
+defaultTheme = "light"
+disableThemeToggle = "true"
+ShowBreadCrumbs = "true"
+
+[params.label]
+text = " "
 
 [params.analytics]
 googlesiteVerificationTag = "O8nQ3mb-lymo3nQFax5JRFE-mgmtxnLJ1H-ZIEdzSxQ"
@@ -25,8 +30,8 @@ name = "Projects"
 url = "/projects"
 
 [[params.profileMode.buttons]]
-name = "Writing"
-url = "/writing"
+name = "Writings"
+url = "/writings"
 
 [[params.socialIcons]]
 name = "github"
