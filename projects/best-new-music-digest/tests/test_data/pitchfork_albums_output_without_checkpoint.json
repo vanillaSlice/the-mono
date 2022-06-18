@@ -1,0 +1,68 @@
+{
+  "title": "Pitchfork Albums",
+  "link": "https://www.pitchfork.com/reviews/best/albums/",
+  "items": [
+    {
+      "artist": "Run the Jewels",
+      "title": "RTJ4",
+      "link": "https://www.pitchfork.com/reviews/albums/run-the-jewels-rtj4/"
+    },
+    {
+      "artist": "Medhane",
+      "title": "Cold Water",
+      "link": "https://www.pitchfork.com/reviews/albums/medhane-cold-water/"
+    },
+    {
+      "artist": "Perfume Genius",
+      "title": "Set My Heart on Fire Immediately",
+      "link": "https://www.pitchfork.com/reviews/albums/perfume-genius-set-my-heart-on-fire-immediately/"
+    },
+    {
+      "artist": "Moses Sumney",
+      "title": "græ",
+      "link": "https://www.pitchfork.com/reviews/albums/moses-sumney-grae/"
+    },
+    {
+      "artist": "Blake Mills",
+      "title": "Mutable Set",
+      "link": "https://www.pitchfork.com/reviews/albums/blake-mills-mutable-set/"
+    },
+    {
+      "artist": "The Soft Pink Truth",
+      "title": "Shall We Go On Sinning So That Grace May Increase?",
+      "link": "https://www.pitchfork.com/reviews/albums/the-soft-pink-truth-shall-we-go-on-sinning-so-that-grace-may-increase/"
+    },
+    {
+      "artist": "KeiyaA",
+      "title": "Forever, Ya Girl",
+      "link": "https://www.pitchfork.com/reviews/albums/keiyaa-forever-ya-girl/"
+    },
+    {
+      "artist": "Fiona Apple",
+      "title": "Fetch the Bolt Cutters",
+      "link": "https://www.pitchfork.com/reviews/albums/fiona-apple-fetch-the-bolt-cutters/"
+    },
+    {
+      "artist": "Yves Tumor",
+      "title": "Heaven to a Tortured Mind",
+      "link": "https://www.pitchfork.com/reviews/albums/yves-tumor-heaven-to-a-tortured-mind/"
+    },
+    {
+      "artist": "Waxahatchee",
+      "title": "Saint Cloud",
+      "link": "https://www.pitchfork.com/reviews/albums/waxahatchee-saint-cloud/"
+    },
+    {
+      "artist": "Lyra Pramuk",
+      "title": "Fountain",
+      "link": "https://www.pitchfork.com/reviews/albums/lyra-pramuk-fountain/"
+    },
+    {
+      "artist": "Jay Electronica",
+      "title": "A Written Testimony",
+      "link": "https://www.pitchfork.com/reviews/albums/jay-electronica-a-written-testimony/"
+    }
+  ],
+  "errors": false,
+  "type": "albums"
+}

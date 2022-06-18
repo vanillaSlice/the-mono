@@ -1,0 +1,11 @@
+{
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?query=artist%3A6ix9ine+%26+Nicki+Minaj+track%3ATROLLZ&type=track&offset=0&limit=1",
+    "items": [],
+    "limit": 1,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total": 0
+  }
+}

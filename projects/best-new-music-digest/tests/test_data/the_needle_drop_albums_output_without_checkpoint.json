@@ -1,0 +1,33 @@
+{
+  "title": "The Needle Drop Albums",
+  "link": "https://www.youtube.com/user/theneedledrop",
+  "items": [
+    {
+      "artist": "Deerhoof",
+      "title": "Future Teenage Cave Artists",
+      "link": "https://www.youtube.com/watch?v=xjNG90UjuII"
+    },
+    {
+      "artist": "Freddie Gibbs & The Alchemist",
+      "title": "Alfredo w/DeadEndHipHop",
+      "link": "https://www.youtube.com/watch?v=sD93lPFOY6s"
+    },
+    {
+      "artist": "Backxwash",
+      "title": "God Has Nothing to Do With This Leave Him Out of It",
+      "link": "https://www.youtube.com/watch?v=OBcYr05W8Cs"
+    },
+    {
+      "artist": "Jeff Rosenstock",
+      "title": "NO DREAM",
+      "link": "https://www.youtube.com/watch?v=nyy8_TisAlE"
+    },
+    {
+      "artist": "Perfume Genius",
+      "title": "Set My Heart on Fire Immediately",
+      "link": "https://www.youtube.com/watch?v=0vFTfoOavRM"
+    }
+  ],
+  "errors": false,
+  "type": "albums"
+}

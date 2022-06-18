@@ -1,0 +1,11 @@
+{
+  "python.pythonPath": "~/.virtualenvs/best-new-music-digest/bin/python",
+  "python.testing.pytestArgs": [
+    "tests"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestPath": "~/.virtualenvs/best-new-music-digest/bin/pytest",
+  "python.linting.pylintPath": "~/.virtualenvs/best-new-music-digest/bin/pylint"
+}

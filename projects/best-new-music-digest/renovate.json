@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "config:base",
+    ":prHourlyLimitNone",
+    ":rebaseStalePrs",
+    "group:allNonMajor"
+  ],
+  "automerge": true,
+  "major": {
+    "automerge": false
+  },
+  "pip_requirements": {
+    "fileMatch": [
+      "requirements\\.txt",
+      "requirements-test\\.txt"
+    ]
+  }
+}
