@@ -1,0 +1,222 @@
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": "j3FN7Gbo2r5iTePo9dykYzGszCw",
+  "nextPageToken": "CAUQAA",
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "bp_MEn-xUYS18C9qiEBGLCaxJyA",
+      "id": "UExQNENTZ2w3Szdvcjg0QUFocjd6bExOcGdoRW5LV3UyYy4xMTFCRDgyODkzQThBMEM3",
+      "snippet": {
+        "publishedAt": "2020-06-08T03:48:06Z",
+        "channelId": "UCt7fwAhXDy3oNFTAzF2o8Pw",
+        "title": "Weekly Track Roundup: 6/7 (Denzel Curry, YG, Poppy, Mr. Bungle)",
+        "description": "FAV TRACKS Spotify playlist:\nhttps://open.spotify.com/playlist/34mJ2w9MY78Bz0Pd5h4P5o?si=44VxevVRTXydLgmRq1btew\n\nTND Patreon: https://www.patreon.com/theneedledrop\n\nTurntable Lab link: http://turntablelab.com/theneedledrop\n\nSHOUTOUTS\n\nFlatbush Zombies - now, more than ever EP\nhttps://www.youtube.com/watch?v=rSOd-0bNGM4&list=OLAK5uy_nLG1HjLfpUjObQ044icH2ETqtLvZr9oSs \n\nGruesome / Exhumed - Twisted Horror (Split)\nhttps://gruesomedeathmetal.bandcamp.com/album/twisted-horror-split-with-exhumed \n\n\n!!!BEST TRACKS THIS WEEK!!!\n\nLil B - I Am George Floyd\nhttps://youtu.be/clcfknHQ66k\n\nMr. Muthafuckin' eXquire - Bootlicker (Burn Baby Burn)\nhttps://www.youtube.com/watch?v=5rTAWOkQE78  \n\nJean Dawson - Policia\nhttps://www.youtube.com/watch?v=9MC857vsMaw\n\nDos Monos - Fable Now\nhttps://www.youtube.com/watch?v=agBqMrQj8U8  \n\nModel/Actriz- Damocles\nhttps://www.youtube.com/watch?v=KX4jhAl7Uug  \n\nPussy Riot - 1312 ft. Parcas, Dillom & Muerejoven\nhttps://www.youtube.com/watch?v=Pm1wkT1vgH0  \n\nRun the Jewels - JU$T ft. Pharrell Williams & Zach de la Rocha\nhttps://www.youtube.com/watch?v=vYPIOaqNlyg  \n\nMeek Mill - Other Side of America\nhttps://youtu.be/JUnc3kl0DcA\n\nConway the Machine - Front Lines\nhttps://www.youtube.com/watch?v=WY4adAbUHZ8\n\nYG - FTP\nhttps://www.youtube.com/watch?v=_NFJtEqO0HU\n\nTerrace Martin - Pig Feet ft. Denzel Curry, Daylyt, Kamasi Washington, & G Perico\nhttps://www.youtube.com/watch?v=2OMirbGvn8o\nReview: https://www.youtube.com/watch?v=wB-PNPBiL18\n\nCupcakKe - Lemon Pepper\nhttps://open.spotify.com/track/3zSTe4OKgehctKAfCsAA46\n\n\n...meh...\n\nThe Menzingers - America Pt. 2\nhttps://themenzingers.bandcamp.com/track/america-pt-2-3\n\nKairon; IRSE! - an Bat None\nhttps://youtu.be/Wl35IJdEi6Y\n\nKOBRA - Confusione\nhttps://ironlungpv.bandcamp.com/track/confusione-2\n\nMr. Bungle - USA (Exploited Cover)\nhttps://youtu.be/6PMz0frVKkc\n\nTWICE - More & More\nhttps://www.youtube.com/watch?v=mH0_XpSHkZo  \n\nZillaKami - ACAB ft. Nascar Aloe\nhttps://www.youtube.com/watch?v=sY2Y-L5cvcA  \n\nTy Segall & Cory Hanson - She's a Beam\nhttps://tysegall-coryhanson.bandcamp.com/album/shes-a-beam\n\nJohn Dwyer, Ryan Sawyer, Peter Kerlin, Tom Dolas, Brad Caulkins, Kyp Malone & Marcos Rodriguez - The Gate\nhttps://johndwyer.bandcamp.com/album/bent-arcana\n\n\n!!!WORST TRACKS THIS WEEK!!!\n\nMuzz - All Is Dead to Me\nhttps://youtu.be/AZ8BVsPN5kc\n\nPoppy - All the Things She Said (Tatu Cover)\nhttps://www.youtube.com/watch?v=YTvIG6gHMh0  \n\nRolling Blackouts Coastal Fever - Cameo\nhttps://www.youtube.com/watch?v=VbQryKouPbc  \n\n===================================\nSubscribe: http://bit.ly/1pBqGCN\n\nPatreon: https://www.patreon.com/theneedledrop\n\nOfficial site: http://theneedledrop.com\n\nTND Twitter: http://twitter.com/theneedledrop\n\nTND Facebook: http://facebook.com/theneedledrop\n\nSupport TND: http://theneedledrop.com/support\n===================================\n\nY'all know this is just my opinion, right?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/FriRf3olBpo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/FriRf3olBpo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/FriRf3olBpo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "theneedledrop",
+        "playlistId": "PLP4CSgl7K7or84AAhr7zlLNpghEnKWu2c",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "FriRf3olBpo"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "KJjWt17gHrZkm4prgv0MhXZyDKA",
+      "id": "UExQNENTZ2w3Szdvcjg0QUFocjd6bExOcGdoRW5LV3UyYy45NjFBMjIyRUI0QzhCQzgz",
+      "snippet": {
+        "publishedAt": "2020-06-01T04:05:56Z",
+        "channelId": "UCt7fwAhXDy3oNFTAzF2o8Pw",
+        "title": "Weekly Track Roundup: 5/31 (BROCKHAMPTON, JPEGMAFIA, Rosalía & Travis Scott)",
+        "description": "FAV TRACKS Spotify playlist:\nhttps://open.spotify.com/playlist/34mJ2w9MY78Bz0Pd5h4P5o?si=44VxevVRTXydLgmRq1btew\n\nTND Patreon: https://www.patreon.com/theneedledrop\n\nTurntable Lab link: http://turntablelab.com/theneedledrop\n\nSHOUTOUT\nJim O'Rourke - Shutting Down Here (Excerpt)\nhttps://soundcloud.com/editionsmego/jim-orourke-shutting-down-here-excerptspgrm-001 \n\n\n!!!BEST TRACKS THIS WEEK!!!\n\nFreddie Gibbs & The Alchemist  - Something to Rap About ft. Tyler, the Creator\nhttps://www.youtube.com/watch?v=POw27Wug4wo\nReview: https://youtu.be/dH2ojiqbBRU\n\nYoung Dolph - RNB ft. Megan Thee Stallion\nhttps://www.youtube.com/watch?v=sP1_ZDl8U0w  \n\nThe Lemon Twigs - Moon\nhttps://youtu.be/7h1d3zh3NRo\n\nBROCKHAMPTON - fishbone & chain on / hold me ft. JPEGMAFIA\nhttps://youtu.be/zC0EanEj-_A\nhttps://www.youtube.com/watch?v=t0RmMunFMKM  \n\nRosalía & Travis Scott - TKN\nhttps://www.youtube.com/watch?v=q5xIoeG4uVI\nReview: https://www.youtube.com/watch?v=6S5PHHVrsvw\n\nMoor Jewelry - Working\nhttps://youtu.be/0fF2N_Jc1ls\n\nJPEGMAFIA - CUTIE PIE!\nhttps://www.youtube.com/watch?v=_6Doo17lb60\nReview: https://www.youtube.com/watch?v=xg80jD5VpTw\n\nLady Gaga & BLACKPINK - Sour Candy\nhttps://www.youtube.com/watch?v=fnPn6At3v28  \nReview: https://www.youtube.com/watch?v=DeW1bW5ZNdI\n\nvalknee, 田島ハルコ, なみちえ, ASOBOiSM, Marukido, あっこゴリラ - ZOOM\nhttps://youtu.be/-wXn_sK3o5Q\n\nSpirit Possession - Spirit Possession\nhttps://youtu.be/oRrNJLF-8jU\n\nWhitney - Take Me Home, Country Roads ft. Waxahatchee\nhttps://youtu.be/uVGhLIUBPZI\n\nDreya Mac - Skippin\nhttps://youtu.be/xGseZRcgYHw\n\nArt Feynman - Not My Guy\nhttps://youtu.be/ympOd3SNFiE\n\nFlatbush ZOMBiES - iamlegend\nhttps://youtu.be/xJbyjdFzOsM\n\nDos Monos - Civil Rap Song ft. Audrey Tang\nhttps://www.youtube.com/watch?v=tYSsZ528EKc\n\n\n...meh...\n\nGeorge Clanton & Nick Hexum - Aurora Summer\nhttp://georgeclanton.bandcamp.com/album/george-clanton-nick-hexum\n\nAminé - Riri\nhttps://youtu.be/_Zn2eb5zxtQ\n\nProtomartyr - Michigan Hammers\nhttps://youtu.be/ofXWdTjvDP4\n\nFlaming Lips - Flowers of Neptune 6 ft. Kacey Musgraves\nhttps://youtu.be/kxUXT6nEYFY\n\nLamb of God - Routes ft. Chuck Billy\nhttps://www.youtube.com/watch?v=nYZLs0Wg2so  \n\nBright Eyes - One and Done\nhttps://youtu.be/SXYA3-z_JH8\n\nThe Soft Pink Truth - Police Bastard (Doom Cover)\nhttps://thesoftpinktruth.bandcamp.com/album/am-i-free-to-go\n\nKemba - Kill Your Idols\nhttps://kembaland.bandcamp.com/track/kill-your-idols\n\nDolly Parton - When Life Is Good Again\nhttps://www.youtube.com/watch?v=zEUYlo6OoDY  \n\n\n!!!WORST TRACKS THIS WEEK!!!\n\nTones and I - Ur So F***ing Cool\nhttps://www.youtube.com/watch?v=N6GLTz0_rCA  \n\nJuice WRLD - Tell Me U Luv Me ft. Trippie Redd\nhttps://www.youtube.com/watch?v=ddoFu4sDXpU\n\nDiplo - Hometown ft. Zac Brown & Danielle Bradbery\nhttps://www.youtube.com/watch?v=EKxQvEjO0Jc  \n\nLil Yachty - Split / Whole Time\nhttps://www.youtube.com/watch?v=h8mW3iA6O4M  \n\nCigarettes After Sex - You're All I Want\nhttps://www.youtube.com/watch?v=BZ6D9SEvBHs  \n\nOrville Peck - No Glory in the West\nhttps://youtu.be/TU0TAsEjUpg\n\n===================================\nSubscribe: http://bit.ly/1pBqGCN\n\nPatreon: https://www.patreon.com/theneedledrop\n\nOfficial site: http://theneedledrop.com\n\nTND Twitter: http://twitter.com/theneedledrop\n\nTND Facebook: http://facebook.com/theneedledrop\n\nSupport TND: http://theneedledrop.com/support\n===================================\n\nY'all know this is just my opinion, right?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/BH-yi1Ilekg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/BH-yi1Ilekg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/BH-yi1Ilekg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "theneedledrop",
+        "playlistId": "PLP4CSgl7K7or84AAhr7zlLNpghEnKWu2c",
+        "position": 1,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "BH-yi1Ilekg"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "lkAM-A_HPpmUp_07J8l5-FkIUxA",
+      "id": "UExQNENTZ2w3Szdvcjg0QUFocjd6bExOcGdoRW5LV3UyYy44Rjc3MDE3QTkyQ0YyOEIx",
+      "snippet": {
+        "publishedAt": "2020-05-18T04:04:34Z",
+        "channelId": "UCt7fwAhXDy3oNFTAzF2o8Pw",
+        "title": "Weekly Track Roundup: 5/17 (BROCKHAMPTON, Katy Perry, slowthai, Future)",
+        "description": "FAV TRACKS Spotify playlist:\nhttps://open.spotify.com/playlist/34mJ2w9MY78Bz0Pd5h4P5o?si=44VxevVRTXydLgmRq1btew\n\nTND Patreon: https://www.patreon.com/theneedledrop\n\nTurntable Lab link: http://turntablelab.com/theneedledrop\n\n\n!!!BEST TRACKS THIS WEEK!!!\n\nStanding on the Corner - Angel (Life and Death of the Earth in the Key of F)\nhttps://youtu.be/PEwQV6RRrzQ\n\nDeerhoof - Damaged Eyes Squinting into the Beautiful Overhot Sun\nhttps://youtu.be/gPP9Q4k3vic\n\nCaribou - Never Come Back (Four Tet Remix)\nhttps://youtu.be/eS7GstfXPwg\n\nAmnesia Scanner - AS Tearless ft. Lalita\nhttps://soundcloud.com/pan_hq/amnesia-scanner-as-tearless-feat-lalita-pan-108\n\nCupcakKe - Grilling N****s\nhttps://youtu.be/yPRgUhPZy-w\n\nPerfume Genius - Jason\nhttps://www.youtube.com/watch?v=_vaXpIDR0iU  \n\nWailin Storms - Rope\nhttps://gileadmedia.bandcamp.com/track/rope\n\nCarpenter Brut - MANIAC ft. Yann Ligner\nhttps://carpenterbrut.bandcamp.com/track/maniac-feat-yann-ligner\n\nslowthai - Magic\nhttps://www.youtube.com/watch?v=x_QODe9Spuw  \n\nSega Bodega & Dorian Electra - Teenage Dirtbag\nhttps://youtu.be/-JA36857TBs\n\nDear Mari - I Got Friends\nhttps://youtu.be/8hogH48AH28\n\nTkay Maidza - Shook\nhttps://youtu.be/IhWJ-wZ7S9k\n\nThe 1975 - Guys\nhttps://www.youtube.com/watch?v=mhLSNfgeQLM  \n\nMoses Sumney - Bless Me\nhttps://youtu.be/D386dU9thiA\n\n\n...meh...\n\nThao & The Get Down Stay Down - Pure Cinema\nhttps://youtu.be/vpzdaqwYaXs\n\nBehemoth - A Forest ft. Niklas Kvarforth\nhttps://www.youtube.com/watch?v=wYZdaYobCSU  \n\nKaty Perry - Daisies\nhttps://www.youtube.com/watch?v=NutHKRKBgR0  \n\nPolo G - Beautiful Pain (Losin My Mind)\nhttps://www.youtube.com/watch?v=YFTkD1Baixg  \n\nYung Lean - Acid at 7/11\nhttps://youtu.be/vYdmrLYftlI\n\nJoyner Lucas - Will (Remix) ft. Will Smith\nhttps://www.youtube.com/watch?v=V5a7cVf2NeM  \n\nBROCKHAMPTON - M.O.B / twisted ft. Ryan Beatty & Christian Alexander\nhttps://youtu.be/cGKAhQI8xBo\nhttps://youtu.be/DgBU5nBb58w\n\nLil Skies - Riot\nhttps://www.youtube.com/watch?v=R16itGXKp9k  \n\nEverything Everything - Arch Enemy\nhttps://youtu.be/HlChQROkhQg\n\n\n!!!WORST TRACKS THIS WEEK!!!\n\nMetallica - Blackened 2020\nhttps://www.youtube.com/watch?v=P_yeICLSDOQ  \n\nFuture - Trillionaire ft. YoungBoy Never Broke Again\nhttps://www.youtube.com/watch?v=5tOytaaALGQ  \n\nJonas Brothers - X ft. Karol G\nhttps://www.youtube.com/watch?v=OHRog2ohHPI  \n\nTrippie Redd & PartyNextDoor - Excitement\nhttps://www.youtube.com/watch?v=n7_C5YX-JM4  \n\nNoah Cyrus - Young & Sad\nhttps://www.youtube.com/watch?v=NbgD9TyTW6g\n\n\n===================================\nSubscribe: http://bit.ly/1pBqGCN\n\nPatreon: https://www.patreon.com/theneedledrop\n\nOfficial site: http://theneedledrop.com\n\nTND Twitter: http://twitter.com/theneedledrop\n\nTND Facebook: http://facebook.com/theneedledrop\n\nSupport TND: http://theneedledrop.com/support\n===================================\n\nY'all know this is just my opinion, right?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/rOR1lpNnBJ0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/rOR1lpNnBJ0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/rOR1lpNnBJ0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "theneedledrop",
+        "playlistId": "PLP4CSgl7K7or84AAhr7zlLNpghEnKWu2c",
+        "position": 2,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "rOR1lpNnBJ0"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "7ldwNNhDlkApewtKH6C_nAuDSg0",
+      "id": "UExQNENTZ2w3Szdvcjg0QUFocjd6bExOcGdoRW5LV3UyYy5GRjZBMzg1QjYxMDdEQTZF",
+      "snippet": {
+        "publishedAt": "2020-05-11T03:55:49Z",
+        "channelId": "UCt7fwAhXDy3oNFTAzF2o8Pw",
+        "title": "Weekly Track Roundup: 5/10 (6IX9INE, Justin Bieber, slowthai, Weezer)",
+        "description": "FAV TRACKS Spotify playlist:\nhttps://open.spotify.com/playlist/34mJ2w9MY78Bz0Pd5h4P5o?si=44VxevVRTXydLgmRq1btew\n\nTND Patreon: https://www.patreon.com/theneedledrop\n\nTurntable Lab link: http://turntablelab.com/theneedledrop\n\nSHOUTOUTS:\n\nEcco2K & Bladee - Remote Utopias (Live on NTS)\nhttps://www.youtube.com/watch?v=YJRzRzt9iNI \n\nOkkyung Lee - Another Old Story\n https://shelterpress.bandcamp.com/track/another-old-story\n\n\n!!!BEST TRACKS THIS WEEK!!!\n\nDirty Projectors - Lose Your Love\nhttps://youtu.be/HtAcgEtY_CM\n\nLydia Ainsworth - Forever\nhttps://youtu.be/wYKDOCb0l-w\n\nBibio - Sleep on the Wing\nhttps://youtu.be/3UNsV5H7xxc\n\nChristine and the Queens - Heart of Gold (Neil Young Cover)\nhttps://youtu.be/ed_JABaIXU0\n\nLianne La Havas - Paper Thin\nhttps://youtu.be/ug3Q9RmFywc\n\nFontaines D.C. - A Hero's Death\nhttps://youtu.be/jLNt8aMNbvY\n\nKim Petras - Malibu\nhttps://www.youtube.com/watch?v=hXlgR4hJFGQ\n\nSam Truth - All My Dogs\nhttps://www.youtube.com/watch?v=_Oa02GNY9f8\n\nThe Drums & Jonny Pierce - Take Yer Meds!! (A Guided Meditation)\nhttps://youtu.be/vDWQ59ICbGQ\n\nPreservation - North Bridge ft. Navy Blue\nhttps://youtu.be/bgNqBpnNkgQ\n\nWeezer - Hero\nhttps://www.youtube.com/watch?v=BdJS11C8LA0\nReview: https://www.youtube.com/watch?v=ZTTswWi8ws4\n\nXIBALBA - Años en Infierno\nhttps://youtu.be/IvNT-XcpMCg\n\nJessie Ware - Save a Kiss\nhttps://youtu.be/b4mcsokUXKc\n\nWillie Nelson - I'm the Only Hell My Mama Ever Raised (Johnny Paycheck Cover)\nhttps://youtu.be/kFPdHJcWEmA\n\nSleaford Mods - Second\nhttps://youtu.be/IT09DGuXwYQ\n\nslowthai - Enemy\nhttps://youtu.be/_vtCvn6eeVQ\n\n\n...meh...\n\nThe Streets - Where the F*ck Did April Go?\nhttps://youtu.be/NvM87-hi8p4\n\nBob Dylan - False Prophet\nhttps://youtu.be/2QPBpFAKTGo\n\nWoods - Can't Get Out\nhttps://youtu.be/v4fE-3M_SCQ\n\nJehnny Beth - Heroine\nhttps://youtu.be/BxJvTUayxow\n\nBad Bunny - Bendiciones\nhttps://www.youtube.com/watch?v=WNadJHcL0X0\n\nAriana Grande & Justin Bieber - Stuck with U\nhttps://www.youtube.com/watch?v=pE49WK-oNjU\n\nCharli XCX - I Finally Understand\nhttps://www.youtube.com/watch?v=T0D2fZ_P0Hg\n\nFire-Toolz - It's Now Safe to Turn Off Your Computer\nhttps://fire-toolz.bandcamp.com/album/rainbow-bridge  \n\nJoe Goddard & Hayden Thorpe - Unknown Song\nhttps://youtu.be/onuLA7H61-o\n\nLittle Big - Hypnodancer\nhttps://youtu.be/RhMYBfF7-hE\n\nAlex Cameron - Before Too Long (Paul Kelly Cover)\nhttps://youtu.be/wlhuOmwcd7Q\n\nDenzel Curry - I'm Just Sayin Tho ft. Tommy Swisher\nhttps://t.co/p5432UlAYm?amp=1\n\nBROCKHAMPTON - N.S.T. / things can't stay the same\nhttps://youtu.be/fd4vxDTt3yQ\nhttps://youtu.be/xYIZ4WNHyzQ\nReview: https://www.youtube.com/watch?v=bBG4eRf_a4A&t=0s\n\n6ix9ine - GOOBA\nhttps://www.youtube.com/watch?v=pPw_izFr5PA\nReview: https://www.youtube.com/watch?v=p1mp8Ikw5Q0\n\n\n!!!WORST TRACKS THIS WEEK!!!\n\nChris Brown & Young Thug - Go Crazy\nhttps://www.youtube.com/watch?v=RhFR23coKCY  \n\nKehlani - Can I ft. Tory Lanez\nhttps://www.youtube.com/watch?v=rCV2RlyBlvs  \n\nNav - Status ft. Lil Uzi Vert\nhttps://www.youtube.com/watch?v=6N-PUM6-Fjs  \n\nMigos - Taco Tuesday\nhttps://youtu.be/t-Dx85AHUBU\n\n===================================\nSubscribe: http://bit.ly/1pBqGCN\n\nPatreon: https://www.patreon.com/theneedledrop\n\nOfficial site: http://theneedledrop.com\n\nTND Twitter: http://twitter.com/theneedledrop\n\nTND Facebook: http://facebook.com/theneedledrop\n\nSupport TND: http://theneedledrop.com/support\n===================================\n\nY'all know this is just my opinion, right?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/fdd87GmShe4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/fdd87GmShe4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/fdd87GmShe4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "theneedledrop",
+        "playlistId": "PLP4CSgl7K7or84AAhr7zlLNpghEnKWu2c",
+        "position": 3,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "fdd87GmShe4"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "Kxn27n1DAv4DzY2yWjjq8aWXPtc",
+      "id": "UExQNENTZ2w3Szdvcjg0QUFocjd6bExOcGdoRW5LV3UyYy41RjNCNjdGQUYwMEEyRkMx",
+      "snippet": {
+        "publishedAt": "2020-05-04T04:13:16Z",
+        "channelId": "UCt7fwAhXDy3oNFTAzF2o8Pw",
+        "title": "Weekly Track Roundup: 5/3 (Gorillaz, Drake, HAIM, Arca)",
+        "description": "FAV TRACKS Spotify playlist:\nhttps://open.spotify.com/playlist/34mJ2w9MY78Bz0Pd5h4P5o?si=44VxevVRTXydLgmRq1btew\n\nOur sponsor: http://ridgewallet.com/fantano\nUSE PROMO CODE \"MELON\" FOR 10% OFF\n\nTND Patreon: https://www.patreon.com/theneedledrop\n\nTurntable Lab link: http://turntablelab.com/theneedledrop\n\nSHOUTOUTS:\n\nKult Krimes - Heavenly Mess EP\nhttps://open.spotify.com/album/492GjgZWQ9lAouyiAhFYVs?si=zng8IxVuQIOlX2kYVJ-uJw\n\nFrankJavCee - I Love Hating You EP\nhttps://frankjavcee.bandcamp.com/album/i-love-hating-you\n\nserpentwithfeet - Apparition EP\nhttps://serpentwithfeet.bandcamp.com/album/apparition-ep\n\n\n!!!BEST TRACKS THIS WEEK!!!\n\nJessy Lanza - Face\nhttps://youtu.be/QrwrjMntR8o\n\nGorillaz - How Far? ft. Tony Allen & Skepta\nhttps://www.youtube.com/watch?v=GiWduWEtma4\nReview: https://www.youtube.com/watch?v=62Tp40K5gis\n\nLingua Ignota - Jolene (Dolly Parton Cover)\nhttps://linguaignota.bandcamp.com/track/jolene\n\nLucy Dacus - Tom Courtenay (Yo La Tengo Cover)\nhttps://youtu.be/85pLz4sc4tI\n\nMegan Thee Stallion - Savage (Remix) ft. Beyoncé\nhttps://www.youtube.com/watch?v=lEIqjoO0-Bs\n\nHinds - Just Like Kids\nhttps://youtu.be/m_N93cxyg8Q\n\nProtomartyr - Worm in Heaven\nhttps://youtu.be/7jBayKVcc7s\n\nBell Witch & Aerial Ruin - Heaven Torn Low II (The Toll)\nhttps://youtu.be/RXoMEZQwhgk\n\n\n...meh...\n\nMETZ - Acid\nhttps://metz.bandcamp.com/album/acid-slow-decay\n\nAmber Mark - 1894\nhttps://youtu.be/isgg8F1g0qw\n\nDisheveled Cuss - Oh My God\nhttps://youtu.be/hoAeQBPmkqc\n\nBig Thief - Love in Mine\nhttps://youtu.be/-CxYz4iWPCI\n\nJess Williamson - Smoke\nhttps://youtu.be/vINgxOeiCoQ\n\nDixie Chicks - Julianna Calm Down\nhttps://www.youtube.com/watch?v=TGxPeJto3U4\n\nDoja Cat - Say So (Remix) ft. Nicki Minaj\nhttps://www.youtube.com/watch?v=marAFsQo3VE\n\nKota the Friend - B.Q.E. ft. Joey Bada$$ & Bas\nhttps://youtu.be/DnLQqpPTK-c\n\nBADBADNOTGOOD - Goodbye Blue\nhttps://youtu.be/DwUkLdbgNso\n\nDrake - Pain 1993 ft. Playboi Carti\nhttps://www.youtube.com/watch?v=Q5jnuOCJvK0\nReview: https://www.youtube.com/watch?v=p1AN1T-otsk\n\nXiu Xiu - I Swallow the Moon\nhttps://qujunktions.bandcamp.com/track/xiu-xiu-i-swallow-the-moon\n\nPollari - Lover's Lane\nhttps://www.youtube.com/watch?v=U0q0gbRmBmo\n\nArca - Nonbinary\nhttps://youtu.be/gfGz4MTQ28I\n\n\n!!!WORST TRACKS THIS WEEK!!!\n\nRemo Drive - Star Worship\nhttps://remodrive.bandcamp.com/album/a-portrait-of-an-ugly-man\n\nLil Baby & 42 Dugg - We Paid\nhttps://www.youtube.com/watch?v=2wowASwbq-w\n\nFrench Montana - Cold ft. Tory Lanez\nhttps://www.youtube.com/watch?v=dRYRjMkialE\n\nHAIM - I Know Alone\nhttps://www.youtube.com/watch?v=vfZSgr_si4I\n\nYG - Laugh Now Kry Later!\nhttps://www.youtube.com/watch?v=-51KiXm3mHs\n\nSia - Saved My Life\nhttps://www.youtube.com/watch?v=2e9_jfzFr0g  \n\nMachine Gun Kelly - Bloody Valentine\nhttps://www.youtube.com/watch?v=jfLpVbu5svQ  \n\nGlass Animals - Dreamland\nhttps://www.youtube.com/watch?v=BE7vBk_zLA4\n\n===================================\nSubscribe: http://bit.ly/1pBqGCN\n\nPatreon: https://www.patreon.com/theneedledrop\n\nOfficial site: http://theneedledrop.com\n\nTND Twitter: http://twitter.com/theneedledrop\n\nTND Facebook: http://facebook.com/theneedledrop\n\nSupport TND: http://theneedledrop.com/support\n===================================\n\nY'all know this is just my opinion, right?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/zQ75BuzThGU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/zQ75BuzThGU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/zQ75BuzThGU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "theneedledrop",
+        "playlistId": "PLP4CSgl7K7or84AAhr7zlLNpghEnKWu2c",
+        "position": 4,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "zQ75BuzThGU"
+        }
+      }
+    },
+
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "Kxn27n1DAv4DzY2yWjjq8aWXPtc",
+      "id": "UExQNENTZ2w3Szdvcjg0QUFocjd6bExOcGdoRW5LV3UyYy41RjNCNjdGQUYwMEEyRkMx",
+      "snippet": {
+        "publishedAt": "2020-05-04T04:13:16Z",
+        "channelId": "UCt7fwAhXDy3oNFTAzF2o8Pw",
+        "title": "RAW",
+        "description": "FAV TRACKS Spotify playlist:\nhttps://open.spotify.com/playlist/34mJ2w9MY78Bz0Pd5h4P5o?si=44VxevVRTXydLgmRq1btew\n\nOur sponsor: http://ridgewallet.com/fantano\nUSE PROMO CODE \"MELON\" FOR 10% OFF\n\nTND Patreon: https://www.patreon.com/theneedledrop\n\nTurntable Lab link: http://turntablelab.com/theneedledrop\n\nSHOUTOUTS:\n\nKult Krimes - Heavenly Mess EP\nhttps://open.spotify.com/album/492GjgZWQ9lAouyiAhFYVs?si=zng8IxVuQIOlX2kYVJ-uJw\n\nFrankJavCee - I Love Hating You EP\nhttps://frankjavcee.bandcamp.com/album/i-love-hating-you\n\nserpentwithfeet - Apparition EP\nhttps://serpentwithfeet.bandcamp.com/album/apparition-ep\n\n\n!!!BEST TRACKS THIS WEEK!!!\n\nJessy Lanza - Face\nhttps://youtu.be/QrwrjMntR8o\n\nGorillaz - How Far? ft. Tony Allen & Skepta\nhttps://www.youtube.com/watch?v=GiWduWEtma4\nReview: https://www.youtube.com/watch?v=62Tp40K5gis\n\nLingua Ignota - Jolene (Dolly Parton Cover)\nhttps://linguaignota.bandcamp.com/track/jolene\n\nLucy Dacus - Tom Courtenay (Yo La Tengo Cover)\nhttps://youtu.be/85pLz4sc4tI\n\nMegan Thee Stallion - Savage (Remix) ft. Beyoncé\nhttps://www.youtube.com/watch?v=lEIqjoO0-Bs\n\nHinds - Just Like Kids\nhttps://youtu.be/m_N93cxyg8Q\n\nProtomartyr - Worm in Heaven\nhttps://youtu.be/7jBayKVcc7s\n\nBell Witch & Aerial Ruin - Heaven Torn Low II (The Toll)\nhttps://youtu.be/RXoMEZQwhgk\n\n\n...meh...\n\nMETZ - Acid\nhttps://metz.bandcamp.com/album/acid-slow-decay\n\nAmber Mark - 1894\nhttps://youtu.be/isgg8F1g0qw\n\nDisheveled Cuss - Oh My God\nhttps://youtu.be/hoAeQBPmkqc\n\nBig Thief - Love in Mine\nhttps://youtu.be/-CxYz4iWPCI\n\nJess Williamson - Smoke\nhttps://youtu.be/vINgxOeiCoQ\n\nDixie Chicks - Julianna Calm Down\nhttps://www.youtube.com/watch?v=TGxPeJto3U4\n\nDoja Cat - Say So (Remix) ft. Nicki Minaj\nhttps://www.youtube.com/watch?v=marAFsQo3VE\n\nKota the Friend - B.Q.E. ft. Joey Bada$$ & Bas\nhttps://youtu.be/DnLQqpPTK-c\n\nBADBADNOTGOOD - Goodbye Blue\nhttps://youtu.be/DwUkLdbgNso\n\nDrake - Pain 1993 ft. Playboi Carti\nhttps://www.youtube.com/watch?v=Q5jnuOCJvK0\nReview: https://www.youtube.com/watch?v=p1AN1T-otsk\n\nXiu Xiu - I Swallow the Moon\nhttps://qujunktions.bandcamp.com/track/xiu-xiu-i-swallow-the-moon\n\nPollari - Lover's Lane\nhttps://www.youtube.com/watch?v=U0q0gbRmBmo\n\nArca - Nonbinary\nhttps://youtu.be/gfGz4MTQ28I\n\n\n!!!WORST TRACKS THIS WEEK!!!\n\nRemo Drive - Star Worship\nhttps://remodrive.bandcamp.com/album/a-portrait-of-an-ugly-man\n\nLil Baby & 42 Dugg - We Paid\nhttps://www.youtube.com/watch?v=2wowASwbq-w\n\nFrench Montana - Cold ft. Tory Lanez\nhttps://www.youtube.com/watch?v=dRYRjMkialE\n\nHAIM - I Know Alone\nhttps://www.youtube.com/watch?v=vfZSgr_si4I\n\nYG - Laugh Now Kry Later!\nhttps://www.youtube.com/watch?v=-51KiXm3mHs\n\nSia - Saved My Life\nhttps://www.youtube.com/watch?v=2e9_jfzFr0g  \n\nMachine Gun Kelly - Bloody Valentine\nhttps://www.youtube.com/watch?v=jfLpVbu5svQ  \n\nGlass Animals - Dreamland\nhttps://www.youtube.com/watch?v=BE7vBk_zLA4\n\n===================================\nSubscribe: http://bit.ly/1pBqGCN\n\nPatreon: https://www.patreon.com/theneedledrop\n\nOfficial site: http://theneedledrop.com\n\nTND Twitter: http://twitter.com/theneedledrop\n\nTND Facebook: http://facebook.com/theneedledrop\n\nSupport TND: http://theneedledrop.com/support\n===================================\n\nY'all know this is just my opinion, right?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/zQ75BuzThGU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/zQ75BuzThGU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/zQ75BuzThGU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "theneedledrop",
+        "playlistId": "PLP4CSgl7K7or84AAhr7zlLNpghEnKWu2c",
+        "position": 4,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "zQ75BuzThGU"
+        }
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 254,
+    "resultsPerPage": 5
+  }
+}

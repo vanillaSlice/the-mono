@@ -1,0 +1,135 @@
+{
+   "albums": {
+      "href": "https://api.spotify.com/v1/search?query=artist%3ARun+the+Jewels+album%3ARTJ4&type=album&offset=0&limit=1",
+      "items": [
+         {
+            "album_type": "album",
+            "artists": [
+               {
+                  "external_urls": {
+                     "spotify": "https://open.spotify.com/artist/4RnBFZRiMLRyZy0AzzTg2C"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/4RnBFZRiMLRyZy0AzzTg2C",
+                  "id": "4RnBFZRiMLRyZy0AzzTg2C",
+                  "name": "Run The Jewels",
+                  "type": "artist",
+                  "uri": "spotify:artist:4RnBFZRiMLRyZy0AzzTg2C"
+               }
+            ],
+            "available_markets": [
+               "AD",
+               "AE",
+               "AR",
+               "AT",
+               "AU",
+               "BE",
+               "BG",
+               "BH",
+               "BO",
+               "BR",
+               "CA",
+               "CH",
+               "CL",
+               "CO",
+               "CR",
+               "CY",
+               "CZ",
+               "DE",
+               "DK",
+               "DO",
+               "DZ",
+               "EC",
+               "EE",
+               "EG",
+               "ES",
+               "FI",
+               "FR",
+               "GB",
+               "GR",
+               "GT",
+               "HK",
+               "HN",
+               "HU",
+               "ID",
+               "IE",
+               "IL",
+               "IS",
+               "IT",
+               "JO",
+               "JP",
+               "KW",
+               "LB",
+               "LI",
+               "LT",
+               "LU",
+               "LV",
+               "MA",
+               "MC",
+               "MT",
+               "MX",
+               "MY",
+               "NI",
+               "NL",
+               "NO",
+               "NZ",
+               "OM",
+               "PA",
+               "PE",
+               "PH",
+               "PL",
+               "PS",
+               "PT",
+               "PY",
+               "QA",
+               "RO",
+               "SA",
+               "SE",
+               "SG",
+               "SK",
+               "SV",
+               "TH",
+               "TN",
+               "TR",
+               "TW",
+               "US",
+               "UY",
+               "VN",
+               "ZA"
+            ],
+            "external_urls": {
+               "spotify": "https://open.spotify.com/album/6cx4GVNs03Pu4ZczRnWiLd"
+            },
+            "href": "https://api.spotify.com/v1/albums/6cx4GVNs03Pu4ZczRnWiLd",
+            "id": "6cx4GVNs03Pu4ZczRnWiLd",
+            "images": [
+               {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273bed9d43f754cc05ae29c2c85",
+                  "width": 640
+               },
+               {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02bed9d43f754cc05ae29c2c85",
+                  "width": 300
+               },
+               {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851bed9d43f754cc05ae29c2c85",
+                  "width": 64
+               }
+            ],
+            "name": "RTJ4",
+            "release_date": "2020-06-03",
+            "release_date_precision": "day",
+            "total_tracks": 11,
+            "type": "album",
+            "uri": "spotify:album:6cx4GVNs03Pu4ZczRnWiLd"
+         }
+      ],
+      "limit": 1,
+      "next": "https://api.spotify.com/v1/search?query=artist%3ARun+the+Jewels+album%3ARTJ4&type=album&offset=1&limit=1",
+      "offset": 0,
+      "previous": null,
+      "total": 2
+   }
+}

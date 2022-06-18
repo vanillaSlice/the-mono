@@ -1,0 +1,32 @@
+name: Best New Music Digest
+on:
+  pull_request:
+    branches: main
+    paths:
+      - .github/workflows/best-new-music-digest.yml
+      - projects/best-new-music-digest/**
+  push:
+    branches: main
+    paths:
+      - .github/workflows/best-new-music-digest.yml
+      - projects/best-new-music-digest/**
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/best-new-music-digest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: 3.9
+      - run: |
+          pip install -r requirements.txt
+          pip install -r requirements-test.txt
+          pylint best_new_music_digest/ tests/
+          pytest tests/ --cov=best_new_music_digest --cov-report=xml --cov-fail-under=95
+      - uses: codecov/codecov-action@v2
+        with:
+          flags: BestNewMusic
+          fail_ci_if_error: true

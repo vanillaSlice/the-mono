@@ -1,0 +1,18 @@
+{
+  "title": "Pitchfork Tracks",
+  "link": "https://www.pitchfork.com/reviews/best/tracks/",
+  "items": [
+    {
+      "artist": "Medhane",
+      "title": "I'm Deadass",
+      "link": "https://www.pitchfork.com/reviews/tracks/medhane-im-deadass/"
+    },
+    {
+      "artist": "Standing on the Corner",
+      "title": "Angel",
+      "link": "https://www.pitchfork.com/reviews/tracks/standing-on-the-corner-angel/"
+    }
+  ],
+  "errors": false,
+  "type": "tracks"
+}

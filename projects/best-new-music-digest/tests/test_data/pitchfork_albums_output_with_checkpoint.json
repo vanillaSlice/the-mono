@@ -1,0 +1,18 @@
+{
+  "title": "Pitchfork Albums",
+  "link": "https://www.pitchfork.com/reviews/best/albums/",
+  "items": [
+    {
+      "artist": "Run the Jewels",
+      "title": "RTJ4",
+      "link": "https://www.pitchfork.com/reviews/albums/run-the-jewels-rtj4/"
+    },
+    {
+      "artist": "Medhane",
+      "title": "Cold Water",
+      "link": "https://www.pitchfork.com/reviews/albums/medhane-cold-water/"
+    }
+  ],
+  "errors": false,
+  "type": "albums"
+}

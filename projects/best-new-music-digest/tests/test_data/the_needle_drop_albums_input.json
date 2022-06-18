@@ -1,0 +1,201 @@
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": "b96bhJRs3hvVT098yHf0gLrlq48",
+  "nextPageToken": "CAUQAA",
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "UnkFc6HKD_OmlCTiLquYgLtXZJI",
+      "id": "UExQNENTZ2w3SzdvbzkzSTQ5dFFhMFRMQjhxWTN1N3h1Ty42QjkxQzlGNTZERTRFODZE",
+      "snippet": {
+        "publishedAt": "2020-06-07T01:25:04Z",
+        "channelId": "UCt7fwAhXDy3oNFTAzF2o8Pw",
+        "title": "Deerhoof - Future Teenage Cave Artists ALBUM REVIEW",
+        "description": "Listen: https://deerhoof.bandcamp.com/album/future-teenage-cave-artists\n\nDeerhoof's new concept album is as fun as apocalyptic surrealism can be.\n\nMore rock reviews: https://www.youtube.com/playlist?list=PLP4CSgl7K7ori6-Iz-AWcX561iWCfapt_\n\n===================================\nSubscribe: http://bit.ly/1pBqGCN\n\nPatreon: https://www.patreon.com/theneedledrop\n\nOfficial site: http://theneedledrop.com\n\nTND Twitter: http://twitter.com/theneedledrop\n\nTND Facebook: http://facebook.com/theneedledrop\n\nSupport TND: http://theneedledrop.com/support\n===================================\n\nFAV TRACKS: FUTURE TEENAGE CAVE ARTISTS, O YE SADDLE BABES, NEW ORPHAN ASYLUM FOR SPIRITED DEERCHILDREN, ZAZEET, FRACTION ANTHEM, \"FAREWELL\" SYMPHONY, REDUCED GUILT, I CALL ON THEE\n\nLEAST FAV TRACK: THE LOVED ONE\n\nDEERHOOF - FUTURE TEENAGE CAVE ARTISTS / 2020 / JOYFUL NOISE / EXPERIMENTAL ROCK, NOISE POP, NEO-PSYCH\n\n8/10 https://www.theneedledrop.com/loved-list/2020/1/loved-list-2020\n\nY'all know this is just my opinion, right?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/xjNG90UjuII/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/xjNG90UjuII/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/xjNG90UjuII/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "theneedledrop",
+        "playlistId": "PLP4CSgl7K7oo93I49tQa0TLB8qY3u7xuO",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "xjNG90UjuII"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "Ird30rH4sbW1RXAGt0ygrqpP_dw",
+      "id": "UExQNENTZ2w3SzdvbzkzSTQ5dFFhMFRMQjhxWTN1N3h1Ty45NkIxMzI2NUNCREVDNDg4",
+      "snippet": {
+        "publishedAt": "2020-06-04T03:24:54Z",
+        "channelId": "UCt7fwAhXDy3oNFTAzF2o8Pw",
+        "title": "Freddie Gibbs & The Alchemist - Alfredo ALBUM REVIEW w/DeadEndHipHop",
+        "description": "The DEHH review: https://www.youtube.com/watch?v=eUcx51jHs_I\n\nThe Alchemist's versatile production soundtracks some of Gangsta Gibbs' best flows and performances yet on Alfredo.\n\n===================================\nSubscribe: http://bit.ly/1pBqGCN\n\nPatreon: https://www.patreon.com/theneedledrop\n\nOfficial site: http://theneedledrop.com\n\nTND Twitter: http://twitter.com/theneedledrop\n\nTND Facebook: http://facebook.com/theneedledrop\n\nSupport TND: http://theneedledrop.com/support\n===================================\n\nFAV TRACKS: GOD IS PERFECT, SCOTTIE BEAM, FRANK LUCAS, SOMETHING TO RAP ABOUT, SKINNY SUGE, ALL GLASS\n\nLEAST FAV TRACK: LOOK AT ME\n\nFREDDIE GIBBS & THE ALCHEMIST - ALFREDO / 2020 / ESGN, ALC, EMPIRE / HARDCORE HIP HOP, GANGSTA RAP\n\n8/10 https://www.theneedledrop.com/loved-list/2020/1/loved-list-2020\n\nY'all know this is just my opinion, right?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/sD93lPFOY6s/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/sD93lPFOY6s/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/sD93lPFOY6s/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "theneedledrop",
+        "playlistId": "PLP4CSgl7K7oo93I49tQa0TLB8qY3u7xuO",
+        "position": 1,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "sD93lPFOY6s"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "g8wYDml-0zD_gjJK79J4qpb_0DE",
+      "id": "UExQNENTZ2w3SzdvbzkzSTQ5dFFhMFRMQjhxWTN1N3h1Ty5EMTU2MDBCREJEMEM1MDA4",
+      "snippet": {
+        "publishedAt": "2020-06-03T02:14:47Z",
+        "channelId": "UCt7fwAhXDy3oNFTAzF2o8Pw",
+        "title": "Backxwash - God Has Nothing to Do With This Leave Him Out of It ALBUM REVIEW",
+        "description": "Listen: https://backxwash.bandcamp.com/album/god-has-nothing-to-do-with-this-leave-him-out-of-it\n\nWith its chilling mix of rap, goth, punk, and noise, God Has Nothing to Do With This has a huge impact for such a concise project.\n\nMore rap reviews: https://www.youtube.com/playlist?list=PLP4CSgl7K7ormBIO138tYonB949PHnNcP\n\n===================================\nSubscribe: http://bit.ly/1pBqGCN\n\nPatreon: https://www.patreon.com/theneedledrop\n\nOfficial site: http://theneedledrop.com\n\nTND Twitter: http://twitter.com/theneedledrop\n\nTND Facebook: http://facebook.com/theneedledrop\n\nSupport TND: http://theneedledrop.com/support\n===================================\n\nFAV TRACKS: GOD HAS NOTHING TO DO WITH THIS LEAVE HIM OUT OF IT, BLACK MAGIC, SPELLS, INTO THE VOID, ADOLESCENCE, AMEN, REDEMPTION\n\nLEAST FAV TRACK: HELL'S INTERLUDE\n\nBACKXWASH - GOD HAS NOTHING TO DO WITH THIS LEAVE HIM OUT OF IT / 2020 / GRIMALKIN / INDUSTRIAL HIP HOP, HORRORCORE\n\n8/10 https://www.theneedledrop.com/loved-list/2020/1/loved-list-2020\n\nY'all know this is just my opinion, right?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/OBcYr05W8Cs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/OBcYr05W8Cs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/OBcYr05W8Cs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/OBcYr05W8Cs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "theneedledrop",
+        "playlistId": "PLP4CSgl7K7oo93I49tQa0TLB8qY3u7xuO",
+        "position": 2,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "OBcYr05W8Cs"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "LXcZOdOhBjFxNrbN9iVhcv3Jk4w",
+      "id": "UExQNENTZ2w3SzdvbzkzSTQ5dFFhMFRMQjhxWTN1N3h1Ty5CMkMxNkZEQkI0M0U4RDVD",
+      "snippet": {
+        "publishedAt": "2020-05-31T02:11:58Z",
+        "channelId": "UCt7fwAhXDy3oNFTAzF2o8Pw",
+        "title": "Jeff Rosenstock - NO DREAM ALBUM REVIEW",
+        "description": "Listen: https://jeffrosenstock.bandcamp.com/album/no-dream\n\nJeff's latest album is his most intense yet.\n\nMore rock reviews: https://www.youtube.com/playlist?list=PLP4CSgl7K7ori6-Iz-AWcX561iWCfapt_\n\n===================================\nSubscribe: http://bit.ly/1pBqGCN\n\nPatreon: https://www.patreon.com/theneedledrop\n\nOfficial site: http://theneedledrop.com\n\nTND Twitter: http://twitter.com/theneedledrop\n\nTND Facebook: http://facebook.com/theneedledrop\n\nSupport TND: http://theneedledrop.com/support\n===================================\n\nFAV TRACKS: NO TIME, NIKES (ALT), SCRAM!, N O D R E A M, STATE LINE, OLD CRAP, ***BNB, OHIO TPKE\n\nLEAST FAV TRACK: HONEYMOON ASHTRAY\n\nJEFF ROSENSTOCK - NO DREAM / 2020 / POLYVINYL / POP PUNK, POWER POP\n\n8/10 https://www.theneedledrop.com/loved-list/2020/1/loved-list-2020\n\nY'all know this is just my opinion, right?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/nyy8_TisAlE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/nyy8_TisAlE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/nyy8_TisAlE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/nyy8_TisAlE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "theneedledrop",
+        "playlistId": "PLP4CSgl7K7oo93I49tQa0TLB8qY3u7xuO",
+        "position": 3,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "nyy8_TisAlE"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "S9WnwAJogX6fSXne8DiOjesgyYk",
+      "id": "UExQNENTZ2w3SzdvbzkzSTQ5dFFhMFRMQjhxWTN1N3h1Ty4zOUZDNjQyRjc5RDhEQzU0",
+      "snippet": {
+        "publishedAt": "2020-05-23T21:39:01Z",
+        "channelId": "UCt7fwAhXDy3oNFTAzF2o8Pw",
+        "title": "Perfume Genius - Set My Heart on Fire Immediately ALBUM REVIEW",
+        "description": "Listen: https://www.youtube.com/watch?v=ln4S83JeY2Y\n\nSet My Heart on Fire Immediately covers even more aesthetic ground than No Shape did, only occasionally coming across as disjointed.\n\nMore pop reviews: https://www.youtube.com/playlist?list=PLP4CSgl7K7oqibt_5oDPppWxQ0iaxyyeq\n\n===================================\nSubscribe: http://bit.ly/1pBqGCN\n\nPatreon: https://www.patreon.com/theneedledrop\n\nOfficial site: http://theneedledrop.com\n\nTND Twitter: http://twitter.com/theneedledrop\n\nTND Facebook: http://facebook.com/theneedledrop\n\nSupport TND: http://theneedledrop.com/support\n===================================\n\nFAV TRACKS: WHOLE LIFE, DESCRIBE, WITHOUT YOU, JASON, ON THE FLOOR, MOONBEND, NOTHING AT ALL, BORROWED LIGHT\n\nLEAST FAV TRACK: LEAVE\n\nPERFUME GENIUS - SET MY HEART ON FIRE IMMEDIATELY / 2020 / MATADOR / ART POP\n\n8/10 https://www.theneedledrop.com/loved-list/2020/1/loved-list-2020\n\nY'all know this is just my opinion, right?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/0vFTfoOavRM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/0vFTfoOavRM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/0vFTfoOavRM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/0vFTfoOavRM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "theneedledrop",
+        "playlistId": "PLP4CSgl7K7oo93I49tQa0TLB8qY3u7xuO",
+        "position": 4,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "0vFTfoOavRM"
+        }
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 546,
+    "resultsPerPage": 5
+  }
+}

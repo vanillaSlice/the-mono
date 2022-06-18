@@ -1,0 +1,18 @@
+{
+  "title": "The Needle Drop Albums",
+  "link": "https://www.youtube.com/user/theneedledrop",
+  "items": [
+    {
+      "artist": "Deerhoof",
+      "title": "Future Teenage Cave Artists",
+      "link": "https://www.youtube.com/watch?v=xjNG90UjuII"
+    },
+    {
+      "artist": "Freddie Gibbs & The Alchemist",
+      "title": "Alfredo w/DeadEndHipHop",
+      "link": "https://www.youtube.com/watch?v=sD93lPFOY6s"
+    }
+  ],
+  "errors": false,
+  "type": "albums"
+}

@@ -1,0 +1,68 @@
+{
+  "title": "Pitchfork Tracks",
+  "link": "https://www.pitchfork.com/reviews/best/tracks/",
+  "items": [
+    {
+      "artist": "Medhane",
+      "title": "I'm Deadass",
+      "link": "https://www.pitchfork.com/reviews/tracks/medhane-im-deadass/"
+    },
+    {
+      "artist": "Standing on the Corner",
+      "title": "Angel",
+      "link": "https://www.pitchfork.com/reviews/tracks/standing-on-the-corner-angel/"
+    },
+    {
+      "artist": "Megan Thee Stallion",
+      "title": "Savage Remix [ft. Beyoncé]",
+      "link": "https://www.pitchfork.com/reviews/tracks/megan-thee-stallion-savage-remix-ft-beyonce/"
+    },
+    {
+      "artist": "India Jordan",
+      "title": "For You",
+      "link": "https://www.pitchfork.com/reviews/tracks/india-jordan-for-you/"
+    },
+    {
+      "artist": "Earl Sweatshirt",
+      "title": "WHOLE WORLD [ft. Maxo]",
+      "link": "https://www.pitchfork.com/reviews/tracks/whole-world-earl-sweatshirt-ft-maxo/"
+    },
+    {
+      "artist": "Fiona Apple",
+      "title": "Cosmonauts",
+      "link": "https://www.pitchfork.com/reviews/tracks/fiona-apple-cosmonauts/"
+    },
+    {
+      "artist": "Nick Hakim",
+      "title": "QADIR",
+      "link": "https://www.pitchfork.com/reviews/tracks/nick-hakim-qadir/"
+    },
+    {
+      "artist": "Bob Dylan",
+      "title": "Murder Most Foul",
+      "link": "https://www.pitchfork.com/reviews/tracks/bob-dylan-murder-most-foul/"
+    },
+    {
+      "artist": "Kate NV",
+      "title": "Sayonara",
+      "link": "https://www.pitchfork.com/reviews/tracks/kate-nv-sayonara/"
+    },
+    {
+      "artist": "Blake Mills",
+      "title": "Vanishing Twin",
+      "link": "https://www.pitchfork.com/reviews/tracks/blake-mills-vanishing-twin/"
+    },
+    {
+      "artist": "Jay Electronica",
+      "title": "The Neverending Story",
+      "link": "https://www.pitchfork.com/reviews/tracks/jay-electronica-jay-z-the-neverending-story/"
+    },
+    {
+      "artist": "Lil Uzi Vert",
+      "title": "POP",
+      "link": "https://www.pitchfork.com/reviews/tracks/lil-uzi-vert-pop/"
+    }
+  ],
+  "errors": false,
+  "type": "tracks"
+}
