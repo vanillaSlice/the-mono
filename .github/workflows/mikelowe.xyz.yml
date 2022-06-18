@@ -24,6 +24,18 @@ jobs:
         with:
           hugo-version: 0.72.0
       - run: hugo --minify
+  Deploy:
+    if: ${{ github.event_name == 'push' }}
+    needs: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+      - uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 0.72.0
+      - run: hugo --minify
       - uses: nwtgck/actions-netlify@v1.2
         with:
           publish-dir: mikelowe.xyz/public
