@@ -2,6 +2,7 @@ baseURL = "https://mikelowe.xyz"
 languageCode = "en-us"
 title = "Mike Lowe"
 theme = "papermod"
+enableRobotsTXT = "true"
 
 [params]
 env = "production"
@@ -11,8 +12,8 @@ author = "Mike Lowe"
 keywords = ["software", "developer", "engineer", "krakenflex"]
 defaultTheme = "auto"
 
-[params.analytics.google]
-SiteVerificationTag = "O8nQ3mb-lymo3nQFax5JRFE-mgmtxnLJ1H-ZIEdzSxQ"
+[params.analytics]
+googlesiteVerificationTag = "O8nQ3mb-lymo3nQFax5JRFE-mgmtxnLJ1H-ZIEdzSxQ"
 
 [params.profileMode]
 enabled = "true"
