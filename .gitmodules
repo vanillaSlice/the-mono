@@ -1,6 +1,3 @@
-[submodule "blog/themes/journal"]
-	path = blog/themes/journal
-	url = git@github.com:dashdashzako/hugo-journal.git
 [submodule "mikelowe.xyz/themes/papermod"]
 	path = mikelowe.xyz/themes/papermod
 	url = git@github.com:adityatelange/hugo-PaperMod.git

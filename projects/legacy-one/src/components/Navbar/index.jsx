@@ -39,7 +39,7 @@ const Navbar = props => (
         <NavLink to="/projects" activeClassName="active">
           Projects<span className="arrow" />
         </NavLink>
-        <a href="https://blog.mikelowe.xyz/">
+        <a href="https://mikelowe.xyz/writings/">
           Blog<span className="arrow" />
         </a>
         <NavLink to="/contact" activeClassName="active">
