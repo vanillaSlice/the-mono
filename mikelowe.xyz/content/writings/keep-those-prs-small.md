@@ -2,6 +2,7 @@
 title: "Keep those PRs small!"
 date: 2019-12-16T22:03:00+00:00
 draft: false
+summary: "Keep those PRs small! - Mike Lowe"
 ---
 
 *tl;dr: Keeping your pull requests small will lead to quicker and better quality reviews, allowing you to

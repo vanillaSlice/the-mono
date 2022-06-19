@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 url: "/projects/"
-summary: "Projects I have worked on"
+summary: "Projects - Mike Lowe"
 hidemeta: true
 ---
 
