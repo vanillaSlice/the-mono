@@ -14,9 +14,6 @@ defaultTheme = "light"
 disableThemeToggle = "true"
 ShowBreadCrumbs = "true"
 
-[params.label]
-text = " "
-
 [params.analytics]
 googlesiteVerificationTag = "O8nQ3mb-lymo3nQFax5JRFE-mgmtxnLJ1H-ZIEdzSxQ"
 
