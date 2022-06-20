@@ -13,6 +13,7 @@ from flask import (abort,
                    request)
 from hashids import Hashids
 from mongoengine.errors import ValidationError
+from pysafebrowsing import SafeBrowsing
 
 from urlshortener.models import URLEntry
 
@@ -45,6 +46,11 @@ def new_url(path):
 
     if request_url_without_prefixes.startswith(server_name):
         return jsonify({'error': 'That is already a shortened link'}), 400
+
+    safe_browsing = SafeBrowsing(current_app.config.get('SAFE_BROWSING_API_KEY'))
+    safe_lookup_response = safe_browsing.lookup_urls([request_url])[request_url]
+    if safe_lookup_response['malicious']:
+        return jsonify({'error': 'Trying to shorten a malicious link'}), 400
 
     url_entry = URLEntry.objects(_id=request_url).first()
 

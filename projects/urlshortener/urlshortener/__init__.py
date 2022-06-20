@@ -43,6 +43,9 @@ def create_app(testing=False):
         'ENV': os.environ.get('ENV', app.config.get('ENV')),
         'MONGODB_HOST':
             os.environ.get('MONGODB_HOST', app.config.get('MONGODB_HOST')),
+        'SAFE_BROWSING_API_KEY':
+            os.environ.get('SAFE_BROWSING_API_KEY',
+                           app.config.get('SAFE_BROWSING_API_KEY')),
         'SECRET_KEY':
             os.environ.get('SECRET_KEY', app.config.get('SECRET_KEY')),
         'SERVER_NAME':
