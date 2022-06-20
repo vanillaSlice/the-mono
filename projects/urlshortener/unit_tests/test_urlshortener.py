@@ -1,4 +1,5 @@
 import pytest
+from pysafebrowsing import SafeBrowsing
 
 from urlshortener import create_app
 from urlshortener.models import URLEntry
@@ -15,6 +16,13 @@ def client(app):
 
     # make sure we clear the database when we're done
     URLEntry.objects.delete()
+
+
+@pytest.fixture(autouse=True)
+def not_malicious(monkeypatch):
+    def lookup_urls(_, urls):
+        return {u: {'malicious': False} for u in urls}
+    monkeypatch.setattr(SafeBrowsing, 'lookup_urls', lookup_urls)
 
 
 def test_home(client):
@@ -75,6 +83,14 @@ def test_new_url_with_new_in_path_exists_returns_short_url(client, app):
 
 def test_new_url_invalid_returns_400(client):
     res = client.get('/new/invalid_url')
+    assert res.status_code == 400
+
+
+def test_new_url_malicious_returns_400(client, monkeypatch):
+    def lookup_urls(_, urls):
+        return {u: {'malicious': True} for u in urls}
+    monkeypatch.setattr(SafeBrowsing, 'lookup_urls', lookup_urls)
+    res = client.get('/new/https://www.something-malicious.com/')
     assert res.status_code == 400
 
 

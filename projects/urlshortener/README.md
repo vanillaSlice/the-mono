@@ -59,6 +59,7 @@ The following properties can be configured:
 | `DEBUG`                 | If debug mode is enabled.                                        | `False`              |
 | `ENV`                   | Environment the app is running in.                               | `production`         |
 | `MONGODB_HOST`          | The MongoDB host name.                                           | `127.0.0.1`          |
+| `SAFE_BROWSING_API_KEY` | The Safe Browsing API key to check malicious links.              | `None`               |
 | `SECRET_KEY`            | A secret key used for security.                                  | `default secret key` |
 | `SERVER_NAME`           | The host and port of the server.                                 | `127.0.0.1:5000`     |
 | `SESSION_COOKIE_DOMAIN` | The domain match rule that the session cookie will be valid for. | `127.0.0.1:5000`     |
@@ -69,6 +70,9 @@ that any environment variables take precedence).
 
 URI style connections are also supported for connecting to MongoDB, just supply the URI as `MONGODB_HOST` (note that
 URI properties will take precedence).
+
+If `SAFE_BROWSING_API_KEY` is set, then URLs will be checked to see if they are malicious. Get an API key by going
+[here](https://developers.google.com/safe-browsing/v4).
 
 #### Running
 
