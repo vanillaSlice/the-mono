@@ -92,7 +92,7 @@ def go_to_url(hashed_id):
 
     if __is_malicious_link(url_entry.get_url()):
         URLEntry.objects(sequence=decoded_sequence).delete()
-        return abort(400)
+        return abort(404)
 
     return redirect(url_entry.get_url())
 
