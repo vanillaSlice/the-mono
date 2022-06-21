@@ -49,7 +49,7 @@ context('E2E', () => {
     cy.get('button')
       .click()
 
-    cy.get('alert')
+    cy.get('.alert')
       .first()
       .should('contain.text', 'Could not shorten this link, please try another one.')
   })
