@@ -47,14 +47,8 @@ def new_url(path):
     if request_url_without_prefixes.startswith(server_name):
         return jsonify({'error': 'That is already a shortened link'}), 400
 
-    safe_browsing_api_key = current_app.config.get('SAFE_BROWSING_API_KEY')
-    if safe_browsing_api_key:
-        safe_browsing = SafeBrowsing(safe_browsing_api_key)
-        safe_lookup_response = \
-            safe_browsing.lookup_urls([request_url])[request_url]
-        if safe_lookup_response['malicious']:
-            return \
-                jsonify({'error': 'Trying to shorten a malicious link'}), 400
+    if __is_malicious_link(request_url):
+        return jsonify({'error': 'Trying to shorten a malicious link'}), 400
 
     url_entry = URLEntry.objects(_id=request_url).first()
 
@@ -96,4 +90,20 @@ def go_to_url(hashed_id):
     if not url_entry:
         return abort(404)
 
+    if __is_malicious_link(url_entry.get_url()):
+        URLEntry.objects(sequence=decoded_sequence).delete()
+        return abort(400)
+
     return redirect(url_entry.get_url())
+
+
+def __is_malicious_link(url):
+    safe_browsing_api_key = current_app.config.get('SAFE_BROWSING_API_KEY')
+
+    if not safe_browsing_api_key:
+        return False
+
+    safe_browsing = SafeBrowsing(safe_browsing_api_key)
+    response = safe_browsing.lookup_urls([url])[url]
+
+    return response['malicious']

@@ -112,6 +112,20 @@ def test_go_to_url_not_in_database_returns_404(client):
     assert res.status_code == 404
 
 
+def test_go_to_url_malicious_deletes_url(client, monkeypatch):
+    new_res = client.get('/new/https://www.something-malicious.com/')
+    short_url = new_res.json['short_url']
+    path = short_url[short_url.rfind('/'):]
+    print(path)
+    def lookup_urls(_, urls):
+        return {u: {'malicious': True} for u in urls}
+    monkeypatch.setattr(SafeBrowsing, 'lookup_urls', lookup_urls)
+    res = client.get(path)
+    assert res.status_code == 400
+    res = client.get(path)
+    assert res.status_code == 404
+
+
 def test_invalid_endpoint_returns_404(client):
     res = client.get('/invalid/endpoint')
     assert res.status_code == 404
