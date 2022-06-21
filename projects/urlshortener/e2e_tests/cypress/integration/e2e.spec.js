@@ -38,6 +38,22 @@ context('E2E', () => {
       .should('eq', url)
   })
 
+  it('rejects malicious links', () => {
+    cy.visit('/')
+
+    const url = 'https://testsafebrowsing.appspot.com/s/phishing.html'
+
+    cy.get('input')
+      .type(url)
+
+    cy.get('button')
+      .click()
+
+    cy.get('alert')
+      .first()
+      .should('contain.text', 'Could not shorten this link, please try another one.')
+  })
+
   it('renders a 404 page', () => {
     cy.visit('/does-not-exist', { failOnStatusCode: false })
 
