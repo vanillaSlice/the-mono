@@ -19,3 +19,22 @@
   * You are responsible for yourself
   * Give your manager a break
   * Choose your managers wisely
+
+## Chapter Two: Mentoring
+
+* Mentoring can be a two-way street of learning
+* Interns:
+  * Have a meaningful project for them to work on
+  * Check-in regularly
+  * Listen carefully to them
+  * Communicate clearly what is expected of them
+* New hires:
+  * Introduce the new person around and build networks
+  * Allow them to update the onboarding docs as they go through them
+  * Network building is a worthwhile investment of your time and energy
+* 'Alpha geeks' make terrible mentors
+* Like doesn't have to mentor like
+* Key takeaways:
+  * Be curious and open-minded
+  * Listen and speak their language
+  * Make connections
