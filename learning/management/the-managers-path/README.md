@@ -53,3 +53,8 @@ writing code with the team."
   * Software developer and team leader
 * Is often considered a temporary role on the way toward a promotion
 * Explain technical details, not everybody is a techie
+* How to be a great tech lead:
+  * Understand the architecture
+  * Be a team player
+  * Lead technical decisions
+  * Communicate
