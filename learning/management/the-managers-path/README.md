@@ -38,3 +38,23 @@
   * Be curious and open-minded
   * Listen and speak their language
   * Make connections
+
+## Chapter Three: Tech Lead
+
+* Patrick Kua, "A leader, responsible for a (software) development team, who spends at least 30 percent of their time
+writing code with the team."
+* Tech leads aren't necessarily the most technically skilled person on the team
+* Focus more on the team and how you can empower them
+* Learn to step away from the code
+* Learn to manage your time
+* Roles of a tech lead:
+  * Systems architect and business analyst
+  * Project planner
+  * Software developer and team leader
+* Is often considered a temporary role on the way toward a promotion
+* Explain technical details, not everybody is a techie
+* How to be a great tech lead:
+  * Understand the architecture
+  * Be a team player
+  * Lead technical decisions
+  * Communicate
