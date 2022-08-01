@@ -58,3 +58,33 @@ writing code with the team."
   * Be a team player
   * Lead technical decisions
   * Communicate
+
+## Chapter Four: Managing People
+
+* Starting a new reporting relationship off right:
+  * Build trust and rapport
+  * Create a 30/60/90 day plan
+  * Encourage participation by updating the new hire documentation
+  * Communicate your style and expectations
+  * Get feedback from your new hire
+* Communicating with your team:
+  * Have regular 1-1s
+  * Don't cancel 1-1s often, if so, reschedule
+* Different 1-1 styles:
+  * The to-do list meeting
+  * The catch-up
+  * The feedback meeting
+  * The progress report
+  * Getting to know you
+  * Mix it up
+* Delegating effectively:
+  * Use the team's goals to understand which details you should dig into
+  * Gather information from the systems before going to the people
+  * Adjust your focus depending on the stage of projects
+  * Establish standards for code and systems
+  * Treat the open sharing of information, good or bad, in a neutral to positive way
+* Creating a culture of continuous feedback:
+  * Know your people
+  * Observe your people
+  * Provide lightweight, regular feedback
+  * Provide coaching
