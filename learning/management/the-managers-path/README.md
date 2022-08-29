@@ -88,3 +88,21 @@ writing code with the team."
   * Observe your people
   * Provide lightweight, regular feedback
   * Provide coaching
+
+## Chapter Five: Managing a Team
+
+* Being a good manager isn't about having the most technical knowledge
+* Staying in the code, even if it is just bug fixes, is important as a manager
+* Debugging dysfunctional teams:
+  * Not shipping
+  * People drama
+  * Unhappiness due to overwork
+  * Collaboration problems
+* You don't have to shield your team from everything
+* How to drive good decisions:
+  * Create a data-driven team culture
+  * Flex your own product muscles
+  * Look into the future
+  * Review the outcomes of your decisions and projects
+  * Run retrospectives for the processes and day-to-day
+* Seek to be kind not nice
