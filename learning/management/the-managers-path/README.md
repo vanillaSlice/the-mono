@@ -106,3 +106,7 @@ writing code with the team."
   * Review the outcomes of your decisions and projects
   * Run retrospectives for the processes and day-to-day
 * Seek to be kind not nice
+* Team cohesion destroyers:
+  * The brilliant jerk
+  * The noncommunicator
+  * The employee who lacks respect
