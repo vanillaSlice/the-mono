@@ -1,6 +1,6 @@
 # Wikipedia Viewer
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Wikipedia%20Viewer/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AWikipedia-Viewer+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/wikipedia-viewer.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AWikipedia-Viewer+branch%3Amain)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 *Intermediate Front End Development Project for FreeCodeCamp.*

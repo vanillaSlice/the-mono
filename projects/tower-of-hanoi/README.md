@@ -1,6 +1,6 @@
 # Tower of Hanoi
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Tower%20of%20Hanoi/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ATower-of-Hanoi+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/tower-of-hanoi.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ATower-of-Hanoi+branch%3Amain)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 Tower of Hanoi puzzle written to practice using [Babel](http://babeljs.io/) and [Webpack](https://webpack.js.org/).

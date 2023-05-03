@@ -1,6 +1,6 @@
 # React Game of Life
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/React%20Game%20of%20Life/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AReact-Game-of-Life+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/react-game-of-life.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AReact-Game-of-Life+branch%3Amain)
 [![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=ReactGameOfLife)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/react-game-of-life)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 

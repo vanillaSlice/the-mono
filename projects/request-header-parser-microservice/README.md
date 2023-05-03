@@ -1,6 +1,6 @@
 # Request Header Parser Microservice
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Request%20Header%20Parser%20Microservice/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ARequest-Header-Parser-Microservice+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/request-header-parser-microservice.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ARequest-Header-Parser-Microservice+branch%3Amain)
 [![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=RequestHeaderParserMicroservice)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/request-header-parser-microservice)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 

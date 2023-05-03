@@ -1,6 +1,6 @@
 # Pomodoro Clock
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Pomodoro%20Clock/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3APomodoro-Clock+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/pomodoro-clock.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3APomodoro-Clock+branch%3Amain)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 *Advanced Front End Development Project for FreeCodeCamp.*

@@ -1,6 +1,6 @@
 # React Weather Dashboard
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/React%20Weather%20Dashboard/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AReact-Weather-Dashboard+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/react-weather-dashboard.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AReact-Weather-Dashboard+branch%3Amain)
 [![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=ReactWeatherDashboard)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/react-weather-dashboard)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 

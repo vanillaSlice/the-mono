@@ -1,6 +1,6 @@
 # Simon Game
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Simon%20Game/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ASimon-Game+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/simon-game.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ASimon-Game+branch%3Amain)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 *Advanced Front End Development Project for FreeCodeCamp.*

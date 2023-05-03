@@ -1,6 +1,6 @@
 # Markdown Previewer
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Markdown%20Previewer/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AMarkdown-Previewer+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/markdown-previewer.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AMarkdown-Previewer+branch%3Amain)
 [![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=MarkdownPreviewer)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/markdown-previewer)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
