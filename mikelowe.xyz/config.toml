@@ -20,7 +20,7 @@ googlesiteVerificationTag = "O8nQ3mb-lymo3nQFax5JRFE-mgmtxnLJ1H-ZIEdzSxQ"
 [params.profileMode]
 enabled = "true"
 title = "Mike Lowe"
-subtitle = "Senior Software Engineer at KrakenFlex"
+subtitle = "Lead Software Engineer at KrakenFlex"
 
 [[params.profileMode.buttons]]
 name = "Projects"
