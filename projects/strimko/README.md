@@ -1,6 +1,6 @@
 # Strimko
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Strimko/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AStrimko+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/strimko.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AStrimko+branch%3Amain)
 [![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=Strimko)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/strimko)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 

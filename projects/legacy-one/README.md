@@ -1,6 +1,6 @@
 # Legacy One
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Legacy%20One/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ALegacy-One+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/legacy-one.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ALegacy-One+branch%3Amain)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 Source code for my legacy website which can be viewed [here](https://legacy-one.mikelowe.xyz/).

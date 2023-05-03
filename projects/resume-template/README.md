@@ -1,6 +1,6 @@
 # Resume Template
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Resume%20Template/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AResume-Template+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/resume-template.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AResume-Template+branch%3Amain)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 A clone of [this](https://creativemarket.com/ikonome/686585-Material-Resume-Blue/screenshots/#screenshot1) resume

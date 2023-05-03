@@ -1,6 +1,6 @@
 # Twitch Status Viewer
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Twitch%20Status%20Viewer/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ATwitch-Status-Viewer+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/twitch-status-viewer.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ATwitch-Status-Viewer+branch%3Amain)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 *Intermediate Front End Development Project for FreeCodeCamp.*

@@ -1,6 +1,6 @@
 # Trainspotting 'Choose...' Quote Machine
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Trainspotting%20Choose%20Quote%20Machine/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ATrainspotting-Choose-Quote-Machine+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/trainspotting-choose-quote-machine.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ATrainspotting-Choose-Quote-Machine+branch%3Amain)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 *Intermediate Front End Development Project for FreeCodeCamp.*

@@ -1,6 +1,6 @@
 # YouTube Viewer
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/YouTube%20Viewer/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AYouTube-Viewer+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/youtube-viewer.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AYouTube-Viewer+branch%3Amain)
 [![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=YouTubeViewer)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/youtube-viewer)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 

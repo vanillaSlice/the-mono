@@ -1,6 +1,6 @@
 # Matrix Digital Rain
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Matrix%20Digital%20Rain/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AMatrix-Digital-Rain+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/matrix-digital-rain.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AMatrix-Digital-Rain+branch%3Amain)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 Digital rain effect from The Matrix written using [p5.js](https://p5js.org/).

@@ -1,6 +1,6 @@
 # Portfolio
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Portfolio/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3APortfolio+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/portfolio.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3APortfolio+branch%3Amain)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 *Basic Front End Development Project for FreeCodeCamp.*

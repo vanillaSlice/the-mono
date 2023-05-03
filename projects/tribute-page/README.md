@@ -1,6 +1,6 @@
 # Tribute Page
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Tribute%20Page/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ATribute-Page+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/tribute-page.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ATribute-Page+branch%3Amain)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 *Basic Front End Development Project for FreeCodeCamp.*
