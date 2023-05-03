@@ -1,6 +1,6 @@
 # Dawdle
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Dawdle/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ADawdle+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/dawdle.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ADawdle+branch%3Amain)
 [![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=Dawdle)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/dawdle)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 

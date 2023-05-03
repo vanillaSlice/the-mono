@@ -1,6 +1,6 @@
 # Tiny
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Tiny/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ATiny+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/tiny.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ATiny+branch%3Amain)
 [![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=Tiny)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/tiny)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
