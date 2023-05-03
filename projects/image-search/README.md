@@ -1,6 +1,6 @@
 # Image Search
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Image%20Search/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AImage-Search+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/image-search.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AImage-Search+branch%3Amain)
 [![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=ImageSearch)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/image-search)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
