@@ -7,7 +7,7 @@ enableRobotsTXT = "true"
 [params]
 env = "production"
 title = "Mike Lowe"
-description = "Senior Software Engineer at KrakenFlex"
+description = "Lead Software Engineer at KrakenFlex"
 author = "Mike Lowe"
 keywords = ["mike lowe", "software", "developer", "engineer", "krakenflex", "manchester", "england", "uk"]
 defaultTheme = "light"
