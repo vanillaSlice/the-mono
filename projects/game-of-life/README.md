@@ -1,6 +1,6 @@
 # Game of Life
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Game%20of%20Life/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AGame-of-Life+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/game-of-life.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AGame-of-Life+branch%3Amain)
 [![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=GameOfLife)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/game-of-life)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 

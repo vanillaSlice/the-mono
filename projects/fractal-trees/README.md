@@ -1,6 +1,6 @@
 # Fractal Trees
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Fractal%20Trees/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AFractal-Trees+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/fractal-trees.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AFractal-Trees+branch%3Amain)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 Playing around with Fractal Trees in [p5.js](https://p5js.org/).

@@ -1,6 +1,6 @@
 # Best New Music Digest
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/Best%20New%20Music%20Digest/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ABest-New-Music-Digest+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/best-new-music-digest.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3ABest-New-Music-Digest+branch%3Amain)
 [![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=BestNewMusicDigest)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/best-new-music-digest)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
