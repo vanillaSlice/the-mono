@@ -1,4 +1,4 @@
-FROM python:3.7.13-alpine
+FROM python:3.11.3-alpine
 
 WORKDIR /opt/app
 
