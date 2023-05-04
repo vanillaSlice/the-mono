@@ -58,8 +58,8 @@ class UpdateEmailForm(FlaskForm):
         widget=PasswordInput(hide_value=False),
     )
 
-    def validate_on_submit(self):
-        if not super().validate_on_submit():
+    def validate_on_submit(self, extra_validators=None):
+        if not super().validate_on_submit(extra_validators):
             return False
 
         if not current_user.verify_password(self.password.data):
@@ -102,8 +102,8 @@ class UpdatePasswordForm(FlaskForm):
         widget=PasswordInput(hide_value=False),
     )
 
-    def validate_on_submit(self):
-        if not super().validate_on_submit():
+    def validate_on_submit(self, extra_validators=None):
+        if not super().validate_on_submit(extra_validators):
             return False
 
         if not current_user.verify_password(self.current_password.data):
@@ -126,8 +126,8 @@ class DeleteUserForm(FlaskForm):
         widget=PasswordInput(hide_value=False),
     )
 
-    def validate_on_submit(self):
-        if not super().validate_on_submit():
+    def validate_on_submit(self, extra_validators=None):
+        if not super().validate_on_submit(extra_validators):
             return False
 
         if not current_user.verify_password(self.password.data):

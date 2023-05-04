@@ -9,4 +9,6 @@ Flask-WTF==1.0.1
 gunicorn==20.1.0
 itsdangerous==2.0.0
 jsmin==3.0.1
+mongoengine==0.26.0
 passlib==1.7.4
+Werkzeug==2.1.2
