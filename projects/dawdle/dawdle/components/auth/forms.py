@@ -41,8 +41,8 @@ class SignUpForm(FlaskForm):
         widget=PasswordInput(hide_value=False),
     )
 
-    def validate_on_submit(self, extra_validators=None):
-        if not super().validate_on_submit(extra_validators):
+    def validate_on_submit(self):
+        if not super().validate_on_submit():
             return False
 
         if User.objects(email=self.email.data).first():
@@ -68,8 +68,8 @@ class VerifyResendForm(FlaskForm):
         super().__init__(*args, **kwargs)
         self.user = None
 
-    def validate_on_submit(self, extra_validators=None):
-        if not super().validate_on_submit(extra_validators):
+    def validate_on_submit(self):
+        if not super().validate_on_submit():
             return False
 
         self.user = User.objects(email=self.email.data).first()
@@ -109,8 +109,8 @@ class LoginForm(FlaskForm):
         super().__init__(*args, **kwargs)
         self.user = None
 
-    def validate_on_submit(self, extra_validators=None):
-        if not super().validate_on_submit(extra_validators):
+    def validate_on_submit(self):
+        if not super().validate_on_submit():
             return False
 
         self.user = User.objects(email=self.email.data).first()
@@ -142,8 +142,8 @@ class ResetPasswordRequestForm(FlaskForm):
         super().__init__(*args, **kwargs)
         self.user = None
 
-    def validate_on_submit(self, extra_validators=None):
-        if not super().validate_on_submit(extra_validators):
+    def validate_on_submit(self):
+        if not super().validate_on_submit():
             return False
 
         self.user = User.objects(email=self.email.data).first()
