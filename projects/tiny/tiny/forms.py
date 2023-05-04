@@ -35,8 +35,8 @@ class SignUpForm(FlaskForm):
         EqualTo('password', message='Password and Confirmation must match.')
     ])
 
-    def validate_on_submit(self):
-        if not super().validate_on_submit():
+    def validate_on_submit(self, extra_validators=None):
+        if not super().validate_on_submit(extra_validators):
             return False
 
         if get_user(email=self.email.data):
@@ -63,8 +63,8 @@ class SignInForm(FlaskForm):
         super().__init__(*args, **kwargs)
         self.user = None
 
-    def validate_on_submit(self):
-        if not super().validate_on_submit():
+    def validate_on_submit(self, extra_validators=None):
+        if not super().validate_on_submit(extra_validators):
             return False
 
         user = get_user(email=self.email.data)
@@ -121,8 +121,8 @@ class UpdatePasswordForm(FlaskForm):
         super().__init__(*args, **kwargs)
         self.user = kwargs['user']
 
-    def validate_on_submit(self):
-        if not super().validate_on_submit():
+    def validate_on_submit(self, extra_validators=None):
+        if not super().validate_on_submit(extra_validators):
             return False
 
         if not sha256_crypt.verify(self.current_password.data, self.user.password):
