@@ -1,6 +1,6 @@
 # URL Shortener
 
-[![Build Status](https://img.shields.io/github/workflow/status/vanillaSlice/the-mono/URL%20Shortener/main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AURL-Shortener+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vanillaSlice/the-mono/url-shortener.yml?branch=main)](https://github.com/vanillaSlice/the-mono/actions?query=workflow%3AURL-Shortener+branch%3Amain)
 [![Coverage Status](https://img.shields.io/codecov/c/gh/vanillaSlice/the-mono/main?flag=URLShortener)](https://codecov.io/gh/vanillaSlice/the-mono/tree/main/projects/URL%20Shortener)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
