@@ -1,4 +1,4 @@
-FROM python:3.8.3-alpine
+FROM python:3.11.3-alpine
 RUN apk update && apk upgrade && apk add bash
 WORKDIR /opt/app
 COPY . .
