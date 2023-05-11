@@ -5,7 +5,7 @@ import { version } from '../../package.json';
  * Constants
  */
 
-const apiEndpoint = 'https://wind-bow.glitch.me/twitch-api';
+const apiEndpoint = 'https://twitch-proxy.freecodecamp.rocks/twitch-api';
 const channels = [
   'brunofin',
   'comster404',
