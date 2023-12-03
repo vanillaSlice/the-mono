@@ -11,6 +11,6 @@ export const sumCalibrationValues = (input: string): number => {
 };
 
 if (Deno.args && Deno.args[0] == 'solve') {
-  const text = await readInput('day1a_input.txt');
+  const text = await readInput('day1a.txt');
   console.log(sumCalibrationValues(text));
 }
