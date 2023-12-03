@@ -4,17 +4,11 @@ export const sumPower = (input: string): number => {
   return input.split(/\r?\n/)
     .filter(line => line.length)
     .reduce((sum, line) => {
-      let maxRed = 0;
-      let maxGreen = 0;
-      let maxBlue = 0;
-
-      line.split(';').forEach((roll) => {
-        maxRed = Math.max(maxRed, Number(roll.match(/\d+(?= red)/g) ?? 0));
-        maxGreen = Math.max(maxGreen, Number(roll.match(/\d+(?= green)/g) ?? 0));
-        maxBlue = Math.max(maxBlue, Number(roll.match(/\d+(?= blue)/g) ?? 0));
-      });
-
-      return sum + (maxRed * maxGreen * maxBlue);
+      const maxMatches = (colour: string) => {
+        const matches = line.match(new RegExp(`\\d+(?= ${colour})`, 'g'));
+        return matches ? Math.max(...matches.map(Number), 0) : 0;
+      };
+      return sum + (maxMatches('red') * maxMatches('green') * maxMatches('blue'));
     }, 0);
 };
 
