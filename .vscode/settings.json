@@ -1,0 +1,6 @@
+{
+  "deno.enable": true,
+  "deno.enablePaths": [
+    "../challenges/advent-of-code/2023"
+  ]
+}
