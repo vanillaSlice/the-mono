@@ -5,9 +5,9 @@ export const waysToBeatRecord = (input: string): number => {
   const raceTime = Number(lines[0].replace('Time:', '').replace(/\s/g, ''));
   const raceDistance = Number(lines[1].replace('Distance:', '').replace(/\s/g, ''));
 
-  for (let offsetIndex = 1; offsetIndex <= raceTime / 2; offsetIndex++) {
-    if ((raceTime - offsetIndex) * offsetIndex > raceDistance) {
-      return raceTime - (2 * offsetIndex) + 1;
+  for (let holdTime = 1; holdTime < raceTime; holdTime++) {
+    if ((raceTime - holdTime) * holdTime > raceDistance) {
+      return raceTime - (2 * holdTime) + 1;
     }
   }
 
