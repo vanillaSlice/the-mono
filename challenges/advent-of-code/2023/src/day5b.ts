@@ -1,3 +1,6 @@
+/**
+ * Horrible brute-force; takes ages to run.
+ */
 import { readInput } from './util.ts';
 
 interface ItemMaps  {
@@ -37,34 +40,28 @@ export const lowestLocation = (input: string): number => {
     itemMaps: {} as ItemMaps,
   }).itemMaps;
 
-  const locationMap = itemMaps['humidity-to-location'];
-  const minPossibleLocation = 0;
-  const maxPossibleLocation = Math.max(...locationMap.ranges.map(range => range[0] + range[2]));
+  let minLocation = Number.MAX_SAFE_INTEGER;
 
-  for (let i = minPossibleLocation; i <= maxPossibleLocation; i++) {
-    console.log(i);
-    const potentialLocationRange = locationMap.ranges.find(range => range[0] <= i && i < range[0] + range[2]);
-    let previousLocation = potentialLocationRange ? i - potentialLocationRange[0] + potentialLocationRange[1] : i;
-    let from = locationMap.from;
-
-    while (true) {
-      if (from === 'seed') {
-        if (seedPairs.find(seedPair => seedPair[0] <= previousLocation && previousLocation < seedPair[0] + seedPair[1])) {
-          return i;
+  for (const seedPair of seedPairs) {
+    for (let seed = seedPair[0]; seed < seedPair[0] + seedPair[1]; seed++) {
+      let from = 'seed';
+      let destination = seed;
+      while (true) {
+        const itemMap = Object.values(itemMaps).find(value => value.from === from)!;
+        const potentialDestination = itemMap.ranges.find((range) => range[1] <= destination && destination < range[1] + range[2]);
+        if (potentialDestination) {
+          destination = destination - potentialDestination[1] + potentialDestination[0];
         }
-        break;
+        from = itemMap.to;
+        if (from === 'location') {
+          minLocation = Math.min(minLocation, destination);
+          break;
+        }
       }
-
-      const itemMap = Object.values(itemMaps).find(value => value.to === from)!;
-      const potentialDestination = itemMap.ranges.find((range) => range[0] <= previousLocation && previousLocation < range[0] + range[2]);
-      if (potentialDestination) {
-        previousLocation = previousLocation - potentialDestination[0] + potentialDestination[1];
-      }
-      from = itemMap.from;
     }
   }
 
-  return 5;
+  return minLocation;
 };
 
 if (Deno.args && Deno.args[0] == 'solve') {
