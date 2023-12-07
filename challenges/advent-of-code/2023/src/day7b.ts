@@ -24,26 +24,26 @@ export const totalWinnings = (input: string): number => {
       }, {} as Record<string, number>),
     }))
     .map(hand => {
-      const cardCounts = { ...hand.cardCounts };
-
-      let maxLetter = '';
+      let cardWithMaxCount = '';
       let maxCount = 0;
       let numberOfJs = 0;
-      Object.entries(hand.cardCounts).forEach(([char, count]) => {
-        if (char === 'J') {
+      const updatedCardCounts = Object.entries(hand.cardCounts).reduce((acc, [card, count]) => {
+        if (card === 'J') {
           numberOfJs = count;
-          delete cardCounts['J'];
+          return acc;
         } else if (count > maxCount) {
           maxCount = count;
-          maxLetter = char;
+          cardWithMaxCount = card;
         }
-      });
+        acc[card] = count;
+        return acc;
+      }, {} as Record<string, number>);
 
-      cardCounts[maxLetter] += numberOfJs;
+      updatedCardCounts[cardWithMaxCount] += numberOfJs;
 
       return {
         ...hand,
-        cardCounts: Object.values(cardCounts),
+        cardCounts: Object.values(updatedCardCounts),
       }
     })
     .map(hand => {
