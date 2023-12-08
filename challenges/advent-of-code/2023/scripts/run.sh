@@ -5,4 +5,4 @@ if [[ $# -eq 0 ]]; then
   exit 1
 fi
 
-deno run --allow-read $(dirname $0)/../src/day${1}.ts solve
+time deno run --allow-read $(dirname $0)/../src/day${1}.ts solve
