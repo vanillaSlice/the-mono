@@ -25,18 +25,12 @@ export const countSteps = (input: string): number => {
           return steps;
         }
       }
-    })
-    .sort();
+    });
 
-  const maxStepsToAZ = stepsToZs[stepsToZs.length - 1];
-  let multiplier = 1;
+  const gcd = (a: number, b: number): number => b === 0 ? a : gcd(b, a % b);
+  const lcm = (a: number, b: number) => (a * b) / gcd(a, b);
 
-  while (true) {
-    if (stepsToZs.every(steps => maxStepsToAZ * multiplier % steps === 0)) {
-      return maxStepsToAZ * multiplier;
-    }
-    multiplier++;
-  }
+  return stepsToZs.reduce((acc, steps) => lcm(acc, steps), 1);
 };
 
 if (Deno.args && Deno.args[0] == 'solve') {
