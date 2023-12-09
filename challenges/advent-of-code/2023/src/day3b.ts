@@ -70,5 +70,5 @@ export const sumGearRatios = (input: string): number => {
 
 if (Deno.args && Deno.args[0] == 'solve') {
   const text = await readInput('day3b.txt');
-  console.log(sumGearRatios(text));
+  console.log(sumGearRatios(text)); // 79613331
 }

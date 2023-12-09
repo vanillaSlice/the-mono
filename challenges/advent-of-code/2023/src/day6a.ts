@@ -19,5 +19,5 @@ export const marginOfError = (input: string): number => {
 
 if (Deno.args && Deno.args[0] == 'solve') {
   const text = await readInput('day6a.txt');
-  console.log(marginOfError(text));
+  console.log(marginOfError(text)); // 2449062
 }

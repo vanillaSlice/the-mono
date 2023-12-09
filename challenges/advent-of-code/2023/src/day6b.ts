@@ -16,5 +16,5 @@ export const waysToBeatRecord = (input: string): number => {
 
 if (Deno.args && Deno.args[0] == 'solve') {
   const text = await readInput('day6b.txt');
-  console.log(waysToBeatRecord(text));
+  console.log(waysToBeatRecord(text)); // 33149631
 }

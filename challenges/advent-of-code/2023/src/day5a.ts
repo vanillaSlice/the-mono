@@ -56,5 +56,5 @@ export const lowestLocation = (input: string): number => {
 
 if (Deno.args && Deno.args[0] == 'solve') {
   const text = await readInput('day5a.txt');
-  console.log(lowestLocation(text));
+  console.log(lowestLocation(text)); // 389056265
 }

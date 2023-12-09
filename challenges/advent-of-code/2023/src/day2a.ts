@@ -19,5 +19,5 @@ export const sumPossibleGames = (input: string): number => {
 
 if (Deno.args && Deno.args[0] == 'solve') {
   const text = await readInput('day2a.txt');
-  console.log(sumPossibleGames(text));
+  console.log(sumPossibleGames(text)); // 2486
 }

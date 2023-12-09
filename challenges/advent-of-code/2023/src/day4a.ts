@@ -17,5 +17,5 @@ export const sumCardPoints = (input: string): number => {
 
 if (Deno.args && Deno.args[0] == 'solve') {
   const text = await readInput('day4a.txt');
-  console.log(sumCardPoints(text));
+  console.log(sumCardPoints(text)); // 24542
 }

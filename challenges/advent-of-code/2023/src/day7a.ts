@@ -61,5 +61,5 @@ export const totalWinnings = (input: string): number => {
 
 if (Deno.args && Deno.args[0] == 'solve') {
   const text = await readInput('day7a.txt');
-  console.log(totalWinnings(text));
+  console.log(totalWinnings(text)); // 246409899
 }

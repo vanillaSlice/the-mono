@@ -35,5 +35,5 @@ export const countSteps = (input: string): number => {
 
 if (Deno.args && Deno.args[0] == 'solve') {
   const text = await readInput('day8b.txt');
-  console.log(countSteps(text));
+  console.log(countSteps(text)); // 9606140307013
 }

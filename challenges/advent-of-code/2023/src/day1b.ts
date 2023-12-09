@@ -30,5 +30,5 @@ export const sumCalibrationValues = (input: string): number => {
 
 if (Deno.args && Deno.args[0] == 'solve') {
   const text = await readInput('day1b.txt');
-  console.log(sumCalibrationValues(text));
+  console.log(sumCalibrationValues(text)); // 53340
 }
