@@ -22,15 +22,15 @@ export const extrapolateHistory = (input: string): number => {
       currentRow = rows[i];
       i++;
     }
-    rows[i - 1].push(0);
+    rows[i - 1].unshift(0);
     rows.unshift(history);
     for (let j = rows.length - 1; j > 0; j--) {
-      const left = rows[j][rows[j].length - 1];
-      const right = rows[j - 1][rows[j - 1].length - 1];
-      const push = left + right;
-      rows[j - 1].push(push);
+      const left = rows[j][0];
+      const right = rows[j - 1][0];
+      const push = right - left;
+      rows[j - 1].unshift(push);
     }
-    nextValues.push(history[history.length - 1]);
+    nextValues.push(history[0]);
   }
 
   return nextValues.reduce((sum, value) => sum + value, 0);
@@ -38,5 +38,5 @@ export const extrapolateHistory = (input: string): number => {
 
 if (Deno.args && Deno.args[0] == 'solve') {
   const text = await readInput('day9b.txt');
-  console.log(extrapolateHistory(text));
+  console.log(extrapolateHistory(text)); // 1140
 }
