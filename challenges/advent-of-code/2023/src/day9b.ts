@@ -1,39 +1,31 @@
 import { readInput } from './util.ts';
 
 export const extrapolateHistory = (input: string): number => {
-  const output = input.split(/\r?\n/)
+  return input.split(/\r?\n/)
     .filter(line => line)
-    .map(line => line.match(/-?\d+/g)!.map(Number));
-
-  // tidy this up
-  const nextValues: number[] = [];
-  for (const history of output) {
-    const rows: number[][] = [];
-    let currentRow = history;
-    let i = 0;
-    while (!currentRow.every(item => item === 0)) {
-      const newRow: number[] = [];
-      rows[i] = newRow;
-      for (let j = 1; j < currentRow.length; j++) {
-        const left = currentRow[j - 1];
-        const right = currentRow[j];
-        newRow[j - 1] = right - left;
+    .map(line => line.match(/-?\d+/g)!.map(Number))
+    .map(history => {
+      const extrapolationRows = [history];
+      let currentExtrapolationRow = history;
+      while (!currentExtrapolationRow.every(value => value === 0)) {
+        const newExtrapolationRow: number[] = [];
+        for (let i = 1; i < currentExtrapolationRow.length; i++) {
+          newExtrapolationRow[i - 1] = currentExtrapolationRow[i] - currentExtrapolationRow[i - 1];
+        }
+        extrapolationRows[extrapolationRows.length] = newExtrapolationRow;
+        currentExtrapolationRow = newExtrapolationRow;
       }
-      currentRow = rows[i];
-      i++;
-    }
-    rows[i - 1].unshift(0);
-    rows.unshift(history);
-    for (let j = rows.length - 1; j > 0; j--) {
-      const left = rows[j][0];
-      const right = rows[j - 1][0];
-      const push = right - left;
-      rows[j - 1].unshift(push);
-    }
-    nextValues.push(history[0]);
-  }
-
-  return nextValues.reduce((sum, value) => sum + value, 0);
+      return extrapolationRows;
+    })
+    .reduce((previousValues, extrapolationRows) => {
+      extrapolationRows[extrapolationRows.length - 1].unshift(0);
+      for (let i = extrapolationRows.length - 1; i > 0; i--) {
+        extrapolationRows[i - 1].unshift(extrapolationRows[i - 1][0] - extrapolationRows[i][0]);
+      }
+      previousValues.push(extrapolationRows[0][0]);
+      return previousValues;
+    }, [] as number[])
+    .reduce((sum, nextValue) => sum + nextValue, 0);
 };
 
 if (Deno.args && Deno.args[0] == 'solve') {
