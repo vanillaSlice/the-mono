@@ -26,5 +26,5 @@ const aggregateScratchCards = (winningNumbersWeHave: number[][], currentIndex: n
 
 if (Deno.args && Deno.args[0] == 'solve') {
   const text = await readInput('day4b.txt');
-  console.log(sumScratchCards(text));
+  console.log(sumScratchCards(text)); // 8736438
 }

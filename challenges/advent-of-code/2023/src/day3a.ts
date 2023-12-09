@@ -41,5 +41,5 @@ export const sumPartNumbers = (input: string): number => {
 
 if (Deno.args && Deno.args[0] == 'solve') {
   const text = await readInput('day3a.txt');
-  console.log(sumPartNumbers(text));
+  console.log(sumPartNumbers(text)); // 543867
 }
