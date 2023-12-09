@@ -1,39 +1,34 @@
 import { readInput } from './util.ts';
 
 export const extrapolateHistory = (input: string): number => {
-  const output = input.split(/\r?\n/)
+  return input.split(/\r?\n/)
     .filter(line => line)
-    .map(line => line.match(/-?\d+/g)!.map(Number));
-
-  // tidy this up
-  const nextValues: number[] = [];
-  for (const history of output) {
-    const rows: number[][] = [];
-    let currentRow = history;
-    let i = 0;
-    while (!currentRow.every(item => item === 0)) {
-      const newRow: number[] = [];
-      rows[i] = newRow;
-      for (let j = 1; j < currentRow.length; j++) {
-        const left = currentRow[j - 1];
-        const right = currentRow[j];
-        newRow[j - 1] = right - left;
+    .map(line => line.match(/-?\d+/g)!.map(Number))
+    .map(history => {
+      const extrapolationRows = [history];
+      let currentExtrapolationRow = history;
+      while (!currentExtrapolationRow.every(value => value === 0)) {
+        const newExtrapolationRow: number[] = [];
+        for (let i = 1; i < currentExtrapolationRow.length; i++) {
+          newExtrapolationRow[i - 1] = currentExtrapolationRow[i] - currentExtrapolationRow[i - 1];
+        }
+        extrapolationRows[extrapolationRows.length] = newExtrapolationRow;
+        currentExtrapolationRow = newExtrapolationRow;
       }
-      currentRow = rows[i];
-      i++;
-    }
-    rows[i - 1].push(0);
-    rows.unshift(history);
-    for (let j = rows.length - 1; j > 0; j--) {
-      const left = rows[j][rows[j].length - 1];
-      const right = rows[j - 1][rows[j - 1].length - 1];
-      const push = left + right;
-      rows[j - 1].push(push);
-    }
-    nextValues.push(history[history.length - 1]);
-  }
-
-  return nextValues.reduce((sum, value) => sum + value, 0);
+      return extrapolationRows;
+    })
+    .reduce((nextValues, extrapolationRows) => {
+      extrapolationRows[extrapolationRows.length - 1].push(0);
+      for (let i = extrapolationRows.length - 1; i > 0; i--) {
+        const aboveRow = extrapolationRows[i];
+        const belowRow = extrapolationRows[i - 1];
+        extrapolationRows[i - 1].push(aboveRow[aboveRow.length - 1] + belowRow[belowRow.length - 1]);
+      }
+      const topRow = extrapolationRows[0];
+      nextValues.push(topRow[topRow.length - 1]);
+      return nextValues;
+    }, [] as number[])
+    .reduce((sum, nextValue) => sum + nextValue, 0);
 };
 
 if (Deno.args && Deno.args[0] == 'solve') {
