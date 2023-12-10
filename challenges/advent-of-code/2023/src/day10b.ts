@@ -1,3 +1,6 @@
+/*
+ * TODO: make this work
+ */
 import { readInput } from './util.ts';
 
 export const enclosedByLoop = (input: string): number => {
@@ -6,69 +9,35 @@ export const enclosedByLoop = (input: string): number => {
     .map(line => line.split(''));
 
   const norths = ['S', '|', '7', 'F'];
-  const souths = ['S', '|', 'L', 'J'];
+  const getNorth = (rowIndex: number, columnIndex: number) => grid[rowIndex - 1]?.[columnIndex];
   const easts = ['S', '-', 'J', '7'];
+  const getEast = (rowIndex: number, columnIndex: number) => grid[rowIndex][columnIndex + 1];
+  const souths = ['S', '|', 'L', 'J'];
+  const getSouth = (rowIndex: number, columnIndex: number) => grid[rowIndex + 1]?.[columnIndex];
   const wests = ['S', '-', 'L', 'F'];
-  const isNorthConnected = (a: number, b: number) => {
-    const north = grid[a - 1] ? grid[a - 1][b] : '';
-    return norths.includes(north);
-  }
-  const isSouthConnected = (a: number, b: number) => {
-    const south = grid[a + 1] ? grid[a + 1][b] : '';
-    return souths.includes(south);
-  }
-  const isEastConnected = (a: number, b: number) => {
-    const east = grid[a][b + 1] ?? '';
-    return easts.includes(east);
-  }
-  const isWestConnected = (a: number, b: number) => {
-    const west = grid[a][b - 1] ?? '';
-    return wests.includes(west);
-  }
-  const isNorthSConnected = (a: number, b: number) => {
-    const north = grid[a - 1] ? grid[a - 1][b] : '';
-    return north.startsWith('S');
-  }
-  const isSouthSConnected = (a: number, b: number) => {
-    const south = grid[a + 1] ? grid[a + 1][b] : '';
-    return south.startsWith('S');
-  }
-  const isEastSConnected = (a: number, b: number) => {
-    const east = grid[a][b + 1] ?? '';
-    return east.startsWith('S');
-  }
-  const isWestSConnected = (a: number, b: number) => {
-    const west = grid[a][b - 1] ?? '';
-    return west.startsWith('S');
-  }
+  const getWest = (rowIndex: number, columnIndex: number) => grid[rowIndex][columnIndex - 1];
 
   let foundNonLoop = true;
   while (foundNonLoop) {
     foundNonLoop = false;
-    for (let i = 0; i <= grid.length - 1; i++) {
-      const row = grid[i];
-      for (let j = 0; j <= row.length - 1; j++) {
-        const current = row[j];
-        if (current === '|' && (!isNorthConnected(i, j) ||  !isSouthConnected(i, j))) {
-          row[j] = '#';
+    for (let rowIndex = 0; rowIndex <= grid.length - 1; rowIndex++) {
+      const row = grid[rowIndex];
+      for (let columnIndex = 0; columnIndex <= row.length - 1; columnIndex++) {
+        const tile = row[columnIndex];
+        const isNorthConnected = norths.includes(getNorth(rowIndex, columnIndex));
+        const isEastConnected = easts.includes(getEast(rowIndex, columnIndex));
+        const isSouthConnected = souths.includes(getSouth(rowIndex, columnIndex));
+        const isWestConnected = wests.includes(getWest(rowIndex, columnIndex));
+
+        if ((tile === '|' && (!isNorthConnected || !isSouthConnected)) ||
+            (tile === '-' && (!isEastConnected || !isWestConnected)) ||
+            (tile === 'L' && (!isNorthConnected || !isEastConnected)) ||
+            (tile === 'J' && (!isNorthConnected || !isWestConnected)) ||
+            (tile === '7' && (!isSouthConnected || !isWestConnected)) ||
+            (tile === 'F' && (!isEastConnected || !isSouthConnected)) ||
+            tile === '.') {
+          row[columnIndex] = '#';
           foundNonLoop = true;
-        } else if (current === '-' && (!isEastConnected(i, j) ||  !isWestConnected(i, j))) {
-          row[j] = '#';
-          foundNonLoop = true;
-        } else if (current === 'L' && (!isEastConnected(i, j) ||  !isNorthConnected(i, j))) {
-          row[j] = '#';
-          foundNonLoop = true;
-        } else if (current === 'J' && (!isWestConnected(i, j) ||  !isNorthConnected(i, j))) {
-          row[j] = '#';
-          foundNonLoop = true;
-        } else if (current === '7' && (!isWestConnected(i, j) ||  !isSouthConnected(i, j))) {
-          row[j] = '#';
-          foundNonLoop = true;
-        } else if (current === 'F' && (!isEastConnected(i, j) ||  !isSouthConnected(i, j))) {
-          row[j] = '#';
-          foundNonLoop = true;
-        } else if (current === '.') {
-          row[j] = '#';
         }
       }
     }
@@ -77,39 +46,34 @@ export const enclosedByLoop = (input: string): number => {
   let foundSConnectedLoops = true;
   while (foundSConnectedLoops) {
     foundSConnectedLoops = false;
-    for (let i = 0; i <= grid.length - 1; i++) {
-      const row = grid[i];
-      for (let j = 0; j <= row.length - 1; j++) {
-        const current = row[j];
-        if (current === '|' && (isNorthSConnected(i, j) || isSouthSConnected(i , j))) {
-          row[j] = `S${current}`;
-          foundSConnectedLoops = true;
-        } else if (current === '-' && (isEastSConnected(i, j) ||  isWestSConnected(i, j))) {
-          row[j] = `S${current}`;
-          foundSConnectedLoops = true;
-        } else if (current === 'L' && (isEastSConnected(i, j) ||  isNorthSConnected(i, j))) {
-          row[j] = `S${current}`;
-          foundSConnectedLoops = true;
-        } else if (current === 'J' && (isWestSConnected(i, j) ||  isNorthSConnected(i, j))) {
-          row[j] = `S${current}`;
-          foundSConnectedLoops = true;
-        } else if (current === '7' && (isWestSConnected(i, j) ||  isSouthSConnected(i, j))) {
-          row[j] = `S${current}`;
-          foundSConnectedLoops = true;
-        } else if (current === 'F' && (isEastSConnected(i, j) ||  isSouthSConnected(i, j))) {
-          row[j] = `S${current}`;
+    for (let rowIndex = 0; rowIndex <= grid.length - 1; rowIndex++) {
+      const row = grid[rowIndex];
+      for (let columnIndex = 0; columnIndex <= row.length - 1; columnIndex++) {
+        const tile = row[columnIndex];
+        const isNorthSConnected = getNorth(rowIndex, columnIndex)?.startsWith('S');
+        const isEastSConnected = getEast(rowIndex, columnIndex)?.startsWith('S');
+        const isSouthSConnected = getSouth(rowIndex, columnIndex)?.startsWith('S');
+        const isWestSConnected = getWest(rowIndex, columnIndex)?.startsWith('S');
+
+        if ((tile === '|' && (isNorthSConnected || isSouthSConnected)) ||
+            (tile === '-' && (isEastSConnected || isWestSConnected)) ||
+            (tile === 'L' && (isNorthSConnected || isEastSConnected)) ||
+            (tile === 'J' && (isNorthSConnected || isWestSConnected)) ||
+            (tile === '7' && (isSouthSConnected || isWestSConnected)) ||
+            (tile === 'F' && (isEastSConnected || isSouthSConnected))) {
+          row[columnIndex] = `S${tile}`;
           foundSConnectedLoops = true;
         }
       }
     }
   }
 
-  for (let i = 0; i <= grid.length - 1; i++) {
-    const row = grid[i];
-    for (let j = 0; j <= row.length - 1; j++) {
-      const current = row[j];
-      if (current !== '#' && !current.startsWith('S')) {
-        grid[i][j] = '#';
+  for (let rowIndex = 0; rowIndex < grid.length; rowIndex++) {
+    const row = grid[rowIndex];
+    for (let columnIndex = 0; columnIndex < row.length; columnIndex++) {
+      const tile = row[columnIndex];
+      if (tile !== '#' && !tile.startsWith('S')) {
+        grid[rowIndex][columnIndex] = '#';
       }
     }
   }

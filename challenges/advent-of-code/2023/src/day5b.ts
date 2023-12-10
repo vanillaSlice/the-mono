@@ -1,5 +1,6 @@
 /**
  * Horrible brute-force; takes ages to run.
+ * TODO: improve performance
  */
 import { readInput } from './util.ts';
 
