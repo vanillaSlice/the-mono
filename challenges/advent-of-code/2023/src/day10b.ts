@@ -6,7 +6,7 @@ enum Direction {
   SOUTH,
   WEST,
   NONE,
-};
+}
 
 export const enclosedByLoop = (input: string): number => {
   const grid = input.split(/\r?\n/)
@@ -26,114 +26,98 @@ export const enclosedByLoop = (input: string): number => {
   }
   const { sRowIndex, sColumnIndex } = getSLocation();
 
-  const norths = ['S', '|', '7', 'F'];
-  const getNorth = (rowIndex: number, columnIndex: number) => grid[rowIndex - 1]?.[columnIndex];
-  const easts = ['S', '-', 'J', '7'];
-  const getEast = (rowIndex: number, columnIndex: number) => grid[rowIndex][columnIndex + 1];
-  const souths = ['S', '|', 'L', 'J'];
-  const getSouth = (rowIndex: number, columnIndex: number) => grid[rowIndex + 1]?.[columnIndex];
-
-  const stepCount: number[][] = [];
-  for (let i = 0; i < grid.length; i++) {
-    stepCount[i] = Array(grid[i].length);
-  };
-
-  let previousMove = Direction.NONE;
-  let currentRowIndex = sRowIndex;
-  let currentColumnIndex = sColumnIndex;
-  let currentTile = grid[currentRowIndex][currentColumnIndex];
+  let direction = Direction.NONE;
+  let rowIndex = sRowIndex;
+  let columnIndex = sColumnIndex;
+  let currentTile = grid[rowIndex][columnIndex];
   let steps = 0;
+  const stepCount: number[][] = [...grid.map(_ => [])];
+
   do {
-    stepCount[currentRowIndex][currentColumnIndex] = steps;
     if (currentTile === 'S') {
-      if (norths.includes(getNorth(currentRowIndex, currentColumnIndex))) {
-        currentRowIndex--;
-        previousMove = Direction.NORTH;
-      } else if (easts.includes(getEast(currentRowIndex, currentColumnIndex))) {
-        currentColumnIndex++;
-        previousMove = Direction.EAST;
-      } else if (souths.includes(getSouth(currentRowIndex, currentColumnIndex))) {
-        currentRowIndex++;
-        previousMove = Direction.SOUTH;
+      if (['|', '7', 'F'].includes(grid[rowIndex - 1]?.[columnIndex])) {
+        rowIndex--;
+        direction = Direction.NORTH;
+      } else if (['-', 'J', '7'].includes(grid[rowIndex][columnIndex + 1])) {
+        columnIndex++;
+        direction = Direction.EAST;
+      } else if (['|', 'L', 'J'].includes(grid[rowIndex + 1]?.[columnIndex])) {
+        rowIndex++;
+        direction = Direction.SOUTH;
       } else {
-        currentColumnIndex--;
-        previousMove = Direction.WEST;
+        columnIndex--;
+        direction = Direction.WEST;
       }
     } else if (currentTile === '|') {
-      if (previousMove === Direction.NORTH) {
-        currentRowIndex--;
-        previousMove = Direction.NORTH;
+      if (direction === Direction.NORTH) {
+        rowIndex--;
       } else {
-        currentRowIndex++;
-        previousMove = Direction.SOUTH;
+        rowIndex++;
+        direction = Direction.SOUTH;
       }
     } else if (currentTile === '-') {
-      if (previousMove === Direction.EAST) {
-        currentColumnIndex++;
-        previousMove = Direction.EAST;
+      if (direction === Direction.EAST) {
+        columnIndex++;
       } else {
-        currentColumnIndex--;
-        previousMove = Direction.WEST;
+        columnIndex--;
+        direction = Direction.WEST;
       }
     } else if (currentTile === 'L') {
-      if (previousMove === Direction.SOUTH) {
-        currentColumnIndex++;
-        previousMove = Direction.EAST;
+      if (direction === Direction.SOUTH) {
+        columnIndex++;
+        direction = Direction.EAST;
       } else {
-        currentRowIndex--;
-        previousMove = Direction.NORTH;
+        rowIndex--;
+        direction = Direction.NORTH;
       }
     } else if (currentTile === 'J') {
-      if (previousMove === Direction.SOUTH) {
-        currentColumnIndex--;
-        previousMove = Direction.WEST;
+      if (direction === Direction.SOUTH) {
+        columnIndex--;
+        direction = Direction.WEST;
       } else {
-        currentRowIndex--;
-        previousMove = Direction.NORTH;
+        rowIndex--;
+        direction = Direction.NORTH;
       }
     } else if (currentTile === '7') {
-      if (previousMove === Direction.NORTH) {
-        currentColumnIndex--;
-        previousMove = Direction.WEST;
+      if (direction === Direction.NORTH) {
+        columnIndex--;
+        direction = Direction.WEST;
       } else {
-        currentRowIndex++;
-        previousMove = Direction.SOUTH;
+        rowIndex++;
+        direction = Direction.SOUTH;
       }
     } else if (currentTile === 'F') {
-      if (previousMove === Direction.NORTH) {
-        currentColumnIndex++;
-        previousMove = Direction.EAST;
+      if (direction === Direction.NORTH) {
+        columnIndex++;
+        direction = Direction.EAST;
       } else {
-        currentRowIndex++;
-        previousMove = Direction.SOUTH;
+        rowIndex++;
+        direction = Direction.SOUTH;
       }
     }
-    currentTile = grid[currentRowIndex][currentColumnIndex];
+    currentTile = grid[rowIndex][columnIndex];
     steps++;
+    stepCount[rowIndex][columnIndex] = steps;
   } while (currentTile !== 'S');
 
   let numTilesInLoop = 0;
 
-  console.log(steps);
-  for (let i = 0; i < grid.length - 1; i++) {
-    const row = stepCount[i];
-    let diffCounter = 0;
-    for (let j = 0; j < row.length; j++) {
-      const current = row[j] === 0 ? row[j] + steps : row[j];
-      const below = (stepCount[i + 1][j]);
-
-      if (current - below === 1) {
-        diffCounter++;
-        console.log('Up:', i, j, grid[i][j], diffCounter);
-      } else if (current - below === -1) {
-        diffCounter--;
-        console.log('Down:', i, j, grid[i][j], diffCounter);
-      } else if (diffCounter !== 0 && current === undefined) {
+  for (let rowIndex = 0; rowIndex < grid.length - 1; rowIndex++) {
+    const row = stepCount[rowIndex];
+    let crossingCounter = 0;
+    for (let columnIndex = 0; columnIndex < row.length; columnIndex++) {
+      const currentTile = row[columnIndex];
+      const belowTile = stepCount[rowIndex + 1][columnIndex];
+      const diff = currentTile - belowTile;
+      if (diff === 1) {
+        crossingCounter++;
+      } else if (diff === -1) {
+        crossingCounter--;
+      } else if (crossingCounter !== 0 && !currentTile) {
         numTilesInLoop++;
-        console.log('In Loop:', i, j, grid[i][j], diffCounter);
       }
     }
-  };
+  }
 
   return numTilesInLoop;
 }
