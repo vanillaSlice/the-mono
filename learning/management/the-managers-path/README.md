@@ -110,3 +110,46 @@ writing code with the team."
   * The brilliant jerk
   * The noncommunicator
   * The employee who lacks respect
+
+## Chapter Six: Managing Multiple Teams
+
+* At this point it's tricky to be as involved in the code, but try to do code reviews
+* Try to set aside some block of time in the week for a creative endeavour e.g. blog posts
+* Make sure meetings are a productive use of people's time
+* Make sure you are prioritising your time
+* Delegate simple and frequent tasks
+* Handle simple and infrequent tasks yourself
+* Use complex and infrequent tasks as learning opportunities to delegate
+* Delegate complex and frequent tasks to your development team
+* Use the "yes, and" approach instead of flat "no" when being asked if something is possible, state that it could impact other projects
+* "Help me say yes", encourage people to try to persuade you
+* Measures of a healthy development team:
+  * Frequency of releases
+  * Frequency of code check-ins
+  * Frequency of incidents
+* Don't isolate your teams into an "us and them" culture
+* Go home! Switch off, don't burn yourself out
+
+## Chapter Seven: Managing Managers
+
+* Don't neglect individual teams and members at this level
+* Organise skip-level meetings, say once a quarter, with your direct report's direct reports
+* Managers who you manage should make your life easier, don't neglect them, make sure they have relevant training
+* Avoid being a people pleaser
+* Help people stop being people pleasers by feeling safer to say no
+* Coach new managers and be ready to help them in the first six months
+* Ensure managers are the right cultural fit
+* If managing areas unknown to you (QAs, data scientists), talk to people and learn, get out of your comfort zone
+* Find problems in underperforming teams as if you are debugging
+* Getting comfortable with estimation, provide updates even when not asked for them
+* Ensure there is time for technical projects as well as features on roadmaps
+* Oversee technical investment and stay abrest of technical trends
+
+## Chapter Eight: The Big Leagues
+
+* Senior leadership tasks:
+  * Information gathering or information sharing
+  * Nudging
+  * Decision making
+  * Role modeling
+* Priorities change, be prepared to ensure to get teams on board
