@@ -160,7 +160,7 @@ writing code with the team."
 
 * Structure is required for scaling up
 * While structure in a startup would be overkill at the start, it should be introduced at some point during growth
-* Examine faiilures, these often come from a lack of stucture
+* Examine failures, these often come from a lack of stucture
 * Company culture is built around core values
 * Reward and praise people who exhibit core values
 * Make core values explicit and clear
