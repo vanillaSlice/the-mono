@@ -153,3 +153,36 @@ writing code with the team."
   * Decision making
   * Role modeling
 * Priorities change, be prepared to ensure to get teams on board
+* Take the time to get to know people
+* Apologise in public, stay calm, don't instill a culture of fear
+
+## Chapter Nine: Bootstrapping Culture
+
+* Structure is required for scaling up
+* While structure in a startup would be overkill at the start, it should be introduced at some point during growth
+* Examine faiilures, these often come from a lack of stucture
+* Company culture is built around core values
+* Reward and praise people who exhibit core values
+* Make core values explicit and clear
+* Just because you could see yourself getting along with someone doesn't mean they'd be a good culture fit
+* Have a detailed career ladder
+* Consider cross-functional teams where appropriate
+* Three processes to add as teams grow:
+  * Code review:
+    * Be clear about code review expectations
+    * Use a linter for style issues
+    * Keep an eye on the review backlog
+  * The outage postmortem:
+    * Resist the urge to point fingers and blame
+    * Look at the circumastances around the incident and understand the context of events
+    * Be realistic about which takeaways are important and which are worth dropping
+  * Architecture review:
+    * Be specific about the kinds of changes that need architecture review
+    * The value of architecture review is in preparing for the review
+    * Choose the review board wisely
+
+## Chapter Ten: Conclusion
+
+* Let go of your ego
+* Try meditation
+* Stay curious!
