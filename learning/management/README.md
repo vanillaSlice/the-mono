@@ -4,4 +4,4 @@ Notes on books, courses, anything specifically to do with management in the soft
 
 ## Reading List
 
-- [ ] The Manager's Path: A Guide for Tech Leaders Navigating Growth & Change by Camille Fournier
+- [x] The Manager's Path: A Guide for Tech Leaders Navigating Growth & Change by Camille Fournier
