@@ -22,3 +22,17 @@
 * Multipliers have a sense of humour and can see the light in things
 * People can accidentally become Diminishers
 * There is a spectrum from Multiplier to Diminisher that we can fall on
+
+## Chapter Two: The Talent Magnet
+
+* Empire Builders hoard resources and underutilise talent
+* Talent Magnets attract talented people and get the best out of them
+* The four practices of the Talent Magnet:
+  * Look for talent everywhere
+  * Find people's native genius
+  * Utilise people at their fullest
+  * Remove the blockers
+* Becoming a Talent Magnet:
+  * Identify the genius
+  * Give them a challenge
+  * Let superstars go, don't hold them back
