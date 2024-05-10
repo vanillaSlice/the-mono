@@ -36,3 +36,17 @@
   * Identify the genius
   * Give them a challenge
   * Let superstars go, don't hold them back
+
+## Chapter Three: The Liberator
+
+* Tyrants create tense environments and supress people's thinking
+* Liberators create intense environments that require people's best thinking and work
+* Three practices of the Liberator:
+  * They create space (they listen, they release others by restraining themselves)
+  * They demand best work
+  * They generate rapid learning cycles (they share their own mistakes and insist that other's learn from theirs)
+* Becoming a Liberator:
+  * Play fewer chips, talk less
+  * Label your opinions as hard or soft
+  * Talk up your mistakes
+  * Make space for mistakes
