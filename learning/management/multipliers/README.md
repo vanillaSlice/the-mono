@@ -50,3 +50,17 @@
   * Label your opinions as hard or soft
   * Talk up your mistakes
   * Make space for mistakes
+
+### Chapter Four: The Challenger
+
+* Know-It-Alls give directives to show how much they know
+* Challengers define opportunities that challenge people to go beyond what they know
+* The three practices of the Challenger:
+  * Seed the opportunity (creating starting points, challenge assumptions, reframe problems)
+  * Lay down a challenge (let others fill in the blanks)
+  * Generate belief in what is possible (orchestrate an early win)
+* Become a challenger by:
+  * Only asking questions (sometimes)
+  * Creating a stretch challenge
+  * Going on a bus trip (taking the team to see customers using the product for example)
+  * Take a massive baby step (get all of the company making a small improvement)
