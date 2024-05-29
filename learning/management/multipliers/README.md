@@ -64,3 +64,17 @@
   * Creating a stretch challenge
   * Going on a bus trip (taking the team to see customers using the product for example)
   * Take a massive baby step (get all of the company making a small improvement)
+
+### Chapter Five: The Debate Maker
+
+* Decision Makers decide efficiently with a small inner circle and leave people in the dark
+* Debate Makers engage people in decisions up-front
+* The three practices of the Debate Maker:
+  * Frame the issue (define the question, form the team, assemble the data, frame the decision)
+  * Spark the debate
+  * Drive a sound decision (communicate the decision)
+* Make a debate by:
+  * Asking the hard question
+  * Asking for evidence
+  * Asking everyone
+  * Asking people to switch (arguing for and against)
