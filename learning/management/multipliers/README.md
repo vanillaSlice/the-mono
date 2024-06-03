@@ -51,7 +51,7 @@
   * Talk up your mistakes
   * Make space for mistakes
 
-### Chapter Four: The Challenger
+## Chapter Four: The Challenger
 
 * Know-It-Alls give directives to show how much they know
 * Challengers define opportunities that challenge people to go beyond what they know
@@ -59,13 +59,13 @@
   * Seed the opportunity (creating starting points, challenge assumptions, reframe problems)
   * Lay down a challenge (let others fill in the blanks)
   * Generate belief in what is possible (orchestrate an early win)
-* Become a challenger by:
+* Become a Challenger by:
   * Only asking questions (sometimes)
   * Creating a stretch challenge
   * Going on a bus trip (taking the team to see customers using the product for example)
   * Take a massive baby step (get all of the company making a small improvement)
 
-### Chapter Five: The Debate Maker
+## Chapter Five: The Debate Maker
 
 * Decision Makers decide efficiently with a small inner circle and leave people in the dark
 * Debate Makers engage people in decisions up-front
@@ -78,3 +78,17 @@
   * Asking for evidence
   * Asking everyone
   * Asking people to switch (arguing for and against)
+
+## Chapter Six: The Investor
+
+* Micromanagers manage every detail in a way that creates a dependence on the leader
+* Investors give responsbility and ownership to produce results independent of the leader
+* The three practices of the Investor:
+  * Define ownership
+  * Invest resources (team and coach, provide backup)
+  * Hold people accountable
+* Becoming an Investor:
+  * Give 51 percent of the vote
+  * Let nature take its course
+  * Ask for the F-I-X not the problem
+  * Give it back (don't take back ownership)
