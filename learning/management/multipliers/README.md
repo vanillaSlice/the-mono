@@ -92,3 +92,21 @@
   * Let nature take its course
   * Ask for the F-I-X not the problem
   * Give it back (don't take back ownership)
+
+## Chapter Seven: The Accidental Diminisher
+
+* Accidental Diminishers are managers, who despite the very best of intentions, have a diminishing impact on the people they lead
+* Accidental Diminisher profiles:
+  * Idea Guy - creative thinkers who think they are stimulating ideas in others
+  * Always On - dynamic leaders who think their energy is infectious
+  * Rescuer - empathetic leaders who are quick to help people who are struggling
+  * Pacesetter - achievement-oriented leaders who lead by example and expect others to follow
+  * Rapid Responder - leaders who are quick to take action and believe they are building an agile team
+  * Optimist - positive leaders who think their beliefs can inspire them to new heights
+  * Protector - vigilant leaders who shield people from problems
+  * Strategist - big thinkers who cast a compelling vision and think they are showing people a better place
+  * Perfectionist - leaders who strive for excellence and manage the fine details to help others produce superior work
+* Decreasing your Accidental Diminisher tendencies:
+  * Seek feedback
+  * Lead with intention
+  * Do less and challenge more
