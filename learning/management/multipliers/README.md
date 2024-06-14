@@ -134,7 +134,7 @@
     * Admit your mistakes
     * Sign up for a stretch
     * Invite them to the party
-  * Level 3: Inspiring Multiplier leadership on others:
+  * Level 3: Inspiring Multiplier leadership in others:
     * Assume positive intent
     * Address one issue at a time
     * Celebrate progress
