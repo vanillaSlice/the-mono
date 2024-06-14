@@ -82,7 +82,7 @@
 ## Chapter Six: The Investor
 
 * Micromanagers manage every detail in a way that creates a dependence on the leader
-* Investors give responsbility and ownership to produce results independent of the leader
+* Investors give responsibility and ownership to produce results independent of the leader
 * The three practices of the Investor:
   * Define ownership
   * Invest resources (team and coach, provide backup)
@@ -110,3 +110,31 @@
   * Seek feedback
   * Lead with intention
   * Do less and challenge more
+
+## Chapter Eight: Dealing with Diminishers
+
+* You can be a Multiplier while working for a Diminisher
+* Breaking the cycle of diminishing:
+  * It's not necessarily about you
+  * Diminishing isn't inevitable
+  * You can lead your leader
+* Dealing with Diminisher strategies:
+  * Level 1: Improve your reactions to Diminishers
+    * Turn down the volume
+    * Strengthen other connections (e.g. with other leaders)
+    * Retreat and regroup
+    * Send the right signals
+    * Assert your capability
+    * Ask for performance intel
+    * Shop for a new boss
+  * Level 2: Multiplying up
+    * Exploit your boss's strengths
+    * Give them a user's guide (about you)
+    * Listen to learn
+    * Admit your mistakes
+    * Sign up for a stretch
+    * Invite them to the party
+  * Level 3: Inspiring Multiplier leadership on others:
+    * Assume positive intent
+    * Address one issue at a time
+    * Celebrate progress
