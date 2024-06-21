@@ -138,3 +138,22 @@
     * Assume positive intent
     * Address one issue at a time
     * Celebrate progress
+
+### Chapter Nine: Becoming a Multiplier
+
+* Starting the journey:
+  * Resonance
+  * Realisation of the Accidental Diminisher
+  * Resolve to be a Multiplier
+* The accelerators:
+  * Start with the assumptions
+  * Work with the extremes (neutralise a weakness; top off a strength)
+  * Run an experiment
+  * Ask a colleague
+  * Brace yourself for setbacks
+* Elements of a culture:
+  * Common language (words and phrases that hold a common meaning in the company)
+  * Learned behaviours
+  * Shared beliefs
+  * Heroes and legends (people who are admired or idolised for their qualities)
+  * Rituals and norms
