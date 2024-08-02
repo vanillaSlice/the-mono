@@ -43,7 +43,7 @@
 
 ## Chapter Four: Coding
 
-* Be prepared. Don't write code when you're tired or worried.
+* Be prepared; don't write code when you're tired or worried
 * Avoid "the Zone" you can lose context here
 * Don't be rude when interrupted
 * Pairing can help with writer's block
