@@ -40,3 +40,16 @@
 * Professionals look for creative ways to say yes
 * Professionals aren't obscure or vague, they give a definite yes or no and highlight any uncertainties
 * Don't "try", you either will or won't
+
+## Chapter Four: Coding
+
+* Be prepared. Don't write code when you're tired or worried.
+* Avoid "the Zone" you can lose context here
+* Don't be rude when interrupted
+* Pairing can help with writer's block
+* Debugging is important but try to reduce the time you do it by creating fewer bugs. Professionals create few bugs
+* Know when to walk a away from a problem, you'll be surprised that you might solve it in the shower or on a drive
+* Don't be late, provide updates, and don't rush
+* Don't say you're done or change the definition of done
+* Ask for help when you need it and help others
+* It is your duty to mentor more junior engineers
