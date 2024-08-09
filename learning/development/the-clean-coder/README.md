@@ -53,3 +53,15 @@
 * Don't say you're done or change the definition of done
 * Ask for help when you need it and help others
 * It is your duty to mentor more junior engineers
+
+## Chapter Five: Test Driven Development
+
+* The three laws of TDD:
+  * You aren't allowed to write any production code until you have written a failing unit test
+  * You aren't allowed to write more of a unit test than is sufficient to fail (not compiling is failing)
+  * You aren't allowed to write more production code that it sufficient to pass the current failing unit test
+* Benefits
+  * Certainty
+  * Fewer defects
+  * More courage to make changes and clean-up code
+  * Acts as documentation
