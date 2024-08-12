@@ -65,3 +65,10 @@
   * Fewer defects
   * More courage to make changes and clean-up code
   * Acts as documentation
+
+## Chapter Six: Practicing
+
+* Practice in your own time, it is not on your employer to keep your skills sharp
+* Do coding katas
+* Contribute to open-source
+* Code in different languages from your job
