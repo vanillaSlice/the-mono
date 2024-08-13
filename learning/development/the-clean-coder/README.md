@@ -72,3 +72,22 @@
 * Do coding katas
 * Contribute to open-source
 * Code in different languages from your job
+
+## Chapter Seven: Acceptance Testing
+
+* Requirements between business and developers is often lost
+* The more precise you make your requirements early on, the less they stay relevant as the system is implemented
+* Estimates will have huge variance
+* Defer precision as long as possible
+* Make sure that ambiguity is removed from the requirements
+* Professional developers have a single definition of done
+  * Done means done
+  * All code is written, all tests pass, QA and stakeholders have accepted
+  * Automated acceptance tests meet all of the criteria
+* Acceptance tests are for communication, clarity, and precision
+* They should be automated
+* Many tools exist for this e.g. Cucumber
+* QA and stakeholders should write these tests but developers often do, make sure they aren't the ones implementing the feature
+* Acceptance tests are not unit tests
+* Unit tests are for programmers by programmers
+* Acceptance tests are for the business for by the business
