@@ -91,3 +91,14 @@
 * Acceptance tests are not unit tests
 * Unit tests are for programmers by programmers
 * Acceptance tests are for the business for by the business
+
+## Chapter Eight: Testing Strategies
+
+* Teams should have a testing strategy
+* QA should find nothing
+* The test automation pyramid consists of:
+  * Unit tests - written by programmers for programmers; should aim for 100% coverage
+  * Component tests - witten by QA and the business; should aim for 50% coverage; mocks other components; against APIs
+  * Integration tests - written by system architects; should aim for 20% coverage; tests that components are plumbed together; against APIs
+  * System tests - written by architects; should aim for 10% coverage; tests entire system is plumbed together; against UIs
+  * Manual exploratory tests - not automated; humans try to break the system
