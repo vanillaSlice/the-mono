@@ -102,3 +102,19 @@
   * Integration tests - written by system architects; should aim for 20% coverage; tests that components are plumbed together; against APIs
   * System tests - written by architects; should aim for 10% coverage; tests entire system is plumbed together; against UIs
   * Manual exploratory tests - not automated; humans try to break the system
+
+## Chapter Nine: Time Management
+
+* Resist attending meetings that don't have immediate or significant benefit
+* When the meeting gets boring, leave
+* Teams should have an agenda and a clear goal
+* You have a limited amount of focus time that you should use:
+  * Make sure you get enough sleep
+  * Limit caffeine
+  * Make sure to recharge
+  * Exercise
+  * Be creatively stimulated
+* Try the Pomodoro Technique
+* Don't avoid things that are true priorities
+* Be mindful of blind alleys and getting vested in an idea that you can't abandon
+* Avoid creating messes and look to clean them, they have detrimental effects to companies
