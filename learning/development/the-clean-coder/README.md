@@ -118,3 +118,14 @@
 * Don't avoid things that are true priorities
 * Be mindful of blind alleys and getting vested in an idea that you can't abandon
 * Avoid creating messes and look to clean them, they have detrimental effects to companies
+
+## Chapter Ten: Estimation
+
+* Business likes to view estimates as commitments
+* Developers like to view estimates as guesses
+* Professionals don't make commitments unless they know they can achieve them
+* Three numbers for estimation (PERT estimation):
+  * Optimistic - if everything went right (1% chance of occurrence)
+  * Nominal - estimate with the greatest probability
+  * Pessimistic - if many things go wrong (1% chance of occurrence)
+* Estimates should be agreed with a team e.g. using planning poker
