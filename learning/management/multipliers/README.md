@@ -139,7 +139,7 @@
     * Address one issue at a time
     * Celebrate progress
 
-### Chapter Nine: Becoming a Multiplier
+## Chapter Nine: Becoming a Multiplier
 
 * Starting the journey:
   * Resonance
