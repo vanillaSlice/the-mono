@@ -140,3 +140,13 @@
 * Don't panic
 * Communicate when you are in trouble
 * Get help and help people when they are in trouble
+
+## Chapter Twelve: Collaboration
+
+* It is unprofessional to be a loner or a recluse on a team
+* Professional programmers take time to understand the business
+* Lack of collaboration leads to "owned code"
+* Teams should own code, not individuals
+* If we pair in an emergency, why don't we pair normally when it is clear that it is a better way to solve the problem?
+* Professionals work together
+* You may work better alone but it doesn't mean the team works better when you work alone
