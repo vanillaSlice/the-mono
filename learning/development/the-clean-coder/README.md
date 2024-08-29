@@ -156,3 +156,8 @@
 * Professional development organisations allocate projects to existing gelled teams, they don't form teams around projects
 * A gelled team can accept many projects simultaneously
 * Teams are harder to build than projects, keep gelled teams together
+
+## Chapter Fourteen: Mentoring, Apprenticeship, and Craftsmanship
+
+* School can teach the theory of computer programming but it does not teach discipline, practice, and skill of being a craftsman
+* It's our duty to guide the next batch of software developers
