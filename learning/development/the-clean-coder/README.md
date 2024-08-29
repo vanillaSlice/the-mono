@@ -129,3 +129,14 @@
   * Nominal - estimate with the greatest probability
   * Pessimistic - if many things go wrong (1% chance of occurrence)
 * Estimates should be agreed with a team e.g. using planning poker
+
+## Chapter Eleven: Pressure
+
+* Avoid commitment to deadlines you aren't sure you can meet
+* Help the business find a way to meet commitments
+* We are not honour bound to accept commitments, it is on the people who made those promises to accept responsibility
+* Do not create a mess in order to move quickly
+* Choose disciplines you would feel comfortable following in a crisis, then follow them all the time
+* Don't panic
+* Communicate when you are in trouble
+* Get help and help people when they are in trouble
