@@ -150,3 +150,9 @@
 * If we pair in an emergency, why don't we pair normally when it is clear that it is a better way to solve the problem?
 * Professionals work together
 * You may work better alone but it doesn't mean the team works better when you work alone
+
+## Chapter Thirteen: Teams and Projects
+
+* Professional development organisations allocate projects to existing gelled teams, they don't form teams around projects
+* A gelled team can accept many projects simultaneously
+* Teams are harder to build than projects, keep gelled teams together
