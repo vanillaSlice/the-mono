@@ -31,3 +31,34 @@
   * Be a listener
   * Get back to people
   * Build documentation in, don't bolt it on
+
+## Chapter Two: A Pragmatic Approach
+
+* Good design is easier to change than bad design
+* DRY - Don't Repeat Yourself
+  * Coincidences are not duplication - don't de-duplicate these
+  * Don't duplicate code in comments
+  * Duplication can occur between developers, ensure communication
+  * Make it easy to reuse
+* Orthogonality in computing refers to system independence
+  * Changes in on system do not affect any of the others
+  * Eliminate effects between unrelated things
+  * Orthogonal systems are reusable
+* There are no final decisions, build systems that can reverse decisions (e.g. database vendors)
+* Forgo following fads
+* Use tracer bullets to find the target
+  * Make a simple E2E to prove that components can communicate successfully and prove out a feature
+  * Users get to see something early
+  * Developers build a structure to work in
+  * You have an integration platform
+  * You have something to demonstrate
+  * You have a better feel for progress
+  * It is not prototyping, tracer bullets are kept
+* Prototype to learn
+  * Ensure everyone knows this is throwaway code
+* Program close to the problem domain (e.g. Cucumber)
+* Estimate to avoid surprises
+  * Ask how long people took to complete a similar project
+  * Estimate subtasks
+  * Give a range of numbers (best, worst, and likely cases)
+* Iterate the schedule with code
