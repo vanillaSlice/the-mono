@@ -1,4 +1,4 @@
-# Factory Method
+# Abstract Factory
 
 ## What?
 
