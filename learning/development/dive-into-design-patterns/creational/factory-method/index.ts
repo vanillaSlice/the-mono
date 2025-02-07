@@ -27,23 +27,14 @@ export abstract class Dialog {
     const okButton = this.createButton();
     okButton.onClick(() => console.log("Closing dialog."));
     okButton.render();
-
-    const inputBox = this.createInputBox();
-    inputBox.onKeyStroke(() => console.log("Key hit."));
-    inputBox.render();
   }
 
   abstract createButton(): Button;
-  abstract createInputBox(): InputBox;
 }
 
 export class WindowsDialog extends Dialog {
   createButton(): Button {
     return new WindowsButton();
-  }
-
-  createInputBox(): InputBox {
-    return new WindowsInputBox();
   }
 }
 
@@ -51,19 +42,11 @@ export class WebDialog extends Dialog {
   createButton(): Button {
     return new HTMLButton();
   }
-
-  createInputBox(): InputBox {
-    return new HTMLInputBox();
-  }
 }
 
 export class MacDialog extends Dialog {
   createButton(): Button {
     return new MacButton();
-  }
-
-  createInputBox(): InputBox {
-    return new MacInputBox();
   }
 }
 
@@ -105,40 +88,3 @@ export class MacButton implements Button {
   }
 }
 
-export interface InputBox {
-  render(): void;
-  onKeyStroke(f: () => void): void;
-}
-
-export class WindowsInputBox implements InputBox {
-  render(): void {
-    console.log("Rendering a Windows input box.");
-  }
-
-  onKeyStroke(f: () => void): void {
-    console.log("Doing Windows input box specific logic.");
-    f();
-  }
-}
-
-export class HTMLInputBox implements InputBox {
-  render(): void {
-    console.log("Rendering an HTML input box.");
-  }
-
-  onKeyStroke(f: () => void): void {
-    console.log("Doing HTML input box specific logic.");
-    f();
-  }
-}
-
-export class MacInputBox implements InputBox {
-  render(): void {
-    console.log("Rendering a Mac input box.");
-  }
-
-  onKeyStroke(f: () => void): void {
-    console.log("Doing Mac input box specific logic.");
-    f();
-  }
-}
