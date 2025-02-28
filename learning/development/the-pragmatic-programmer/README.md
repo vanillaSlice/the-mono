@@ -34,7 +34,6 @@
 
 ## Chapter Two: A Pragmatic Approach
 
-* Good design is easier to change than bad design
 * DRY - Don't Repeat Yourself
   * Coincidences are not duplication - don't de-duplicate these
   * Don't duplicate code in comments
@@ -67,3 +66,14 @@
 
 * Keep knowledge in plain text
 * Use the power of command shells
+* Achieve editor fluency
+* Always use version control
+* Debugging
+  * Fix the problem, not the blame
+  * Don't panic
+  * Write a failing test before fixing code
+  * Read the damn error message
+  * Rubber duck, talk people through the problem and you'll likely reveal a solution
+  * It's unlikely to be a system fault, it's likely your application code
+  * Don't assume you've fixed it, prove it
+* Learn a text manipulation language
