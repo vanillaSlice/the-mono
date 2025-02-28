@@ -41,7 +41,7 @@
   * Duplication can occur between developers, ensure communication
   * Make it easy to reuse
 * Orthogonality in computing refers to system independence
-  * Changes in on system do not affect any of the others
+  * Changes in one system do not affect any of the others
   * Eliminate effects between unrelated things
   * Orthogonal systems are reusable
 * There are no final decisions, build systems that can reverse decisions (e.g. database vendors)
@@ -62,3 +62,19 @@
   * Estimate subtasks
   * Give a range of numbers (best, worst, and likely cases)
 * Iterate the schedule with code
+
+## Chapter Three: The Basic Tools
+
+* Keep knowledge in plain text
+* Use the power of command shells
+* Achieve editor fluency
+* Always use version control
+* Debugging
+  * Fix the problem, not the blame
+  * Don't panic
+  * Write a failing test before fixing code
+  * Read the damn error message
+  * Rubber duck, talk people through the problem and you'll likely reveal a solution
+  * It's unlikely to be a system fault, it's likely your application code
+  * Don't assume you've fixed it, prove it
+* Learn a text manipulation language
