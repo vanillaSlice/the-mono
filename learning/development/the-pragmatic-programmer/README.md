@@ -34,6 +34,7 @@
 
 ## Chapter Two: A Pragmatic Approach
 
+* Good design is easier to change than bad design
 * DRY - Don't Repeat Yourself
   * Coincidences are not duplication - don't de-duplicate these
   * Don't duplicate code in comments
