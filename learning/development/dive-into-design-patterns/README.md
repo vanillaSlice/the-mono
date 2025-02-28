@@ -1,4 +1,6 @@
-# Dive Into Design Patterns
+# Dive Into Design Patterns by Alexander Shvets
+
+![Cover](./cover.jpg)
 
 Design patterns are typical solutions to commonly occurring problems in software design. They are tried
 and tested ways of solving problems. They provide a standard way of working and communicating.
