@@ -78,3 +78,15 @@
   * It's unlikely to be a system fault, it's likely your application code
   * Don't assume you've fixed it, prove it
 * Learn a text manipulation language
+
+## Chapter Four: Pragmatic Paranoia
+
+* You can't write perfect software
+* Design with contracts, functions the have pre- and post-conditions
+* Crash early, a dead program does less damage than a crippled one
+* Use assertions to prevent the impossible, and leave them switched on in production!
+* Finish what you start, release resources, avoid tight coupling
+* Whatever allocates a resource should reallocate it i.e. free it up
+* Act locally
+* Take small steps, always
+* Avoid fortune-telling
