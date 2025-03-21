@@ -90,3 +90,16 @@
 * Act locally
 * Take small steps, always
 * Avoid fortune-telling
+
+## Chapter Five: Bend, or Break
+
+* Decoupled code is easier to
+* Tell, don't ask (don't expose low-level details)
+* Don't chain method calls
+* Avoid global data
+* If it's import enough to be global, wrap it in an API
+* Programming is about code, but programs are about data (think about data transformations, inputs, and outputs)
+* Don't hoard state; pass it around
+* Don't pay inheritance tax, avoid inheritance
+* Prefer interfaces to express polymorphism
+* Delegate to services: "has a" trumps "is a"
