@@ -93,7 +93,7 @@
 
 ## Chapter Five: Bend, or Break
 
-* Decoupled code is easier to
+* Decoupled code is easier to maintain
 * Tell, don't ask (don't expose low-level details)
 * Don't chain method calls
 * Avoid global data
