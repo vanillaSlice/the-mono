@@ -103,3 +103,5 @@
 * Don't pay inheritance tax, avoid inheritance
 * Prefer interfaces to express polymorphism
 * Delegate to services: "has a" trumps "is a"
+* Use mixins to share functionality
+* Parameterise your app using external configuration
