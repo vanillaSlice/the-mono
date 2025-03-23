@@ -105,3 +105,11 @@
 * Delegate to services: "has a" trumps "is a"
 * Use mixins to share functionality
 * Parameterise your app using external configuration
+
+## Chapter Six: Concurrency
+
+* Analyse workflow to improve concurrency
+* Shared state is incorrect state
+* Random failures are often concurrency issues
+* Use actors for concurrency without shared state
+* Use blackboards to coordinate workflow
