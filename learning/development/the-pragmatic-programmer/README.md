@@ -113,3 +113,23 @@
 * Random failures are often concurrency issues
 * Use actors for concurrency without shared state
 * Use blackboards to coordinate workflow
+
+## Chapter Seven: While You Are Coding
+
+* Listen to your inner lizard (your instincts)
+* Don't program by coincidence, be deliberate
+* Estimate the order of your algorithms (Big-O Notation)
+* Test your estimates (code profilers)
+* Refactor early, refactor often
+* Testing is not about finding bugs
+  * Tests drive coding
+* A test is the first user of your code
+* Build end-to-end, not top-down or bottom-up
+  * Build small pieces of end-to-end functionality
+* Design to test
+* Test your software, or your users will
+* Use property-based tests to validate your assumptions
+* Security
+  * Keep it simple and minimise attack surfaces
+  * Apply security patches quickly
+* Name well; rename when needed
