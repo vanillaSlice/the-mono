@@ -133,3 +133,16 @@
   * Keep it simple and minimise attack surfaces
   * Apply security patches quickly
 * Name well; rename when needed
+
+## Chapter Eight: Before the Project
+
+* No one knows exactly what they want
+* Programmers help people understand what they want
+* Requirements are learned in a feedback loop
+* Work with a user to think like a user
+* Policy is metadata
+* Use a project glossary
+* Don't think outside the box, find the box
+* Don't go in the code alone
+* Agile is not a noun; agile is how you do things
+* A team that doesn't experiment with their process isn't agile
