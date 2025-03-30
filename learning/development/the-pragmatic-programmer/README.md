@@ -146,3 +146,26 @@
 * Don't go in the code alone
 * Agile is not a noun; agile is how you do things
 * A team that doesn't experiment with their process isn't agile
+
+## Chapter Nine: Pragmatic Projects
+
+* Maintain small, stable teams
+* Schedule it to make it happen (tech debt, training, maintenance)
+* Organise fully functional teams
+* Do what works, not what's fashionable
+* Deliver when users need it
+* Use version control to drive builds, tests, and releases
+* Test early, test often, test automatically
+* Coding ain't done 'til all the tests run
+* Use saboteurs to test your testing (introduce bugs and ensure they are caught)
+* Test state coverage, not code coverage
+* Find bugs once
+* Don't use manual procedures
+* Delight users, don't just deliver code
+* Sign your work
+
+## Postface
+
+* First, do no harm
+* Don't enable scumbags
+* It's your life, share it, celebrate it, build it, and have fun!
