@@ -82,7 +82,7 @@
 ## Chapter Four: Pragmatic Paranoia
 
 * You can't write perfect software
-* Design with contracts, functions the have pre- and post-conditions
+* Design with contracts, functions that have pre- and post-conditions
 * Crash early, a dead program does less damage than a crippled one
 * Use assertions to prevent the impossible, and leave them switched on in production!
 * Finish what you start, release resources, avoid tight coupling
