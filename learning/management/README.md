@@ -6,3 +6,4 @@ Notes on books, courses, anything specifically to do with management in the soft
 
 - [x] The Manager's Path: A Guide for Tech Leaders Navigating Growth & Change by Camille Fournier
 - [x] Multipliers: How the Best Leaders Make Everyone Smarter by Liz Wiseman
+- [x] The Five Dysfunctions of a Team: A Leadership Fable by Patrick Lencioni
