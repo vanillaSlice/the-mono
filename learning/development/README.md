@@ -8,3 +8,4 @@ Notes on books, courses, anything specifically to do with the development of sof
 - [x] The Pragmatic Programmer by David Thomas and Andrew Hunt
 - [x] The Clean Coder: A Code of Conduct for Professional Programmers by Robert C. Martin
 - [ ] Clean Architecture: A Craftsman's Guide to Software Structure and Design by Robert C. Martin
+- [ ] Extreme Programming Explained: Embrace Change by Kent Beck
