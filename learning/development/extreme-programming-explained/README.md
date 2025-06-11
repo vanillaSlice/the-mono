@@ -49,7 +49,7 @@ Principles that guide XP:
 * Failure - failure imparts knowledge
 * Quality - pushing quality higher often results in faster delivery
 * Baby Steps - momentous change taken all at once is dangerous
-* Accepted Responsibility - is cannot be assigned, it can only be accepted
+* Accepted Responsibility - it cannot be assigned, it can only be accepted
 
 ### Chapter 6: Practices
 
