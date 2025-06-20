@@ -70,3 +70,26 @@ Practices themselves are barren unless given purpose by values.
 * Continuous Integration - integrate and test changes after no more than a couple of hours
 * Test-First Programming - write a failing automated test before changing any code
 * Incremental Design - invest in the design of the system every day
+
+### Chapter 8: Getting Started
+
+Start by changing one thing at a time. Start by changing yourself. Dictating practices
+to a team harbours resentment and mistrust. Map practices with your team to identify
+what that practice means to you and signs that it isn't going well. Don't let it be a
+complaining session. Look for ways to find solutions.
+
+### Chapter 9: Corollary Practices
+
+Look at implementing the primary practices before these.
+
+* Real Customer Involvement - make people whose lives and business affected by your system part of the team
+* Incremental Deployment - deploy the smallest piece of functionality you can, avoid "big bang"
+* Team Continuity - keep effective teams together
+* Shrinking Teams - as a team grows in capability, keep its workload constant but gradually reduce its size
+* Root-Cause Analysis - when a defect is found, eliminate it and its cause
+* Shared Code - anyone on the team can improve any part of the system at any time
+* Code and Tests - maintain only the code and the tests as permanent artifacts, generate documents from these
+* Single Code Base - don't have multiple versions of the same code (i.e. different branches long-lived)
+* Daily Deployment - put new software into production every night
+* Negotiated Scope Contract - write contracts for software development that are small and precise
+* Pay-Per-Use - charge for every time the system is used
