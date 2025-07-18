@@ -93,3 +93,61 @@ Look at implementing the primary practices before these.
 * Daily Deployment - put new software into production every night
 * Negotiated Scope Contract - write contracts for software development that are small and precise
 * Pay-Per-Use - charge for every time the system is used
+
+### Chapter 10: The Whole XP Team
+
+Here are the various roles of an XP team:
+
+* Testers - they are involved early in the cycle, implementing tests that must pass before a feature is released
+* Interaction Designers - choose metaphors for the system, write stores, and evaluate the system to find opportunities for new stories
+* Architects - look for large scale changes and architect the system
+* Project Managers - facilitate communication inside and outside the team
+* Product Managers - write stories, pick themes, and help define priorities
+* Executives - provide the team with courage, confidence, and accountability
+* Technical Writers - ensure documentation is up-to-date, quick, and easy to maintain
+* Users - help write and pick stories from experience with the system
+* Programmers - actually write the code to implement features
+* Human Resources - deal with hiring and performance reviews
+
+People may fulfil multiple roles or even switch roles, it's not set in stone.
+
+### Chapter 11: The Theory of Constraints
+
+The theory of constraints suggests that regardless of process, there is always a bottleneck. Once that bottleneck
+is moved, another bottleneck will be identified. Work on identifying these bottlenecks and places that you can
+improve efficiency regularly.
+
+### Chapter 12: Planning: Managing Scope
+
+Planning makes goals and directions clear and explicit. Plan as close as you can to implementation. That way, you
+have the most up-to-date information at the time. Plans change, be prepared to adapt. Work on estimations. This
+will improve with experience and how much time you've spent on similar tasks. Prefer using time estimates than
+story points or t-shirt sizes.
+
+### Chapter 13: Testing: Early, Often, and Automated
+
+Defects destroy trust across the board. From customers through to developers. Testing early, whilst programming
+reduces defects and reduces the cost of defects. Trying to fix a defect when it has been discovered years later
+is expensive. Testing early gives us confidence in what we build.
+
+### Chapter 14: Designing: The Value of Time
+
+Design just enough and incrementally. As you get more experience, you can make more informed design decisions.
+Doing everything up front is asking for trouble. Strive for simplicity in your designs.
+
+### Chapter 15: Scaling XP
+
+* Try and solve problems with a small team first. If it doesn't, begin with a small team, then split it amongst autonomous teams.
+* Don't force XP on the entire organisation. You can fit your team's new ways of working into this.
+* Strive for simplicity. Make improvements as you go along whilst delivering new functionality.
+* XP principles do scale. Practices may require some adjustment.
+
+### Chapter 16: Interview
+
+Interview with a Senior Vice President of an airline and the benefits and challenges of implementing XP in the company.
+
+## Section 2: Philosophy of XP
+
+### Chapter 17: Creation Story
+
+TODO
