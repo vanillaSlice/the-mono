@@ -150,4 +150,48 @@ Interview with a Senior Vice President of an airline and the benefits and challe
 
 ### Chapter 17: Creation Story
 
-TODO
+The author's first experience where XP was used at Chrysler. By building and delivering software a small piece at a time,
+they were able to deliver a successful project.
+
+### Chapter 18: Taylorism and Software
+
+Frederick Taylor was the first industrial engineer. He would observe a worker at a task, devise alternative ways to
+perform the task, observe these, and pick the best one. Taylorism has some positive effects but has some serious
+shortcomings coming from these assumptions:
+
+* Things usually go according to plan
+* Micro-optimisation leads to macro-optimisation
+* People are mostly interchangeable and need to be told what to do
+
+### Chapter 19: Toyota Production System
+
+The Toyota Production System doesn't have a quality department. They expect everyone on the production line to be
+responsible for quality. If they see a defect on their parts, they pull the cord and production is halted. It's then
+a responsibility of everyone to get things up and running as soon as possible. It seems counter-intuitive but it has
+seen huge success for Toyota.
+
+### Chapter 20: Applying XP
+
+Start by applying XP to yourself. Seek to improve your practices and start to branch out to the team.
+
+### Chapter 21: Purity
+
+You can't really measure if a team is extreme. There'll be varying degrees to how well you implement it. There is
+no accreditation for it. But it is more of a state of a mind and how much you believe in the XP values.
+
+### Chapter 22: Offshore Development
+
+Multi-site teams may require a tweak in how they perform XP practices.
+
+### Chapter 23: The Timeless Way of Programming
+
+Technical and business concerns must be brought into harmony for success. Harmony and balance are the aims of XP.
+
+### Chapter 24: Community and XP
+
+Communities are important for support. And that's the same with XP. It could be your team, a working group, or even
+a community built outside of your job. A community should help you to be your best self.
+
+### Chapter 25: Conclusion
+
+Following XP starts with your own values. Operate according to your values.
