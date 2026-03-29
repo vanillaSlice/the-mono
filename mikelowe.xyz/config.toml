@@ -7,9 +7,9 @@ enableRobotsTXT = "true"
 [params]
 env = "production"
 title = "Mike Lowe"
-description = "Lead Software Engineer at KrakenFlex"
+description = "Lead Software Engineer at Kraken Technologies"
 author = "Mike Lowe"
-keywords = ["mike lowe", "software", "developer", "engineer", "krakenflex", "manchester", "england", "uk"]
+keywords = ["mike lowe", "software", "developer", "engineer", "kraken", "tech", "manchester", "england", "uk"]
 defaultTheme = "light"
 disableThemeToggle = "true"
 ShowBreadCrumbs = "true"
@@ -20,7 +20,7 @@ googlesiteVerificationTag = "O8nQ3mb-lymo3nQFax5JRFE-mgmtxnLJ1H-ZIEdzSxQ"
 [params.profileMode]
 enabled = "true"
 title = "Mike Lowe"
-subtitle = "Lead Software Engineer at KrakenFlex"
+subtitle = "Lead Software Engineer at Kraken Technologies"
 
 [[params.profileMode.buttons]]
 name = "Projects"
