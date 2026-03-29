@@ -21,6 +21,8 @@ jobs:
         with:
           submodules: true
       - uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 0.101.0
       - run: hugo --minify
   Deploy:
     if: ${{ github.event_name == 'push' }}
