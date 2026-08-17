@@ -8,3 +8,4 @@ Notes on books, courses, anything specifically to do with management in the soft
 - [x] Multipliers: How the Best Leaders Make Everyone Smarter by Liz Wiseman
 - [x] The Five Dysfunctions of a Team: A Leadership Fable by Patrick Lencioni
 - [x] An Elegant Puzzle: Systems of Engineering Management by Will Larson
+- [x] Turn the Ship Around! A True Story of Turning Followers Into Leaders by L. David Marquet
