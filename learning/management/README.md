@@ -9,3 +9,4 @@ Notes on books, courses, anything specifically to do with management in the soft
 - [x] The Five Dysfunctions of a Team: A Leadership Fable by Patrick Lencioni
 - [x] An Elegant Puzzle: Systems of Engineering Management by Will Larson
 - [x] Turn the Ship Around! A True Story of Turning Followers Into Leaders by L. David Marquet
+- [x] Team Topologies: Organizing Business and Technology Teams for Fast Flow by Matthew Skelton and Manuel Pais
