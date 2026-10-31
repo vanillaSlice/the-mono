@@ -24,6 +24,8 @@ jobs:
       - run: npm ci
       - run: npm test
       - uses: codecov/codecov-action@v2
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         with:
           flags: RecipeBox
           fail_ci_if_error: true
